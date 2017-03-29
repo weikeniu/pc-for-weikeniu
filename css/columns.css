@@ -1,0 +1,16 @@
+.ca-hotel-msg{margin-right:42px;}
+.ca-tips{width:100%; height:38px; border:1px solid #ffcb80; line-height:40px; color:#333; margin-top:20px; margin-bottom:10px; background:#ffffe7; font-size:14px;}
+.ca-tips>span{background:url(../images/sugar.png) no-repeat no-repeat -10px -120px; width:18px; height:18px; display:block; float:left; margin:11px;}
+.ca-message{ width:100%;}
+.ca-message tr{line-height:55px; color:#999999;}
+.ca-message tr td:first-child{ text-align:right; padding-right:15px;}
+.ca-message tr td label{font-size:14px;}
+.ca-message tr td span{margin-left:10px;}
+.ca-message tr td select{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:18px; line-height:32px;}
+.ca-input{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:18px; line-height:35px;}
+.ca-loading{border:none; background:none; padding-right:10px; line-height:32px; color:#666;}
+.ca-textearea{width:560px; height:180px; color:#999; font-size:14px; padding-right:25px; padding-top:8px; line-height:24px;}
+.ca-fre-tips{width:78px; height:23px; border:1px solid #ddd; background:#fff; color:#2093f7; margin:0 10px; border-radius:2px;}
+.ca-keep-btn{width:160px; height:45px; background:#2093f7; color:#fff; border:none; font-size:18px; border-radius:4px}
+.ca-map{height:290px; width:900px;}
+.ca-map img{width:100%; height:100%;}

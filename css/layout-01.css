@@ -147,14 +147,15 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 .sidebar__menu .btns{padding:20px 10px;}
 .sidebar__menu .btns a{border:1px dashed #d7d7d7;color:#666;display:block;font-size:16px;text-align:center;height:40px;line-height:40px;}
 .sidebar__menu .btns a i{
-	background: url(../images/sugar.png) no-repeat -210px -7px;
-	display: inline-block;margin: 14px 10px 0 0;height: 14px; width: 14px;
+	background: url(../images/icon-multiple-sel.png) no-repeat 0 -2px;
+	display: inline-block;margin: 15px 10px 0 0;height: 12px; width: 12px;
 }
 .sidebar__menu .btns a:hover{border-color:#2093f7;color:#2093f7;}
-.sidebar__menu .btns a:hover i{background-position:-227px -7px;}
+.sidebar__menu .btns a:hover i{background-position:-16px -2px;}
 /* }}} */
 
 /* :::弹窗样式(会员中心-子账号管理) */
+.dlg-popup .mask-inner .main-box{border:0 none!important;}
 .dlg-popup .mask-inner .main-box th{width:auto;}
 .dlg-popup .mask-inner .main-box td.error{color:#f00;}
 .dlg-popup .mask-inner .main-box td.error input{border-color:#f00;color:#f00;}
@@ -169,6 +170,19 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 .dlg-createDpt .dlg-main .main-box{overflow-y:auto;height:420px;}
 .dlg-editLgPwd .dlg-main, .dlg-editPayPwd .dlg-main{margin:-160px 0 0 -260px;height:320px;width:520px;}
 .dlg-forgetPwd .dlg-main, .dlg-forgetPayPwd .dlg-main{margin:-130px 0 0 -260px;height:260px;width:520px;}
+.dlg-moveDpt .dlg-main{margin:-200px 0 0 -170px;height:350px;width:340px;}
+.dlg-moveDpt .dlg-main .main-box{overflow-y:auto;height:350px;}
+.dlg-delSubAccount .dlg-main{margin:-75px 0 0 -150px;height:150px;width:300px;}
+
+/* 分组 */
+.dlg-popup .group-list{margin-left:20px;}
+.dlg-popup .group-list ul li{display:inline;float:left;font-size:14px; margin-bottom:15px;line-height:16px;width:46%;}
+.dlg-popup .group-list ul li i{
+	background:url(../images/icon-multiple-sel.png) no-repeat -51px 0;
+	display:inline-block;margin-right:10px;vertical-align:top;height:16px;width:16px;
+}
+.dlg-popup .group-list ul li.on i{background-position: -70px 0;}
+
 /* 树菜单选择 */
 .tree-choose{background:#f9f9f9;border:1px solid #ebebeb; height:240px;width:370px; position:relative;}
 .tree-choose .tree-inner{padding:20px;overflow-y:auto;height:200px;}

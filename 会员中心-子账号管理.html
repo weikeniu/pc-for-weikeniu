@@ -145,17 +145,17 @@
 										</p>
 										<div class="fr">
 											<label class="fl yu-line35 yu-rmar10 mr--30">
-												<input type="checkbox"> 全选
+												<input class="J__chkAll" type="checkbox" name="chkAll" /> 全选
 											</label>
-											<div class="fl yu-del1 move-dpm">移动部门</div>
-											<div class="fl yu-del1 del-mark">删除</div>
+											<div class="fl yu-del1 move-dpm J_btn_moveDpt">移动部门</div>
+											<div class="fl yu-del1 del-mark J_btn_delSubAccount">删除</div>
 											<div class="fl yu-add1 add-mark ml--20" style="margin-right:0;" id="J_btn_createAccount"><span class="yu-ico"></span>添加子账号</div>
 										</div>
 									</div>
 									
 									<!--列表-->
 									<div class="s-v-card-list" style="padding-right:0;">
-										<table width="100%" style="border-top:1px solid #e7e7e7;">
+										<table width="100%" style="border-top:1px solid #e7e7e7;" id="J__tabList">
 											<colgroup>
 												<col width="180px" />
 												<col width="180px" />
@@ -287,7 +287,7 @@
 									</li>
 								</ul>
 								<div class="btns">
-									<a href="#"><i></i>新建部门</a>
+									<a class="J__createDpt" href="javascript:;"><i></i>新建部门</a>
 								</div>
 							</div>
 						</div>
@@ -347,12 +347,12 @@
 							<th valign="top" style="padding-top:10px;">使用权限</th>
 							<td>
 								<div class="tree-choose">
-									<div class="tree-inner">
+									<div class="tree-inner" id="J__treeChoose">
 										<dl>
 											<dt class="on"><i></i>订单处理</dt>
 											<dd>
-												<a href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
-												<a href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
 											</dd>
 										</dl>
 										<dl>
@@ -406,12 +406,12 @@
 							<th valign="top" style="padding-top:10px;">使用权限</th>
 							<td>
 								<div class="tree-choose">
-									<div class="tree-inner">
+									<div class="tree-inner" id="J__treeChoose">
 										<dl>
 											<dt class="on"><i></i>订单处理</dt>
 											<dd>
-												<a href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
-												<a href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
 											</dd>
 										</dl>
 										<dl>
@@ -597,10 +597,64 @@
 			</div>
 		</div>
 	</div>
+	
+	<!--//移动部门-->
+	<div class="mask dlg-popup dlg-moveDpt" id="J_dlg_moveDpt" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="top-box">
+				<p>移动部门</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad20">
+					<div class="group-list">
+						<ul class="clearfix" id="J__groupList">
+							<li class="on"><i></i>前厅部</li>
+							<li><i></i>客房部</li>
+							<li><i></i>餐饮部</li>
+							<li><i></i>餐饮商家部</li>
+							<li><i></i>会议部</li>
+							<li><i></i>康乐部</li>
+						</ul>
+					</div>
+					<div class="button-row ml--20 mt--10">
+						<input type="button" value="取消" class="type1 mask-cancel" />
+						<input type="submit" value="确定" class="type2" />
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(function(){
+					//选项选择(单选)
+					$("#J__groupList li").on("click", function(){
+						$(this).addClass("on").siblings().removeClass("on");
+					});
+				});
+			</script>
+		</div>
+	</div>
+	
+	<!--//删除子账号-->
+	<div class="mask dlg-popup dlg-delSubAccount" id="J_dlg_delSubAccount" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="main-box">
+				<div class="yu-bgw yu-pad20">
+					<div class="message ml--20 mt--20">
+						确定删除吗？
+					</div>
+					<div class="button-row ml--20 mt--30">
+						<input type="button" value="取消" class="type1 mask-cancel" />
+						<input type="submit" value="确定" class="type2" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript">
 		/**
 		 *	create by hison
 		 */
+		
 		/** 弹窗控制 */
 		$(function(){
 			//关闭弹窗
@@ -641,6 +695,74 @@
 				$("#J_dlg_forgetPayPwd").fadeIn();
 			});
 			
+			//移动部门
+			$(".J_btn_moveDpt").on("click", function(){
+				$("#J_dlg_moveDpt").fadeIn();
+			});
+			
+			//删除子账号
+			$(".J_btn_delSubAccount").on("click", function(){
+				$("#J_dlg_delSubAccount").fadeIn();
+			});
+			
+		});
+		
+		/** 控制函数 */
+		$(function(){
+			//树节点控制
+			$("#J__treeChoose dl dt").on("click", function(){
+				if($(this).hasClass("on")){
+					$(this).removeClass("on");
+					$(this).siblings("dd").children("a").removeClass("checked");
+				}else{
+					$(this).addClass("on");
+					$(this).siblings("dd").children("a").addClass("checked");
+				}
+			});
+			$("#J__treeChoose dl dd a").on("click", function(){
+				$(this).toggleClass("checked");
+				
+				var count = $(this).parents("dl").find("dd a").size();
+				var i = 0;
+				$(this).parents("dl").find("dd a").each(function(){
+					if($(this).hasClass("checked")){
+						i++;
+					}
+				});
+				if(count == i){
+					$(this).parents("dl").find("dt").addClass("on");
+				}else{
+					$(this).parents("dl").find("dt").removeClass("on");
+				}
+			});
+			
+			//状态控制
+			$("#J__tabList .tab-btn").on("click", function(){
+				$(this).toggleClass("cur");
+			});
+			
+			//全选控制
+			$(".J__chkAll").on("click", function(){
+				if($(this).is(":checked")){
+					$("#J__tabList input[name='id[]']").prop("checked", true);
+				}else{
+					$("#J__tabList input[name='id[]']").prop("checked", false);
+				}
+			});
+			$("#J__tabList input[name='id[]']").on("click", function(){
+				var chkNum = $("#J__tabList input[name='id[]']").size();
+				var chk = 0;
+				$("#J__tabList input[name='id[]']").each(function(){
+					if($(this).is(":checked")){
+						chk++;
+					}
+				});
+				if(chkNum == chk){
+					$(".J__chkAll").prop("checked", true);
+				}else{
+					$(".J__chkAll").prop("checked", false);
+				}
+			});
 		});
 	</script>
 	<!-- ……弹窗内容模板.End -->

@@ -1,0 +1,437 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="关键词1,关键词2,关键词3" />
+<meta name="description" content="对网站的描述" />
+<title>订餐管理-上传相册</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link type="text/css" rel="stylesheet" href="css/index.css"/>
+<link href="css/layout-01.css" rel="stylesheet" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<div class="top-bar">
+		<h1 id="logo">微可牛管理中心</h1>
+		<div class="left-side kai">
+			<div class="yu-c7d yu-h45 yu-bgf4 yu-l45 yu-pos-r">
+				<p class="nav-ico type1">
+					
+				</p>
+				<p class="">功能导航</p>
+			</div>
+			<div class="left-side-nav">
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type2"></p>
+						<p>系统设置</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type3"></p>
+						<p>酒店管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd>
+						<dl class="lv2">
+							<dt><span class="dian"></span>餐饮订餐</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>
+								<dl class="lv3">
+									<dt>订单管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>								
+							</dd>
+						</dl>
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房管理</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>	
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房设置</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>													
+					</dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type4"></p>
+						<p>团购管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type5"></p>
+						<p>会员中心</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type6"></p>
+						<p>手机官网</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+			</div>
+		</div>		
+	</div>
+	<div class="content">
+		
+
+		<div class="right-side">
+			<div class="bread-nav">
+				<ul>
+					<li class="yu-c99">订餐管理</li>
+					<li class="yu-next-ico yu-c99 yu-font14">》</li>
+					<li class="yu-c99">商家管理</li>
+					<li class="yu-next-ico yu-c99 yu-font14">》</li>
+					<li>上传相册</li>
+
+				</ul>
+			</div>
+			<div class="yu-pad20">
+				<div class="inner-type1 ">
+					<!-- <>上传相册区域 -->
+					<div class="zone__rt-similar">
+						<div class="hd-tit clearfix">
+							<h2 class="fl"><i></i>上传相册</h2>
+						</div>
+						
+						<div class="zone__photoAlbum mt--20 clearfix">
+							<!--//内容区域-->
+							<div class="main__cont">
+								<!--操作选项-->
+								<div class="yu-h50 clearfix">
+									<div class="fl yu-line35 yu-rmar10 mr--30">
+										<div class="fl"><label><input class="J__chkAll" type="checkbox" name="chkAll" /> 全选</label></div>
+										<div class="fl yu-del1 del-mark J_btn_delPhoto ml--20">删除</div>
+									</div>
+									
+									<div class="fr">
+										<div class="fl yu-add1 add-mark ml--20 J_btn_uploadPhoto" style="margin-right:0;"><span class="yu-ico"></span>上传相片</div>
+										
+										<div class="fl ml--30">
+											<ul class="page-btn fr">
+												<li class="prev-page  dis"><div class=" arr prev-arr"></div></li>
+												<li class="next-page"><div class="arr next-arr"></div></li>
+											</ul>
+											<!--pagee-btn end-->
+											<div class="fr yu-line35 yu-rmar10">
+												<span class="yu-orange cur-page">1</span>
+												<span class="yu-c66">/</span>
+												<span class="yu-c66 all-page">5</span>
+											</div>
+											<!--yu-rmar10 end-->
+										</div>
+										<!--page-turn end-->
+									</div>
+								</div>
+								
+								<!--相册相片列表-->
+								<div class="pht-products" id="cal-list">
+									<ul class="clearfix">
+										 <li>
+											<div class="cal-false curren"></div>
+											<a href="#"><dl>
+												<dt><div><img src="images/temp-photo.jpg"></div></dt>
+												<dd><p class="flt">酒店室内休息区 酒店室内休息区酒店室内休息区</p></dd>
+											 </dl></a>
+											 <div class="cal-pro"><span class="cal-edit" title="编辑"></span><span class="cal-carbage" title="删除"></span></div>
+										 </li>
+										 <li>
+											<div class="cal-false curren"></div>
+											<a href="#"><dl>
+												<dt><div><img src="images/temp-photo.jpg"></div></dt>
+												<dd><p class="flt">酒店室内休息区</p></dd>
+											 </dl></a>
+											 <div class="cal-pro"><span class="cal-edit" title="编辑"></span><span class="cal-carbage" title="删除"></span></div>
+										 </li>
+										 <li>
+											<div class="cal-false curren"></div>
+											<a href="#"><dl>
+												<dt><div><img src="images/temp-photo.jpg"></div></dt>
+												<dd><p class="flt">酒店室内休息区</p></dd>
+											 </dl></a>
+											 <div class="cal-pro"><span class="cal-edit" title="编辑"></span><span class="cal-carbage" title="删除"></span></div>
+										 </li>
+										 <li>
+											<div class="cal-false curren"></div>
+											<a href="#"><dl>
+												<dt><div><img src="images/temp-photo.jpg"></div></dt>
+												<dd><p class="flt">酒店室内休息区</p></dd>
+											 </dl></a>
+											 <div class="cal-pro"><span class="cal-edit" title="编辑"></span><span class="cal-carbage" title="删除"></span></div>
+										 </li>
+										 <li>
+											<div class="cal-false curren"></div>
+											<a href="#"><dl>
+												<dt><div><img src="images/temp-photo.jpg"></div></dt>
+												<dd><p class="flt">酒店室内休息区</p></dd>
+											 </dl></a>
+											 <div class="cal-pro"><span class="cal-edit" title="编辑"></span><span class="cal-carbage" title="删除"></span></div>
+										 </li>
+										 <li>
+											<div class="cal-false curren"></div>
+											<a href="#"><dl>
+												<dt><div><img src="images/temp-photo.jpg"></div></dt>
+												<dd><p class="flt">酒店室内休息区</p></dd>
+											 </dl></a>
+											 <div class="cal-pro"><span class="cal-edit" title="编辑"></span><span class="cal-carbage" title="删除"></span></div>
+										 </li>
+										 <li>
+											<div class="cal-false curren"></div>
+											<a href="#"><dl>
+												<dt><div><img src="images/temp-photo.jpg"></div></dt>
+												<dd><p class="flt">酒店室内休息区</p></dd>
+											 </dl></a>
+											 <div class="cal-pro"><span class="cal-edit" title="编辑"></span><span class="cal-carbage" title="删除"></span></div>
+										 </li>
+										 <li class="add-pro J_btn_uploadPhoto">
+											 <a href="javascript:;"><dl>
+													<dt><p class="cal-bg"></p><span>上传相片</span></dt>
+											  </dl></a>
+										 </li>
+									</ul>
+							   </div>
+							   
+							   <!--分页-->
+							   <div class="page-num-bar" style="padding-left:180px;">
+									<p class="yu-line37 yu-c88 yu-font14 yu-rmar10">总菜单：129</p>
+									<ul class="page-num-zujian">
+									  <li class="type1"> 上一页 </li>
+									  <li class="type2">1</li>
+									  <li class="type3">2</li>
+									  <li class="type3"> 下一页 </li>
+									</ul>
+									<p class="yu-line37 yu-c88 yu-font14 yu-rmar10">共2页</p>
+									<div class="yu-line37 yu-c88 yu-font14 yu-rmar10">到第
+									  <input type="text" value="1" class="page-input">
+									  页</div>
+									<p>
+									  <input type="submit" value="确定" class="page-sub">
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 在这里写内容 -->
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- ……弹窗内容模板.Start -->
+	<!--//上传照片-->
+	<div class="mask dlg-popup dlg-createDpt" id="J_dlg_uploadPhoto" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="top-box">
+				<p>上传照片</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad20">
+					<form>
+					<table>
+						<tr>
+							<th>相片名称</th>
+							<td><input type="text" class="type1" /></td>
+							<td>
+								<span class="yu-font14 yu-c99 yu-cblue">0</span>
+								<span class="yu-font14 yu-c99">/12字</span>
+							</td>
+						</tr>
+						<tr>
+							<th>选择图片</th>
+							<td>
+								<div>
+									<div class="file-copy fl">
+										<input type="file" class="file-btn"/>
+										<p></p>
+									</div>
+									<p class="fl">
+										<span class="yu-cblue">*</span>
+										<span class="yu-c99 yu-font14">支持PNG、JPG格式</span>
+									</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel" />
+									<input type="submit" value="确定" class="type2" />
+								</div>
+								
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--//删除照片-->
+	<div class="mask dlg-popup dlg-delSubAccount" id="J_dlg_delPhoto" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="main-box">
+				<div class="yu-bgw yu-pad20">
+					<div class="message ml--20 mt--20">
+						确定要删除所选照片吗？
+					</div>
+					<div class="button-row ml--20 mt--30">
+						<input type="button" value="取消" class="type1 mask-cancel" />
+						<input type="submit" value="确定" class="type2" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		/**
+		 *	create by hison
+		 */
+		
+		/** 弹窗控制 */
+		$(function(){
+			//关闭弹窗
+			$(".dlg-popup").on("click", function(){
+				$(this).fadeOut(250);
+			});
+			$(".mask-close, .mask-cancel").on("click", function(){
+				$(this).parents(".dlg-popup").fadeOut(250);
+			});
+			$(".mask-inner").on("click", function(e){
+				e.stopPropagation();
+			});
+			
+			//上传照片
+			$(".J_btn_uploadPhoto").on("click", function(){
+				$("#J_dlg_uploadPhoto").fadeIn();
+			});
+			
+			//删除照片
+			$(".J_btn_delPhoto").on("click", function(){
+				$("#J_dlg_delPhoto").fadeIn();
+			});
+			
+		});
+		
+		/** 控制函数 */
+		$(function(){
+			//树节点控制
+			$(".J__chkAll").on("click", function(){
+				if($(this).is(":checked")){
+					$("#cal-list .cal-false").addClass("cal-ture");
+				}else{
+					$("#cal-list .cal-false").removeClass("cal-ture");
+				}
+			});
+			$("#cal-list .cal-false").on("click", function(){
+				$(this).toggleClass("cal-ture");
+				
+				var count = $("#cal-list .cal-false").size();
+				var i = 0;
+				$("#cal-list .cal-false").each(function(){
+					if($(this).hasClass("cal-ture")){
+						i++;
+					}
+				});
+				if(count == i){
+					$(".J__chkAll").prop("checked", true);
+				}else{
+					$(".J__chkAll").prop("checked", false);
+				}
+			});
+		});
+	</script>
+	<!-- ……弹窗内容模板.End -->
+	
+	<script type="text/javascript">
+		$(function(){
+			//侧导航
+			$(".left-side-nav>.lv1>dt").on("click",function(){
+				$(this).siblings().children(".lv2").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv2>dt").on("click",function(){
+				$(this).siblings().children(".lv3").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv3>dt").on("click",function(){
+				$(this).siblings().slideToggle(200);
+				$(this).toggleClass("cur");
+
+			})
+			//
+			$(".copy-checkbox1").on("click",function(){
+				$(this).parent().toggleClass("cur");
+			})
+
+			//翻页按钮
+			var allPages=parseInt($(".all-page").text());
+			var pageClickNum=1;
+			$(".next-page").click(function(){
+				if(pageClickNum<allPages){
+					pageClickNum++;
+					$(".cur-page").text(pageClickNum);
+					$(".prev-page").removeClass("dis");
+					if(pageClickNum==allPages){
+						$(this).addClass("dis");
+					}
+				}
+			});
+			$(".prev-page").click(function(){
+				if(pageClickNum>1){
+					pageClickNum--;
+					$(".cur-page").text(pageClickNum);
+					$(".next-page").removeClass("dis");
+					if(pageClickNum==1){
+						$(this).addClass("dis");
+					}
+
+				}
+			});
+
+		});
+	</script>
+</body>
+</html>

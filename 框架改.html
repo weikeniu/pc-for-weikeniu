@@ -91,7 +91,12 @@
 						<p class="yu-arr type1"></p>
 					</dt>
 					<dd>
-						<a href="#">订房管理</a>
+						<div class="one-slide">
+							<a href="#">订房管理</a>
+							<a href="#">订房管理</a>
+							<a href="#">订房管理</a>
+							<a href="#">订房管理</a>
+						</div>
 					</dd>
 				</dl>				
 				<dl class="lv1">
@@ -100,7 +105,11 @@
 						<p>会员中心</p>
 						<p class="yu-arr type1"></p>
 					</dt>
-					<dd></dd>
+					<dd>
+						<div class="one-slide">
+							<a href="#">订房管理</a>
+						</div>
+					</dd>
 				</dl>				
 				<dl class="lv1">
 					<dt>
@@ -137,13 +146,15 @@
 		$(function(){
 			//侧导航
 			$(".left-side-nav>.lv1>dt").on("click",function(){
-				if($(this).siblings().children().hasClass("lv2")){
-					$(this).siblings().children(".lv2").slideToggle(200);
+//				if($(this).siblings().children().hasClass("lv2")){
+//					$(this).siblings().children(".lv2").slideToggle(200);
+//					$(this).toggleClass("cur");
+//				}else{
+//					$(this).siblings().children().slideToggle(200);
+//					$(this).toggleClass("cur");
+//				}
+					$(this).siblings().children().slideToggle(200);
 					$(this).toggleClass("cur");
-				}else{
-					$(this).siblings().children().toggle();
-					$(this).toggleClass("cur");
-				}
 			})
 			$(".left-side-nav .lv2>dt").on("click",function(){
 				$(this).siblings().children(".lv3").slideToggle(200);

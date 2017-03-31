@@ -90,13 +90,16 @@
 .left-side-nav .lv3 > dd {
   display: none;
 }
-.left-side-nav .lv3 > dd > a,.left-side-nav .lv1 > dd > a {
+.left-side-nav .lv3 > dd > a,.one-slide a{
   display: block;
   color: #7d7d7d;
   background: #fff;
   height: 45px;
   line-height: 45px;
   font-size: 14px;
+}
+.one-slide {
+	display: none;
 }
 .left-side-nav .lv1 > dd > a {
 	display: none;

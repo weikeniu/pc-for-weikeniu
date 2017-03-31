@@ -328,7 +328,8 @@
 .page-num-bar {
   overflow: hidden;
   margin: 20px auto;
-  padding-left: 250px;
+  /*padding-left: 250px;*/
+ width: 300px;
 }
 .page-num-bar > * {
   float: left;

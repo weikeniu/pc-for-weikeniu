@@ -64,15 +64,14 @@
 .left-side-nav .lv2 > dt {
   background: #f0f1f4;
   position: relative;
+  text-align: left;
 }
 .left-side-nav .lv2 .dian {
   display: block;
   width: 4px;
   height: 4px;
-  position: absolute;
-  top: 50%;
-  left: 60px;
-  margin-top: -2px;
+     float: left;
+    margin: 22px 10px 0 58px;
   background: #7d7d7d;
 }
 .left-side-nav .lv2 > .cur {
@@ -239,7 +238,7 @@
   background: #f9f9f9;
   color: #999;
   text-align: center;
-  line-height: 33px;
+  line-height: 35px;
   font-size: 16px;
   margin-right: 10px;
   cursor: pointer;
@@ -350,7 +349,7 @@
   border: 1px solid #fff;
   color: #f60;
 }
-.page-num-zujian > .type3 {
+.page-num-zujian > .type3,.page-num-zujian > .type1.cur {
   color: #000;
   border: 1px solid #e7e7e7;
   background: #f3f3f3;
@@ -464,7 +463,7 @@
 .mask .mask-inner .main-box td {
   padding: 10px 0;
 }
-.mask .mask-inner .main-box td input[type="text"],.mask .mask-inner .main-box td input[type="password"] {
+.mask .mask-inner .main-box td input[type="text"] {
   border: 1px solid #ebebeb;
   height: 33px;
   border-radius: 3px;

@@ -239,7 +239,7 @@
   background: #f9f9f9;
   color: #999;
   text-align: center;
-  line-height: 35px;
+  line-height: 33px;
   font-size: 16px;
   margin-right: 10px;
   cursor: pointer;
@@ -464,7 +464,7 @@
 .mask .mask-inner .main-box td {
   padding: 10px 0;
 }
-.mask .mask-inner .main-box td input[type="text"] {
+.mask .mask-inner .main-box td input[type="text"],.mask .mask-inner .main-box td input[type="password"] {
   border: 1px solid #ebebeb;
   height: 33px;
   border-radius: 3px;

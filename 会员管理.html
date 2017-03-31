@@ -1,0 +1,847 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="关键词1,关键词2,关键词3" />
+<meta name="description" content="对网站的描述" />
+<title>会员管理</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link type="text/css" rel="stylesheet" href="css/index.css"/>
+<link type="text/css" rel="stylesheet" href="css/columns.css"/>
+<link type="text/css" rel="stylesheet" href="css/common.css"/>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+	<div class="top-bar">
+		<h1 id="logo">微可牛管理中心</h1>
+	</div>
+	<div class="content">
+		<div class="left-side">
+			<div class="yu-c7d yu-h45 yu-bgf4 yu-l45 yu-pos-r">
+				<p class="nav-ico type1">
+					
+				</p>
+				<p class="">功能导航</p>
+			</div>
+			<div class="left-side-nav">
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type2"></p>
+						<p>系统设置</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type3"></p>
+						<p>酒店管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd>
+						<dl class="lv2">
+							<dt><span class="dian"></span>餐饮订餐</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>
+								<dl class="lv3">
+									<dt>订单管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>								
+							</dd>
+						</dl>
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房管理</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>	
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房设置</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>													
+					</dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type4"></p>
+						<p>团购管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type5"></p>
+						<p>会员中心</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type6"></p>
+						<p>手机官网</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+			</div>
+		</div>
+
+		<div class="right-side">
+			<div class="bread-nav">
+				<ul>
+					<li class="yu-c99">会员中心</li>
+					<li class="yu-next-ico yu-c99 yu-font14">》</li>
+					<li>会员管理</li>
+
+				</ul>
+			</div>
+			<div class="yu-pad20">
+				<div class="inner-type1 ">
+                     <div class="cal-marr30">
+                            <div class="top-menu">
+                                  <p class="fl left-top-menu"><span></span>会员管理</p>
+                                  <div class="search-box fr" style="margin-right:0px">
+                                         <span class="fl"><input type="text" placeholder="请输入姓名或手机号" class="my-search-bx"></span><span class="fl"><input type="button" value="搜索" class="my-search-btn"></span>
+                                   </div>
+                                   <!--search-box end-->
+                            </div>
+                            <div class="ord-manager">
+                                  <div class="all-order fl">
+                                        <ul>
+                                            <li class="li_curre rgula1" onclick="regular(1)">全部会员<span class="org">(5158)</span><div></div></li>
+                                            <li class="rgula2" onclick="regular(2)">普通会员<span class="org">(1158)</span><div></div></li>
+                                            <li class="rgula3" onclick="regular(3)">高级会员<span class="org">(158)</span><div></div></li>
+                                            <li class="rgula4" onclick="regular(4)">白银会员<span class="org">(158)</span><div></div></li>
+                                            <li class="rgula5" onclick="regular(5)">黄金会员<span class="org">(158)</span><div></div></li>
+                                            <li class="rgula6" onclick="regular(6)">钻石会员<span class="org">(158)</span><div></div></li>
+                                        </ul>
+                                   </div>
+                                   <!--all-order end-->
+                                   <div class="chose fr">
+                                         <ul>
+                                             <li class="middle cal-mart40" style="color:#222;"><label><input type="checkbox" value=""/>全选</label></li>
+                                             <li class="cal-mart30"><input type="button" value="移动分组" class="yd-btn cal-font14" /></li>
+                                         </ul>
+                                   </div>
+                                   <!--chose end-->
+                             </div>
+                             <!--ord-manager end-->
+                             <div class="s-v-card-list cal_sub1" style="padding-right:0px;">
+                                  <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                      <table width="100%">
+                                          <colgroup>
+                                              <col width="105px" />
+                                              <col width="143px" />
+                                              <col width="157px" />
+                                              <col width="142px" />
+                                              <col width="157px" />
+                                              <col width="144px" />
+                                              <col width="157px" />
+                                              <col width="142px" />
+                                              <col width="154px" />
+                                          </colgroup>
+                                          <thead>
+                                              <tr>
+                                                  <th>选择</th>
+                                                  <th>头像</th>
+                                                  <th>昵称</th>
+                                                  <th>姓名</th>
+                                                  <th>手机号码</th>
+                                                  <th>注册时间</th>
+                                                  <th>折扣</th>
+                                                  <th>会员等级</th>
+                                                  <th>操作</th>
+                                              </tr>									
+                                          </thead>
+                                          <tbody>
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-ordinary"></div>普通会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>
+                                              <tr class="even">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-senior"></div>高级会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>	
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-silver"></div>白银会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>
+                                              <tr class="even">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-gold"></div>黄金会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>		
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-diamond"></div>钻石会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>																				
+                                          </tbody>
+                                      </table>							
+                                 </div>
+                          </div>
+                          <!--s-v-card-list end-->
+                          <div class="s-v-card-list cal_sub2" style="padding-right:0px; display:none;">
+                                <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                    <table width="100%">
+                                        <colgroup>
+                                            <col width="105px" />
+                                            <col width="143px" />
+                                            <col width="157px" />
+                                            <col width="142px" />
+                                            <col width="157px" />
+                                            <col width="144px" />
+                                            <col width="157px" />
+                                            <col width="142px" />
+                                            <col width="154px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>选择</th>
+                                                <th>头像</th>
+                                                <th>昵称</th>
+                                                <th>姓名</th>
+                                                <th>手机号码</th>
+                                                <th>注册时间</th>
+                                                <th>折扣</th>
+                                                <th>会员等级</th>
+                                                <th>操作</th>
+                                            </tr>									
+                                        </thead>
+                                        <tbody>
+                                            <tr class="odd">
+                                                <td><label class="ca-no-chose"></label></td>
+                                                <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                <td>彭卓鸿</td>
+                                                <td>彭卓鸿</td>
+                                                <td>13880155900</td>
+                                                <td>2017-1-6 19:10:57</td>
+                                                <td>9.6</td>
+                                                <td><div class="ca-vip-ordinary"></div>普通会员</td>
+                                                <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td><label class="ca-no-chose"></label></td>
+                                                <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                <td>彭卓鸿</td>
+                                                <td>彭卓鸿</td>
+                                                <td>13880155900</td>
+                                                <td>2017-1-6 19:10:57</td>
+                                                <td>9.6</td>
+                                                <td><div class="ca-vip-ordinary"></div>普通会员</td>
+                                                <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                            </tr>	
+                                            <tr class="odd">
+                                                <td><label class="ca-no-chose"></label></td>
+                                                <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                <td>彭卓鸿</td>
+                                                <td>彭卓鸿</td>
+                                                <td>13880155900</td>
+                                                <td>2017-1-6 19:10:57</td>
+                                                <td>9.6</td>
+                                                <td><div class="ca-vip-ordinary"></div>普通会员</td>
+                                                <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td><label class="ca-no-chose"></label></td>
+                                                <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                <td>彭卓鸿</td>
+                                                <td>彭卓鸿</td>
+                                                <td>13880155900</td>
+                                                <td>2017-1-6 19:10:57</td>
+                                                <td>9.6</td>
+                                                <td><div class="ca-vip-ordinary"></div>普通会员</td>
+                                                <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                            </tr>	
+                                        </tbody>
+                                    </table>							
+                              </div>
+                        </div>
+                        <!--s-v-card-list end-->
+                          <div class="s-v-card-list cal_sub3 cal-display-no" style="padding-right:0px; display:none;">
+                                  <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                      <table width="100%">
+                                          <colgroup>
+                                              <col width="105px" />
+                                              <col width="143px" />
+                                              <col width="157px" />
+                                              <col width="142px" />
+                                              <col width="157px" />
+                                              <col width="144px" />
+                                              <col width="157px" />
+                                              <col width="142px" />
+                                              <col width="154px" />
+                                          </colgroup>
+                                          <thead>
+                                              <tr>
+                                                  <th>选择</th>
+                                                  <th>头像</th>
+                                                  <th>昵称</th>
+                                                  <th>姓名</th>
+                                                  <th>手机号码</th>
+                                                  <th>注册时间</th>
+                                                  <th>折扣</th>
+                                                  <th>会员等级</th>
+                                                  <th>操作</th>
+                                              </tr>									
+                                          </thead>
+                                          <tbody>
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-senior"></div>高级会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>
+                                              <tr class="even">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-senior"></div>高级会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>	
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-senior"></div>高级会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>
+                                              <tr class="even">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-senior"></div>高级会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>		
+                                          </tbody>
+                                      </table>							
+                                 </div>
+                          </div>
+                          <!--s-v-card-list end-->
+                          <div class="s-v-card-list cal_sub4 cal-display-no" style="padding-right:0px; display:none;">
+                                  <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                      <table width="100%">
+                                          <colgroup>
+                                              <col width="105px" />
+                                              <col width="143px" />
+                                              <col width="157px" />
+                                              <col width="142px" />
+                                              <col width="157px" />
+                                              <col width="144px" />
+                                              <col width="157px" />
+                                              <col width="142px" />
+                                              <col width="154px" />
+                                          </colgroup>
+                                          <thead>
+                                              <tr>
+                                                  <th>选择</th>
+                                                  <th>头像</th>
+                                                  <th>昵称</th>
+                                                  <th>姓名</th>
+                                                  <th>手机号码</th>
+                                                  <th>注册时间</th>
+                                                  <th>折扣</th>
+                                                  <th>会员等级</th>
+                                                  <th>操作</th>
+                                              </tr>									
+                                          </thead>
+                                          <tbody>
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-silver"></div>白银会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>
+                                              <tr class="even">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-silver"></div>白银会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>	
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-silver"></div>白银会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>
+                                              <tr class="even">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-silver"></div>白银会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>		
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-silver"></div>白银会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>																				
+                                          </tbody>
+                                      </table>							
+                                 </div>
+                          </div>
+                          <!--s-v-card-list end-->
+                          <div class="s-v-card-list cal_sub5 cal-display-no" style="padding-right:0px; display:none;">
+                                  <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                      <table width="100%">
+                                          <colgroup>
+                                              <col width="105px" />
+                                              <col width="143px" />
+                                              <col width="157px" />
+                                              <col width="142px" />
+                                              <col width="157px" />
+                                              <col width="144px" />
+                                              <col width="157px" />
+                                              <col width="142px" />
+                                              <col width="154px" />
+                                          </colgroup>
+                                          <thead>
+                                              <tr>
+                                                  <th>选择</th>
+                                                  <th>头像</th>
+                                                  <th>昵称</th>
+                                                  <th>姓名</th>
+                                                  <th>手机号码</th>
+                                                  <th>注册时间</th>
+                                                  <th>折扣</th>
+                                                  <th>会员等级</th>
+                                                  <th>操作</th>
+                                              </tr>									
+                                          </thead>
+                                          <tbody>
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6<br/> 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-gold"></div>黄金会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>
+                                              <tr class="even">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-gold"></div>黄金会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>	
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-gold"></div>黄金会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>
+                                              <tr class="even">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-gold"></div>黄金会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>		
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-gold"></div>黄金会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>																				
+                                          </tbody>
+                                      </table>							
+                                 </div>
+                          </div>
+                          <!--s-v-card-list end-->
+                          <div class="s-v-card-list cal_sub6  cal-display-no" style="padding-right:0px; display:none;">
+                                  <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                      <table width="100%">
+                                          <colgroup>
+                                              <col width="105px" />
+                                              <col width="143px" />
+                                              <col width="157px" />
+                                              <col width="142px" />
+                                              <col width="157px" />
+                                              <col width="144px" />
+                                              <col width="157px" />
+                                              <col width="142px" />
+                                              <col width="154px" />
+                                          </colgroup>
+                                          <thead>
+                                              <tr>
+                                                  <th>选择</th>
+                                                  <th>头像</th>
+                                                  <th>昵称</th>
+                                                  <th>姓名</th>
+                                                  <th>手机号码</th>
+                                                  <th>注册时间</th>
+                                                  <th>折扣</th>
+                                                  <th>会员等级</th>
+                                                  <th>操作</th>
+                                              </tr>									
+                                          </thead>
+                                          <tbody>
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-diamond"></div>钻石会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>
+                                              <tr class="even">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-diamond"></div>钻石会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>	
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-diamond"></div>钻石会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>
+                                              <tr class="even">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-diamond"></div>钻石会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>		
+                                              <tr class="odd">
+                                                  <td><label class="ca-no-chose"></label></td>
+                                                  <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>彭卓鸿</td>
+                                                  <td>13880155900</td>
+                                                  <td>2017-1-6 19:10:57</td>
+                                                  <td>9.6</td>
+                                                  <td><div class="ca-vip-diamond"></div>钻石会员</td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
+                                              </tr>																				
+                                          </tbody>
+                                      </table>							
+                                 </div>
+                          </div>
+                          <!--s-v-card-list end-->
+                    </div>
+					<div class="page-num-bar">
+			            <p class="yu-line37 yu-c88 yu-font14 yu-rmar10">总菜单：129</p>
+			            <ul class="page-num-zujian">
+			              <li class="type1"> 上一页 </li>
+			              <li class="type2">1</li>
+			              <li class="type3">2</li>
+			              <li class="type3"> 下一页 </li>
+			            </ul>
+			            <p class="yu-line37 yu-c88 yu-font14 yu-rmar10">共2页</p>
+			            <div class="yu-line37 yu-c88 yu-font14 yu-rmar10">到第
+			              <input type="text" value="1" class="page-input">
+			              页</div>
+			            <p>
+			              <input type="submit" value="确定" class="page-sub">
+			            </p>
+			           </div>
+				  </div>
+			</div>
+	  </div>
+</div>
+<!--移动分组 弹框-->
+<div class="cal-pop">
+      <form action=""; method="get">
+            <div class="cal-show">
+                 <div class="cal-title">
+                      <dl>
+                           <dt>移动分组</dt>
+                           <dd class="Close"></dd>
+                      </dl> 
+                 </div>
+                 <!--cal-title end-->
+                 <div class="recom-prd">
+                      <div class="new-name">
+                            <ul>
+                                <li><span class="no-chose"></span>普通会员</li>
+                                <li><span class="no-chose"></span>高级会员</li>
+                                <li><span class="no-chose"></span>白银会员</li>
+                                <li><span class="no-chose"></span>黄金会员</li>
+                                <li><span class="no-chose"></span>钻石会员</li>
+                            </ul>
+                      </div>
+                      <!--recom-prd end-->
+                      <div class="cal-btn">
+                            <ul>
+                                <li><input type="reset" value="取消"  class="gy-btn"/></li>
+                                <li><input type="submit" value="确定" class="bl-btn"/></li>
+                            </ul>
+                      </div>
+                      <!--cal-btn end-->
+                 </div>
+                 <!--recom-prd end-->
+            </div>
+            <!--cal-show end-->
+      </form>
+</div>
+<!--cal-pop end-->	
+<!--修改等级 弹框-->
+<div class="ca-change-dialog">
+      <form action=""; method="get">
+            <div class="cal-show">
+                 <div class="cal-title">
+                      <dl>
+                           <dt>修改等级</dt>
+                           <dd class="Close"></dd>
+                      </dl> 
+                 </div>
+                 <!--cal-title end-->
+                 <div class="recom-prd">
+                      <div class="new-name">
+                            <ul>
+                                <li><span class="no-chose"></span>普通会员</li>
+                                <li><span class="no-chose"></span>高级会员</li>
+                                <li><span class="no-chose"></span>白银会员</li>
+                                <li><span class="no-chose"></span>黄金会员</li>
+                                <li><span class="no-chose"></span>钻石会员</li>
+                            </ul>
+                      </div>
+                      <!--recom-prd end-->
+                      <div class="cal-btn">
+                            <ul>
+                                <li><input type="reset" value="取消"  class="gy-btn"/></li>
+                                <li><input type="submit" value="确定" class="bl-btn"/></li>
+                            </ul>
+                      </div>
+                      <!--cal-btn end-->
+                 </div>
+                 <!--recom-prd end-->
+            </div>
+            <!--cal-show end-->
+      </form>
+</div>
+<!--ca-change-dialog end-->
+    
+	<script type="text/javascript">
+		 //选择框
+		   $('.no-chose,.ca-no-chose').click(function(){
+			   $(this).toggleClass('ca-done-chosed')
+		   })
+	     //修改等级弹框
+		 $('.ca-change-lev').click(function(){
+	        $('.ca-change-dialog').css('display','block')
+		 })
+		    $('.Close,.gy-btn,.bl-btn').click(function(){
+		    $('.ca-change-dialog').css('display','none')
+	     })
+	     //移动分组弹框
+		 $('.yd-btn').click(function(){
+	        $('.cal-pop').css('display','block')
+		})
+		    $('.Close,.gy-btn,.bl-btn').click(function(){
+		    $('.cal-pop').css('display','none')
+	    })
+		//鼠标经搜索框
+	    $('.my-search-btn').mouseover(function(){
+			   $(this).css({'background':'#2093f7','color':'#fff'})
+			})
+		$('.my-search-btn').mouseout(function(){
+			   $(this).css({'background':'#f2f2f2','color':'#666'})
+			})
+	    //切换
+	    function regular(value){
+ 	       for(i=1;i<=6;i++){
+				if(i == value){
+		             $('.rgula'+value).addClass('li_curre')
+					 $('.cal_sub'+value).css('display','block');	
+				}else{
+		             $('.rgula'+i).removeClass('li_curre') 
+					 $('.cal_sub'+i).css('display','none');	
+				 }
+			  }
+           }
+	</script>
+	<script type="text/javascript">	
+		$(function(){
+			//侧导航
+			$(".left-side-nav>.lv1>dt").on("click",function(){
+				$(this).siblings().children(".lv2").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv2>dt").on("click",function(){
+				$(this).siblings().children(".lv3").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv3>dt").on("click",function(){
+				$(this).siblings().slideToggle(200);
+				$(this).toggleClass("cur");
+
+			})
+			//
+			$(".copy-checkbox1").on("click",function(){
+				$(this).parent().toggleClass("cur");
+			})
+
+			//翻页按钮
+			var allPages=parseInt($(".all-page").text());
+			var pageClickNum=1;
+			$(".next-page").click(function(){
+				if(pageClickNum<allPages){
+					pageClickNum++;
+					$(".cur-page").text(pageClickNum);
+					$(".prev-page").removeClass("dis");
+					if(pageClickNum==allPages){
+						$(this).addClass("dis");
+					}
+				}
+			});
+			$(".prev-page").click(function(){
+				if(pageClickNum>1){
+					pageClickNum--;
+					$(".cur-page").text(pageClickNum);
+					$(".next-page").removeClass("dis");
+					if(pageClickNum==1){
+						$(this).addClass("dis");
+					}
+
+				}
+			});
+
+		})
+	</script>
+</body>
+
+</html>

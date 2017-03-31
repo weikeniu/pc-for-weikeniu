@@ -1,6 +1,6 @@
 .ca-hotel-msg{margin-right:42px;}
 .ca-tips{width:100%; height:38px; border:1px solid #ffcb80; line-height:40px; color:#333; margin-top:20px; margin-bottom:10px; background:#ffffe7; font-size:14px;}
-.ca-tips>span{background:url(../images/sugar.png) no-repeat no-repeat -10px -120px; width:18px; height:18px; display:block; float:left; margin:11px;}
+.ca-tips>span{background:url(../images/sugar.png) no-repeat -10px -120px; width:18px; height:18px; display:block; float:left; margin:11px;}
 .ca-message{ width:100%;}
 .ca-message tr{line-height:55px; color:#999999;}
 .ca-message tr td:first-child{ text-align:right; padding-right:15px;}
@@ -14,3 +14,27 @@
 .ca-keep-btn{width:160px; height:45px; background:#2093f7; color:#fff; border:none; font-size:18px; border-radius:4px}
 .ca-map{height:290px; width:900px;}
 .ca-map img{width:100%; height:100%;}
+
+/*会员管理*/
+.ca-vip-list table tbody tr td{color:#333;}
+.ca-no-chose{border:1px solid #ddd; width:14px; height:14px; display:block; margin:0 auto;}
+.ca-done-chosed{background:url(../images/sugar.png) no-repeat -171px -5px; width:16px; height:16px; display:block; border:none;}
+.ca-vip-list table tbody tr td div{ width:20px; height:20px; display:block; margin-left:10px; margin-right:-28px; float:left;}
+.ca-vip-heard{width:50px; height:50px; display:block; margin:0 auto; border-radius:50%;}
+.ca-vip-heard img{width:100%; height:100%;}
+.ca-vip-ordinary{background:url(../images/sugar.png) no-repeat  -134px -150px;}
+.ca-vip-senior{background:url(../images/sugar.png) no-repeat  -10px -150px;}
+.ca-vip-silver{background:url(../images/sugar.png) no-repeat  -103px -150px;}
+.ca-vip-gold{background:url(../images/sugar.png) no-repeat  -72px -150px;}
+.ca-vip-diamond{background:url(../images/sugar.png) no-repeat  -41px -150px;}
+
+/*粉丝管理*/
+.ca-bding-btn{border:1px solid #ededed; background:#f9f9f9; width:58px; height:20px; font-size:14px; color:#2093f7; line-height:10px;}
+.ca-bding-btn-tips{ width:60px; height:22px; background:#ccc; border:none; color:#fff; font-size:14px;}
+.ca-bding-doalog{width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
+.ca-bding-doalog table{margin-top:20px;}
+.ca-bding-doalog table tr{line-height:52px;}
+.ca-bding-doalog table tr td input{ width:203px; height:33px; line-height:35px; border:1px solid #ddd;  margin-left:12px; padding-left:15px; font-size:14px; color:#333;}
+.ca-bding-doalog table tr td label{font-size:14px; color:#999; width:100%; text-align:right; float:left;}
+.ca-bding-doalog table tr td p{float:left; margin-left:12px; color:#999;}
+.ca-bding-doalog table tr td span{margin-top:18px; margin-right:5px;}

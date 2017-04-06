@@ -1384,6 +1384,9 @@
 	border: 0;
 	background: #fff;
 }
+.left-side-nav a:hover{
+	color: #2093f7 !important;
+}
 /*yuffie部分end*/
 /*cassiel部分*/
 @charset "utf-8";
@@ -1497,7 +1500,7 @@ a{text-decoration:none;}
 .cal-sure{background:#fff; width:278px; height:148px; border:1px solid #ddd; font-size:16px; color:#222; top:39.68%; left:41.4%; position:absolute;}
 .cal-sure p{margin:40px 0px 28px 30px;}
 
-.edt-dialog{width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
+.edt-dialog{width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;z-index: 100}
 .my-edit{width:340px; height:340px; background:#fff; position:absolute; top:26.5%; left:39.25%;}
 .my-menus{font-size:14px; height:210px;}
 .my-menus>ul>li{margin-top:8px; margin-left:30px; line-height:30px; color:#999;}

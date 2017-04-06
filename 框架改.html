@@ -146,15 +146,8 @@
 		$(function(){
 			//侧导航
 			$(".left-side-nav>.lv1>dt").on("click",function(){
-//				if($(this).siblings().children().hasClass("lv2")){
-//					$(this).siblings().children(".lv2").slideToggle(200);
-//					$(this).toggleClass("cur");
-//				}else{
-//					$(this).siblings().children().slideToggle(200);
-//					$(this).toggleClass("cur");
-//				}
 					$(this).siblings().children().slideToggle(200);
-					$(this).toggleClass("cur");
+					$(this).toggleClass("cur").parent("dl").siblings("dl").children("dt").removeClass("cur").siblings().children().slideUp(200);
 			})
 			$(".left-side-nav .lv2>dt").on("click",function(){
 				$(this).siblings().children(".lv3").slideToggle(200);

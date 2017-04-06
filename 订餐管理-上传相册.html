@@ -326,9 +326,9 @@
 						</tr>
 						<tr>
 							<th>相片名称</th>
-							<td><input type="text" class="type1" /></td>
+							<td><input type="text" class="type1 J__wordWrite" /></td>
 							<td>
-								<div class="ml--10 ff-vd"><span class="yu-font14 yu-c99 yu-cblue">0</span><span class="yu-font14 yu-c99">/12 字</span></div>
+								<div class="ml--10 ff-vd"><span class="yu-font14 yu-c99 yu-cblue J__wordLimit" data-max="12">0</span><span class="yu-font14 yu-c99">/12 字</span></div>
 							</td>
 						</tr>
 						<tr>
@@ -398,9 +398,9 @@
 						</tr>
 						<tr>
 							<th>相片名称</th>
-							<td><input type="text" class="type1" value="酒店室内休息区" /></td>
+							<td><input type="text" class="type1 J__wordWrite2" value="酒店室内休息区" /></td>
 							<td>
-								<div class="ml--10 ff-vd"><span class="yu-font14 yu-c99 yu-cblue">0</span><span class="yu-font14 yu-c99">/12 字</span></div>
+								<div class="ml--10 ff-vd"><span class="yu-font14 yu-c99 yu-cblue J__wordLimit2" data-max="12">0</span><span class="yu-font14 yu-c99">/12 字</span></div>
 							</td>
 						</tr>
 						<tr>
@@ -481,6 +481,21 @@
 		/**
 		 *	create by hison
 		 */
+		
+		/** 字数统计 */
+		function limitWordNum(o, field){
+			var max = field.attr("data-max"), curLen;
+			o[0].setAttribute("maxlength", max);
+			curLen = o.val().length;
+			//field.text(max - curLen);
+			field.text(curLen);
+			o.on("input propertychange keyup", function(){
+				//field.text(max - $(this).val().length);
+				field.text($(this).val().length);
+			});
+		}
+		limitWordNum($(".J__wordWrite"), $(".J__wordLimit"));
+		limitWordNum($(".J__wordWrite2"), $(".J__wordLimit2"));
 		
 		/** 弹窗控制 */
 		$(function(){

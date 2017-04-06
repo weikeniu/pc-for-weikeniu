@@ -253,7 +253,7 @@
   height: 35px;
   padding: 0 20px;
   background: #f60;
-  border-radius: 3px;
+  border-radius: 2px;
   color: #fff;
   line-height: 35px;
   cursor: pointer;
@@ -316,7 +316,7 @@
 .yu-btn-bar1 {
   margin-top: 7px;
   border: 1px solid #e2e2e2;
-  border-radius: 3px;
+  border-radius: 2px;
   height: 28px;
   text-align: center;
   color: #666;
@@ -473,7 +473,7 @@
 .mask .mask-inner .main-box td input[type="text"],.mask .mask-inner .main-box td input[type="password"] {
   border: 1px solid #ebebeb;
   height: 33px;
-  border-radius: 3px;
+  border-radius: 2px;
   text-indent: 1em;
   background: #f9f9f9;
 }
@@ -495,7 +495,7 @@
   height: 62px;
   background: #f9f9f9;
   border: 1px solid #ebebeb;
-  border-radius: 3px;
+  border-radius: 2px;
   cursor: pointer;
   position: relative;
   margin-right: 10px;
@@ -521,7 +521,7 @@
   width: 100px;
   height: 35px;
   font: 16px "microsoft yahei", simhei;
-  border-radius: 3px;
+  border-radius: 2px;
   cursor: pointer;
   border: 0;
 }
@@ -571,7 +571,7 @@
   position: relative;
   width: 402px;
   border: 1px solid #ebebeb;
-  border-radius: 3px;
+  border-radius: 2px;
   cursor: pointer;
 }
 .mask .ad-box .ad-img-box {
@@ -732,7 +732,7 @@
   height: 35px;
   background: #f60;
   border: 0;
-  border-radius: 3px;
+  border-radius: 2px;
   color: #fff;
   font: 16px "microsoft yahei", simhei;
 }
@@ -776,7 +776,7 @@
 }
 .btn-row2 input {
   font: 16px "microsoft yahei", simhei;
-  border-radius: 3px;
+  border-radius: 2px;
   float: right;
   margin-right: 10px;
 }
@@ -831,7 +831,7 @@
   padding: 5px 10px;
   border: 1px solid #ddd;
   margin: 0 5px;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 .map-select {
   width: 120px;
@@ -884,7 +884,7 @@
   width: 14px;
   height: 14px;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 2px;
   cursor: pointer;
   float: left;
   margin-right: 5px;
@@ -960,7 +960,7 @@
   width: 210px;
   height: 35px;
   border: 1px solid #ebebeb;
-  border-radius: 3px;
+  border-radius: 2px;
   color: #666;
   outline: 0;
 }
@@ -971,7 +971,7 @@
   display: block;
   width: 120px;
   height: 35px;
-  border-radius: 3px;
+  border-radius: 2px;
   font-size: 16px;
   font-family: microsoft yahei,simhei;
   text-align: center;
@@ -1188,7 +1188,7 @@
   background: #f9f9f9;
   cursor:pointer;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 2px;
   margin:0 10px 10px 0;
   float: left;
 }
@@ -1197,7 +1197,7 @@
   width: 380px;
   height: 55px;
   border: 0;
-  border-radius: 3px;
+  border-radius: 2px;
   background: #2093f7;
   font-size: 22px;
 }
@@ -1227,7 +1227,7 @@
   text-align: center;
   line-height: 53px;
   color: #666;
-  border-radius: 3px ;
+  border-radius: 2px ;
   margin-right: 10px;
   font-size: 20px;
   cursor: pointer;
@@ -1354,7 +1354,7 @@
 	text-align: center;
 	line-height: 26px;
 	background: #2093f7;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 .mask > .type8{
 	width: 760px;

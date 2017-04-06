@@ -128,7 +128,7 @@
 				<div class="inner-type1 ">
                      <div class="cal-marr30">
                             <div class="top-menu">
-                                  <p class="fl left-top-menu"><span></span>会员管理</p>
+                                  <p class="fl left-top-menu"><span></span>粉丝管理</p>
                                   <div class="search-box fr" style="margin-right:0px">
                                          <span class="fl"><input type="text" placeholder="请输入姓名或手机号" class="my-search-bx"></span><span class="fl"><input type="button" value="搜索" class="my-search-btn"></span>
                                    </div>
@@ -235,7 +235,7 @@
                      <div class="cal-btn" style="margin-left:56px;">
                           <ul>
                               <li><input type="reset" value="取消"  class="gy-btn"/></li>
-                              <li><input type="submit" value="确定" class="bl-btn"/></li>
+                              <li><input type="button" value="确定" class="bl-btn"/></li>
                           </ul>
                      </div>
                      <!--cal-btn end-->
@@ -246,29 +246,36 @@
   <!--ca-bding-doalog end-->
 	<script type="text/javascript">
 	        //鼠标经搜索框
-			$('.my-search-btn').mouseover(function(){
-				   $(this).css({'background':'#2093f7','color':'#fff'})
-				})
-			$('.my-search-btn').mouseout(function(){
-				   $(this).css({'background':'#f2f2f2','color':'#666'})
-				})
+			//$('.my-search-btn').mouseover(function(){
+				  // $(this).css({'background':'#2093f7','color':'#fff',})
+				//})
+			//$('.my-search-btn').mouseout(function(){
+				   //$(this).css({'background':'#f2f2f2','color':'#666'})
+				//})
 	        //绑定弹框
 			$('.ca-bding-btn').click(function(){
-				$('.ca-bding-doalog').css('display','block')
+				var that = $(this);
+				  if($(this).hasClass('ca-bding-btn-tips')){
+					         $('.ca-bding-doalog').hide()
+					     }else{
+							 $('.ca-bding-doalog').show()
+						 }
+				 //弹框关闭
+				  $('.Close,.gy-btn,.bl-btn').click(function(){
+				        $('.ca-bding-doalog').css('display','none')
+				  })
+				  //绑定按钮状态改变
+				  $('.bl-btn').click(function(){
+					    that.addClass('ca-bding-btn-tips')
+					    that.removeClass('ca-bding-btn')
+				   })
 			})
 	         //选择框
 		    $('.no-chose').click(function(){
 				$(this).toggleClass('ca-done-chosed')
+				$(this).parents().siblings().children().removeClass('ca-done-chosed')
 			})
-			//弹框关闭
-			$('.Close,.gy-btn,.bl-btn').click(function(){
-		    $('.ca-bding-doalog').css('display','none')
-		    })
-			//绑定按钮状态改变
-			$('.ca-bding-btn').click(function(){
-				$(this).removeClass('ca-bding-btn')
-				$(this).addClass('ca-bding-btn-tips')
-			})
+			
 	</script>
 	<script type="text/javascript">
 	    $(function(){

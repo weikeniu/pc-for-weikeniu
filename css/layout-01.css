@@ -95,7 +95,7 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 .btn_def:hover{background-color:#35a0fe;}
 
 
-.zone__rt-similar{background:#fff;padding:35px 65px 35px 0;}
+.zone__rt-similar{background:#fff;padding:35px 30px 35px 0;}
 .zone__rt-similar .hd-tit{border-bottom:1px solid #e7e7e7;padding-bottom:20px;}
 .zone__rt-similar .hd-tit.un_bor{border-bottom:0 none;}
 .zone__rt-similar .hd-tit h2{color:#333;font-size:24px;}
@@ -170,17 +170,17 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 /* …… 订餐管理-上传相册 {{{ …… */
 .zone__photoAlbum .main__cont{width:100%;}
 .zone__photoAlbum .pht-products{margin-top:10px;}
-.zone__photoAlbum .pht-products ul{display:inline-block;margin-right:-23px;}
-.zone__photoAlbum .pht-products ul li{margin:0 23px 23px 0; width:224px;}
-.zone__photoAlbum .pht-products ul li.add-pro{height:282px;width:224px;}
+.zone__photoAlbum .pht-products ul{display:inline-block;margin-right:-40px;}
+.zone__photoAlbum .pht-products ul li{margin:0 40px 23px 0; width:226px;}
+.zone__photoAlbum .pht-products ul li.add-pro{height:282px;width:226px;}
 .zone__photoAlbum .pht-products ul li.add-pro dl{border:1px solid #e3e3e3;}
-.zone__photoAlbum .pht-products ul li.add-pro dl dt{padding-top:100px;height:170px; width:120px;}
+.zone__photoAlbum .pht-products ul li.add-pro dl dt{padding-top:100px;height:170px; width:122px;}
 .zone__photoAlbum .pht-products ul li.add-pro dl dd{border-top:0 none;}
 .zone__photoAlbum .pht-products li:hover dl{border:1px solid #2093f7!important;}
-.zone__photoAlbum .pht-products dt>div{width:210px!important;}
+.zone__photoAlbum .pht-products dt>div{width:212px!important;}
 .zone__photoAlbum .pht-products dl dd{border-top:1px solid #e3e3e3; position:relative;}
 .zone__photoAlbum .pht-products dl dd .ipt-edit{
-	background:#EDF7FF;border:0 none;color:#000;font-size:14px;font-family:"Microsoft Yahei";padding:0 6px;line-height:32px;width:210px;position:absolute;left:0;top:0; display:none;
+	background:#EDF7FF;border:0 none;color:#000;font-size:14px;font-family:"Microsoft Yahei";padding:0 6px;line-height:32px;width:212px;position:absolute;left:0;top:0; display:none;
 }
 .zone__photoAlbum .pht-products dl dd .flt{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:100%;}
 .zone__photoAlbum .pht-products .cal-pro .cal-edit{background:none!important; cursor:pointer; display:inline-block; margin-left:10px; text-align:center; width:50px;}
@@ -269,3 +269,61 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 	display:inline-block;margin-right:10px;vertical-align:top;height:16px;width:16px;
 }
 .tree-choose .tree-inner dl dd a.checked i{background-position: -70px 0;}
+
+
+/* :::重置系统滚动条样式 */
+.dlg-popup::-webkit-scrollbar {
+ width:10px;
+ height:10px;
+}
+.dlg-popup::-webkit-scrollbar-button {
+ background-color:#fff;
+}
+.dlg-popup::-webkit-scrollbar-track {
+ background:#dfdfdf;
+ border-radius:5px;
+}
+.dlg-popup::-webkit-scrollbar-track-piece {
+}
+.dlg-popup::-webkit-scrollbar-thumb{
+ background:#F2C826;
+ border-radius:5px;
+}
+.dlg-popup::-webkit-scrollbar-corner {
+ background:#82AFFF;
+}
+.dlg-popup::-webkit-scrollbar-resizer {
+ background:#dfdfdf;
+}
+
+
+
+::-webkit-scrollbar {
+	height:6px;
+	width:10px;
+	background:rgba(222,222,222,0.5);
+	transition:all 0.3s ease-in-out;
+	border-radius:8px;
+}
+::-webkit-scrollbar-button {
+	/*display:none*/
+}
+::-webkit-scrollbar-track {
+	background-color: #eee;
+}
+::-webkit-scrollbar-track-piece {
+	background: #eee;
+}
+::-webkit-scrollbar-thumb {
+	width:10px;
+	min-height:15px;
+	background:rgba(0,0,0,0.2);
+	transition:all 0.3s ease-in-out;
+	border-radius:8px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background:rgba(0,0,0,0.3)
+}
+::-webkit-scrollbar-thumb:active {
+	background:rgba(0,0,0,0.3)
+}

@@ -150,7 +150,7 @@
                                    <div class="chose fr">
                                          <ul>
                                              <li class="middle cal-mart40" style="color:#222;"><label class="cp__checkbox-custom"><i class="checkbox__mask"><input class="J__chkAll" type="checkbox" name="chkAll" /></i> 全选</label></li>
-                                             <li class="cal-mart30"><input type="button" value="删 除" class="yd-btn cal-font16" /></li>
+                                             <li class="cal-mart30"><input type="button" value="删 除" class="yd-btn cal-font16 J_btn_delSubAccount" /></li>
                                          </ul>
                                    </div>
                                    <!--chose end-->
@@ -684,7 +684,7 @@
 	  </div>
 </div>
 <!--移动分组 弹框-->
-<div class="cal-pop">
+<!--<div class="cal-pop">
       <form action=""; method="get">
             <div class="cal-show">
                  <div class="cal-title">
@@ -694,7 +694,7 @@
                       </dl> 
                  </div>
                  <!--cal-title end-->
-                 <div class="recom-prd">
+                 <!--<div class="recom-prd">
                       <div class="new-name">
                             <ul>
                                 <li><span class="no-chose"></span>普通会员</li>
@@ -705,24 +705,40 @@
                             </ul>
                       </div>
                       <!--recom-prd end-->
-                      <div class="cal-btn">
+                      <!--<div class="cal-btn">
                             <ul>
                                 <li><input type="reset" value="取消"  class="gy-btn"/></li>
                                 <li><input type="submit" value="确定" class="bl-btn"/></li>
                             </ul>
                       </div>
                       <!--cal-btn end-->
-                 </div>
+                 <!--</div>
                  <!--recom-prd end-->
-            </div>
+            <!--</div>
             <!--cal-show end-->
-      </form>
-</div>
+      <!--</form>
+</div>-->
 <!--cal-pop end-->	
+<!--删除tr-->
+<div class="mask dlg-popup dlg-delSubAccount" id="J_dlg_delSubAccount" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="main-box">
+				<div class="yu-bgw yu-pad20">
+					<div class="message ml--20 mt--20">
+						确定要删除所选会员吗？
+					</div>
+					<div class="button-row ml--20 mt--30">
+						<input type="button" value="取消" class="type1 mask-cancel" />
+						<input type="submit" value="确定" class="type2" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 <!--修改等级 弹框-->
 <div class="ca-change-dialog">
       <form action=""; method="get">
-            <div class="cal-show">
+            <div class="cal-show ca-dig-width">
                  <div class="cal-title">
                       <dl>
                            <dt>修改等级</dt>
@@ -792,15 +808,24 @@
 		   // $('.cal-pop').css('display','none')
 	    //})
 		
-		//删除
-		    $('.yd-btn').click(function(){
-				var Catr=$(".ca-vip-list tr")
-				if($('.ca-no-chose').hasClass('ca-done-chosed')){
-					    $('.ca-done-chosed').parents('tr').hide()
-					}else
-					{
-						Catr.show()
-					}
+		//删除选中tr
+		    $('.J_btn_delSubAccount').click(function(){
+				    $("#J_dlg_delSubAccount").fadeIn();
+				    $('.type2').click(function(){
+					var Catr=$(".ca-vip-list tr")
+					if($('.ca-no-chose').hasClass('ca-done-chosed')){
+						    
+							$('.ca-done-chosed').parents('tr').remove()
+						}else
+						{
+							alert("还没有选择选项！");
+						}
+						 $("#J_dlg_delSubAccount").fadeOut();
+			      })
+				   $('.type1').click(function(){
+					     $("#J_dlg_delSubAccount").fadeOut(); 
+					   })
+				    
 			})
 		//鼠标经搜索框
 	    //$('.my-search-btn').mouseover(function(){
@@ -812,6 +837,7 @@
 	    //切换
 	    function regular(value){
 		   $('.cal_sub'+value).children().find("table>tbody>tr>td label").removeClass('ca-done-chosed')
+		   $('.J__chkAll').parent(".checkbox__mask").removeClass("on");
  	       for(i=1;i<=6;i++){
 				if(i == value){
 		             $('.rgula'+value).addClass('li_curre')

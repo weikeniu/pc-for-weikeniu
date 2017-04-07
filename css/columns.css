@@ -29,6 +29,12 @@
 .ca-vip-silver{background:url(../images/sugar.png) no-repeat  -103px -150px;}
 .ca-vip-gold{background:url(../images/sugar.png) no-repeat  -72px -150px;}
 .ca-vip-diamond{background:url(../images/sugar.png) no-repeat  -41px -150px;}
+/*如果index有加统一的页面可以删掉
+.ca-dig-width{width:280px;}
+.ca-dig-width .cal-title{width:280px;}
+.recom-prd .new-name{width:250px; margin-left:30px; padding-top:18px;}
+.recom-prd .cal-btn{margin-top:0px;}
+.recom-prd .new-name li{width:125px;}*/
 
 /*粉丝管理*/
 .ca-bding-btn{border:1px solid #ededed; background:#f9f9f9; width:58px; height:20px; font-size:14px; color:#2093f7; line-height:10px;}
@@ -36,7 +42,7 @@
 .ca-bding-doalog{width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
 .ca-bding-doalog table{margin-top:20px;}
 .ca-bding-doalog table tr{line-height:52px;}
-.ca-bding-doalog table tr td input{ width:203px; height:33px; line-height:35px; border:1px solid #ddd;  margin-left:12px; padding-left:15px; font-size:14px; color:#333;}
+.ca-bding-doalog table tr td input{ width:203px; height:33px; line-height:35px; border:1px solid #ddd;  margin-left:12px; padding-left:10px; font-size:14px; color:#333;}
 .ca-bding-doalog table tr td label{font-size:14px; color:#999; width:100%; text-align:right; float:left;}
 .ca-bding-doalog table tr td p{float:left; margin-left:12px; color:#999;}
 .ca-bding-doalog table tr td span{margin-top:18px; margin-right:5px;}

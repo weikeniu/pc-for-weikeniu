@@ -265,3 +265,6 @@ input{
 .yu-i-b{
 	display: inline-block;
 }
+.no-rbor{
+	border-right: 0 !important;
+}

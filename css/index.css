@@ -491,8 +491,8 @@
   width: 402px;
 }
 .mask .mask-inner .main-box td .file-copy {
-  width: 62px;
-  height: 62px;
+  width: 99px;
+  height: 99px;
   background: #f9f9f9;
   border: 1px solid #ebebeb;
   border-radius: 2px;
@@ -501,14 +501,14 @@
   margin-right: 10px;
 }
 .mask .mask-inner .main-box td .file-copy > p {
-  width: 20px;
-  height: 20px;
-  background: url(../images/icons.png) no-repeat -60px 0;
+  width: 36px;
+  height: 36px;
+  background: url(../images/icons.png) no-repeat 0 -315px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -10px;
-  margin-left: -10px;
+  margin-top: -18px;
+  margin-left: -18px;
 }
 .mask .mask-inner .main-box th {
   font-size: 14px;
@@ -1404,6 +1404,58 @@
 .pay-type.type2{
 	background: #f40;
 }
+.la-lv{
+	height: 33px;
+	line-height: 33px;
+	border: 1px solid #ebebeb;
+	border-radius: 2px;
+	text-align: center;
+	color: #999;
+	background: #f9f9f9;
+	float: left;
+	margin-right: 10px;
+	font-size: 14px;
+}
+.la-lv>li{
+	border-right: 1px solid #ebebeb;
+	width: 72px;
+	float: left;
+}
+.s-h-select{
+	float: left;
+	padding-top: 8px;
+	font-size: 14px;
+}
+.s-h-select>li{
+	float: left;
+	cursor: pointer;
+	margin-right: 10px;
+	color: #999;
+}
+.s-h-select .ico{
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../images/icons.png) no-repeat -215px 0;
+	margin-right: 5px;
+	margin-top: 2px;
+}
+.s-h-select .cur {
+	color: #333;
+}
+.s-h-select .cur .ico{
+	background: url(../images/icons.png) no-repeat -199px 0;
+}
+.select-type1{
+	width: 273px;
+	height: 33px;
+	border: 1px solid #ebebeb;
+	border-radius: 2px;
+	background: #f9f9f9;
+	color: #999;
+	outline: 0;
+}
 /*yuffie部分end*/
 /*cassiel部分*/
 @charset "utf-8";
@@ -1476,7 +1528,7 @@ a{text-decoration:none;}
 .cal-pro span{float:left; text-align:center; cursor:pointer; display:block;}
 .cal-edit{background:url(../images/sugar.png) no-repeat -42px -6px; width:18px; height:20px; margin-left:27px; margin-right:52px;}
 .cal-move{background:url(../images/sugar.png) no-repeat -60px -6px; width:20px; height:16px; margin-right:56px;}
-.cal-carbage{background:url(../images/sugar.png) no-repeat -80px -5px; width:18px; height:20px;}
+.cal-carbage{background:url(../images/sugar.png) no-repeat -80px -5px; width:18px; height:20px;float: right !important;margin-right: 10px;}
 .add-pro a{color:#afafaf; font-size:14px;}
 .add-pro a:hover dl dt span{ color:#2093f7;}
 .add-pro dt{ background:#f9f9f9; width:112px; height:149px; margin-left:6px; padding-top:80px; padding-left:90px;}

@@ -136,14 +136,14 @@
                                    <!--search-box end-->
                             </div>
                             <div class="ord-manager">
-                                  <div class="all-order fl">
+                                  <div class="all-order fl" id="J__orderMenu">
                                         <ul>
-                                            <li class="li_curre rgula1" onclick="regular(1)">全部会员<span class="org">(5158)</span><div></div></li>
-                                            <li class="rgula2" onclick="regular(2)">普通会员<span class="org">(1158)</span><div></div></li>
-                                            <li class="rgula3" onclick="regular(3)">高级会员<span class="org">(158)</span><div></div></li>
-                                            <li class="rgula4" onclick="regular(4)">白银会员<span class="org">(158)</span><div></div></li>
-                                            <li class="rgula5" onclick="regular(5)">黄金会员<span class="org">(158)</span><div></div></li>
-                                            <li class="rgula6" onclick="regular(6)">钻石会员<span class="org">(158)</span><div></div></li>
+                                            <li class="li_curre" data-index="1">全部会员<span class="org">(5158)</span><div></div></li>
+                                            <li data-index="2">普通会员<span class="org">(1158)</span><div></div></li>
+                                            <li data-index="3">高级会员<span class="org">(158)</span><div></div></li>
+                                            <li data-index="4">白银会员<span class="org">(158)</span><div></div></li>
+                                            <li data-index="5">黄金会员<span class="org">(158)</span><div></div></li>
+                                            <li data-index="6">钻石会员<span class="org">(158)</span><div></div></li>
                                         </ul>
                                    </div>
                                    <!--all-order end-->
@@ -154,9 +154,10 @@
                                          </ul>
                                    </div>
                                    <!--chose end-->
-                             </div>
-                             <!--ord-manager end-->
-                             <div class="s-v-card-list cal_sub1" style="padding-right:0px;">
+                            </div>
+							
+                            <!--ord-manager end-->
+                           <div class="s-v-card-list cal_sub1 active" style="padding-right:0px;">
                                   <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
                                       <table width="100%">
                                           <colgroup>
@@ -184,7 +185,7 @@
                                               </tr>									
                                           </thead>
                                           <tbody>
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="1001">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -195,7 +196,7 @@
                                                   <td><div class="ca-vip-ordinary"></div><p>普通会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>
-                                              <tr class="even">
+                                              <tr class="even" data-val="1002">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -206,7 +207,7 @@
                                                   <td><div class="ca-vip-senior"></div><p>高级会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>	
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="1003">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -217,7 +218,7 @@
                                                   <td><div class="ca-vip-silver"></div><p>白银会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>
-                                              <tr class="even">
+                                              <tr class="even" data-val="1004">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -228,7 +229,7 @@
                                                   <td><div class="ca-vip-gold"></div><p>黄金会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>		
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="1005">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -272,7 +273,7 @@
                                             </tr>									
                                         </thead>
                                         <tbody>
-                                            <tr class="odd">
+                                            <tr class="odd" data-val="2001">
                                                 <td><label class="ca-no-chose"></label></td>
                                                 <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                 <td>彭卓鸿</td>
@@ -283,7 +284,7 @@
                                                 <td><div class="ca-vip-ordinary"></div><p>普通会员</p></td>
                                                 <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                             </tr>
-                                            <tr class="even">
+                                            <tr class="even" data-val="2002">
                                                 <td><label class="ca-no-chose"></label></td>
                                                 <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                 <td>彭卓鸿</td>
@@ -294,7 +295,7 @@
                                                 <td><div class="ca-vip-ordinary"></div><p>普通会员</p></td>
                                                 <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                             </tr>	
-                                            <tr class="odd">
+                                            <tr class="odd" data-val="2003">
                                                 <td><label class="ca-no-chose"></label></td>
                                                 <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                 <td>彭卓鸿</td>
@@ -305,7 +306,7 @@
                                                 <td><div class="ca-vip-ordinary"></div><p>普通会员</p></td>
                                                 <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                             </tr>
-                                            <tr class="even">
+                                            <tr class="even" data-val="2004">
                                                 <td><label class="ca-no-chose"></label></td>
                                                 <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                 <td>彭卓鸿</td>
@@ -321,7 +322,7 @@
                               </div>
                         </div>
                         <!--s-v-card-list end-->
-                          <div class="s-v-card-list cal_sub3 cal-display-no" style="padding-right:0px; display:none;">
+                          <div class="s-v-card-list cal_sub3" style="padding-right:0px; display:none;">
                                   <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
                                       <table width="100%">
                                           <colgroup>
@@ -349,7 +350,7 @@
                                               </tr>									
                                           </thead>
                                           <tbody>
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="3001">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -360,7 +361,7 @@
                                                   <td><div class="ca-vip-senior"></div><p>高级会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>
-                                              <tr class="even">
+                                              <tr class="even" data-val="3002">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -371,7 +372,7 @@
                                                   <td><div class="ca-vip-senior"></div><p>高级会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>	
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="3003">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -382,7 +383,7 @@
                                                   <td><div class="ca-vip-senior"></div><p>高级会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>
-                                              <tr class="even">
+                                              <tr class="even" data-val="3004">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -398,7 +399,7 @@
                                  </div>
                           </div>
                           <!--s-v-card-list end-->
-                          <div class="s-v-card-list cal_sub4 cal-display-no" style="padding-right:0px; display:none;">
+                          <div class="s-v-card-list cal_sub4" style="padding-right:0px; display:none;">
                                   <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
                                       <table width="100%">
                                           <colgroup>
@@ -426,7 +427,7 @@
                                               </tr>									
                                           </thead>
                                           <tbody>
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="4001">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -437,7 +438,7 @@
                                                   <td><div class="ca-vip-silver"></div><p>白银会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>
-                                              <tr class="even">
+                                              <tr class="even" data-val="4002">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -448,7 +449,7 @@
                                                   <td><div class="ca-vip-silver"></div><p>白银会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>	
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="4003">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -459,7 +460,7 @@
                                                   <td><div class="ca-vip-silver"></div><p>白银会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>
-                                              <tr class="even">
+                                              <tr class="even" data-val="4004">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -470,7 +471,7 @@
                                                   <td><div class="ca-vip-silver"></div><p>白银会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>		
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="4005">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -486,7 +487,7 @@
                                  </div>
                           </div>
                           <!--s-v-card-list end-->
-                          <div class="s-v-card-list cal_sub5 cal-display-no" style="padding-right:0px; display:none;">
+                          <div class="s-v-card-list cal_sub5" style="padding-right:0px; display:none;">
                                   <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
                                       <table width="100%">
                                           <colgroup>
@@ -514,7 +515,7 @@
                                               </tr>									
                                           </thead>
                                           <tbody>
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="5001">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -525,7 +526,7 @@
                                                   <td><div class="ca-vip-gold"></div><p>黄金会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>
-                                              <tr class="even">
+                                              <tr class="even" data-val="5002">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -536,7 +537,7 @@
                                                   <td><div class="ca-vip-gold"></div><p>黄金会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>	
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="5003">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -547,7 +548,7 @@
                                                   <td><div class="ca-vip-gold"></div><p>黄金会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>
-                                              <tr class="even">
+                                              <tr class="even" data-val="5004">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -558,7 +559,7 @@
                                                   <td><div class="ca-vip-gold"></div><p>黄金会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>		
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="5005">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-02.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -574,7 +575,7 @@
                                  </div>
                           </div>
                           <!--s-v-card-list end-->
-                          <div class="s-v-card-list cal_sub6  cal-display-no" style="padding-right:0px; display:none;">
+                          <div class="s-v-card-list cal_sub6" style="padding-right:0px; display:none;">
                                   <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
                                       <table width="100%">
                                           <colgroup>
@@ -602,7 +603,7 @@
                                               </tr>									
                                           </thead>
                                           <tbody>
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="6001">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -613,7 +614,7 @@
                                                   <td><div class="ca-vip-diamond"></div><p>钻石会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>
-                                              <tr class="even">
+                                              <tr class="even" data-val="6002">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -624,7 +625,7 @@
                                                   <td><div class="ca-vip-diamond"></div><p>钻石会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>	
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="6003">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -635,7 +636,7 @@
                                                   <td><div class="ca-vip-diamond"></div><p>钻石会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>
-                                              <tr class="even">
+                                              <tr class="even" data-val="6004">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -646,7 +647,7 @@
                                                   <td><div class="ca-vip-diamond"></div><p>钻石会员</p></td>
                                                   <td><a href="javascript:;" class="yu-blue ca-change-lev">修改等级</a></td>
                                               </tr>		
-                                              <tr class="odd">
+                                              <tr class="odd" data-val="6005">
                                                   <td><label class="ca-no-chose"></label></td>
                                                   <td><span class="ca-vip-heard"><img src="images/pic-heard-01.png"></span></td>
                                                   <td>彭卓鸿</td>
@@ -683,6 +684,7 @@
 			</div>
 	  </div>
 </div>
+
 <!--移动分组 弹框-->
 <!--<div class="cal-pop">
       <form action=""; method="get">
@@ -707,7 +709,7 @@
                       <!--recom-prd end-->
                       <!--<div class="cal-btn">
                             <ul>
-                                <li><input type="reset" value="取消"  class="gy-btn"/></li>
+                                <li><input type="reset" value="取消"  class="gy-btn mask-cancel"/></li>
                                 <li><input type="submit" value="确定" class="bl-btn"/></li>
                             </ul>
                       </div>
@@ -719,78 +721,103 @@
       <!--</form>
 </div>-->
 <!--cal-pop end-->	
+
 <!--删除tr-->
 <div class="mask dlg-popup dlg-delSubAccount" id="J_dlg_delSubAccount" style="display:none;">
-		<div class="mask-inner dlg-main">
-			<div class="main-box">
-				<div class="yu-bgw yu-pad20">
-					<div class="message ml--20 mt--20">
-						确定要删除所选会员吗？
-					</div>
-					<div class="button-row ml--20 mt--30">
-						<input type="button" value="取消" class="type1 mask-cancel" />
-						<input type="submit" value="确定" class="type2" />
-					</div>
+	<div class="mask-inner dlg-main">
+		<div class="main-box">
+			<div class="yu-bgw yu-pad20">
+				<div class="message ml--20 mt--20">
+					确定要删除所选会员吗？
+				</div>
+				<div class="button-row ml--20 mt--30">
+					<input type="button" value="取消" class="type1 mask-cancel" />
+					<input type="submit" value="确定" class="type2" />
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+
 <!--修改等级 弹框-->
 <div class="ca-change-dialog">
-      <form action=""; method="get">
-            <div class="cal-show ca-dig-width">
-                 <div class="cal-title">
-                      <dl>
-                           <dt>修改等级</dt>
-                           <dd class="Close"></dd>
-                      </dl> 
-                 </div>
-                 <!--cal-title end-->
-                 <div class="recom-prd">
-                      <div class="new-name">
-                            <ul>
-                                <li><span class="no-chose"></span>普通会员</li>
-                                <li><span class="no-chose"></span>高级会员</li>
-                                <li><span class="no-chose"></span>白银会员</li>
-                                <li><span class="no-chose"></span>黄金会员</li>
-                                <li><span class="no-chose"></span>钻石会员</li>
-                            </ul>
-                      </div>
-                      <!--recom-prd end-->
-                      <div class="cal-btn">
-                            <ul>
-                                <li><input type="reset" value="取消"  class="gy-btn"/></li>
-                                <li><input type="submit" value="确定" class="bl-btn"/></li>
-                            </ul>
-                      </div>
-                      <!--cal-btn end-->
-                 </div>
-                 <!--recom-prd end-->
-            </div>
-            <!--cal-show end-->
-      </form>
+  <form action=""; method="get">
+		<div class="cal-show ca-dig-width">
+			 <div class="cal-title">
+				  <dl>
+					   <dt>修改等级</dt>
+					   <dd class="Close"></dd>
+				  </dl> 
+			 </div>
+			 <!--cal-title end-->
+			 <div class="recom-prd">
+				  <div class="new-name">
+						<ul>
+							<li><span class="no-chose"></span>普通会员</li>
+							<li><span class="no-chose"></span>高级会员</li>
+							<li><span class="no-chose"></span>白银会员</li>
+							<li><span class="no-chose"></span>黄金会员</li>
+							<li><span class="no-chose"></span>钻石会员</li>
+						</ul>
+				  </div>
+				  <!--recom-prd end-->
+				  <div class="cal-btn">
+						<ul>
+							<li><input type="reset" value="取消"  class="gy-btn mask-cancel"/></li>
+							<li><input type="submit" value="确定" class="bl-btn"/></li>
+						</ul>
+				  </div>
+				  <!--cal-btn end-->
+			 </div>
+			 <!--recom-prd end-->
+		</div>
+		<!--cal-show end-->
+  </form>
 </div>
 <!--ca-change-dialog end-->
     
 	<script type="text/javascript">
+		//关闭弹窗
+		$(".dlg-popup, .ca-change-dialog").on("click", function(){
+			$(this).fadeOut(250);
+		});
+		$(".mask-close, .mask-cancel").on("click", function(){
+			$(this).parents(".dlg-popup").fadeOut(250);
+		});
+		$(".mask-inner").on("click", function(e){
+			e.stopPropagation();
+		});
+			
 	     //全选效果
 		 $('.J__chkAll').click(function(){
-			 if($(this).is(":checked")){
+			if($(this).is(":checked")){
 				 $(this).parent(".checkbox__mask").addClass("on");
-				 $('.ca-no-chose').addClass('ca-done-chosed')
-				}
-			else{
+				 $('.s-v-card-list.active .ca-no-chose').addClass('ca-done-chosed')
+			}else{
 				 $(this).parent(".checkbox__mask").removeClass("on");
-				 $('.ca-no-chose').removeClass('ca-done-chosed')
-			   }
-			})
-		 //选择框
-		   $('.no-chose,.ca-no-chose').click(function(){
-			   $(this).toggleClass('ca-done-chosed')
-		   })
-		   $('.new-name>ul>li>span').click(function(){
-			   $(this).parent().siblings().children().removeClass('ca-done-chosed')
-			 })
+				 $('.s-v-card-list.active .ca-no-chose').removeClass('ca-done-chosed')
+			}
+		})
+		//选择框(单选)
+		$('.ca-no-chose').click(function(){
+			$(this).toggleClass('ca-done-chosed');
+			
+			var count = $(".s-v-card-list.active .ca-no-chose").size();
+			var i = 0;
+			$(".s-v-card-list.active .ca-no-chose").each(function(){
+				if($(this).hasClass("ca-done-chosed")){
+					i++;
+				}
+			});
+			if(count == i){
+				$(".J__chkAll").prop("checked", true);
+				$(".J__chkAll").parent(".checkbox__mask").addClass("on"); //checkbox全选控制
+			}else{
+				$(".J__chkAll").prop("checked", false);
+				$(".J__chkAll").parent(".checkbox__mask").removeClass("on"); //checkbox全选控制
+			}
+		})
+		   
 		  
 	     //修改等级弹框
 		 $('.ca-change-lev').click(function(){
@@ -799,6 +826,11 @@
 				$('.ca-change-dialog').css('display','none')
 			 })
 		 })
+		 //等级checkbox
+		 $('.new-name .no-chose').click(function(){
+			 $(this).parent().siblings().children().removeClass("ca-done-chosed");
+			 $(this).addClass("ca-done-chosed");
+		});
 		    
 	     //移动分组弹框
 		// $('.yd-btn').click(function(){
@@ -809,53 +841,50 @@
 	    //})
 		
 		//删除选中tr
-		    $('.J_btn_delSubAccount').click(function(){
-				    $("#J_dlg_delSubAccount").fadeIn();
-				    $('.type2').click(function(){
-					var Catr=$(".ca-vip-list tr")
-					if($('.ca-no-chose').hasClass('ca-done-chosed')){
-						    
-							$('.ca-done-chosed').parents('tr').remove()
-						}else
-						{
-							alert("还没有选择选项！");
-						}
-						 $("#J_dlg_delSubAccount").fadeOut();
-			      })
-				   $('.type1').click(function(){
-					     $("#J_dlg_delSubAccount").fadeOut(); 
-					   })
-				    
-			})
-		//鼠标经搜索框
-	    //$('.my-search-btn').mouseover(function(){
-			   //$(this).css({'background':'#2093f7','color':'#fff'})
-			//})
-		//$('.my-search-btn').mouseout(function(){
-			  // $(this).css({'background':'#f2f2f2','color':'#666'})
-			//})
-	    //切换
-	    function regular(value){
-		   $('.cal_sub'+value).children().find("table>tbody>tr>td label").removeClass('ca-done-chosed')
-		   $('.J__chkAll').parent(".checkbox__mask").removeClass("on");
- 	       for(i=1;i<=6;i++){
-				if(i == value){
-		             $('.rgula'+value).addClass('li_curre')
-					 $('.cal_sub'+value).css('display','block');
-					
+		$('.J_btn_delSubAccount').click(function(){
+			$("#J_dlg_delSubAccount").fadeIn();
+			
+			//执行删除
+			$("#J_dlg_delSubAccount .type2").on("click", function(){
+				var tmpVal = [];
+				if($(".s-v-card-list.active .ca-done-chosed").size() > 0){
+					//获取选中项值
+					$(".s-v-card-list.active .ca-done-chosed").each(function(){
+						tmpVal.push($(this).parents("tr").data("val"));
+					});
+					alert(tmpVal);
+					$("#J_dlg_delSubAccount").fadeOut(250);
 				}else{
-		             $('.rgula'+i).removeClass('li_curre') 
-					 $('.cal_sub'+i).css('display','none');	
-				 }
-			  }
-			  //if($('.ca-no-chose').hasClass('ca-done-chosed')){
-					   // $('.cal_sub'+value).children().find("table>tbody>tr>td label").removeClass('ca-done-chosed')
-					//}else
-					//{
-						//$('.cal_sub'+value).children().find("table>tbody>tr>td label").addClass('ca-done-chosed')
-				//}
-           }
+					alert("还没有选择选项！");
+				}
+			});
+				
+		})
+	   
+	   //选项卡切换
+	   $("#J__orderMenu li").on("click", function(){
+			var index = $(this).attr("data-index");
+			$(this).addClass("li_curre").siblings().removeClass("li_curre");
+			
+			$(".s-v-card-list").removeClass("active").hide();
+			$(".cal_sub"+index).addClass("active").show();
+			
+			//取消全选及选项
+			$(".J__chkAll").prop("checked", false);
+			$(".checkbox__mask").removeClass("on");
+			$('.ca-no-chose').removeClass('ca-done-chosed')
+	   });
+	   
+	   //鼠标经搜索框
+	    //$('.my-search-btn').mouseover(function(){
+			//$(this).css({'background':'#2093f7','color':'#fff'})
+		//})
+		//$('.my-search-btn').mouseout(function(){
+			// $(this).css({'background':'#f2f2f2','color':'#666'})
+		//})
+	    
 	</script>
+	
 	<script type="text/javascript">	
 		$(function(){
 			//侧导航

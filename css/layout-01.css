@@ -15,7 +15,7 @@ body {
 	margin:0 auto;width:1200px;
 }
 
-h1, h2, h3, em, i, th, caption, cite, code, address{font-style: normal; font-weight: normal;}
+h1, h2, h3, em, i, caption, cite, code, address{font-style: normal; font-weight: normal;}
 
 .align-l{text-align: left!important;} .align-c{text-align: center!important;} .align-r{text-align: right!important;}
 .v__top{vertical-align: top!important;} .v__middle{vertical-align: middle!important;}
@@ -153,6 +153,17 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 }
 .sidebar__menu .btns a:hover{border-color:#2093f7;color:#2093f7;}
 .sidebar__menu .btns a:hover i{background-position:-16px -2px;}
+
+/* checkbox样式 */
+.checkbox__item{
+	background:url(../images/icon-multiple-sel.png) no-repeat -51px 0; display:inline-block; margin-top:-3px; vertical-align:middle; height:16px;width:16px; position:relative;
+}
+.checkbox__item.on{background-position: -70px 0;}
+.checkbox__item input[type="checkbox"]{
+	appearance: none;
+	-webkit-appearance: none;
+	opacity:0; position:absolute;left:0;top:0;height:100%;width:100%;
+}
 /* }}} */
 
 
@@ -191,7 +202,7 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 .cp__checkbox-custom .checkbox__mask input[type="checkbox"]{
 	appearance: none;
 	-webkit-appearance: none;
-	position:absolute;left:0;top:0;height:100%;width:100%;
+	opacity:0; position:absolute;left:0;top:0;height:100%;width:100%;
 }
 
 /* 上传照片按钮 */

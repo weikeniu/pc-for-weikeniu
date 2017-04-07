@@ -332,7 +332,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th class="v__top pt--12">选择图片</th>
+							<th class="v__top" style="padding-top:9px;">选择图片</th>
 							<td>
 								<div>
 									<!--<div class="file-copy fl">
@@ -404,7 +404,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th class="v__top pt--12">选择图片</th>
+							<th class="v__top" style="padding-top:9px;">选择图片</th>
 							<td>
 								<div>
 									<!--<div class="file-copy fl">
@@ -527,7 +527,7 @@
 				//执行删除
 				$("#J_dlg_delMultiplePhoto .type2").on("click", function(){
 					//that.parents("li").remove();
-					//$("#J_dlg_delPhoto").fadeOut(250);
+					//$("#J_dlg_delMultiplePhoto").fadeOut(250);
 					
 					var tmpVal = [];
 					if($("#cal-list .cal-ture").size() > 0){
@@ -536,6 +536,7 @@
 							tmpVal.push($(this).parents("li").data("val"));
 						});
 						alert(tmpVal);
+						$("#J_dlg_delMultiplePhoto").fadeOut(250);
 					}else{
 						alert("没有选择照片！");
 					}
@@ -558,7 +559,7 @@
 		
 		/** 控制函数 */
 		$(function(){
-			//树节点控制
+			//全选控制
 			$(".J__chkAll").on("click", function(){
 				if($(this).is(":checked")){
 					$(this).parent(".checkbox__mask").addClass("on"); //checkbox全选控制

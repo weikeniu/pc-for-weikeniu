@@ -143,7 +143,7 @@
                                         <tbody>
                                                 <tr>
                                                      <td><label>酒店名称</label></td>
-                                                     <td colspan="2"><input type="text" value=" 广州桃花江豪生酒店" class="ca-width450 cal-c22 ca-input"><span class="yu-blue1">0</span>/12</td>
+                                                     <td colspan="2"><input type="text"  value=" 广州桃花江豪生酒店" class="ca-width450 yu-c99 ca-input J__wordWrite" ><span class="yu-blue1  J__wordLimit" data-max="12">0</span>/12</td>
                                                 </tr>
                                                 <tr>
                                                      <td><label>星级档次</label></td>
@@ -238,6 +238,28 @@
 			</div>
 		</div>
 	</div>
+    <script type="text/javascript">
+	     /*获得光标事件*/
+		 $(".ca-message tr td input").focus(function(){
+              $(this).css("color","#333");
+            });
+        $(".ca-message tr td select").focus(function(){
+              $(this).css("color","#333");
+            });
+	      /** 字数统计 */
+		function limitWordNum(o, field){
+			var max = field.attr("data-max"), curLen;
+			o[0].setAttribute("maxlength", max);
+			curLen = o.val().length;
+			//field.text(max - curLen);
+			field.text(curLen);
+			o.on("input propertychange keyup", function(){
+				//field.text(max - $(this).val().length);
+				field.text($(this).val().length);
+			});
+		}
+		limitWordNum($(".J__wordWrite"), $(".J__wordLimit"));
+	</script>
 	<script type="text/javascript">
 		$(function(){
 			//侧导航

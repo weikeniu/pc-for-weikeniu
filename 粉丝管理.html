@@ -229,7 +229,7 @@
                                      <tr><td><label>姓名</label></td><td><input type="text" value="周莹"></td></tr>
                                      <tr><td><label>手机号</label></td><td><input type="text" value=""></td></tr>
                                      <tr><td><label>身份证</label></td><td><input type="text" value=""></td></tr>
-                                     <tr><td><label>身份者</label></td><td><p class="cal-font14"><span class="no-chose"></span>男</p><p class="cal-font14"><span class="no-chose"></span>女</p></td></tr>
+                                     <tr><td><label>身份者</label></td><td><p class="cal-font14 yu-c99"><span class="no-chose"></span>男</p><p class="cal-font14 yu-c99"><span class="no-chose"></span>女</p></td></tr>
                              </tbody>
                      </table>
                      <div class="cal-btn" style="margin-left:56px;">
@@ -274,6 +274,11 @@
 		    $('.no-chose').click(function(){
 				$(this).toggleClass('ca-done-chosed')
 				$(this).parents().siblings().children().removeClass('ca-done-chosed')
+				
+				    $(this).parent().addClass('yu-c33')
+					$(this).parent().siblings().removeClass('yu-c33')
+				 
+				
 			})
 			
 	</script>

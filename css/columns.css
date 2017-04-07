@@ -6,8 +6,8 @@
 .ca-message tr td:first-child{ text-align:right; padding-right:15px;}
 .ca-message tr td label{font-size:14px;}
 .ca-message tr td span{margin-left:10px;}
-.ca-message tr td select{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:18px; line-height:32px;}
-.ca-input{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:18px; line-height:35px;}
+.ca-message tr td select{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:5px; line-height:32px; color:#999999;}
+.ca-input{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:10px; line-height:35px;}
 .ca-loading{border:none; background:none; padding-right:10px; line-height:32px; color:#666;}
 .ca-textearea{width:560px; height:180px; color:#999; font-size:14px; padding-right:25px; padding-top:8px; line-height:24px;}
 .ca-fre-tips{width:78px; height:23px; border:1px solid #ddd; background:#fff; color:#2093f7; margin:0 10px; border-radius:2px;}
@@ -44,5 +44,5 @@
 .ca-bding-doalog table tr{line-height:52px;}
 .ca-bding-doalog table tr td input{ width:203px; height:33px; line-height:35px; border:1px solid #ddd;  margin-left:12px; padding-left:10px; font-size:14px; color:#333;}
 .ca-bding-doalog table tr td label{font-size:14px; color:#999; width:100%; text-align:right; float:left;}
-.ca-bding-doalog table tr td p{float:left; margin-left:12px; color:#999;}
+.ca-bding-doalog table tr td p{float:left; margin-left:12px;}
 .ca-bding-doalog table tr td span{margin-top:18px; margin-right:5px;}

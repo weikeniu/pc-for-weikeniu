@@ -283,6 +283,98 @@
 			</div>
 		</div>
 	</div>
+	
+	<div class="mask up-load-mask">
+		<div class="mask-inner type1">
+			<div class="top-box">
+				<p>编辑菜式</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad20">
+					<form>
+					<table>
+						<tbody><tr>
+							<th>菜名</th>
+							<td>
+								<input type="text" class="type2">
+								<span class="yu-font14 yu-c99 yu-cblue">0</span><span class="yu-font14 yu-c99">/8字</span>
+							</td>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>价格</th>
+							<td>
+								<input type="text" class="type2">
+								<span class="yu-font14 yu-c99">￥</span>
+							</td>
+						</tr>
+						<tr>
+							<th>口味</th>
+							<td>
+								<ul class="la-lv">
+									<li>小辣</li>
+									<li>中辣</li>
+									<li class="no-rbor">大辣</li>
+								</ul>
+								<ul class="s-h-select">
+									<li class="cur">
+										<span class="ico fl"></span>
+										<span class="fl">显示</span>
+									</li>
+									<li>
+										<span class="ico fl"></span>
+										<span class="fl">隐藏</span>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>图片</th>
+							<td>
+								<div>
+									<input type="file" class="file-btn yu-disN">
+									<div class="file-copy fl">
+										<p></p>
+									</div>
+									<p class="fl">
+										<span class="yu-c99 yu-font14">*支持PNG、JPG格式</span>
+									</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>分组</th>
+							<td>
+								<select class="select-type1">
+									<option>热销榜</option>
+									<option>优惠</option>
+									<option>蒸蒸日上</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel">
+									<input type="submit" value="上传" class="type2">
+								</div>
+								
+							</td>
+						</tr>
+					</tbody></table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
 	<div class="edt-dialog">
       <form action=""; method="get">
       <div class="my-edit">
@@ -434,10 +526,24 @@
 				}
 			});
 			//显示隐藏
-			$(".show-or-hide li").on("click",function(){
+//			$(".show-or-hide li").on("click",function(){
+//				$(this).addClass("cur").siblings().removeClass("cur");
+//			})
+			
+			$(".s-h-select li").on("click",function(){
 				$(this).addClass("cur").siblings().removeClass("cur");
 			})
-
+			//mask通用操作
+			$(".mask,.mask-close,.mask-cancel").on("click",function(){
+				$(".mask").fadeOut();
+			})
+			$(".mask-inner").click(function(e){
+				e.stopPropagation();
+			})
+			
+			$(".load-btn").click(function(){
+				$(".up-load-mask").fadeIn();
+			})
 			//cassiel
 
 	/*去掉右边距*/

@@ -12,7 +12,7 @@
 .ca-textearea{width:560px; height:180px; color:#999; font-size:14px; padding-right:25px; padding-top:8px; line-height:24px;}
 .ca-fre-tips{width:78px; height:23px; border:1px solid #ddd; background:#fff; color:#2093f7; margin:0 10px; border-radius:2px;}
 .ca-keep-btn{width:160px; height:45px; background:#2093f7; color:#fff; border:none; font-size:18px; border-radius:4px}
-.ca-map{height:290px; width:900px;}
+.ca-map{height:290px; width:885px; float:left; margin-bottom:25px;}
 .ca-map img{width:100%; height:100%;}
 
 /*会员管理*/

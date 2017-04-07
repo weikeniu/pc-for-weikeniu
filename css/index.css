@@ -942,7 +942,7 @@
     padding: 10px 0;
 }
 .refund-inner{
-  padding-right: 100px;
+  padding-right: 30px;
 }
 .refund-top{
   background: #f7f7f7;
@@ -1518,7 +1518,7 @@ a{text-decoration:none;}
 .cal-sure p{margin:40px 0px 28px 30px;}
 
 .edt-dialog{width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;z-index: 100}
-.my-edit{width:340px; height:340px; background:#fff; position:absolute; top:26.5%; left:39.25%;}
+.my-edit{width:340px;  background:#fff; position:absolute; top:26.5%; left:39.25%;padding-bottom: 20px;}
 .my-menus{font-size:14px; height:210px;}
 .my-menus>ul>li{margin-top:8px; margin-left:30px; line-height:30px; color:#999;}
 .my-menus span{font-size:14px;}
@@ -1546,7 +1546,7 @@ a{text-decoration:none;}
 .page-turn{float:right; margin-top:25px;}
 
 .ord-menus{margin-right:30px;}
-.t-title{background:#f2f2f2;  margin-top:20px; line-height:40px; font-size:14px; color:#666; font-weight:normal;}
+.t-title{background:#f2f2f2;  margin-top:20px; line-height:40px; font-size:14px; color:#666; font-weight:normal;width: 100%;}
 .t-title th{}
 .t-title li{float:left; text-align:center;}
 .ord-times{ width:18.5%;}
@@ -1615,9 +1615,29 @@ a{text-decoration:none;}
 .ord-give{width:110px;}
 .ord-state{width:155px; text-align:center;}
 .no-aplay{text-align:center;}
-.blue-small-btn{width:110px; height:22px; background:#2093f7; border-radius:2px; margin:0 auto; margin-top:5px;}
-.blue-small-btn input{color:#fff; line-height:22px; margin-left:16px; margin-right:16px;border: 0;background: #2093f7;}
-.blue-small-btn div{background:url(../images/sugar.png) no-repeat  -103px -32px; width:22px; height:22px; display:block; float:left;}
+.blue-small-btn.cur{ background:#2093f7;border: 0; }
+.blue-small-btn.cur input{color:#fff; background: #2093f7;}
+.blue-small-btn.cur div{background:url(../images/sugar.png) no-repeat  -103px -32px; width:22px; height:22px; display:block; }
 .msg-detail{ height:auto; background:#f9f9f9; padding-left:20px;padding-bottom: 30px;}
+.msg-detail.sp{
+	display: none;
+}
 .shop-tips{ height:60px;line-height:60px; font-weight:bold;}
 .shop-tips li{float:left;}
+.blue-small-btn{
+	border: 1px solid #ebebeb;
+	width:110px;
+	 height:22px;
+	 border-radius:2px;
+	  margin:0 auto;
+	   margin-top:5px;
+}
+.blue-small-btn input{
+	line-height:22px; margin-left:16px; margin-right:16px;border: 0;color: #666;background: #fff;
+}
+.blue-small-btn div{
+	width: 11px;
+	height: 20px;
+	background: url(../images/icons.png) no-repeat -184px 0;
+	float:left;
+}

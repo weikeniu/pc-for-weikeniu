@@ -174,7 +174,7 @@
 												</tr>									
 											</thead>
 											<tbody>
-												<tr class="odd">
+												<tr class="odd" data-val="101">
 													<td align="left"><div class="fl ml--20 mr--20"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div>广州都市易家酒店-ABCD007</td>
 													<td>张小娴</td>
 													<td>13880155900</td>
@@ -182,7 +182,7 @@
 													<td><div class="tab-btn cur"></div></td>
 													<td><a href="javascript:;" class="yu-blue J_btn_editAccount">编辑</a></td>
 												</tr>
-												<tr class="even">
+												<tr class="even" data-val="102">
 													<td align="left"><div class="fl ml--20 mr--20"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div>广州都市易家酒店-ABCD007</td>
 													<td>张小娴</td>
 													<td>13880155900</td>
@@ -190,7 +190,7 @@
 													<td><div class="tab-btn"></div></td>
 													<td><a href="javascript:;" class="yu-blue J_btn_editAccount">编辑</a></td>
 												</tr>
-												<tr class="odd">
+												<tr class="odd" data-val="103">
 													<td align="left"><div class="fl ml--20 mr--20"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div>广州都市易家酒店-ABCD007</td>
 													<td>张小娴</td>
 													<td>13880155900</td>
@@ -198,7 +198,7 @@
 													<td><div class="tab-btn cur"></div></td>
 													<td><a href="javascript:;" class="yu-blue J_btn_editAccount">编辑</a></td>
 												</tr>
-												<tr class="even">
+												<tr class="even" data-val="104">
 													<td align="left"><div class="fl ml--20 mr--20"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div>广州都市易家酒店-ABCD007</td>
 													<td>张小娴</td>
 													<td>13880155900</td>
@@ -206,7 +206,7 @@
 													<td><div class="tab-btn"></div></td>
 													<td><a href="javascript:;" class="yu-blue J_btn_editAccount">编辑</a></td>
 												</tr>
-												<tr class="odd">
+												<tr class="odd" data-val="105">
 													<td align="left"><div class="fl ml--20 mr--20"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div>广州都市易家酒店-ABCD007</td>
 													<td>张小娴</td>
 													<td>13880155900</td>
@@ -214,7 +214,7 @@
 													<td><div class="tab-btn cur"></div></td>
 													<td><a href="javascript:;" class="yu-blue J_btn_editAccount">编辑</a></td>
 												</tr>
-												<tr class="even">
+												<tr class="even" data-val="106">
 													<td align="left"><div class="fl ml--20 mr--20"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div>广州都市易家酒店-ABCD007</td>
 													<td>张小娴</td>
 													<td>13880155900</td>
@@ -869,9 +869,27 @@
 				$("#J_dlg_moveDpt").fadeIn();
 			});
 			
-			//删除子账号
+			//删除子账号(选择)
 			$(".J_btn_delSubAccount").on("click", function(){
 				$("#J_dlg_delSubAccount").fadeIn();
+				
+				//执行删除
+				$("#J_dlg_delSubAccount .type2").on("click", function(){
+					//that.parents("li").remove();
+					//$("#J_dlg_delSubAccount").fadeOut(250);
+					
+					var tmpVal = [];
+					if($("#J__tabList .checkbox__item.on").size() > 0){
+						//获取选中项值
+						$("#J__tabList .checkbox__item.on").each(function(){
+							tmpVal.push($(this).parents("tr").data("val"));
+						});
+						alert(tmpVal);
+						$("#J_dlg_delSubAccount").fadeOut(250);
+					}else{
+						alert("还没有选择选项！");
+					}
+				});
 			});
 			
 			//删除部门

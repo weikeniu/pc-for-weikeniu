@@ -240,12 +240,10 @@
 	</div>
     <script type="text/javascript">
 	     /*获得光标事件*/
-		 $(".ca-message tr td input").focus(function(){
+		 $(".ca-message tr td input,.ca-message tr td textarea,.ca-message tr td select").focus(function(){
               $(this).css("color","#333");
             });
-        $(".ca-message tr td select").focus(function(){
-              $(this).css("color","#333");
-            });
+        
 	      /** 字数统计 */
 		function limitWordNum(o, field){
 			var max = field.attr("data-max"), curLen;

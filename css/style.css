@@ -259,3 +259,9 @@ input{
 .yu-pad30{
 	padding: 30px;
 }
+.yu-bmar5{
+	margin-bottom: 5px;
+}
+.yu-i-b{
+	display: inline-block;
+}

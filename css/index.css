@@ -1384,7 +1384,7 @@
 	border: 0;
 	background: #fff;
 }
-.left-side-nav a:hover{
+.left-side-nav a:hover,.left-side-nav a.cur{
 	color: #2093f7 !important;
 }
 .pay-type{

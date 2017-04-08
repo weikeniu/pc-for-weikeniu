@@ -268,3 +268,19 @@ input{
 .no-rbor{
 	border-right: 0 !important;
 }
+/*输入框字体颜色*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+color: #999 !important; 
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+color: #999 !important; 
+} 
+input::-moz-placeholder, textarea::-moz-placeholder { 
+color: #999 !important; 
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+color: #999 !important; 
+} 
+input[type="text"]{
+	color: #333 !important;
+}

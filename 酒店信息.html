@@ -143,7 +143,7 @@
                                         <tbody>
                                                 <tr>
                                                      <td><label>酒店名称</label></td>
-                                                     <td colspan="2"><input type="text"  value=" 广州桃花江豪生酒店" class="ca-width450 yu-c99 ca-input J__wordWrite" ><span class="yu-blue1  J__wordLimit" data-max="12">0</span>/12</td>
+                                                     <td colspan="2"><input type="text" placeholder=" 广州桃花江豪生酒店" class="ca-width450 ca-input J__wordWrite" ><span class="yu-blue1  J__wordLimit" data-max="12">0</span>/12</td>
                                                 </tr>
                                                 <tr>
                                                      <td><label>星级档次</label></td>
@@ -156,11 +156,11 @@
                                                 </tr>
                                                 <tr>
                                                      <td><label>前台电话</label></td>
-                                                     <td colspan="2"><input type="text" value="酒店前台固定电话" class="ca-width280 yu-c99 ca-input"></td>
+                                                     <td colspan="2"><input type="text" placeholde="酒店前台固定电话" class="ca-width280 ca-input"></td>
                                                 </tr>
                                                 <tr>
                                                      <td><label>手机号码</label></td>
-                                                     <td colspan="2"><input type="text" value="有新订单时向手机发送新订单提醒短信" class="ca-width280 yu-c99 ca-input"></td>
+                                                     <td colspan="2"><input type="text" placeholde="有新订单时向手机发送新订单提醒短信" class="ca-width280 ca-input"></td>
                                                 </tr>
                                                 <tr>
                                                      <td><label>酒店LOGO</label></td>
@@ -173,12 +173,12 @@
                                                 <tr>
                                                      <td><label>开业时间</label></td>
                                                      <td>
-                                                         <select class="ca-width140 yu-c99">
+                                                         <select class="ca-width140">
                                                                   <option>请选择</option>
                                                                   <option>2017.3.22</option>
                                                          </select>
                                                          <label class="cal-marl10">装修时间</label>
-                                                         <select class="ca-width140 cal-c33">
+                                                         <select class="ca-width140">
                                                                   <option>请选择</option>
                                                                   <option>2017-1-15</option>
                                                          </select>
@@ -186,24 +186,24 @@
                                                 </tr>
                                                 <tr>
                                                      <td valign="top"><label>酒店简介</label></td>
-                                                     <td colspan="2"><textarea class="ca-input ca-textearea cal-mart10">微可牛微信战略合作合作伙伴，为专注于打造基于微信的酒店直销网站，为酒店提供公众号的申请和认证、二维码设计宣传、酒店各类信息的展示、酒店预订系统、会员管理系统、会员营销系统等信息化服务，同时为酒店提供公众号的营销推广指导，帮酒店开启移动互联网时代的直销业务。</textarea></td>
+                                                     <td colspan="2"><textarea class="ca-input ca-textearea cal-mart10" placeholder="微可牛微信战略合作合作伙伴，为专注于打造基于微信的酒店直销网站，为酒店提供公众号的申请和认证、二维码设计宣传、酒店各类信息的展示、酒店预订系统、会员管理系统、会员营销系统等信息化服务，同时为酒店提供公众号的营销推广指导，帮酒店开启移动互联网时"></textarea></td>
                                                 </tr>
                                                 <tr>
                                                      <td valign="top"><label>酒店城市</label></td>
                                                      <td colspan="2">
-                                                          <select class="ca-width120 yu-c99">
+                                                          <select class="ca-width120">
                                                                   <option>请选择</option>
                                                                   <option>2017.3.22</option>
                                                           </select>
                                                      
                                                           <label>省</label>
-                                                          <select class="ca-width120 cal-c33">
+                                                          <select class="ca-width120">
                                                                   <option>广州</option>
                                                                   <option>2017-1-15</option>
                                                           </select>
                                                      
                                                           <label>市</label>
-                                                          <select class="ca-width120 yu-c99">
+                                                          <select class="ca-width120">
                                                                   <option>请选择</option>
                                                                   <option>2017-1-15</option>
                                                           </select>
@@ -240,10 +240,7 @@
 	</div>
     <script type="text/javascript">
 	     /*获得光标事件*/
-		 $(".ca-message tr td input,.ca-message tr td textarea,.ca-message tr td select").focus(function(){
-              $(this).css("color","#333");
-            });
-        
+		 
 	      /** 字数统计 */
 		function limitWordNum(o, field){
 			var max = field.attr("data-max"), curLen;

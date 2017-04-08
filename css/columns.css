@@ -29,6 +29,8 @@
 .ca-vip-silver{background:url(../images/sugar.png) no-repeat  -103px -150px;}
 .ca-vip-gold{background:url(../images/sugar.png) no-repeat  -72px -150px;}
 .ca-vip-diamond{background:url(../images/sugar.png) no-repeat  -41px -150px;}
+.all-order li span{font-weight:normal; font-size:14px;}
+.li_curre span{font-weight:normal; font-size:14px;}
 /*如果index有加统一的页面可以删掉
 .ca-dig-width{width:280px;}
 .ca-dig-width .cal-title{width:280px;}

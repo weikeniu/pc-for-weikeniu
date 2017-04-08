@@ -742,7 +742,7 @@
 <!--修改等级 弹框-->
 <div class="ca-change-dialog">
   <form action=""; method="get">
-		<div class="cal-show ca-dig-width">
+		<div class="cal-show">
 			 <div class="cal-title">
 				  <dl>
 					   <dt>修改等级</dt>
@@ -826,6 +826,10 @@
 				$('.ca-change-dialog').css('display','none')
 			 })
 		 })
+		 $(".cal-show").on("click", function(e){
+				e.stopPropagation();
+			});
+			
 		 //等级checkbox
 		 $('.new-name .no-chose').click(function(){
 			 $(this).parent().siblings().children().removeClass("ca-done-chosed");

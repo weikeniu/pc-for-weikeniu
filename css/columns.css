@@ -11,7 +11,7 @@
 .ca-loading{border:none; background:none; padding-right:10px; line-height:32px; color:#666;}
 .ca-textearea{width:560px; height:180px; font-size:14px; padding-right:25px; padding-top:8px; line-height:24px;}
 .ca-fre-tips{width:78px; height:23px; border:1px solid #ddd; background:#fff; color:#2093f7; margin:0 10px; border-radius:2px;}
-.ca-keep-btn{width:160px; height:45px; background:#2093f7; color:#fff; border:none; font-size:18px; border-radius:4px}
+.ca-keep-btn{width:160px; height:45px; background:#2093f7; color:#fff; border:none; font-size:18px; border-radius:4px; font-family:"微软雅黑";}
 .ca-map{height:290px; width:885px; float:left; margin-bottom:25px;}
 .ca-map img{width:100%; height:100%;}
 
@@ -62,11 +62,7 @@
 .s-v-card-list.s-v-card-list{padding-right:0px;}
 .ca-vip-manager a{margin-right:10px;}
 
-/*设置会员卡 弹窗*/
-.ca-vipdig-menu{width:800px; margin:0 auto; overflow-y:scroll; height:100%}
-.ca-set-vipcard{height:45px; line-height:45px; background:#f1f1f1;}
-.ca-vipdig-menu .cal-title{width:100%;}
-.ca-vip-style{background:#fff;}
+/*设置会员卡*/
 .ca-set-card{padding-top:30px; display:inline-block;}
 .ca-set-card > dl{width:313px; height:202px; background-size:100%; color:#fff; float:left; margin-right:30px;}
 .ca-vbg-yellow{background:url(../images/cards-yellow.png) no-repeat;}
@@ -85,7 +81,7 @@
 .ca-vip-idcard{font-size:20px; margin-top:60px; margin-left:12px; text-shadow:2px 2px 1px rgba(0,0,0,0.3);}
 .ca-set-color{float:left; display:inline-block; margin-top:15px; position:relative;}
 .ca-memb-defind{width:280px;}
-.ca-memb-defind li{float:left; width:50px; height:50px; display:block; border-radius:50%; margin:12px 20px 8px 0;}
+.ca-memb-defind li{float:left; width:50px; height:50px; display:block; border-radius:50%; margin:12px 20px 8px 0; cursor:pointer;}
 .ca-memb-yellow{background:#f3be00;}
 .ca-memb-green{background:#85ba09;}
 .ca-memb-cyan{background:#21afbe;}
@@ -94,10 +90,10 @@
 .ca-memb-black{background:#333;}
 .ca-memb-purple{background:#b221be;}
 #ca-memb-custom{border:2px solid #ccc; border-radius:50%; bottom:10px; right:20px; width:46px; height:46px; text-align:center; line-height:46px; color:#333; font-size:14px; position:absolute;}
-#ca-memb-custom input{width:48px; height:48px; position:absolute; left:-1px; top:-1px; opacity:0;}
+#ca-memb-custom input{width:48px; height:48px; position:absolute; left:-1px; top:-1px; opacity:0; cursor:pointer;}
 .ca-set-vlogo{border:1px solid #ccc; background:#eee; float:left; height:78px; width:78px;  border-radius:50%; color:#666; font-size:14px; margin-left:8px; margin-top:68px; position:relative;}
 .ca-set-vlogo p{text-align:center; margin-top:20px;}
-.ca-set-vlogo input{position:absolute; width:80px; height:80px; top:-1px; right:0px; opacity:0;}
+.ca-set-vlogo input{position:absolute; width:80px; height:80px; top:-1px; right:0px; opacity:0; cursor:pointer;}
 .ca-memb-level{margin-top:22px; height:auto;}
 .ca-ord-dec{background:url(../images/sugar.png) no-repeat -50px -123px; margin-left:8px;}
 .ca-ord-add{background:url(../images/sugar.png) no-repeat -82px -123px; margin-right:8px;}
@@ -107,12 +103,11 @@
 .ca-order-prdmt li > span i{font-style:normal; color:#7d7d7d;}
 .ca-order-prdmt li > div{width:120px; height:30px; border:1px solid #ebebeb; margin:0 10px; border-radius:2px;}
 .ca-order-prdmt li > div p{margin-top:8px; width:12px; height:12px; float:left; display:block;}
-.ca-order-prdmt li > div > span{width:78px; text-align:center;}
+.ca-order-prdmt li > div > span input{width:78px; height:30px; text-align:center; border:none; font-size:16px; float:left; color:#2093f7; font-family:Verdana;}
 .ca-instrc-books{width:598px; height:148px; border:1px solid #ebebeb; background:#f9f9f9; margin-left:20px; margin-top:8px;}
 .ca-rem-point li{margin-top:10px; margin-left:20px;}
 .ca-rem-point span{font-size:14px; color:#222;}
 .ca-vip-select{width:58px; height:30px; text-align:center; font-size:16px; border:1px solid #ebebeb; background:#f9f9f9; border-radius:2px;}
-.ca-vip-style .cal-btn{ margin:30px auto;}
 .ca-cur{background:url(../images/sugar.png) no-repeat -108px -70px; width:32px; height:32px; margin:0 auto; margin-top:12px;}
 
 

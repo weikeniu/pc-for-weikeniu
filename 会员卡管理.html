@@ -1,0 +1,550 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="关键词1,关键词2,关键词3" />
+<meta name="description" content="对网站的描述" />
+<title>会员卡管理</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link type="text/css" rel="stylesheet" href="css/index.css"/>
+<link type="text/css" rel="stylesheet" href="css/columns.css"/>
+<link type="text/css" rel="stylesheet" href="css/common.css"/>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+	<div class="top-bar">
+		<h1 id="logo">微可牛管理中心</h1>
+	</div>
+	<div class="content">
+		<div class="left-side">
+			<div class="yu-c7d yu-h45 yu-bgf4 yu-l45 yu-pos-r">
+				<p class="nav-ico type1">
+					
+				</p>
+				<p class="">功能导航</p>
+			</div>
+			<div class="left-side-nav">
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type2"></p>
+						<p>系统设置</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type3"></p>
+						<p>酒店管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd>
+						<dl class="lv2">
+							<dt><span class="dian"></span>餐饮订餐</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>
+								<dl class="lv3">
+									<dt>订单管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>								
+							</dd>
+						</dl>
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房管理</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>	
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房设置</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>													
+					</dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type4"></p>
+						<p>团购管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type5"></p>
+						<p>会员中心</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type6"></p>
+						<p>手机官网</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+			</div>
+		</div>
+
+	    <div class="right-side">
+			<div class="bread-nav">
+				<ul>
+					<li class="yu-c99">会员中心</li>
+					<li class="yu-next-ico yu-c99 yu-font14">》</li>
+					<li>会员卡管理</li>
+
+				</ul>
+			</div>
+			<div class="yu-pad20">
+                 <div class="inner-type1">
+                        <div class="cal-marr30">
+                              <div class="top-menu">
+                                     <p class="fl left-top-menu"><span></span>会员卡管理</p>
+                                     <div class="search-box fr" style="margin-right:0px">
+                                          <span class="fl"><input type="text" placeholder="请输入姓名或手机号" class="my-search-bx"></span><span class="fl"><input type="button" value="搜索" class="my-search-btn"></span>
+                                      </div>
+                                      <!--search-box end-->
+                              </div>
+                              <div class="s-v-card-method ca-vip-manager">
+                                  <a href="javascript:;" class="type4">
+                                      <div class="yu-tpad20 yu-lpad30">
+                                          <p class="ico"></p>
+                                          <div>
+                                              <span class="font-color">一键生成·</span>
+                                              <span class="yu-c66">会员卡号</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                                  <a href="javascript:;" class="type5">
+                                      <div class="yu-tpad20 yu-lpad30">
+                                          <p class="ico"></p>
+                                          <div>
+                                              <span class="font-color">批量录入· </span>
+                                              <span class="yu-c66">会员卡号</span>
+                                          </div>
+                                      </div>							
+                                  </a>
+                                  <a href="javascript:;" class="type6" style="margin-right:0px;" onClick="dig-vip">
+                                      <div class="yu-tpad20 yu-lpad30">
+                                          <p class="ico"></p>
+                                          <div>
+                                              <span class="font-color">快捷设置 ·</span>
+                                              <span class="yu-c66">会员卡</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </div>
+                              <div class="s-v-card-list">
+                                    <div>
+                                         <table width="100%" id="J__tabList">
+                                                      <colgroup>
+                                                          <col width="19.57%" />
+                                                          <col width="14.97%" />
+                                                          <col width="13.43%" />
+                                                          <col width="19.57%" />
+                                                          <col width="11.28%" />
+                                                          <col width="72.18%" />
+                                                          
+                                                      </colgroup>
+                                                      <thead>
+                                                          <tr>
+                                                              
+                                                              <th>卡号（115 / 15）</th>
+                                                              <th>已使用</th>
+                                                              <th>等级</th>
+                                                              <th>积分</th>
+                                                              <th>酒店折扣</th>
+                                                              <th>状态</th>
+                                                          </tr>									
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr class="odd" data-val="101">
+                                                              <td>2829100115</td>
+                                                              <td>否</td>
+                                                              <td>
+                                                                  <div>
+                                                                        <p class="mem-ico lv1"></p>
+                                                                        <p class="dis-i-b">普通会员</p>
+											                      </div>
+                                                              </td>
+                                                              <td>1376</td>
+                                                              <td class="yu-blue">9.9</td>
+                                                              <td><div class="tab-btn cur"></div></td>
+                                                          </tr>
+                                                          <tr class="even" data-val="102">
+                                                              <td>2829100115</td>
+                                                              <td>否</td>
+                                                              <td>
+                                                                  <div>
+                                                                        <p class="mem-ico lv2"></p>
+                                                                        <p class="dis-i-b">高级会员</p>
+											                      </div>
+                                                              </td>
+                                                              <td>1376</td>
+                                                              <td class="yu-blue">9.9</td>
+                                                              <td><div class="tab-btn"></div></td>
+                                                          </tr>
+                                                          <tr class="odd" data-val="103">
+                                                              <td>2829100115</td>
+                                                              <td>否</td>
+                                                              <td>
+                                                                  <div>
+                                                                        <p class="mem-ico lv1"></p>
+                                                                        <p class="dis-i-b">普通会员</p>
+											                      </div>
+                                                              </td>
+                                                              <td>1376</td>
+                                                              <td class="yu-blue">9.9</td>
+                                                              <td><div class="tab-btn cur"></div></td>
+                                                          </tr>
+                                                          <tr class="even" data-val="104">
+                                                              <td>2829100115</td>
+                                                              <td>否</td>
+                                                              <td>
+                                                                  <div>
+                                                                        <p class="mem-ico lv2"></p>
+                                                                        <p class="dis-i-b">高级会员</p>
+											                      </div>
+                                                              </td>
+                                                              <td>1376</td>
+                                                              <td class="yu-blue">9.9</td>
+                                                              <td><div class="tab-btn"></div></td>
+                                                          </tr>
+                                                          <tr class="odd" data-val="105">
+                                                              <td>2829100115</td>
+                                                              <td>否</td>
+                                                              <td>
+                                                                  <div>
+                                                                        <p class="mem-ico lv1"></p>
+                                                                        <p class="dis-i-b">普通会员</p>
+											                      </div>
+                                                              </td>
+                                                              <td>1376</td>
+                                                              <td class="yu-blue">9.9</td>
+                                                              <td><div class="tab-btn cur"></div></td>
+                                                          </tr>
+                                                          <tr class="even" data-val="106">
+                                                              <td>2829100115</td>
+                                                              <td>否</td>
+                                                              <td>
+                                                                  <div>
+                                                                        <p class="mem-ico lv2"></p>
+                                                                        <p class="dis-i-b">高级会员</p>
+											                      </div>
+                                                              </td>
+                                                              <td>1376</td>
+                                                              <td class="yu-blue">9.9</td>
+                                                              <td><div class="tab-btn"></div></td>
+                                                          </tr>
+                                                   </tbody>
+                                           </table>						
+                                    </div>
+                               </div>
+                              <div class="page-num-bar">
+                                    <p class="yu-line37 yu-c88 yu-font14 yu-rmar10">总菜单：129</p>
+                                    <ul class="page-num-zujian">
+                                      <li class="type1"> 上一页 </li>
+                                      <li class="type2">1</li>
+                                      <li class="type3">2</li>
+                                      <li class="type3"> 下一页 </li>
+                                    </ul>
+                                    <p class="yu-line37 yu-c88 yu-font14 yu-rmar10">共2页</p>
+                                    <div class="yu-line37 yu-c88 yu-font14 yu-rmar10">到第
+                                      <input type="text" value="1" class="page-input">
+                                      页</div>
+                                    <p>
+                                      <input type="submit" value="确定" class="page-sub">
+                                    </p>
+                                </div>
+                        </div>
+                  </div>
+                  <!--inner-type1 end-->
+            </div>
+            <!--yu-pad20 end-->
+	  </div>
+      <!--right-side end-->
+<!--设置会员卡 弹窗-->	
+<div class="mask" style="display:block;">
+      <div class="ca-vipdig-menu">
+            <div class="cal-title">
+                  <dl> 
+                       <dt>设置会员卡</dt>
+                       <dd class="Close"></dd>
+                  </dl> 
+            </div>
+            <!--ca-vipdig-menu end-->
+            <div class="ca-vip-style">
+                  <div class="cal-marl30">
+                        <div class="ca-set-card">
+                             <dl class="ca-vbg-green">
+                                  <dt>
+                                       <dl class="ca-vip-infor">
+                                            <dt><img src="images/vip-logos.png"></dt>
+                                            <dd><p>北京新世纪日航饭店</p><span>微信会员卡</span></dd>
+                                       </dl>
+                                  </dt>
+                                  <dd class="ca-vip-idcard">会员卡号：0123456789</dd>
+                             </dl>
+                             <div class="ca-set-color">
+                                   <div>会员卡样式：</div>
+                                   <div class="ca-memb-defind">
+                                         <ul>
+                                              <li class="ca-memb-yellow" data-bg="ca-vbg-yellow"><div></div></li>
+                                              <li class="ca-memb-green" data-bg="ca-vbg-green"><div class="ca-cur"></div></li>
+                                              <li class="ca-memb-cyan" data-bg="ca-vbg-cyan"><div></div></li>
+                                              <li class="ca-memb-blue" data-bg="ca-vbg-blue"><div></div></li>
+                                              <li class="ca-memb-red" data-bg="ca-vbg-red"><div></div></li>
+                                              <li class="ca-memb-black" data-bg="ca-vbg-black"><div></div></li>
+                                              <li class="ca-memb-purple" data-bg="ca-vbg-purple"><div></div></li>
+                                              
+                                         </ul>
+                                         
+                                   </div>
+                                   <!--ca-memb-defind end-->
+                                   <div id="ca-memb-custom"><li ><input type="file">自定</li></div>
+                             </div>
+                             <!--ca-set-color end-->
+                             <div class="ca-set-vlogo"><input type="file"><p>设置<br/>LOGO</p></div>
+                        </div>
+                        <!--ca-set-card end-->
+                        <div class="ca-memb-level">
+                              <h1 class="cal-c22 yu-font16 yu-bmar10">设置会员等级</h1>
+                              <h2 class="yu-c99 yu-font14 cal-marl30">成功关注酒店官方微信，绑定会员卡后即视为申请成为酒店的普通会员。</h2>
+                              <div class="ca-order-prdmt">
+                                    <ul>
+                                         <li>
+                                              <span>预订客房间夜量达</span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">10</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span>可升级为高级会员</span>
+                                         </li>
+                                         <li>
+                                              <span>预订客房间夜量达</span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">30</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span>可升级为高级会员</span>
+                                         </li>
+                                         <li>
+                                              <span>预订客房间夜量达</span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">60</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span>可升级为高级会员</span>
+                                         </li>
+                                         <li>
+                                              <span>预订客房间夜量达</span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">90</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span>可升级为高级会员</span>
+                                         </li>
+                                    </ul>
+                              </div>
+                              <!--ca-order-prdmt end-->
+                        </div>
+                        <!--ca-memb-level end-->
+                        <div class="ca-memb-level">
+                              <h1 class="cal-c22 yu-font16 yu-bmar10">设置会员优惠</h1>
+                              <h2 class="yu-c99 yu-font14 cal-marl30">会员优惠不适用于酒水与特价商品，不能与其他优惠同时使用。</h2>
+                              <div class="ca-order-prdmt">
+                                    <ul>
+                                         <li>
+                                              <span>普通会员</span>
+                                              <span><i>可享订房</i></span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">9.9</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span><i>折优惠</i></span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">9.9</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span>倍积分加成</span>
+                                         </li>
+                                         <li>
+                                              <span>普通会员</span>
+                                              <span><i>可享订房</i></span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">9.8</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span><i>折优惠</i></span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">9.8</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span>倍积分加成</span>
+                                         </li>
+                                         <li>
+                                              <span>普通会员</span>
+                                              <span><i>可享订房</i></span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">9.7</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span><i>折优惠</i></span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">9.7</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span>倍积分加成</span>
+                                         </li>
+                                         <li>
+                                              <span>普通会员</span>
+                                              <span><i>可享订房</i></span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">9.6</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span><i>折优惠</i></span>
+                                              <div class="fl">
+                                                    <p class="ca-ord-dec"></p><span class="yu-blue1 fl">9.6</span><p class="ca-ord-add"></span></p>
+                                              </div>
+                                              <span>倍积分加成</span>
+                                         </li>
+                                    </ul>
+                              </div>
+                              <!--ca-order-prdmt end-->
+                        </div>
+                        <!--ca-memb-level end-->
+                        <div class="ca-memb-level">
+                              <h1 class="cal-c22 yu-font16 yu-bmar10">会员卡说明</h1>
+                              <textarea class="ca-instrc-books"></textarea>
+                        </div>
+                        <!--ca-memb-level end-->
+                        <div class="ca-memb-level">
+                              <h1 class="cal-c22 yu-font16 yu-bmar10">设置会员积分</h1>
+                              <div class="ca-rem-point">
+                                    <ul>
+                                         <li><span>会员每消费一元即可获得</span>
+                                             <select class="yu-blue1 ca-vip-select">
+                                                     <option>1</option>
+                                                     <option>2</option>
+                                             </select>
+                                             <span>积分，积分可用于换区礼物、兑换积分房，预订折扣等；</span>
+                                         </li>
+                                         <li><span>会员每笔积分的有效期为</span>
+                                             <select class="yu-blue1 ca-vip-select">
+                                                     <option>1</option>
+                                                     <option>2</option>
+                                             </select>
+                                             <span>年，若积分在有效期内未使用，将被视为过期自动放弃，积分将自动扣除；</span>
+                                         </li>
+                                    </ul>
+                              </div>
+                              <!--ca-rem-point end-->
+                              <div class="cal-mart30">
+                                   <span class="yu-font14 cal-c22">自动生成会员卡:&nbsp;&nbsp;</span>
+                                   <select class="yu-blue1 ca-vip-select">
+                                           <option>1</option>
+                                           <option>2</option>
+                                   </select>
+                              </div>
+                              <!--ca-auto-card end-->
+                        </div>
+                        <!--ca-memb-level end-->
+                        
+                  </div>
+                  <!--cal-marl30 end-->
+                  <div class="cal-btn">
+                         <ul>
+                              <li><input type="reset" value="取消"  class="gy-btn"/></li>
+                              <li><input type="submit" value="保存" class="bl-btn"/></li>
+                         </ul>
+                   </div>
+                   <!--cal-btn end-->
+            </div>
+            <!--ca-vip-style end-->
+      </div>
+      <!--ca-vipdig-menu end-->
+</div>
+<!--dig-vip end-->
+    <script type="text/javascript">
+	         //设置会员卡样式
+			 $(".ca-memb-defind li").click(function(){
+				    $(this).children("div").addClass("ca-cur")
+					$(this).siblings().children().removeClass("ca-cur")
+					var color = $(this).attr("data-bg");
+					$(".ca-set-card > dl").removeAttr("class").addClass(color);
+			 })
+			 
+	        //状态控制
+			$("#J__tabList .tab-btn").on("click", function(){
+				$(this).toggleClass("cur");
+			});
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			//侧导航
+			$(".left-side-nav>.lv1>dt").on("click",function(){
+				$(this).siblings().children(".lv2").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv2>dt").on("click",function(){
+				$(this).siblings().children(".lv3").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv3>dt").on("click",function(){
+				$(this).siblings().slideToggle(200);
+				$(this).toggleClass("cur");
+
+			})
+			//
+			$(".copy-checkbox1").on("click",function(){
+				$(this).parent().toggleClass("cur");
+			})
+
+			//翻页按钮
+			var allPages=parseInt($(".all-page").text());
+			var pageClickNum=1;
+			$(".next-page").click(function(){
+				if(pageClickNum<allPages){
+					pageClickNum++;
+					$(".cur-page").text(pageClickNum);
+					$(".prev-page").removeClass("dis");
+					if(pageClickNum==allPages){
+						$(this).addClass("dis");
+					}
+				}
+			});
+			$(".prev-page").click(function(){
+				if(pageClickNum>1){
+					pageClickNum--;
+					$(".cur-page").text(pageClickNum);
+					$(".next-page").removeClass("dis");
+					if(pageClickNum==1){
+						$(this).addClass("dis");
+					}
+
+				}
+			});
+
+		})
+	</script>
+</body>
+</html>

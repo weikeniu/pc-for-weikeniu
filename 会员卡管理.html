@@ -153,7 +153,7 @@
                                           </div>
                                       </div>							
                                   </a>
-                                  <a href="javascript:;" class="type6" style="margin-right:0px;" onClick="dig-vip">
+                                  <a href="javascript:;" class="type6" style="margin-right:0px;">
                                       <div class="yu-tpad20 yu-lpad30">
                                           <p class="ico"></p>
                                           <div>
@@ -293,7 +293,7 @@
 	  </div>
       <!--right-side end-->
 <!--设置会员卡 弹窗-->	
-<div class="mask" style="display:block;">
+<div class="mask">
       <div class="ca-vipdig-menu">
             <div class="cal-title">
                   <dl> 
@@ -485,6 +485,13 @@
 </div>
 <!--dig-vip end-->
     <script type="text/javascript">
+	         //会员卡弹窗
+			   $(".s-v-card-method > .type6").click(function(){
+				    $(".mask").fadeIn(250)
+				   })
+			   $(".Close,.gy-btn,.bl-btn").click(function(){
+				    $(".mask").fadeOut(250)
+				   });
 	         //设置会员卡样式
 			 $(".ca-memb-defind li").click(function(){
 				    $(this).children("div").addClass("ca-cur")

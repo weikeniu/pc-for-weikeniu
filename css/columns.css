@@ -48,3 +48,71 @@
 .ca-bding-doalog table tr td label{font-size:14px; color:#999; width:100%; text-align:right; float:left;}
 .ca-bding-doalog table tr td p{float:left; margin-left:12px;}
 .ca-bding-doalog table tr td span{margin-top:18px; margin-right:5px;}
+
+/*会员卡管理*/
+.s-v-card-method > .type4{background:#f6fcf7;}
+.s-v-card-method > .type4 .ico{background:url(../images/sugar.png) no-repeat -10px -185px;}
+.s-v-card-method>.type4 .font-color{color:#4bcc5c;}
+.s-v-card-method > .type5{background:#f4f9ff;}
+.s-v-card-method > .type5 .ico{background:url(../images/sugar.png) no-repeat -101px -185px;}
+.s-v-card-method>.type5 .font-color{color:#2093f7;}
+.s-v-card-method > .type6{background:#fef7f7;}
+.s-v-card-method > .type6 .ico{background:url(../images/sugar.png) no-repeat -191px -185px;}
+.s-v-card-method>.type6 .font-color{color:#f46464;}
+.s-v-card-list.s-v-card-list{padding-right:0px;}
+.ca-vip-manager a{margin-right:10px;}
+
+/*设置会员卡 弹窗*/
+.ca-vipdig-menu{width:800px; margin:0 auto; overflow-y:scroll; height:100%}
+.ca-set-vipcard{height:45px; line-height:45px; background:#f1f1f1;}
+.ca-vipdig-menu .cal-title{width:100%;}
+.ca-vip-style{background:#fff;}
+.ca-set-card{padding-top:30px; display:inline-block;}
+.ca-set-card > dl{width:313px; height:202px; background-size:100%; color:#fff; float:left; margin-right:30px;}
+.ca-vbg-yellow{background:url(../images/cards-yellow.png) no-repeat;}
+.ca-vbg-green{background:url(../images/cards-green.png) no-repeat;}
+.ca-vbg-cyan{background:url(../images/cards-cyan.png) no-repeat;}
+.ca-vbg-blue{background:url(../images/cards-blue.png) no-repeat;}
+.ca-vbg-red{background:url(../images/cards-red.png) no-repeat;}
+.ca-vbg-black{background:url(../images/cards-black.png) no-repeat;}
+.ca-vbg-purple{background:url(../images/cards-purple.png) no-repeat;}
+.ca-vip-infor{ padding-top:15px;}
+.ca-vip-infor dt{width:50px; height:50px; border-radius:50%; float:left; margin-right:10px; margin-left:12px;}
+.ca-vip-infor dt img{width:100%; height:100%;}
+.ca-vip-infor dd{text-shadow:2px 2px 1px rgba(0,0,0,0.3);}
+.ca-vip-infor dd p{font-size:20px;}
+.ca-vip-infor dd span{font-size:12px;}
+.ca-vip-idcard{font-size:20px; margin-top:60px; margin-left:12px; text-shadow:2px 2px 1px rgba(0,0,0,0.3);}
+.ca-set-color{float:left; display:inline-block; margin-top:15px; position:relative;}
+.ca-memb-defind{width:280px;}
+.ca-memb-defind li{float:left; width:50px; height:50px; display:block; border-radius:50%; margin:12px 20px 8px 0;}
+.ca-memb-yellow{background:#f3be00;}
+.ca-memb-green{background:#85ba09;}
+.ca-memb-cyan{background:#21afbe;}
+.ca-memb-blue{background:#0a74ce;}
+.ca-memb-red{background:#ba0910;}
+.ca-memb-black{background:#333;}
+.ca-memb-purple{background:#b221be;}
+#ca-memb-custom{border:2px solid #ccc; border-radius:50%; bottom:10px; right:20px; width:46px; height:46px; text-align:center; line-height:46px; color:#333; font-size:14px; position:absolute;}
+#ca-memb-custom input{width:48px; height:48px; position:absolute; left:-1px; top:-1px; opacity:0;}
+.ca-set-vlogo{border:1px solid #ccc; background:#eee; float:left; height:78px; width:78px;  border-radius:50%; color:#666; font-size:14px; margin-left:8px; margin-top:68px; position:relative;}
+.ca-set-vlogo p{text-align:center; margin-top:20px;}
+.ca-set-vlogo input{position:absolute; width:80px; height:80px; top:-1px; right:0px; opacity:0;}
+.ca-memb-level{margin-top:22px; height:auto;}
+.ca-ord-dec{background:url(../images/sugar.png) no-repeat -50px -123px; margin-left:8px;}
+.ca-ord-add{background:url(../images/sugar.png) no-repeat -82px -123px; margin-right:8px;}
+.ca-order-prdmt{line-height:30px; margin-top:10px; display:inline-block; margin-left:30px;}
+.ca-order-prdmt li{margin-top:10px; height:30px;}
+.ca-order-prdmt li > span{color:#222; font-size:14px; float:left;}
+.ca-order-prdmt li > span i{font-style:normal; color:#7d7d7d;}
+.ca-order-prdmt li > div{width:120px; height:30px; border:1px solid #ebebeb; margin:0 10px; border-radius:2px;}
+.ca-order-prdmt li > div p{margin-top:8px; width:12px; height:12px; float:left; display:block;}
+.ca-order-prdmt li > div > span{width:78px; text-align:center;}
+.ca-instrc-books{width:598px; height:148px; border:1px solid #ebebeb; background:#f9f9f9; margin-left:20px; margin-top:8px;}
+.ca-rem-point li{margin-top:10px; margin-left:20px;}
+.ca-rem-point span{font-size:14px; color:#222;}
+.ca-vip-select{width:58px; height:30px; text-align:center; font-size:16px; border:1px solid #ebebeb; background:#f9f9f9; border-radius:2px;}
+.ca-vip-style .cal-btn{ margin:30px auto;}
+.ca-cur{background:url(../images/sugar.png) no-repeat -108px -70px; width:32px; height:32px; margin:0 auto; margin-top:12px;}
+
+

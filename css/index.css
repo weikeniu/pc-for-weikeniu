@@ -1174,7 +1174,7 @@
   font-weight: 100;
   width: 100px;
 }
-.mask .mask-inner .main-box td input[type="text"].sp{
+.mask .mask-inner .main-box td input[type="text"].sp，.mask .mask-inner .main-box td input[type="password"]{
   background: #fff;
   width: 380px;
   height: 45px;

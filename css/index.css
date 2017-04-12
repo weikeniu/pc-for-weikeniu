@@ -486,7 +486,7 @@
   /*padding: 10px 0;*/
  padding-top: 20px;
 }
-.mask .mask-inner .main-box td input[type="text"],.mask .mask-inner .main-box td input[type="password"] {
+.mask .mask-inner .main-box td input[type="text"] {
   border: 1px solid #ebebeb;
   height: 33px;
   border-radius: 2px;
@@ -777,6 +777,7 @@
   font-size: 12px !important;
   font-weight: bold !important;
   height: 36px;
+  text-align: center !important;
 }
 .order-tetails-table td {
   background: #fff;
@@ -1197,7 +1198,7 @@
   font-weight: 100;
   width: 100px;
 }
-.mask .mask-inner .main-box td input[type="text"].sp{
+.mask .mask-inner .main-box td input[type="text"].sp,.mask .mask-inner .main-box td input[type="password"]{
   background: #fff;
   width: 380px;
   height: 45px;

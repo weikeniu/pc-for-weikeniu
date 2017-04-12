@@ -1,3 +1,5 @@
+
+.cal-container-mr{margin-right:30px;}
 .ca-hotel-msg{margin-right:42px;}
 .ca-tips{width:100%; height:38px; border:1px solid #ffcb80; line-height:40px; color:#333; margin-top:20px; margin-bottom:10px; background:#ffffe7; font-size:14px;}
 .ca-tips>span{background:url(../images/sugar.png) no-repeat -10px -120px; width:18px; height:18px; display:block; float:left; margin:11px;}
@@ -107,7 +109,10 @@
 .ca-instrc-books{width:598px; height:148px; border:1px solid #ebebeb; background:#f9f9f9; margin-left:20px; margin-top:8px;}
 .ca-rem-point li{margin-top:10px; margin-left:20px;}
 .ca-rem-point span{font-size:14px; color:#222;}
-.ca-vip-select{width:58px; height:30px; text-align:center; font-size:16px; border:1px solid #ebebeb; background:#f9f9f9; border-radius:2px;}
+.ca-vip-select{width:58px; height:30px; font-size:16px; border:1px solid #ebebeb; background:#f9f9f9; border-radius:2px; text-align:left; padding-left:4px;}
 .ca-cur{background:url(../images/sugar.png) no-repeat -108px -70px; width:32px; height:32px; margin:0 auto; margin-top:12px;}
+
+/*团购管理*/
+.top-menu .ca-togther{padding-left:32px; padding-right:45px; margin-right:0px;}
 
 

@@ -755,6 +755,7 @@
   font-size: 12px !important;
   font-weight: bold !important;
   height: 36px;
+  text-align: center !important;
 }
 .order-tetails-table td {
   background: #fff;

@@ -185,16 +185,17 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 .zone__photoAlbum .pht-products dl dd .flt{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:100%;}
 .zone__photoAlbum .pht-products .cal-pro .cal-edit{background:none!important; cursor:pointer; display:inline-block; margin-left:10px; text-align:center; width:50px;}
 .zone__photoAlbum .pht-products .cal-pro .cal-edit .ico{display:inline-block;background:url(../images/sugar.png) no-repeat -42px -6px; height:20px;width:18px;}
-.zone__photoAlbum .pht-products .cal-pro .cal-edit .txt{display:none; color:#999;font-size:14px; line-height:20px;position:relative;top:-5px;}
+.zone__photoAlbum .pht-products .cal-pro .cal-edit .txt{display:none; color:#999;font-size:14px; line-height:20px;position:relative;top:-2px;}
 .zone__photoAlbum .pht-products .cal-pro .cal-edit:hover .ico{display:none;}
 .zone__photoAlbum .pht-products .cal-pro .cal-edit:hover .txt{display:block;}
-.zone__photoAlbum .pht-products .cal-pro .cal-carbage{background:none!important; cursor:pointer; display:inline-block; margin-left:50px; text-align:center; width:50px;}
+.zone__photoAlbum .pht-products .cal-pro .cal-carbage{float: right; background:none!important; cursor:pointer; display:inline-block; text-align:center; width:50px;}
 .zone__photoAlbum .pht-products .cal-pro .cal-carbage .ico{display:inline-block;background:url(../images/sugar.png) no-repeat -80px -5px; height:20px;width:18px;}
-.zone__photoAlbum .pht-products .cal-pro .cal-carbage .txt{display:none; color:#999;font-size:14px; line-height:20px; position:relative;top:-5px;}
+.zone__photoAlbum .pht-products .cal-pro .cal-carbage .txt{display:none; color:#999;font-size:14px; line-height:20px; position:relative;top:-2px;}
 .zone__photoAlbum .pht-products .cal-pro .cal-carbage:hover .ico{display:none;}
 .zone__photoAlbum .pht-products .cal-pro .cal-carbage:hover .txt{display:block;}
 
 /* 单选checkbox */
+.cp__checkbox-custom{cursor: pointer;}
 .cp__checkbox-custom .checkbox__mask{
 	background:url(../images/icon-multiple-sel.png) no-repeat -51px 0; display:inline-block; margin-top:-3px; vertical-align:middle; height:16px;width:16px; position:relative;
 }
@@ -218,7 +219,14 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 	background:url(../images/icon-upload@1x.png) no-repeat; display:inline-block; height:36px;width:36px;
 }
 .cp__upload-zone .btn__upload label{color:#999;display:block;font-size:14px; line-height:20px;}
-.cp__upload-zone .btn__upload img{display:block;max-width:100%;max-height:100%;width:100%;}
+.cp__upload-zone .btn__upload .imglist{display:block;max-width:100%;max-height:100%;width:100%; position: absolute; left: 0; top: 0;}
+.cp__upload-zone .btn__upload .del__cover{
+	display: none;
+	background:rgba(0,0,0,0.5); filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
+	height: 100%; width: 100%; position: absolute; left: 0; top: 0;
+}
+.cp__upload-zone .btn__upload .del__cover label{color: #fff;}
+.cp__upload-zone .btn__upload:hover .del__cover{display: block;}
 /* }}} */
 
 
@@ -269,61 +277,3 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 	display:inline-block;margin-right:10px;vertical-align:top;height:16px;width:16px;
 }
 .tree-choose .tree-inner dl dd a.checked i{background-position: -70px 0;}
-
-
-/* :::重置系统滚动条样式 */
-.dlg-popup::-webkit-scrollbar {
- width:10px;
- height:10px;
-}
-.dlg-popup::-webkit-scrollbar-button {
- background-color:#fff;
-}
-.dlg-popup::-webkit-scrollbar-track {
- background:#dfdfdf;
- border-radius:5px;
-}
-.dlg-popup::-webkit-scrollbar-track-piece {
-}
-.dlg-popup::-webkit-scrollbar-thumb{
- background:#F2C826;
- border-radius:5px;
-}
-.dlg-popup::-webkit-scrollbar-corner {
- background:#82AFFF;
-}
-.dlg-popup::-webkit-scrollbar-resizer {
- background:#dfdfdf;
-}
-
-
-
-::-webkit-scrollbar {
-	height:6px;
-	width:10px;
-	background:rgba(222,222,222,0.5);
-	transition:all 0.3s ease-in-out;
-	border-radius:8px;
-}
-::-webkit-scrollbar-button {
-	/*display:none*/
-}
-::-webkit-scrollbar-track {
-	background-color: #eee;
-}
-::-webkit-scrollbar-track-piece {
-	background: #eee;
-}
-::-webkit-scrollbar-thumb {
-	width:10px;
-	min-height:15px;
-	background:rgba(0,0,0,0.2);
-	transition:all 0.3s ease-in-out;
-	border-radius:8px;
-}
-::-webkit-scrollbar-thumb:hover {
-	background:rgba(0,0,0,0.3)
-}
-::-webkit-scrollbar-thumb:active {
-	background:rgba(0,0,0,0.3)
-}

@@ -125,9 +125,9 @@
 			<div class="yu-pad20">
 				<div class="inner-type1 ">
 					<div class="top-menu">
-			          <p class="fl left-top-menu"><span></span>退款管理</p>
+			          <p class="fl left-top-menu"><span></span>储值卡管理</p>
 			          <div class="fr yu-tpad30">
-						<div class="yu-add1">
+						<div class="yu-add1 J__btnAddCard">
 				         	<span class="yu-ico"></span>
 				         	添加储值卡
 				         </div>			          	
@@ -135,7 +135,7 @@
 			         
 			        </div>
 					<div class="s-v-card-method">
-						<a href="javascript:;" class="type1">
+						<a href="javascript:;" class="type1 J__btnMemRecharge">
 							<div class="yu-tpad20 yu-lpad30">
 								<p class="ico"></p>
 								<div>
@@ -144,7 +144,7 @@
 								</div>
 							</div>
 						</a>
-						<a href="javascript:;" class="type2">
+						<a href="javascript:;" class="type2 J__btnAddCard">
 							<div class="yu-tpad20 yu-lpad30">
 								<p class="ico"></p>
 								<div>
@@ -185,8 +185,8 @@
 										<td class="yu-orange">480</td>
 										<td>150</td>
 										<td>350</td>
-										<td><div class="tab-btn"></div></td>
-										<td><a href="javascript:;" class="yu-blue">编辑</a></td>
+										<td><div class="tab-btn J__cardStatus"></div></td>
+										<td><a href="javascript:;" class="yu-blue J__btnSetCard">编辑</a></td>
 									</tr>
 									<tr class="even">
 										<td>商务灵通卡</td>
@@ -194,8 +194,8 @@
 										<td class="yu-orange">480</td>
 										<td>150</td>
 										<td>350</td>
-										<td><div class="tab-btn cur"></div></td>
-										<td><a href="javascript:;" class="yu-blue">编辑</a></td>
+										<td><div class="tab-btn cur J__cardStatus"></div></td>
+										<td><a href="javascript:;" class="yu-blue J__btnSetCard">编辑</a></td>
 									</tr>	
 									<tr class="odd">
 										<td>商务灵通卡</td>
@@ -203,8 +203,8 @@
 										<td class="yu-orange">480</td>
 										<td>150</td>
 										<td>350</td>
-										<td><div class="tab-btn"></div></td>
-										<td><a href="javascript:;" class="yu-blue">编辑</a></td>
+										<td><div class="tab-btn J__cardStatus"></div></td>
+										<td><a href="javascript:;" class="yu-blue J__btnSetCard">编辑</a></td>
 									</tr>
 									<tr class="even">
 										<td>商务灵通卡</td>
@@ -212,8 +212,8 @@
 										<td class="yu-orange">480</td>
 										<td>150</td>
 										<td>350</td>
-										<td><div class="tab-btn"></div></td>
-										<td><a href="javascript:;" class="yu-blue">编辑</a></td>
+										<td><div class="tab-btn J__cardStatus"></div></td>
+										<td><a href="javascript:;" class="yu-blue J__btnSetCard">编辑</a></td>
 									</tr>																						
 								</tbody>
 							</table>							
@@ -239,40 +239,42 @@
 			</div>
 		</div>
 	</div>
-	<!-- 设置储值卡 -->
-	<div class="mask">
+	
+	<!-- ……弹窗内容模板.Start -->
+	<!-- 添加储值卡 -->
+	<div class="mask" id="J_dlg_addRechargeCard">
 		<div class="mask-inner type6">
 			<div class="top-box">
-				<p>设置储值卡</p>
+				<p>添加储值卡</p>
 				<p class="mask-close"></p>
 			</div>	
 			<div class="main-box">
-				<div class="yu-bgw yu-pad20">
+				<div class="yu-bgw yu-pad30">
 					<form>
 					<table>
 						<tbody>
 							<tr>
-								<th>储值卡名称</th>
-								<td><input type="text" class="type5" value="商务精选卡"></td>
+								<th style="width: 70px;">储值卡名称</th>
+								<td><input type="text" class="type5" ></td>
 							</tr>
 							<tr>
 								<th>开卡数量</th>
-								<td><input type="text" class="type5" value="100"><span class="company1">张</span></td>
+								<td><input type="text" class="type5" ><span class="company1">张</span></td>
 							</tr>							
 							<tr>
 								<th>储值卡面额</th>
-								<td><input type="text" class="type5" value="800"><span class="company1">元</span></td>
+								<td><input type="text" class="type5" ><span class="company1">元</span></td>
 							</tr>							
 							<tr>
 								<th>储值卡售价</th>
-								<td><input type="text" class="type5" value="760"><span class="company1">元</span>
+								<td><input type="text" class="type5" ><span class="company1">元</span>
 									<span class="yu-font14 yu-c99 yu-lmar10">9.5折</span>
 								</td>
 							</tr>							
 							<tr>
 								<th>使用范围</th>
 								<td>
-									<div class="checkbox-group1">
+									<div class="checkbox-group1 J__chkboxGroup">
 										<div>
 										<div class="fl checkbox-copy cur">
 											<p class="checkbox-copy-ico"></p>
@@ -300,11 +302,11 @@
 							</tr>							
 							<tr>
 								<th>售卖状态</th>
-								<td><div class="tab-btn sp"></div></td>
+								<td><div class="tab-btn sp J__saleSwitch"></div></td>
 							</tr>							
 							<tr>
 								<th>卡密售卖</th>
-								<td><div class="tab-btn cur sp"></div></td>
+								<td><div class="tab-btn cur sp J__saleSwitch"></div></td>
 							</tr>							
 							<tr>
 								<th>&nbsp;</th>
@@ -324,20 +326,106 @@
 			</div>	
 		</div>
 	</div>
-	<!-- end -->
+	
+	<!-- 设置储值卡 -->
+	<div class="mask" id="J_dlg_setRechargeCard">
+		<div class="mask-inner type6">
+			<div class="top-box">
+				<p>设置储值卡</p>
+				<p class="mask-close"></p>
+			</div>	
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<form>
+					<table>
+						<tbody>
+							<tr>
+								<th style="width: 70px;">储值卡名称</th>
+								<td><input type="text" class="type5" value="商务精选卡"></td>
+							</tr>
+							<tr>
+								<th>开卡数量</th>
+								<td><input type="text" class="type5" value="100"><span class="company1">张</span></td>
+							</tr>							
+							<tr>
+								<th>储值卡面额</th>
+								<td><input type="text" class="type5" value="800"><span class="company1">元</span></td>
+							</tr>							
+							<tr>
+								<th>储值卡售价</th>
+								<td><input type="text" class="type5" value="760"><span class="company1">元</span>
+									<span class="yu-font14 yu-c99 yu-lmar10">9.5折</span>
+								</td>
+							</tr>							
+							<tr>
+								<th>使用范围</th>
+								<td>
+									<div class="checkbox-group1 J__chkboxGroup">
+										<div>
+										<div class="fl checkbox-copy cur">
+											<p class="checkbox-copy-ico"></p>
+											<p>酒店订房</p>
+										</div>
+										<div class="fl checkbox-copy">
+											<p class="checkbox-copy-ico"></p>
+											<p>自营餐饮</p>
+										</div>										
+										<div class="fl checkbox-copy cur">
+											<p class="checkbox-copy-ico"></p>
+											<p>团购预售</p>
+										</div>										
+										<div class="fl checkbox-copy">
+											<p class="checkbox-copy-ico"></p>
+											<p>酒店超市</p>
+										</div>										
+										<div class="fl checkbox-copy cur">
+											<p class="checkbox-copy-ico"></p>
+											<p>周边商家</p>
+										</div>																			
+										</div>		
+									</div>
+								</td>
+							</tr>							
+							<tr>
+								<th>售卖状态</th>
+								<td><div class="tab-btn sp J__saleSwitch"></div></td>
+							</tr>							
+							<tr>
+								<th>卡密售卖</th>
+								<td><div class="tab-btn cur sp J__saleSwitch"></div></td>
+							</tr>							
+							<tr>
+								<th>&nbsp;</th>
+								<td>
+									<div class="button-row">
+										<input type="button" value="取消" class="type1 mask-cancel">
+										<input type="submit" value="确定" class="type2">
+									</div>
+								</td>
+							</tr>							
+						
+						</tbody>
+				</table>
+					
+				</form>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
 	<!-- 会员充值 -->
-	<div class="mask">
+	<div class="mask" id="J_dlg_memRecharge">
 		<div class="mask-inner type7">
 			<div class="top-box">
 				<p>会员充值</p>
 				<p class="mask-close"></p>
 			</div>	
 			<div class="main-box">
-			<div class="yu-bgw yu-pad20">
+			<div class="yu-bgw yu-pad30">
 				<form>
 				<table>
 						<tr>
-							<th class="sp">店铺电话</th>
+							<th class="sp" style="width: 60px;">店铺电话</th>
 							<td>
 								<input type="text" class="sp fl yu-rmar10" placeholder="请输入会员手机号">
 							</td>
@@ -363,7 +451,7 @@
 						<tr>
 							<th class="sp">&nbsp;</th>
 							<td>
-									<ul class="money-list">
+									<ul class="money-list J__secRecharge">
 										<li>
 											<p class="yu-c66 yu-font26 yu-tpad5">300</p>
 											<p class="yu-c88 yu-font16">仅售280元</p>
@@ -394,7 +482,7 @@
 						<tr>
 							<th class="sp">&nbsp;</th>
 							<td>
-								<input value="下一步" class="next-btn1" type="button">
+								<input value="下一步" class="next-btn1 J__btnNext" type="button">
 							</td>
 						</tr>										
 				</table>
@@ -404,7 +492,9 @@
 		</div>
 		
 	</div>
-	<div class="mask">
+	
+	<!--会员充值(确认充值信息)-->
+	<div class="mask" id="J_dlg_SureRechargeInfo">
 		<div class="mask-inner type7">
 			<div class="top-box">
 				<p>会员充值</p>
@@ -412,7 +502,7 @@
 			</div>	
 			<div class="main-box">
 				<div class="tip-bar">请与会员核实充值信息，确认无误。</div>
-			<div class="yu-bgw yu-pad20">
+			<div class="yu-bgw yu-pad30">
 
 				<form>
 				<table>
@@ -451,8 +541,8 @@
 							<th class="sp">&nbsp;</th>
 							<td>
 								<div class="button-row">
-									<input type="button" value="返回修改" class="type6 yu-rmar10">
-									<input type="submit" value="发送验证码" class="type7">
+									<input type="button" value="返回修改" class="type6 yu-rmar10 J__btnBackEdit">
+									<input type="button" value="发送验证码" class="type7 J__btnSendCode">
 								</div>
 							</td>
 						</tr>													
@@ -462,8 +552,10 @@
 		</div>				
 		</div>
 		
-	</div>	
-	<div class="mask">
+	</div>
+	
+	<!--会员充值(确认验证码)-->
+	<div class="mask" id="J_dlg_SureVcode">
 		<div class="mask-inner type7">
 			<div class="top-box">
 				<p>会员充值</p>
@@ -471,7 +563,7 @@
 			</div>	
 			<div class="main-box">
 				<div class="tip-bar">验证码已发送到<span class="yu-orange">133315245645</span><br>请会员提供验证码</div>
-			<div class="yu-bgw yu-pad20">
+			<div class="yu-bgw yu-pad30">
 
 				<form>
 				<table>
@@ -502,7 +594,7 @@
 							<td>
 								<div class="button-row">
 									<div class="resent-btn">重发验证码<span>(56s)</span></div>
-									<input type="submit" value="确认充值" class="type7">
+									<input type="button" value="确认充值" class="type7 J__btnSureRecharge">
 								</div>
 							</td>
 						</tr>																			
@@ -513,22 +605,22 @@
 		</div>
 		
 	</div>	
-	<!-- end -->
+	
 	<!-- 会员卡状态 -->
-	<div class="mask">
+	<div class="mask" id="J_dlg_CloseCard">
 		<div class="cal-sure">
-                    <p>是否关闭会员卡状态？</p>
-                    <div class="cal-btn">
-                          <ul>
-                              <li><input type="reset" value="否" class="gy-btn"></li>
-                              <li><input type="button" value="是" class="bl-btn sp"></li>
-                          </ul>
-                    </div>
-              </div>
+            <p>是否关闭会员卡状态？</p>
+            <div class="cal-btn">
+                  <ul>
+                      <li><input type="reset" value="否" class="gy-btn mask-cancel"></li>
+                      <li><input type="button" value="是" class="bl-btn sp J__btnCloseStatus"></li>
+                  </ul>
+            </div>
+        </div>
 	</div>
-	<!-- end -->
+	
 	<!-- 充值成功 -->
-	<div class="mask">
+	<div class="mask" id="J_dlg_successRecharge">
 		<div class="mask-mask">
 			<div class="yu-pad20 yu-overf  type1">
 				<p class="s-ico fl yu-rmar10"></p>
@@ -539,7 +631,94 @@
 			</div>
 		</div>
 	</div>
-	<!-- end -->
+	<script type="text/javascript">
+		/**
+		 *	create by hison
+		 */
+		
+		/** 弹窗控制 */
+		$(function(){
+			//关闭弹窗
+			$(".mask,.mask-close,.mask-cancel").on("click",function(){
+				$(".mask").fadeOut(250);
+			});
+			$(".mask-inner, .cal-sure").click(function(e){
+				e.stopPropagation();
+			});
+			
+			//添加储值卡
+			$(".J__btnAddCard").on("click", function(){
+				$("#J_dlg_addRechargeCard").fadeIn();
+			});
+			//设置储值卡
+			$(".J__btnSetCard").on("click", function(){
+				$("#J_dlg_setRechargeCard").fadeIn();
+			});
+			
+			//会员充值
+			$(".J__btnMemRecharge").on("click", function(){
+				$("#J_dlg_memRecharge").fadeIn();
+				
+				//下一步
+				$(".J__btnNext").on("click", function(){
+					$("#J_dlg_memRecharge").fadeOut(250);
+					$("#J_dlg_SureRechargeInfo").fadeIn();
+					
+					//返回修改、发送验证码
+					$(".J__btnBackEdit").on("click", function(){
+						$("#J_dlg_SureRechargeInfo").fadeOut(250);
+						$("#J_dlg_memRecharge").fadeIn();
+					});
+					$(".J__btnSendCode").on("click", function(){
+						$("#J_dlg_SureRechargeInfo").fadeOut(250);
+						$("#J_dlg_SureVcode").fadeIn();
+						
+						//充值成功
+						$(".J__btnSureRecharge").on("click", function(){
+							$("#J_dlg_SureVcode").fadeOut(250);
+							$("#J_dlg_successRecharge").fadeIn();
+						});
+					});
+				});
+			});
+			
+			//关闭会员卡状态
+			$(".J__cardStatus").on("click", function(){
+				var that = $(this);
+				if($(this).hasClass("cur")){
+					$("#J_dlg_CloseCard").fadeIn();
+					$(".J__btnCloseStatus").on("click", function(){
+						$("#J_dlg_CloseCard").fadeOut(250);
+						that.removeClass("cur");
+					});
+				}
+			});
+			//开启
+			$(".J__cardStatus:not(.cur)").on("click", function(){
+				$(this).addClass("cur");
+			});
+			
+			
+			//设置使用范围
+			$(".J__chkboxGroup .checkbox-copy").on("click", function(){
+				$(this).toggleClass("cur");
+			});
+			
+			//售卖状态|卡密售卖开关
+			$(".J__saleSwitch").on("click", function(){
+				$(this).toggleClass("cur");
+			});
+			
+			//设置充值金额
+			$(".J__secRecharge li").on("click", function(){
+				$(this).addClass("cur").siblings().removeClass("cur");
+			});
+			
+		});
+	</script>
+	<!-- ……弹窗内容模板.End -->
+	
+	
 	<script type="text/javascript">
 		$(function(){
 			//侧导航
@@ -555,10 +734,6 @@
 				$(this).siblings().slideToggle(200);
 				$(this).toggleClass("cur");
 
-			})
-			//
-			$(".copy-checkbox1").on("click",function(){
-				$(this).parent().toggleClass("cur");
 			})
 
 			//翻页按钮

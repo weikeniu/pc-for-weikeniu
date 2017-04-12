@@ -132,7 +132,7 @@
 						<div class="yu-pic1 fl">
 							<img src="images/pic(3).jpg">
 						</div>
-						<div class="fl">
+						<div class="yu-menuSet fl">
 							<div>
 								<p class="fl yu-font26 yu-rmar60">广州桃花江豪生酒店</p>
 								<p class="fl yu-c99 yu-font16">酒店餐饮<span class="yu-orange yu-lrmar10 yu-font26">￥31</span><span class="yu-font14">起送</span></p>
@@ -140,11 +140,11 @@
 							<div class="clear"></div>
 							<ul class="yu-ul-type1">
 								<li class="fl set-mark">
-									<a href="#">
+									<a href="javascript:;">
 										<p class="yu-ico type1"></p>
 										<div class="fl">
 											<p class="yu-c00 yu-tbpad5">设置</p>
-											<p class="yu-c99">酒店基本信息设置</p>
+											<p class="yu-c99 fs14">酒店基本信息设置</p>
 										</div>
 									</a>
 								</li>
@@ -153,7 +153,7 @@
 										<p class="yu-ico type2"></p>
 										<div class="fl">
 											<p class="yu-c00 yu-tbpad5">上传菜单</p>
-											<p class="yu-c99">酒店上传菜单设置</p>
+											<p class="yu-c99 fs14">酒店上传菜单设置</p>
 										</div>
 									</a>
 								</li>								
@@ -161,11 +161,20 @@
 									<a href="#">
 										<p class="yu-ico type3"></p>
 										<div class="fl">
-											<p class="yu-c00 yu-tbpad5">订单管理</p>
-											<p class="yu-c99">酒店订单管理功能</p>
+											<p class="yu-c00 yu-tbpad5">上传相片</p>
+											<p class="yu-c99 fs14">酒店上传相片设置</p>
 										</div>
 									</a>
-								</li>								
+								</li>
+								<li class="fl" id="J_uploadAds">
+									<a href="javascript:;">
+										<p class="yu-ico type4"></p>
+										<div class="fl">
+											<p class="yu-c00 yu-tbpad5">商家广告</p>
+											<p class="yu-c99 fs14">上传商家广告图</p>
+										</div>
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -175,10 +184,8 @@
 								周边餐饮
 							</p>
 							<div class="fr">
-								<label class="fl yu-line35 yu-rmar10">
-									<input type="checkbox" />
-									全选
-								</label>
+								<div class="fl yu-line35 yu-rmar30"><label class="cp__checkbox-custom"><i class="checkbox__mask"><input class="J__chkAll" type="checkbox" name="chkAll" /></i> 全选</label></div>
+								
 								<div class="fl yu-del1 del-mark">删除</div>
 								<div class="fl yu-add1 add-mark"><span class="yu-ico"></span>添加新的商家</div>
 								<div class="fl yu-line35 yu-rmar10">
@@ -192,7 +199,7 @@
                                    </ul>                            
 							</div>
 						</div>
-						<ul class="near-list">
+						<ul class="near-list" id="J__nearList">
 							<li>
 								<div class="copy-checkbox1"></div>
 								<div class="fl yu-rmar10">
@@ -213,8 +220,8 @@
 										<span class="yu-c99 yu-font12">起送</span>
 									</p>
 									<div class="yu-btn-bar1">
-										<p class="yu-rbor">上传菜单</p>
-										<p>订单管理</p>
+										<a class="yu-rbor" href="#">上传菜单</a>
+										<a href="#">上传相片</a>
 
 									</div>
 								</div>
@@ -239,8 +246,8 @@
 										<span class="yu-c99 yu-font12">起送</span>
 									</p>
 									<div class="yu-btn-bar1">
-										<p class="yu-rbor">上传菜单</p>
-										<p>订单管理</p>
+										<a class="yu-rbor" href="#">上传菜单</a>
+										<a href="#">上传相片</a>
 
 									</div>
 								</div>
@@ -265,8 +272,8 @@
 										<span class="yu-c99 yu-font12">起送</span>
 									</p>
 									<div class="yu-btn-bar1">
-										<p class="yu-rbor">上传菜单</p>
-										<p>订单管理</p>
+										<a class="yu-rbor" href="#">上传菜单</a>
+										<a href="#">上传相片</a>
 
 									</div>
 								</div>
@@ -291,8 +298,8 @@
 										<span class="yu-c99 yu-font12">起送</span>
 									</p>
 									<div class="yu-btn-bar1">
-										<p class="yu-rbor">上传菜单</p>
-										<p>订单管理</p>
+										<a class="yu-rbor" href="#">上传菜单</a>
+										<a href="#">上传相片</a>
 
 									</div>
 								</div>
@@ -317,8 +324,8 @@
 										<span class="yu-c99 yu-font12">起送</span>
 									</p>
 									<div class="yu-btn-bar1">
-										<p class="yu-rbor">上传菜单</p>
-										<p>订单管理</p>
+										<a class="yu-rbor" href="#">上传菜单</a>
+										<a href="#">上传相片</a>
 
 									</div>
 								</div>
@@ -343,8 +350,8 @@
 										<span class="yu-c99 yu-font12">起送</span>
 									</p>
 									<div class="yu-btn-bar1">
-										<p class="yu-rbor">上传菜单</p>
-										<p>订单管理</p>
+										<a class="yu-rbor" href="#">上传菜单</a>
+										<a href="#">上传相片</a>
 
 									</div>
 								</div>
@@ -377,6 +384,9 @@
 			</div>
 		</div>
 	</div>
+	
+	<!-- ……弹窗内容模板.Start -->
+	<!--添加新商家-->
 	<div class="mask add-mark-mask">
 		<div class="mask-inner type1">
 			<div class="top-box">
@@ -384,50 +394,75 @@
 				<p class="mask-close"></p>
 			</div>
 			<div class="main-box">
-				<div class="yu-bgw yu-pad20">
+				<div class="yu-bgw yu-pad30">
 					<form>
 					<table>
 						<tr>
 							<th>商家名称</th>
 							<td><input type="text" class="type1" /></td>
 							<td>
-								<span class="yu-font14 yu-c99 yu-cblue">0</span>
-								<span class="yu-font14 yu-c99">/12字</span>
-							</td>
-						</tr>
-						<tr>
-							<th>起送价格</th>
-							<td>
-								<input type="text" class="type2" />
-								<span class="yu-font14 yu-c99">￥</span>
+								<div class="ff-vd">
+									<span class="yu-font14 yu-c99">建议输入<span class="yu-cblue">12</span>字</span>
+								</div>
 							</td>
 						</tr>
 						<tr>
 							<th>距离酒店</th>
 							<td>
-								<div class="yu-bgf7 yu-overf yu-pad10">
+								<div class="yu-overf">
 									<p class="fl yu-rmar10">
-										<input type="text" class="type3" />
-										<span class="yu-font14 yu-c99">km</span>
+										<input type="text" class="type1" style="width: 100px;" />
+										<span class="yu-font14 yu-c99 ml__5">km</span>
 									</p>
-									<p class="fl">
-										<input type="text" class="type3" />
-										<span class="yu-font14 yu-c99">分钟</span>
+									<p class="fl ml__20">
+										<input type="text" class="type1" style="width: 100px;" />
+										<span class="yu-font14 yu-c99 ml__5">分钟</span>
 									</p>
 								</div>
 							</td>
 						</tr>
 						<tr>
-							<th>选择图片</th>
+							<th>起送价格</th>
+							<td>
+								<input type="text" class="type1"  style="width: 100px;" />
+								<span class="yu-font14 yu-c99 ml__5">￥</span>
+							</td>
+						</tr>
+						<tr>
+							<th>支付方式</th>
+							<td>
+								<ul class="cp__ui-checkbox">
+									<li class="item on"><i></i>微信支付</li>
+									<li class="item"><i></i>货到付款</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>默认餐饮</th>
+							<td>
+								<ul class="s-h-select" style="padding-top: 0;">
+									<li class="cur">
+										<span class="ico fl"></span>
+										<span class="fl">将该商家设为酒店的默认餐饮</span>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th class="v__top">商家封面</th>
 							<td>
 								<div>
-									<input type="file" class="file-btn yu-disN"/>
-									<div class="file-copy fl">
-										<p></p>
+									<div class="cp__upload-zone fl">
+										<input class="ipt__upload" type="file" />
+										<div class="v__middle">
+											<div class="btn__upload">
+												<i class="ico"></i>
+												<label>添加图片</label>
+											</div>
+										</div>
 									</div>
 									<p class="fl">
-										<span class="yu-cblue">*</span>
-										<span class="yu-c99 yu-font14">支持PNG、JPG格式</span>
+										<div class="ff-vd"><span class="yu-cblue">*</span><span class="yu-c99 yu-font14">支持PNG、JPG格式</span></div>
 									</p>
 								</div>
 							</td>
@@ -449,39 +484,45 @@
 			</div>
 		</div>
 	</div>
+	
 	<div class="mask  del-mark-mask">
 		<div class="mask-inner type2">
-			<div class="main-box yu-tbpad10">
-				<div class="yu-bgw yu-pad20">
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
 					<p class="yu-bmar20">确定删除产品吗？</p>
 					<div class="button-row">
-									<input type="button" value="取消" class="type1 mask-cancel">
-									<input type="button" value="确定" class="type2">
-								</div>
+						<input type="button" value="取消" class="type1 mask-cancel">
+						<input type="button" value="确定" class="type2">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="mask set-mark-mask" style="display: block;">
+	
+	<!--商家设置-->
+	<div class="mask set-mark-mask">
 		<div class="mask-inner type3">
 			<div class="top-box">
-				<p>店铺设置</p>
+				<p>商家设置</p>
 				<p class="mask-close"></p>
 			</div>
 			<div class="main-box">
-			<div class="yu-bgw yu-pad20">
+			<div class="yu-bgw yu-pad30">
 				<form>
 					<table>
 						<tr>
-							<th>店铺电话</th>
+							<th>商家名称</th>
 							<td>
-								<input type="text" class="type4 fl yu-rmar10">
+								<input type="text" class="type4 fl yu-rmar10 J__wordWrite">
+								<div class="ff-vd" style="line-height: 36px;;">
+									<span class="yu-font14 yu-c99">建议输入<span class="yu-cblue">12</span>字</span>
+								</div>
 							</td>
 						</tr>
 						
-						<tr>
+						<!--<tr>
 							<th>上传广告</th>
-							<!--<td>
+							<td>
 								<div class="ad-box">
 									<div class="ad-img-box">
 										<div class="state1">
@@ -507,7 +548,7 @@
 										
 									</div>
 								</div>
-							</td>-->
+							</td>
 							<td>
 								<div class="ad-img-box2">
 									<div class="inner state1">
@@ -515,7 +556,7 @@
 									</div>
 								</div>
 							</td>
-						</tr>
+						</tr>-->
 						<!--<tr>
 							<th>&nbsp;</th>
 							<td>
@@ -567,7 +608,7 @@
 								</div>
 							</td>
 						</tr>-->
-						<tr>
+						<!--<tr>
 							<th>&nbsp;</th>
 							<td>
 								<div class="ad-img-box2 fl yu-rmar10">
@@ -589,7 +630,7 @@
 									</div>
 								</div>
 							</td>
-						</tr>
+						</tr>-->
 						<tr>
 							<th>店铺地址</th>
 							<td>
@@ -615,7 +656,7 @@
 						</tr>
 						<tr>
 							<th>&nbsp;</th>
-							<td><input type="text" class="type4"></td>
+							<td><input type="text" class="type4" style="width: 446px;"></td>
 						</tr>
 						<tr>
 							<th>地理位置</th>
@@ -631,7 +672,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr>
+						<!--<tr>
 							<th>打包费用</th>
 							<td>
 								<input type="text" placeholder="请输入"/>
@@ -650,7 +691,7 @@
 									<p>取消</p>
 								</div>
 							</td>
-						</tr>
+						</tr>-->
 						<tr>
 							<th>&nbsp;</th>
 							<td>
@@ -668,6 +709,181 @@
 		</div>
 		
 	</div>
+	
+	<!--商家广告-->
+	<div class="mask ads-mark-mask">
+		<div class="mask-inner">
+			<div class="top-box">
+				<p>商家广告</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+			<div class="yu-bgw yu-pad30">
+				<p class="yu-c99 yu-font14" style="margin-bottom: 20px;">设置广告图，可以在已添加的店铺首页中展示，最多3张，不上传图片时将被隐藏。</p>
+				<table>
+					<tr>
+						<th class="v__top" style="width: 42px;">第一张</th>
+						<td>
+							<div>
+								<div class="cp__upload-zone cp__upload-zoneBig fl unUpload">
+									<input class="ipt__upload" type="file" />
+									<div class="v__middle">
+										<div class="btn__upload">
+											<i class="ico"></i>
+											<label>添加图片</label>
+											<label class="ff-hv mt__10">图片尺寸大小：640px*320px</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="v__top">第二张</th>
+						<td>
+							<div>
+								<div class="cp__upload-zone cp__upload-zoneBig fl unUpload" style="display: none;">
+									<input class="ipt__upload" type="file" />
+									<div class="v__middle">
+										<div class="btn__upload">
+											<i class="ico"></i>
+											<label>添加图片</label>
+											<label class="ff-hv mt__10">图片尺寸大小：640px*320px</label>
+										</div>
+									</div>
+								</div>
+								<div class="cp__upload-zone cp__upload-zoneBig fl isUpload">
+									<div class="v__middle">
+										<div class="btn__upload">
+											<img class="imglist" src="images/ads-img.jpg" />
+											<div class="del__cover">
+												<img src="images/icon-del@2x.png" style="margin-top: 60px;" />
+												<label>删除图片</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="v__top">第三张</th>
+						<td>
+							<div>
+								<div class="cp__upload-zone cp__upload-zoneBig fl unUpload" style="display: none;">
+									<input class="ipt__upload" type="file" />
+									<div class="v__middle">
+										<div class="btn__upload">
+											<i class="ico"></i>
+											<label>添加图片</label>
+											<label class="ff-hv mt__10">图片尺寸大小：640px*320px</label>
+										</div>
+									</div>
+								</div>
+								<div class="cp__upload-zone cp__upload-zoneBig fl isUpload">
+									<div class="v__middle">
+										<div class="btn__upload">
+											<img class="imglist" src="images/ads-img.jpg" />
+											<div class="del__cover">
+												<img src="images/icon-del@2x.png" style="margin-top: 60px;" />
+												<label>删除图片</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>&nbsp;</th>
+						<td>
+							<div class="button-row">
+								<input type="button" value="取消" class="type1 mask-cancel">
+								<input type="submit" value="保存" class="type2">
+							</div>
+							
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".cp__upload-zone.isUpload").on("click", function(){
+					$(this).siblings(".unUpload").show();
+					$(this).remove();
+				});
+			});
+		</script>
+	</div>
+	<script type="text/javascript">
+		/** 弹窗控制 */
+		$(function(){
+			//关闭弹窗
+			$(".mask,.mask-close,.mask-cancel").on("click",function(){
+				$(".mask").fadeOut(250);
+			});
+			$(".mask-inner").click(function(e){
+				e.stopPropagation();
+			});
+			
+			//添加新的商家
+			$(".add-mark").on("click",function(){
+				$(".add-mark-mask").fadeIn();
+			});
+			
+			//删除
+			$(".del-mark").on("click",function(){
+				$(".del-mark-mask").fadeIn();
+			});
+			
+			//商家设置
+			$(".set-mark").on("click",function(){
+				$(".set-mark-mask").fadeIn();
+			});
+			
+			//商家广告
+			$("#J_uploadAds").on("click",function(){
+				$(".ads-mark-mask").fadeIn();
+			});
+			
+		});
+		
+		/** 控制函数 */
+		$(function(){
+			//全选控制
+			$(".J__chkAll").on("click", function(){
+				if($(this).is(":checked")){
+					$(this).parent(".checkbox__mask").addClass("on"); //checkbox全选控制
+					$("#J__nearList .copy-checkbox1").parent().addClass("cur");
+				}else{
+					$(this).parent(".checkbox__mask").removeClass("on"); //checkbox全选控制
+					$("#J__nearList .copy-checkbox1").parent().removeClass("cur");
+				}
+			});
+			$("#J__nearList .copy-checkbox1").on("click", function(){
+				$(this).parent().toggleClass("cur");
+				
+				var count = $("#J__nearList .copy-checkbox1").size();
+				var i = 0;
+				$("#J__nearList .copy-checkbox1").each(function(){
+					if($(this).parent().hasClass("cur")){
+						i++;
+					}
+				});
+				if(count == i){
+					$(".J__chkAll").prop("checked", true);
+					$(".J__chkAll").parent(".checkbox__mask").addClass("on"); //checkbox全选控制
+				}else{
+					$(".J__chkAll").prop("checked", false);
+					$(".J__chkAll").parent(".checkbox__mask").removeClass("on"); //checkbox全选控制
+				}
+			});
+		});
+	</script>
+	<!-- ……弹窗内容模板.End -->
+	
 	<script type="text/javascript">
 		$(function(){
 			//侧导航
@@ -683,10 +899,6 @@
 				$(this).siblings().slideToggle(200);
 				$(this).toggleClass("cur");
 
-			})
-			//
-			$(".copy-checkbox1").on("click",function(){
-				$(this).parent().toggleClass("cur");
 			})
 
 			//翻页按钮
@@ -713,35 +925,12 @@
 
 				}
 			});
-			//mask通用操作
-			$(".mask,.mask-close,.mask-cancel").on("click",function(){
-				$(".mask").fadeOut();
-			})
-			$(".mask-inner").click(function(e){
-				e.stopPropagation();
-			})
 			
-			//添加新的商家
-			$(".add-mark").on("click",function(){
-				$(".add-mark-mask").fadeIn();
-			})
-			$(".file-copy").click(function(){
-				$(".file-btn").click();
-			})
-			//删除
-			$(".del-mark").on("click",function(){
-				$(".del-mark-mask").fadeIn();
-			})
 			//仿下拉
 			$(".select-copy").on("click",function(){
 				$(this).siblings(".select-real").show().attr("size",5);
 				$(this).children(".select-copy-j").toggleClass("cur");
-			})
-			//商家设置
-			$(".set-mark").on("click",function(){
-				$(".set-mark-mask").fadeIn();
-			})
-			//修改
+			});
 			
 		})
 	</script>

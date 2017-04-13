@@ -244,7 +244,7 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 .dlg-createAccount .dlg-main .main-box{overflow-y:auto;height:550px;}
 .dlg-createDpt .dlg-main{margin:-230px 0 0 -260px;height:500px;width:520px;}
 .dlg-createDpt .dlg-main .main-box{overflow-y:auto;height:420px;}
-.dlg-editLgPwd .dlg-main, .dlg-editPayPwd .dlg-main{margin:-160px 0 0 -260px;height:320px;width:520px;}
+.dlg-editLgPwd .dlg-main, .dlg-editPayPwd .dlg-main{margin:-160px 0 0 -260px;height:320px;width:530px;}
 .dlg-forgetPwd .dlg-main, .dlg-forgetPayPwd .dlg-main{margin:-130px 0 0 -260px;height:260px;width:520px;}
 .dlg-moveDpt .dlg-main{margin:-200px 0 0 -170px;height:350px;width:340px;}
 .dlg-moveDpt .dlg-main .main-box{overflow-y:auto;height:350px;}
@@ -269,6 +269,7 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 	display:inline-block;margin-right:10px;vertical-align:top;height:16px;width:16px;
 }
 .tree-choose .tree-inner dl dt.on i{background-position: -70px 0;}
+.tree-choose .tree-inner dl dt.disabled{cursor: not-allowed;}
 .tree-choose .tree-inner dl dd{border-left:1px solid #d7d7d7; margin-left:8px;padding:5px 0 20px;}
 .tree-choose .tree-inner dl dd a{color:#666;display:block;font-size:14px;margin-top:10px;line-height:16px; position:relative;}
 .tree-choose .tree-inner dl dd a .line{border-bottom:1px solid #d7d7d7;display:inline-block;margin-top:-5px;vertical-align:middle;height:1px;width:20px;}
@@ -277,3 +278,4 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 	display:inline-block;margin-right:10px;vertical-align:top;height:16px;width:16px;
 }
 .tree-choose .tree-inner dl dd a.checked i{background-position: -70px 0;}
+.tree-choose .tree-inner dl dd a.disabled{cursor: not-allowed;}

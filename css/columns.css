@@ -46,7 +46,7 @@
 .ca-bding-doalog{width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
 .ca-bding-doalog table{margin-top:20px;}
 .ca-bding-doalog table tr{line-height:52px;}
-.ca-bding-doalog table tr td input{ width:203px; height:33px; line-height:35px; border:1px solid #ddd;  margin-left:12px; padding-left:10px; font-size:14px; color:#333; background:#f9f9f9; border-radius:2px;}
+.ca-bding-doalog table tr td input{ width:215px; height:33px; line-height:35px; border:1px solid #ddd;  margin-left:12px; padding-left:10px; font-size:14px; color:#333; background:#f9f9f9; border-radius:2px;}
 .ca-bding-doalog table tr td label{font-size:14px; color:#999; width:100%; text-align:right; float:left;}
 .ca-bding-doalog table tr td p{float:left; margin-left:12px;}
 .ca-bding-doalog table tr td span{margin-top:18px; margin-right:5px;}

@@ -347,7 +347,7 @@
 								<div class="tree-choose">
 									<div class="tree-inner" id="J__treeChoose">
 										<dl>
-											<dt class="on"><i></i>订单处理</dt>
+											<dt class="on disabled"><i></i>订单处理</dt>
 											<dd>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
@@ -358,7 +358,7 @@
 											<dd>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>修改价格</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>取消订单</a>
-												<a href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
+												<a class="disabled" href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
 												<a href="javascript:;"><em class="line"></em><i></i>同意退货/换货/维修/补寄</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>拒绝申请</a>
 												<a href="javascript:;"><em class="line"></em><i></i>同意订金退给买家</a>
@@ -434,7 +434,7 @@
 								<div class="tree-choose">
 									<div class="tree-inner" id="J__treeChoose">
 										<dl>
-											<dt class="on"><i></i>订单处理</dt>
+											<dt class="on disabled"><i></i>订单处理</dt>
 											<dd>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
@@ -445,7 +445,7 @@
 											<dd>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>修改价格</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>取消订单</a>
-												<a href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
+												<a class="disabled" href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
 												<a href="javascript:;"><em class="line"></em><i></i>同意退货/换货/维修/补寄</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>拒绝申请</a>
 												<a href="javascript:;"><em class="line"></em><i></i>同意订金退给买家</a>
@@ -493,7 +493,7 @@
 								<div class="tree-choose">
 									<div class="tree-inner" id="J__treeChoose">
 										<dl>
-											<dt class="on"><i></i>订单处理</dt>
+											<dt class="on disabled"><i></i>订单处理</dt>
 											<dd>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
@@ -504,7 +504,7 @@
 											<dd>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>修改价格</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>取消订单</a>
-												<a href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
+												<a class="disabled" href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
 												<a href="javascript:;"><em class="line"></em><i></i>同意退货/换货/维修/补寄</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>拒绝申请</a>
 												<a href="javascript:;"><em class="line"></em><i></i>同意订金退给买家</a>
@@ -552,7 +552,7 @@
 								<div class="tree-choose">
 									<div class="tree-inner" id="J__treeChoose">
 										<dl>
-											<dt class="on"><i></i>订单处理</dt>
+											<dt class="on disabled"><i></i>订单处理</dt>
 											<dd>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
@@ -563,7 +563,7 @@
 											<dd>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>修改价格</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>取消订单</a>
-												<a href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
+												<a class="disabled" href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
 												<a href="javascript:;"><em class="line"></em><i></i>同意退货/换货/维修/补寄</a>
 												<a class="checked" href="javascript:;"><em class="line"></em><i></i>拒绝申请</a>
 												<a href="javascript:;"><em class="line"></em><i></i>同意订金退给买家</a>
@@ -602,7 +602,7 @@
 					<form>
 					<table>
 						<tr>
-							<th>原密码</th>
+							<th style="width: 70px;">原密码</th>
 							<td><input type="password" class="type1 input-250" value="789fds78" /> <span class="yu-font14 ml--10"><a class="yu-cblue J__forgetPwd" href="javascript:;">找回密码</a></span></td>
 						</tr>
 						<tr>
@@ -909,7 +909,7 @@
 		/** 控制函数 */
 		$(function(){
 			//树节点控制
-			$("#J__treeChoose dl dt").on("click", function(){
+			$("#J__treeChoose dl dt:not(.disabled)").on("click", function(){
 				if($(this).hasClass("on")){
 					$(this).removeClass("on");
 					$(this).siblings("dd").children("a").removeClass("checked");
@@ -918,7 +918,7 @@
 					$(this).siblings("dd").children("a").addClass("checked");
 				}
 			});
-			$("#J__treeChoose dl dd a").on("click", function(){
+			$("#J__treeChoose dl dd a:not(.disabled)").on("click", function(){
 				$(this).toggleClass("checked");
 				
 				var count = $(this).parents("dl").find("dd a").size();

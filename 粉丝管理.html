@@ -210,6 +210,7 @@
 			</div>
 		</div>
   </div>
+  
  <!--绑定会员卡 弹框-->
   <div class="ca-bding-doalog">
        <form action=""; method="get">
@@ -246,43 +247,36 @@
   </div>
   <!--ca-bding-doalog end-->
 	<script type="text/javascript">
-	        //鼠标经搜索框
-			//$('.my-search-btn').mouseover(function(){
-				  // $(this).css({'background':'#2093f7','color':'#fff',})
-				//})
-			//$('.my-search-btn').mouseout(function(){
-				   //$(this).css({'background':'#f2f2f2','color':'#666'})
-				//})
-	        //绑定弹框
-			$('.ca-bding-btn').click(function(){
-				var that = $(this);
-				  if($(this).hasClass('ca-bding-btn-tips')){
-					         $('.ca-bding-doalog').hide()
-					     }else{
-							 $('.ca-bding-doalog').show()
-						 }
-				 //弹框关闭
-				  $('.Close,.gy-btn,.bl-btn').click(function(){
-				        $('.ca-bding-doalog').css('display','none')
-				  })
-				  //绑定按钮状态改变
-				  $('.bl-btn').click(function(){
-					    that.addClass('ca-bding-btn-tips')
-					    that.removeClass('ca-bding-btn')
-				   })
-			})
-	         //选择框
-		    $('.no-chose').click(function(){
-				$(this).toggleClass('ca-done-chosed')
-				$(this).parents().siblings().children().removeClass('ca-done-chosed')
-				
-				    $(this).parent().addClass('yu-c33')
-					$(this).parent().siblings().removeClass('yu-c33')
-				 
-				
-			})
+        //绑定弹框
+		$('.ca-bding-btn').click(function(){
+			var that = $(this);
+			  if($(this).hasClass('ca-bding-btn-tips')){
+				         $('.ca-bding-doalog').hide()
+				     }else{
+						 $('.ca-bding-doalog').show()
+					 }
+			 //弹框关闭
+			  $('.Close,.gy-btn,.bl-btn').click(function(){
+			        $('.ca-bding-doalog').css('display','none')
+			  })
+			  //绑定按钮状态改变
+			  $('.bl-btn').click(function(){
+				    that.addClass('ca-bding-btn-tips')
+				    that.removeClass('ca-bding-btn')
+			   })
+		})
+         //选择框
+	    $('.no-chose').click(function(){
+			$(this).toggleClass('ca-done-chosed')
+			$(this).parents().siblings().children().removeClass('ca-done-chosed')
 			
+			    $(this).parent().addClass('yu-c33')
+				$(this).parent().siblings().removeClass('yu-c33')
+			 
+			
+		})
 	</script>
+	
 	<script type="text/javascript">
 	    $(function(){
 			//侧导航

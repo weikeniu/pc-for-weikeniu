@@ -911,6 +911,7 @@
   border: 0 ;
   background: url(../images/sugar.png) no-repeat -171px -5px;
 }
+.cur.disabled .checkbox-copy-ico{background:url(../images/icon-chkbox-disabled-on.png) no-repeat;}
 .checkbox-copy {
   margin-right: 10px;
 }

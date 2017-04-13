@@ -269,7 +269,7 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 	display:inline-block;margin-right:10px;vertical-align:top;height:16px;width:16px;
 }
 .tree-choose .tree-inner dl dt.on i{background-position: -70px 0;}
-.tree-choose .tree-inner dl dt.disabled{cursor: not-allowed;}
+.tree-choose .tree-inner dl dt.disabled i{background:url(../images/icon-chkbox-disabled-on.png) no-repeat;cursor: not-allowed;}
 .tree-choose .tree-inner dl dd{border-left:1px solid #d7d7d7; margin-left:8px;padding:5px 0 20px;}
 .tree-choose .tree-inner dl dd a{color:#666;display:block;font-size:14px;margin-top:10px;line-height:16px; position:relative;}
 .tree-choose .tree-inner dl dd a .line{border-bottom:1px solid #d7d7d7;display:inline-block;margin-top:-5px;vertical-align:middle;height:1px;width:20px;}
@@ -278,4 +278,4 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 	display:inline-block;margin-right:10px;vertical-align:top;height:16px;width:16px;
 }
 .tree-choose .tree-inner dl dd a.checked i{background-position: -70px 0;}
-.tree-choose .tree-inner dl dd a.disabled{cursor: not-allowed;}
+.tree-choose .tree-inner dl dd a.disabled i{background:url(../images/icon-chkbox-disabled-on.png) no-repeat;cursor: not-allowed;}

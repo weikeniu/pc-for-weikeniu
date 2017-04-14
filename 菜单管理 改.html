@@ -10,6 +10,7 @@
 
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
+
 </head>
 <body>
 	<div class="top-bar">
@@ -217,7 +218,6 @@
                                  <li class="add-pro">
                                      <a href="#"><dl>
                                             <dt><p class="cal-bg"></p><span>添加产品</span></dt>
-                                            <dd></dd>
                                       </dl></a>
                                  </li>
                             </ul>
@@ -551,67 +551,60 @@
 				$(".up-load-mask").fadeIn();
 			})
 			//cassiel
-
-	/*去掉右边距*/
-	function del4margin(x) {
-    var ObjLi = document.getElementById("cal-list").getElementsByTagName("li");
-    for (var i = 1; i < ObjLi.length; i++) {
-        if (i % x == 0 && i !== 0) {
-           ObjLi[i-1].style.marginRight = "0";
-        }
-    }
-}
-    window.onload = del4margin(4);
-	/*去掉右边距*/
 	
-	 $('.curren').click(function(){
-		 $(this).toggleClass("cal-ture");
-});
+			$('.curren').click(function(){
+				$(this).toggleClass("cal-ture");
+			});
 
 
-	$('.no-chose').click(function(){
-	   $(this).toggleClass('do-chose')
-});
-
-     
-	 $('.cal-edit').click(function(){
-	     $('.edt-dialog').show();
-	})
-     $('.Close,.gy-btn,.bl-btn').click(function(){
-		 $('.edt-dialog').css('display','none')
-	})
-	
-
-	 $('.cal-move').click(function(){
-	     $('.cal-pop').css('display','block')
-		})
-     $('.Close,.gy-btn,.bl-btn').click(function(){
-		 $('.cal-pop').css('display','none')
-	})
-	
-	
-	 $('.cal-carbage').click(function(){
-		 $('.rem-dialog').css('display','block')
-	})
-	 $('.gy-btn,.bl-btn').click(function(){
-		 $('.rem-dialog').css('display','none')
-	})
-	  
-  var Caltimer=null;
-  function setShow(){
-  	window.clearTimeout(Caltimer);	
-	$('.state-mlayer').show();
-    Caltimer=window.setTimeout(
-        function(){
-           $('.state-mlayer').hide();
-        },1000);
-
-  }
-
-  $(".bl-btn.sp").click(function(){
-  	setShow();
-  })		
-
+			$('.no-chose').click(function(){
+			   $(this).toggleClass('do-chose')
+			});
+		
+		     
+			 $('.cal-edit').click(function(){
+			     $('.edt-dialog').show();
+			})
+		     $('.Close,.gy-btn,.bl-btn').click(function(){
+				 $('.edt-dialog').css('display','none')
+			})
+			
+		
+			 $('.cal-move').click(function(){
+			     $('.cal-pop').css('display','block')
+				})
+		     $('.Close,.gy-btn,.bl-btn').click(function(){
+				 $('.cal-pop').css('display','none')
+			})
+			
+			
+			 $('.cal-carbage').click(function(){
+				 $('.rem-dialog').css('display','block')
+			})
+			 $('.gy-btn,.bl-btn').click(function(){
+				 $('.rem-dialog').css('display','none')
+			})
+		  
+			var Caltimer=null;
+			function setShow(){
+			  	window.clearTimeout(Caltimer);	
+				$('.state-mlayer').show();
+			    Caltimer=window.setTimeout(
+			        function(){
+			           $('.state-mlayer').hide();
+			    },1000);
+			
+			}
+			
+			$(".bl-btn.sp").click(function(){
+			  	setShow();
+			})		
+			
+			
+			//新增js部分
+			//在产品区新增一层div
+			$("#cal-list ul li").wrap("<div class='wrap__item'></div>")
+			
 		})
 	</script>
 </body>

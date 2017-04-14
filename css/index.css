@@ -1622,8 +1622,8 @@ a{text-decoration:none;}
 
 .state-mlayer{width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; font-family:'宋体'; display:none;}
 .state-suc{background:rgba(0,0,0,0.7); width:300px; height:60px; line-height:60px; position:absolute; top:45.95%; left:40%;}
-.state-suc dl dt{background:url(../images/sugar.png) no-repeat  -44px -33px; width:25px; height:25px; display:block; float:left; margin:18px 6px 18px 20px;}
-.state-suc dl dt.info{background: url(../images/icon__tips-info.png) no-repeat;}
+.state-suc dl dt{/*background:url(../images/sugar.png) no-repeat  -44px -33px;*/ width:25px; height:25px; display:block; float:left; margin:18px 6px 18px 20px;}
+.state-suc dl dt{background: url(../images/icon__tips-info.png) no-repeat;}
 .state-suc dl dd{color:#fff; font-size:14px;}
 /*cassiel部分*/
 
@@ -1861,3 +1861,31 @@ a{text-decoration:none;}
 ::-webkit-scrollbar-thumb:active {
 	background:rgba(0,0,0,0.3)
 }
+
+
+
+/* :::媒体查询区域 */
+/*菜单管理*/
+.pht-products .wrap__item{float: left; text-align: center;}
+.pht-products li {margin:0 10px 30px; float: none; display: inline-block;}
+@media (max-width: 1680px){
+	.pht-products .wrap__item {
+		width: calc(25%); width:-moz-calc(25%); width: -webkit-calc(25%);
+	}
+}
+@media (max-width: 1440px){
+	.pht-products .wrap__item {
+		width: calc(33.3%); width:-moz-calc(33.3%); width: -webkit-calc(33.3%);
+	}
+}
+@media (max-width: 1240px){
+	.pht-products .wrap__item {
+		width: calc(50%); width:-moz-calc(50%); width: -webkit-calc(50%);
+	}
+}
+@media (max-width: 1024px){
+	.pht-products .wrap__item {
+		width: calc(100%); width:-moz-calc(100%); width: -webkit-calc(100%);
+	}
+}
+

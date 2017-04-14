@@ -133,7 +133,7 @@
 							<img src="images/pic(3).jpg">
 						</div>
 						<div class="yu-menuSet fl">
-							<div>
+							<div class="hotel__tit">
 								<p class="fl yu-font26 yu-rmar60">广州桃花江豪生酒店</p>
 								<p class="fl yu-c99 yu-font16">酒店餐饮<span class="yu-orange yu-lrmar10 yu-font26">￥31</span><span class="yu-font14">起送</span></p>
 							</div>
@@ -847,6 +847,11 @@
 			$("#J_uploadAds").on("click",function(){
 				$(".ads-mark-mask").fadeIn();
 			});
+			
+			
+			//新增js部分
+			//在产品区新增一层div
+			$("#J__nearList li").wrap("<div class='wrap__item'></div>")
 			
 		});
 		

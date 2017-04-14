@@ -280,7 +280,7 @@
 .near-list {
   overflow: hidden;
 }
-.near-list > li {
+.near-list li {
   position: relative;
   width: 360px;
   height: 130px;
@@ -291,8 +291,8 @@
   margin-bottom: 30px;
   float: left;
 }
-.near-list > .cur,
-.near-list > li:hover {
+.near-list .cur,
+.near-list li:hover {
   border: 1px solid #2093f7;
 }
 .copy-checkbox1 {
@@ -1868,4 +1868,97 @@ a{text-decoration:none;}
 }
 ::-webkit-scrollbar-thumb:active {
 	background:rgba(0,0,0,0.3)
+}
+
+
+
+/* :::媒体查询区域 */
+/*菜单管理*/
+.pht-products .wrap__item{float: left; text-align: center;}
+.pht-products li {margin:0 10px 30px; float: none; display: inline-block;}
+@media (max-width: 1680px){
+	.pht-products .wrap__item {
+		width: calc(25%); width:-moz-calc(25%); width: -webkit-calc(25%);
+	}
+}
+@media (max-width: 1440px){
+	.pht-products .wrap__item {
+		width: calc(33.3%); width:-moz-calc(33.3%); width: -webkit-calc(33.3%);
+	}
+}
+@media (max-width: 1240px){
+	.pht-products .wrap__item {
+		width: calc(50%); width:-moz-calc(50%); width: -webkit-calc(50%);
+	}
+}
+@media (max-width: 1024px){
+	.pht-products .wrap__item {
+		width: calc(100%); width:-moz-calc(100%); width: -webkit-calc(100%);
+	}
+}
+
+/*index商家管理*/
+/*顶部商家菜单自适应*/
+.yu-main{position: relative; padding-right: 30px;}
+.yu-menuSet{width: auto;}
+@media (max-width: 1560px){
+	.yu-menuSet{width: 100%;}
+	.yu-menuSet .hotel__tit{position: absolute; left: 340px; top:30px;}
+	.yu-menuSet .hotel__tit p{float: none; margin-top: 10px;}
+	.yu-ul-type1 li{width:24.8%;margin-right: -1px; margin-top: -1px;}
+}
+@media (max-width: 1090px){
+	.yu-menuSet{width: 100%;}
+	.yu-menuSet .hotel__tit{position: absolute; left: 340px; top:30px;}
+	.yu-menuSet .hotel__tit p{float: none; margin-top: 10px;}
+	.yu-ul-type1 li{width:49.5%;margin-right: -1px; margin-top: -1px;}
+}
+
+.near-list .wrap__item{float: left; text-align: center;}
+.near-list li{margin:0 10px 30px!important;float: none; display: inline-block;}
+@media (max-width: 1680px){
+	.near-list .wrap__item {
+		width: calc(33.3%); width:-moz-calc(33.3%); width: -webkit-calc(33.3%);
+	}
+}
+@media (max-width: 1510px){
+	.near-list .wrap__item {
+		width: calc(50%); width:-moz-calc(50%); width: -webkit-calc(50%);
+	}
+}
+@media (max-width: 1140px){
+	.near-list .wrap__item {
+		width: calc(100%); width:-moz-calc(100%); width: -webkit-calc(100%);
+	}
+}
+
+
+/*储值卡订单*/
+@media (max-width: 1550px){
+	.s-v-card-info a{
+		width: calc(31.3%); width:-moz-calc(31.3%); width: -webkit-calc(31.3%);
+	}
+}
+@media (max-width: 1130px){
+	.s-v-card-info a{
+		width: calc(46%); width:-moz-calc(46%); width: -webkit-calc(46%);
+	}
+}
+
+/*会员卡管理*/
+.s-v-card-method a{margin-bottom: 10px;}
+@media (max-width: 1680px){
+	.s-v-card-method a{
+		width: calc(33.3% - 10px); width:-moz-calc(33.3% - 10px); width: -webkit-calc(33.3% - 10px);
+	}
+}
+@media (max-width: 1200px){
+	.s-v-card-method a{
+		width: calc(50% - 10px); width:-moz-calc(50% - 10px); width: -webkit-calc(50% - 10px);
+	}
+}
+@media (max-width: 970px){
+	.s-v-card-method a{
+		width: calc(100%); width:-moz-calc(100%); width: -webkit-calc(100%);
+	}
 }

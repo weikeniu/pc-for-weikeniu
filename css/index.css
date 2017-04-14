@@ -272,7 +272,7 @@
 .near-list {
   overflow: hidden;
 }
-.near-list > li {
+.near-list li {
   position: relative;
   width: 360px;
   height: 130px;
@@ -283,8 +283,8 @@
   margin-bottom: 30px;
   float: left;
 }
-.near-list > .cur,
-.near-list > li:hover {
+.near-list .cur,
+.near-list li:hover {
   border: 1px solid #2093f7;
 }
 .copy-checkbox1 {
@@ -1314,7 +1314,7 @@
 }
 .s-v-card-info>a{
 	display: block;
-	width: 400px;
+	width: 415px;
 	float: left;
 	margin-right: 20px;
 	color: #fff;
@@ -1590,8 +1590,8 @@ a{text-decoration:none;}
 
 
 .cal-pop{width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
-.cal-show{width:340px; height:250px; background:#fff; position:absolute; left:39.4%; top:33%;}
-.cal-title{width:340px; height:45px; background:#f1f1f1; line-height:45px;}
+.cal-show{width:360px; height:250px; background:#fff; position:absolute; left:39.4%; top:33%;}
+.cal-title{/*width:340px;*/ height:45px; background:#f1f1f1; line-height:45px;}
 .cal-title dl dt{font-size:16px; color:#002222; margin-left:30px; float:left;}
 .cal-title dl dd{background:url(../images/icons.png) no-repeat  -56px -90px; width:25px; height:25px; display:block; float:right; margin-top:10px; margin-right:12px;}
 .recom-prd{height:204px; border:1px solid #ddd; border-top:0px;font-size:14px; color:#222;}
@@ -1809,7 +1809,7 @@ a{text-decoration:none;}
 }
 .cp__upload-zone .btn__upload{text-align:center;display:table-cell;vertical-align:middle;}
 .cp__upload-zone .btn__upload .ico{
-	background:url(../images/icon-upload@1x.png) no-repeat; display:inline-block; height:36px;width:36px;
+	background:url(../images/icon-upload@1x.png) no-repeat; display:inline-block; height:36px;width:36px; vertical-align: middle;
 }
 .cp__upload-zone .btn__upload label{color:#999;display:block;font-size:14px; line-height:20px;}
 .cp__upload-zone .btn__upload .imglist{display:block;max-width:100%;max-height:100%;width:100%; position: absolute; left: 0; top: 0;}
@@ -1888,4 +1888,71 @@ a{text-decoration:none;}
 		width: calc(100%); width:-moz-calc(100%); width: -webkit-calc(100%);
 	}
 }
+
+/*index商家管理*/
+/*顶部商家菜单自适应*/
+.yu-main{position: relative; padding-right: 30px;}
+.yu-menuSet{width: auto;}
+@media (max-width: 1560px){
+	.yu-menuSet{width: 100%;}
+	.yu-menuSet .hotel__tit{position: absolute; left: 340px; top:30px;}
+	.yu-menuSet .hotel__tit p{float: none; margin-top: 10px;}
+	.yu-ul-type1 li{width:24.8%;margin-right: -1px; margin-top: -1px;}
+}
+@media (max-width: 1090px){
+	.yu-menuSet{width: 100%;}
+	.yu-menuSet .hotel__tit{position: absolute; left: 340px; top:30px;}
+	.yu-menuSet .hotel__tit p{float: none; margin-top: 10px;}
+	.yu-ul-type1 li{width:49.5%;margin-right: -1px; margin-top: -1px;}
+}
+
+.near-list .wrap__item{float: left; text-align: center;}
+.near-list li{margin:0 10px 30px!important;float: none; display: inline-block;}
+@media (max-width: 1680px){
+	.near-list .wrap__item {
+		width: calc(33.3%); width:-moz-calc(33.3%); width: -webkit-calc(33.3%);
+	}
+}
+@media (max-width: 1510px){
+	.near-list .wrap__item {
+		width: calc(50%); width:-moz-calc(50%); width: -webkit-calc(50%);
+	}
+}
+@media (max-width: 1140px){
+	.near-list .wrap__item {
+		width: calc(100%); width:-moz-calc(100%); width: -webkit-calc(100%);
+	}
+}
+
+
+/*储值卡订单*/
+@media (max-width: 1550px){
+	.s-v-card-info a{
+		width: calc(31.3%); width:-moz-calc(31.3%); width: -webkit-calc(31.3%);
+	}
+}
+@media (max-width: 1130px){
+	.s-v-card-info a{
+		width: calc(46%); width:-moz-calc(46%); width: -webkit-calc(46%);
+	}
+}
+
+/*会员卡管理*/
+.s-v-card-method a{margin-bottom: 10px;}
+@media (max-width: 1680px){
+	.s-v-card-method a{
+		width: calc(33.3% - 10px); width:-moz-calc(33.3% - 10px); width: -webkit-calc(33.3% - 10px);
+	}
+}
+@media (max-width: 1200px){
+	.s-v-card-method a{
+		width: calc(50% - 10px); width:-moz-calc(50% - 10px); width: -webkit-calc(50% - 10px);
+	}
+}
+@media (max-width: 970px){
+	.s-v-card-method a{
+		width: calc(100%); width:-moz-calc(100%); width: -webkit-calc(100%);
+	}
+}
+
 

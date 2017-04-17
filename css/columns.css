@@ -120,25 +120,29 @@
 .ca-recept-goods li>div{margin-top:20px;}
 
 /*订单详情*/
-.ca-ord-detail{color:#999; height:25px; margin-top:30px; margin-bottom:15px;}
+.ca-ord-detail{color:#999; height:25px; margin-top:30px;}
 .ca-ord-detail li{float:left; font-size:14px; margin-right:10px;}
 .ca-super-btn{width:65px; height:22px; border:1px solid #ebebeb; background:#f9f9f9; color:#999; line-height:12px;}
-.ca-operation-state{height:35px; margin-bottom:20px;}
+.ca-over-time{margin-left:77px; display:none;}
+.ca-operation-state{height:35px; margin-bottom:20px; margin-top:20px;}
 .ca-operation-state li{float:left;  margin-right:20px;}
-.ca-operation-state li input{width:120px; height:35px; border-radius:2px; font-size:16px;}
-.ca-gray-btn{color:#333; border:1px solid #ebebeb;}
+.ca-operation-state li input{width:120px; height:35px; border-radius:2px; font-size:16px; color:#333; border:1px solid #ebebeb;}
 .ca-operation-state .on.ca-dliver-btn{background:#ff6600; border:none;  color:#fff;}
 .ca-operation-state .on.ca-wxreturn-btn{background:#2093f7; border:none;  color:#fff;}
-/*.ca-print-btn{background:#f9f9f9; border:1px solid #ebebeb; color:#333;}*/
+.ca-operation-state .on.ca-return-detail{background:#ff9900; border:none;  color:#fff;}
+.ca-operation-state .on.ca-print-btn{background:#e7e7e7; border:1px solid #ebebeb; color:#333;}
+#ca-R-mation{display:none;}
 .ca-list-content{position:relative; color:#333;}
 .ca-bg-gray{background:#f7f7f7; padding:12px 10px 20px 12px;}
 .ca-goods-title{height:40px; line-height:40px; color:#666; background:#e8e8e8; padding-left:20px;}
 .ca-left-list{margin-right:320px;}
+.ca-ship-infor{display:none;}
 .ca-left-list table{border:1px solid #f3f3f3; background:#fff; width:100%; margin-bottom:20px;}
 .ca-left-list table thead tr th{height:38px; color:#666;}
-.ca-left-list table tbody tr td{ height:52px; line-height:52px;}
+.ca-left-list table tbody tr td{ height:54px;}
 .ca-left-list table td{ border-top:1px solid #f3f3f3;}
-.ca-products-img{border-radius:50%; width:40px; height:40px; margin:7px 10px 0 18px;}
+.ca-products-img{line-height:50px;}
+.ca-products-img span{border-radius:50%; width:40px; height:40px; margin:7px 10px 0 18px; float:left}
 .ca-buy-infor{background:#fff; line-height:25px; padding:12px 0px 18px 20px;}
 .ca-buy-infor li>span{margin-right:10px; color:#999;}
 .ca-right-list{width:276px; position:absolute; right:0px; top:0px; float:right; }
@@ -156,5 +160,24 @@
 .ca-hotel-mytbody{border:1px solid #ebebeb; height:auto; padding:0 3px 2px 3px;}
 .ca-hotel-tips tbody tr td{border-bottom:1px solid #f3f3f3; height:43px;}
 
+/*发货弹窗*/
+.ca-ship-dialog{ width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
+.ca-ship-show{width:470px; margin:0 auto;  margin-top:10%; background:#ffff;}
+.ca-ship-show table{margin:18px 0 20px 30px;}
+.ca-ship-show table tbody{line-height:50px;}
+.ca-ship-show table tbody tr td select{width:277px; height:33px; border:1px solid #ddd; border-radius:2px;}
+.ca-ship-show table tbody tr td input{width:265px; height:33px; border:1px solid #ddd; border-radius:2px;}
+.ca-middle-btn{width:120px; height:32px; background:#2093f7; font-size:16px; color:#fff; border-radius:2px; border:none; margin-left:96px;}
+
+/*退款弹窗*/
+.ca-return-dialog{ width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
+.ca-return-show{width:415px; margin:0 auto;  margin-top:10%; background:#ffff; padding-bottom:30px;}
+.ca-cor-telep{width:413px; height:43px; line-height:43px; border:1px solid #ffcb80; background:#ffffe7; font-size:12px; text-indent:45px; color:#666;}
+.ca-return-show table{margin:20px 0 0px 30px; }
+.ca-return-show table tbody tr{display:block; margin-bottom:20px;}
+.ca-return-show table tbody tr td input{border: none }
+.get-phone-msg{width:250px; border:1px solid #ebebeb; height:35px; border-radius:2px;}
+.ca-phone-codas{width:110px; height:35px;}
+.ca-get-codas{width:128px; height:35px;}
 
 

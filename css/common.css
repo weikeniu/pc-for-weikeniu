@@ -1,4 +1,6 @@
 .bd-and-bg{border:none; background:none;}
+.cal-bdleft-f3{border-left:1px solid #f3f3f3;}
+.cal-bdradius-circle{border-radius:50%;}
 .cal-red{color:#ff4400;}
 .cal-c33{color:#333;}
 .cal-c22{color:#222;}
@@ -7,18 +9,26 @@
 .cal-textac{text-align:center;}
 .cal-mart5{margin-top:5px;}
 .cal-mart10{margin-top:10px;}
+.cal-mart15{margin-top:15px;}
+.cal-mart20{margin-top:20px;}
 .cal-mart30{margin-top:30px;}
 .cal-mart40{margin-top:40px;}
 .cal-mart60{margin-top:60px;}
 .cal-marl5{margin-left:5px;}
 .cal-marl10{margin-left:10px;}
+.cal-marl20{margin-left:20px;}
 .cal-marl30{margin-left:30px;}
 .cal-marl45{margin-left:45px;}
+.cal-marl-big{margin-left:110px;}
+.cal-marr10{margin-right:10px;}
+.cal-marr20{margin-right:20px;}
 .cal-marr15{margin-right:15px;}
 .cal-marr25{margin-right:25px;}
 .cal-marr30{margin-right:30px;}
+.cal-marb30{margin-bottom:30px}
 .cal-padr25{padding-right:25px;}
 .cal-padl20{padding-left:20px;}
+.cal-padl30{padding-left:30px;}
 .cal-padl45{padding-left:45px;}
 
 .ca-width450{width:450px;}
@@ -28,5 +38,7 @@
 .ca-width140{width:140px;}
 .ca-width120{width:120px;}
 
+
+.ca-middle-35{height:35px;}
 .ca-sml-lineheight{line-height:30px;}
 .ca-change-dialog{width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}

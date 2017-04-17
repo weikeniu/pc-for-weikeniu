@@ -115,4 +115,46 @@
 /*团购管理*/
 .top-menu .ca-togther{padding-left:32px; padding-right:45px; margin-right:0px;}
 
+.ca-products-pht img{width:60px; height:60px;}
+.ca-recept-goods li{float:left; margin-right:20px;}
+.ca-recept-goods li>div{margin-top:20px;}
+
+/*订单详情*/
+.ca-ord-detail{color:#999; height:25px; margin-top:30px; margin-bottom:15px;}
+.ca-ord-detail li{float:left; font-size:14px; margin-right:10px;}
+.ca-super-btn{width:65px; height:22px; border:1px solid #ebebeb; background:#f9f9f9; color:#999; line-height:12px;}
+.ca-operation-state{height:35px; margin-bottom:20px;}
+.ca-operation-state li{float:left;  margin-right:20px;}
+.ca-operation-state li input{width:120px; height:35px; border-radius:2px; font-size:16px;}
+.ca-gray-btn{color:#333; border:1px solid #ebebeb;}
+.ca-operation-state .on.ca-dliver-btn{background:#ff6600; border:none;  color:#fff;}
+.ca-operation-state .on.ca-wxreturn-btn{background:#2093f7; border:none;  color:#fff;}
+/*.ca-print-btn{background:#f9f9f9; border:1px solid #ebebeb; color:#333;}*/
+.ca-list-content{position:relative; color:#333;}
+.ca-bg-gray{background:#f7f7f7; padding:12px 10px 20px 12px;}
+.ca-goods-title{height:40px; line-height:40px; color:#666; background:#e8e8e8; padding-left:20px;}
+.ca-left-list{margin-right:320px;}
+.ca-left-list table{border:1px solid #f3f3f3; background:#fff; width:100%; margin-bottom:20px;}
+.ca-left-list table thead tr th{height:38px; color:#666;}
+.ca-left-list table tbody tr td{ height:52px; line-height:52px;}
+.ca-left-list table td{ border-top:1px solid #f3f3f3;}
+.ca-products-img{border-radius:50%; width:40px; height:40px; margin:7px 10px 0 18px;}
+.ca-buy-infor{background:#fff; line-height:25px; padding:12px 0px 18px 20px;}
+.ca-buy-infor li>span{margin-right:10px; color:#999;}
+.ca-right-list{width:276px; position:absolute; right:0px; top:0px; float:right; }
+.ca-ord-infor{margin-top:15px; margin-left:20px; line-height:20px;}
+.ca-ord-infor li>span{margin-right:10px; color:#999;}
+.ca-hotel-instion{background:#ffffe7; border:2px solid #ffcb80; padding:15px 12px 17px 20px; margin-top:15px;}
+.ca-hotel-instion >p{font-size:12px; margin-top:15px; color:#666;}
+.ca-keep-post{ width:100%; position:relative; background:#f7f7f7; padding:12px 0px 10px 0px;}
+.ca-keep-post >div{margin-right:152px;}
+.ca-keep-post >div >textarea{width:100%; text-indent:20px; line-height:20px; padding-top:5px; margin-left:12px;}
+.ca-keep-middle-btn{width:120px; height:35px; border-radius:2px; background:#2093f7; color:#fff; border:none; font-size:16px; position:absolute; right:10px; top:25px; float:right;}
+.ca-hotel-tips{margin-top:20px;}
+.ca-hotel-tips table{border-collapse:collapse;}
+.ca-hotel-tips thead tr{height:40px; background:#f7f7f7;}
+.ca-hotel-mytbody{border:1px solid #ebebeb; height:auto; padding:0 3px 2px 3px;}
+.ca-hotel-tips tbody tr td{border-bottom:1px solid #f3f3f3; height:43px;}
+
+
 

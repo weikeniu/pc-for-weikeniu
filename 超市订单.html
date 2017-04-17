@@ -1,0 +1,1013 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="关键词1,关键词2,关键词3" />
+<meta name="description" content="对网站的描述" />
+<title>超市订单</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link type="text/css" rel="stylesheet" href="css/index.css"/>
+<link type="text/css" rel="stylesheet" href="css/columns.css"/>
+<link type="text/css" rel="stylesheet" href="css/common.css"/>
+<link href="css/layout-01.css" rel="stylesheet" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+	<div class="top-bar">
+		<h1 id="logo">微可牛管理中心</h1>
+	</div>
+	<div class="content">
+		<div class="left-side">
+			<div class="yu-c7d yu-h45 yu-bgf4 yu-l45 yu-pos-r">
+				<p class="nav-ico type1">
+					
+				</p>
+				<p class="">功能导航</p>
+			</div>
+			<div class="left-side-nav">
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type2"></p>
+						<p>系统设置</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type3"></p>
+						<p>酒店管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd>
+						<dl class="lv2">
+							<dt><span class="dian"></span>餐饮订餐</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>
+								<dl class="lv3">
+									<dt>订单管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>								
+							</dd>
+						</dl>
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房管理</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>	
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房设置</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>													
+					</dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type4"></p>
+						<p>团购管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type5"></p>
+						<p>会员中心</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type6"></p>
+						<p>手机官网</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+			</div>
+		</div>
+
+		<div class="right-side">
+			<div class="bread-nav">
+				<ul>
+					<li class="yu-c99">酒店超市</li>
+					<li class="yu-next-ico yu-c99 yu-font14">》</li>
+					<li>超市订单</li>
+				</ul>
+			</div>
+			<div class="yu-pad20">
+				<div class="inner-type1 ">
+                     <div class="cal-marr30">
+                            <div class="top-menu">
+                                  <p class="fl left-top-menu"><span></span>超市订单</p>
+                                  <div class="fr seach-box2" style="padding-right:0px;">
+			                           <input type="text" placeholder="请输入订单号" /><input type="button" value="搜索" />
+			                      </div>
+                                   <!--search-box end-->
+                            </div>
+                            <div class="ord-manager">
+                                  <div class="all-order fl" id="J__orderMenu">
+                                        <ul>
+                                            <li class="li_curre" data-index="1">所有订单<span class="org yu-fontv">(5158)</span><div></div></li>
+                                            <li data-index="2">待付款<span class="org yu-fontv">(2)</span><div></div></li>
+                                            <li data-index="3">待处理<span class="org yu-fontv">(66)</span><div></div></li>
+                                            <li data-index="4">已发货<span class="org yu-fontv">(88)</span><div></div></li>
+                                            <li data-index="5">交易完成<span class="org yu-fontv">(99)</span><div></div></li>
+                                            <li data-index="6">微信退款<span class="org yu-fontv">(222)</span><div></div></li>
+                                        </ul>
+                                   </div>
+                                   <!--all-order end-->
+                            </div>
+							<!--ord-manager end-->
+                           <div class="s-v-card-list cal_sub1 active" style="padding-right:0px;">
+                                  <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                      <table width="100%">
+                                          <colgroup>
+                                              <col width="90px" />
+                                              <col width="133px" />
+                                              <col width="48px" />
+                                              <col width="66px" />
+                                              <col width="48px" />
+                                              <col width="68px" />
+                                              <col width="82px" />
+                                              <col width="90px" />
+                                              <col width="94px" />
+                                              <col width="95px" />
+                                              <col width="65px" />
+                                          </colgroup>
+                                          <thead>
+                                              <tr>
+                                                  <th>订单号</th>
+                                                  <th>商品名称</th>
+                                                  <th>数量</th>
+                                                  <th>收货人</th>
+                                                  <th>金额</th>
+                                                  <th>收货方式</th>
+                                                  <th>支付状态</th>
+                                                  <th>下单时间</th>
+                                                  <th>签收时间</th>
+                                                  <th>订单状态</th>
+                                                  <th>操作</th>
+                                              </tr>									
+                                          </thead>
+                                          <tbody>
+                                              <tr class="odd" data-val="1001">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">微信退款</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>
+                                              <tr class="even" data-val="1002">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">待付款</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>	
+                                              <tr class="odd" data-val="1003">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">待处理</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>
+                                              <tr class="even" data-val="1004">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">已发货</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>		
+                                              <tr class="odd" data-val="1005">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">交易完成</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>																				
+                                          </tbody>
+                                      </table>							
+                                 </div>
+                          </div>
+                          <!--s-v-card-list end-->
+                          <div class="s-v-card-list cal_sub2" style="padding-right:0px; display:none;">
+                                <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                    <table width="100%">
+                                        <colgroup>
+                                              <col width="90px" />
+                                              <col width="133px" />
+                                              <col width="48px" />
+                                              <col width="66px" />
+                                              <col width="48px" />
+                                              <col width="68px" />
+                                              <col width="82px" />
+                                              <col width="90px" />
+                                              <col width="94px" />
+                                              <col width="95px" />
+                                              <col width="65px" />
+                                        </colgroup>
+                                        <thead>
+                                              <tr>
+                                                  <th>订单号</th>
+                                                  <th>商品名称</th>
+                                                  <th>数量</th>
+                                                  <th>收货人</th>
+                                                  <th>金额</th>
+                                                  <th>收货方式</th>
+                                                  <th>支付状态</th>
+                                                  <th>下单时间</th>
+                                                  <th>签收时间</th>
+                                                  <th>订单状态</th>
+                                                  <th>操作</th>
+                                             </tr>									
+                                        </thead>
+                                        <tbody>
+                                            <tr class="odd" data-val="2001">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">待付款</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                            </tr>
+                                            <tr class="even" data-val="2002">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">待付款</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                            </tr>	
+                                            <tr class="odd" data-val="2003">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">待付款</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                            </tr>
+                                            <tr class="even" data-val="2004">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">待付款</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                            </tr>	
+                                        </tbody>
+                                    </table>							
+                              </div>
+                        </div>
+                        <!--s-v-card-list end-->
+                          <div class="s-v-card-list cal_sub3" style="padding-right:0px; display:none;">
+                                  <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                      <table width="100%">
+                                          <colgroup>
+                                              <col width="90px" />
+                                              <col width="133px" />
+                                              <col width="48px" />
+                                              <col width="66px" />
+                                              <col width="48px" />
+                                              <col width="68px" />
+                                              <col width="82px" />
+                                              <col width="90px" />
+                                              <col width="94px" />
+                                              <col width="95px" />
+                                              <col width="65px" />
+                                          </colgroup>
+                                          <thead>
+                                              <tr>
+                                                  <th>订单号</th>
+                                                  <th>商品名称</th>
+                                                  <th>数量</th>
+                                                  <th>收货人</th>
+                                                  <th>金额</th>
+                                                  <th>收货方式</th>
+                                                  <th>支付状态</th>
+                                                  <th>下单时间</th>
+                                                  <th>签收时间</th>
+                                                  <th>订单状态</th>
+                                                  <th>操作</th>
+                                              </tr>									
+                                          </thead>
+                                          <tbody>
+                                              <tr class="odd" data-val="3001">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">待处理</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>
+                                              <tr class="even" data-val="3002">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">待处理</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>	
+                                              <tr class="odd" data-val="3003">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">待处理</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>
+                                              <tr class="even" data-val="3004">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">待处理</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>		
+                                          </tbody>
+                                      </table>							
+                                 </div>
+                          </div>
+                          <!--s-v-card-list end-->
+                          <div class="s-v-card-list cal_sub4" style="padding-right:0px; display:none;">
+                                  <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                      <table width="100%">
+                                          <colgroup>
+                                              <col width="90px" />
+                                              <col width="133px" />
+                                              <col width="48px" />
+                                              <col width="66px" />
+                                              <col width="48px" />
+                                              <col width="68px" />
+                                              <col width="82px" />
+                                              <col width="90px" />
+                                              <col width="94px" />
+                                              <col width="95px" />
+                                              <col width="65px" />
+                                          </colgroup>
+                                          <thead>
+                                              <tr>
+                                                  <th>订单号</th>
+                                                  <th>商品名称</th>
+                                                  <th>数量</th>
+                                                  <th>收货人</th>
+                                                  <th>金额</th>
+                                                  <th>收货方式</th>
+                                                  <th>支付状态</th>
+                                                  <th>下单时间</th>
+                                                  <th>签收时间</th>
+                                                  <th>订单状态</th>
+                                                  <th>操作</th>
+                                              </tr>									
+                                          </thead>
+                                          <tbody>
+                                              <tr class="odd" data-val="4001">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">已发货</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>
+                                              <tr class="even" data-val="4002">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">已发货</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>	
+                                              <tr class="odd" data-val="4003">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">已发货</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>
+                                              <tr class="even" data-val="4004">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">已发货</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>		
+                                              <tr class="odd" data-val="4005">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">已发货</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>																				
+                                          </tbody>
+                                      </table>							
+                                 </div>
+                          </div>
+                          <!--s-v-card-list end-->
+                          <div class="s-v-card-list cal_sub5" style="padding-right:0px; display:none;">
+                                  <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                      <table width="100%">
+                                          <colgroup>
+                                              <col width="90px" />
+                                              <col width="133px" />
+                                              <col width="48px" />
+                                              <col width="66px" />
+                                              <col width="48px" />
+                                              <col width="68px" />
+                                              <col width="82px" />
+                                              <col width="90px" />
+                                              <col width="94px" />
+                                              <col width="95px" />
+                                              <col width="65px" />
+                                          </colgroup>
+                                          <thead>
+                                              <tr>
+                                                  <th>订单号</th>
+                                                  <th>商品名称</th>
+                                                  <th>数量</th>
+                                                  <th>收货人</th>
+                                                  <th>金额</th>
+                                                  <th>收货方式</th>
+                                                  <th>支付状态</th>
+                                                  <th>下单时间</th>
+                                                  <th>签收时间</th>
+                                                  <th>订单状态</th>
+                                                  <th>操作</th>
+                                              </tr>									
+                                          </thead>
+                                          <tbody>
+                                              <tr class="odd" data-val="5001">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">交易完成</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>
+                                              <tr class="even" data-val="5002">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">交易完成</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>	
+                                              <tr class="odd" data-val="5003">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">交易完成</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>
+                                              <tr class="even" data-val="5004">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">交易完成</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>		
+                                              <tr class="odd" data-val="5005">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">交易完成</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>																				
+                                          </tbody>
+                                      </table>							
+                                 </div>
+                          </div>
+                          <!--s-v-card-list end-->
+                          <div class="s-v-card-list cal_sub6" style="padding-right:0px; display:none;">
+                                  <div style="border-top:0px; padding-top:0px;" class="ca-vip-list">
+                                      <table width="100%">
+                                          <colgroup>
+                                              <col width="90px" />
+                                              <col width="133px" />
+                                              <col width="48px" />
+                                              <col width="66px" />
+                                              <col width="48px" />
+                                              <col width="68px" />
+                                              <col width="82px" />
+                                              <col width="90px" />
+                                              <col width="94px" />
+                                              <col width="95px" />
+                                              <col width="65px" />
+                                          </colgroup>
+                                          <thead>
+                                              <tr>
+                                                  <th>订单号</th>
+                                                  <th>商品名称</th>
+                                                  <th>数量</th>
+                                                  <th>收货人</th>
+                                                  <th>金额</th>
+                                                  <th>收货方式</th>
+                                                  <th>支付状态</th>
+                                                  <th>下单时间</th>
+                                                  <th>签收时间</th>
+                                                  <th>订单状态</th>
+                                                  <th>操作</th>
+                                              </tr>									
+                                          </thead>
+                                          <tbody>
+                                              <tr class="odd" data-val="6001">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">微信退款</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>
+                                              <tr class="even" data-val="6002">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">微信退款</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>	
+                                              <tr class="odd" data-val="6003">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">微信退款</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>
+                                              <tr class="even" data-val="6004">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">微信退款</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>		
+                                              <tr class="odd" data-val="6005">
+                                                  <td align="left" class="cal-padl20">w170406145703360</td>
+                                                  <td align="left" class="cal-padl20">新农哥坚果休闲零食果仁果...3个商品<span class="yu-blue1">>>详情</span></td>
+                                                  <td>3</td>
+                                                  <td>王莉莉</td>
+                                                  <td>280</td>
+                                                  <td>酒店</td>
+                                                  <td>微信支付</td>
+                                                  <td align="left" class="cal-padl30">2017-04-09<br/>22:03:44</td>
+                                                  <td align="left" class="cal-padl30">2017-04-10<br/>22:03:44</td>
+                                                  <td ><span class="yu-orange">微信退款</span></td>
+                                                  <td><a href="javascript:;" class="yu-blue ca-change-lev">编辑</a></td>
+                                              </tr>																				
+                                          </tbody>
+                                      </table>							
+                                 </div>
+                          </div>
+                          <!--s-v-card-list end-->
+                    </div>
+					<div class="page-num-bar">
+			            <p class="yu-line37 yu-c88 yu-font14 yu-rmar10">总菜单：129</p>
+			            <ul class="page-num-zujian">
+			              <li class="type1"> 上一页 </li>
+			              <li class="type2">1</li>
+			              <li class="type3">2</li>
+			              <li class="type3"> 下一页 </li>
+			            </ul>
+			            <p class="yu-line37 yu-c88 yu-font14 yu-rmar10">共2页</p>
+			            <div class="yu-line37 yu-c88 yu-font14 yu-rmar10">到第
+			              <input type="text" value="1" class="page-input">
+			              页</div>
+			            <p>
+			              <input type="submit" value="确定" class="page-sub">
+			            </p>
+			           </div>
+				  </div>
+			</div>
+	  </div>
+</div>
+
+<!--移动分组 弹框-->
+<!--<div class="cal-pop">
+      <form action=""; method="get">
+            <div class="cal-show">
+                 <div class="cal-title">
+                      <dl>
+                           <dt>移动分组</dt>
+                           <dd class="Close"></dd>
+                      </dl> 
+                 </div>
+                 <!--cal-title end-->
+                 <!--<div class="recom-prd">
+                      <div class="new-name">
+                            <ul>
+                                <li><span class="no-chose"></span>普通会员</li>
+                                <li><span class="no-chose"></span>高级会员</li>
+                                <li><span class="no-chose"></span>白银会员</li>
+                                <li><span class="no-chose"></span>黄金会员</li>
+                                <li><span class="no-chose"></span>钻石会员</li>
+                            </ul>
+                      </div>
+                      <!--recom-prd end-->
+                      <!--<div class="cal-btn">
+                            <ul>
+                                <li><input type="reset" value="取消"  class="gy-btn mask-cancel"/></li>
+                                <li><input type="submit" value="确定" class="bl-btn"/></li>
+                            </ul>
+                      </div>
+                      <!--cal-btn end-->
+                 <!--</div>
+                 <!--recom-prd end-->
+            <!--</div>
+            <!--cal-show end-->
+      <!--</form>
+</div>-->
+<!--cal-pop end-->	
+
+<!--删除tr-->
+<div class="mask dlg-popup dlg-delSubAccount" id="J_dlg_delSubAccount" style="display:none;">
+	<div class="mask-inner dlg-main">
+		<div class="main-box">
+			<div class="yu-bgw yu-pad20">
+				<div class="message ml--20 mt--20">
+					确定要删除所选会员吗？
+				</div>
+				<div class="button-row ml--20 mt--30">
+					<input type="button" value="取消" class="type1 mask-cancel" />
+					<input type="submit" value="确定" class="type2" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--修改等级 弹框-->
+<div class="ca-change-dialog">
+  <form action=""; method="get">
+		<div class="cal-show">
+			 <div class="cal-title">
+				  <dl>
+					   <dt>修改等级</dt>
+					   <dd class="Close"></dd>
+				  </dl> 
+			 </div>
+			 <!--cal-title end-->
+			 <div class="recom-prd">
+				  <div class="new-name pt__20">
+						<ul>
+							<li><span class="no-chose"></span>普通会员</li>
+							<li><span class="no-chose"></span>高级会员</li>
+							<li><span class="no-chose"></span>白银会员</li>
+							<li><span class="no-chose"></span>黄金会员</li>
+							<li><span class="no-chose"></span>钻石会员</li>
+						</ul>
+				  </div>
+				  <!--recom-prd end-->
+				  <div class="cal-btn" style="margin-top: 0;">
+						<ul>
+							<li><input type="reset" value="取消"  class="gy-btn mask-cancel"/></li>
+							<li><input type="submit" value="确定" class="bl-btn"/></li>
+						</ul>
+				  </div>
+				  <!--cal-btn end-->
+			 </div>
+			 <!--recom-prd end-->
+		</div>
+		<!--cal-show end-->
+  </form>
+</div>
+<!--ca-change-dialog end-->
+    
+	<script type="text/javascript">
+		//关闭弹窗
+		$(".dlg-popup, .ca-change-dialog").on("click", function(){
+			$(this).fadeOut(250);
+		});
+		$(".mask-close, .mask-cancel").on("click", function(){
+			$(this).parents(".dlg-popup").fadeOut(250);
+		});
+		$(".mask-inner").on("click", function(e){
+			e.stopPropagation();
+		});
+			
+	     //全选效果
+		 $('.J__chkAll').click(function(){
+			if($(this).is(":checked")){
+				 $(this).parent(".checkbox__mask").addClass("on");
+				 $('.s-v-card-list.active .ca-no-chose').addClass('ca-done-chosed')
+			}else{
+				 $(this).parent(".checkbox__mask").removeClass("on");
+				 $('.s-v-card-list.active .ca-no-chose').removeClass('ca-done-chosed')
+			}
+		})
+		//选择框(单选)
+		$('.ca-no-chose').click(function(){
+			$(this).toggleClass('ca-done-chosed');
+			
+			var count = $(".s-v-card-list.active .ca-no-chose").size();
+			var i = 0;
+			$(".s-v-card-list.active .ca-no-chose").each(function(){
+				if($(this).hasClass("ca-done-chosed")){
+					i++;
+				}
+			});
+			if(count == i){
+				$(".J__chkAll").prop("checked", true);
+				$(".J__chkAll").parent(".checkbox__mask").addClass("on"); //checkbox全选控制
+			}else{
+				$(".J__chkAll").prop("checked", false);
+				$(".J__chkAll").parent(".checkbox__mask").removeClass("on"); //checkbox全选控制
+			}
+		})
+		   
+		  
+	     //修改等级弹框
+		 $('.ca-change-lev').click(function(){
+	        $('.ca-change-dialog').css('display','block')
+			  $('.Close,.gy-btn,.bl-btn').click(function(){
+				$('.ca-change-dialog').css('display','none')
+			 })
+		 })
+		 $(".cal-show").on("click", function(e){
+				e.stopPropagation();
+			});
+			
+		 //等级checkbox
+		 $('.new-name .no-chose').click(function(){
+			 $(this).parent().siblings().children().removeClass("ca-done-chosed");
+			 $(this).addClass("ca-done-chosed");
+		});
+		    
+	     //移动分组弹框
+		// $('.yd-btn').click(function(){
+	        //$('.cal-pop').css('display','block')
+		//})
+		   // $('.Close,.gy-btn,.bl-btn').click(function(){
+		   // $('.cal-pop').css('display','none')
+	    //})
+		
+		//删除选中tr
+		$('.J_btn_delSubAccount').click(function(){
+			$("#J_dlg_delSubAccount").fadeIn();
+			
+			//执行删除
+			$("#J_dlg_delSubAccount .type2").on("click", function(){
+				var tmpVal = [];
+				if($(".s-v-card-list.active .ca-done-chosed").size() > 0){
+					//获取选中项值
+					$(".s-v-card-list.active .ca-done-chosed").each(function(){
+						tmpVal.push($(this).parents("tr").data("val"));
+					});
+					alert(tmpVal);
+					$("#J_dlg_delSubAccount").fadeOut(250);
+				}else{
+					alert("还没有选择选项！");
+				}
+			});
+				
+		})
+	   
+	   //选项卡切换
+	   $("#J__orderMenu li").on("click", function(){
+			var index = $(this).attr("data-index");
+			$(this).addClass("li_curre").siblings().removeClass("li_curre");
+			
+			$(".s-v-card-list").removeClass("active").hide();
+			$(".cal_sub"+index).addClass("active").show();
+			
+			//取消全选及选项
+			$(".J__chkAll").prop("checked", false);
+			$(".checkbox__mask").removeClass("on");
+			$('.ca-no-chose').removeClass('ca-done-chosed')
+	   });
+	   
+	   //鼠标经搜索框
+	    //$('.my-search-btn').mouseover(function(){
+			//$(this).css({'background':'#2093f7','color':'#fff'})
+		//})
+		//$('.my-search-btn').mouseout(function(){
+			// $(this).css({'background':'#f2f2f2','color':'#666'})
+		//})
+	    
+	</script>
+	
+	<script type="text/javascript">	
+		$(function(){
+			//侧导航
+			$(".left-side-nav>.lv1>dt").on("click",function(){
+				$(this).siblings().children(".lv2").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv2>dt").on("click",function(){
+				$(this).siblings().children(".lv3").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv3>dt").on("click",function(){
+				$(this).siblings().slideToggle(200);
+				$(this).toggleClass("cur");
+
+			})
+			//
+			$(".copy-checkbox1").on("click",function(){
+				$(this).parent().toggleClass("cur");
+			})
+
+			//翻页按钮
+			var allPages=parseInt($(".all-page").text());
+			var pageClickNum=1;
+			$(".next-page").click(function(){
+				if(pageClickNum<allPages){
+					pageClickNum++;
+					$(".cur-page").text(pageClickNum);
+					$(".prev-page").removeClass("dis");
+					if(pageClickNum==allPages){
+						$(this).addClass("dis");
+					}
+				}
+			});
+			$(".prev-page").click(function(){
+				if(pageClickNum>1){
+					pageClickNum--;
+					$(".cur-page").text(pageClickNum);
+					$(".next-page").removeClass("dis");
+					if(pageClickNum==1){
+						$(this).addClass("dis");
+					}
+
+				}
+			});
+
+		})
+	</script>
+</body>
+
+</html>

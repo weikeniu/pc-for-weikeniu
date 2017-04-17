@@ -407,13 +407,63 @@
          </form>
     </div>
     <!--ca-return-dialog end-->
+    <!--退款明细弹窗-->
+    <div class="ca-detail-dialog">
+          <div class="ca-detail-show">
+                 <div class="cal-title">
+                       <dl>
+                            <dt>退款单明细</dt>
+                            <dd class="Close"></dd>
+                       </dl> 
+                 </div>
+                 <!--cal-title end-->
+                 <table cellspacing="0" cellpadding="0" class="yu-font14" width="100%">
+                        <colgroup>
+                                   <col width="42%">
+                                   <col width="16%">
+                                   <col width="20%">
+                                   <col width="22%">
+                        </colgroup>
+                        <thead>
+                               <tr><th>退款申请编号</th><th>退款金额</th><th>审批状态</th><th>支付状态</th></tr>
+                        </thead>
+                 </table>
+                 <div class="ca-return-detail">
+                       <table cellspacing="0" cellpadding="0" class="yu-font14" width="100%">
+                              <colgroup>
+                                       <col width="42%">
+                                       <col width="16%">
+                                       <col width="20%">
+                                       <col width="22%">
+                              </colgroup>
+                              <tbody>
+                                     <tr>
+                                          <td align="center" class="cal-padl30">965456218875562456987521425</td>
+                                          <td align="center">￥100</td>
+                                          <td align="center">审批通过</td>
+                                          <td align="center">已退清</td>
+                                     </tr>
+                                     <tr>
+                                          <td align="center" class="cal-padl30">965456218875562456987521425</td>
+                                          <td align="center">￥50</td>
+                                          <td align="center">审批通过</td>
+                                          <td align="center">已退清</td>
+                                     </tr>
+                              </tbody>
+                        </table>
+                 </div>
+                 <!--ca-return-detail end-->
+          </div>
+          <!--ca-detail-show end-->
+    </div>
+    <!--ca-detail-dialog end-->
     <script type="text/javascript">
 	       //发货状态变化
 		   $('.ca-dliver-btn').click(function(){
 			      $('.ca-ship-dialog').css('display','block')  
 			   })
 		   $('.Close,.ca-middle-btn').click(function(){
-			      $('.ca-ship-dialog,.ca-return-dialog').css('display','none')
+			      $('.ca-ship-dialog,.ca-return-dialog,.ca-detail-dialog').css('display','none')
 			   })
 		   $('#ca-sure').click(function(){
 			      $('.ca-dliver-btn').addClass('on')
@@ -434,6 +484,10 @@
 		  $('#ca-return').click(function(){
 			       $('#ca-R-mation').show()
 			       $('.ca-wxreturn-btn,.ca-return-detail').addClass('on')
+			  })
+			  
+		  $('.ca-return-detail').click(function(){
+			    $('.ca-detail-dialog').show()
 			  })
 		  
 	      /** 字数统计 */

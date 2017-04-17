@@ -162,7 +162,7 @@
 
 /*发货弹窗*/
 .ca-ship-dialog{ width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
-.ca-ship-show{width:470px; margin:0 auto;  margin-top:10%; background:#ffff;}
+.ca-ship-show{width:470px; margin:0 auto;  margin-top:10%; background:#fff;}
 .ca-ship-show table{margin:18px 0 20px 30px;}
 .ca-ship-show table tbody{line-height:50px;}
 .ca-ship-show table tbody tr td select{width:277px; height:33px; border:1px solid #ddd; border-radius:2px;}
@@ -171,7 +171,7 @@
 
 /*退款弹窗*/
 .ca-return-dialog{ width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
-.ca-return-show{width:415px; margin:0 auto;  margin-top:10%; background:#ffff; padding-bottom:30px;}
+.ca-return-show{width:415px; margin:0 auto;  margin-top:10%; background:#fff; padding-bottom:30px;}
 .ca-cor-telep{width:413px; height:43px; line-height:43px; border:1px solid #ffcb80; background:#ffffe7; font-size:12px; text-indent:45px; color:#666;}
 .ca-return-show table{margin:20px 0 0px 30px; }
 .ca-return-show table tbody tr{display:block; margin-bottom:20px;}
@@ -180,4 +180,12 @@
 .ca-phone-codas{width:110px; height:35px;}
 .ca-get-codas{width:128px; height:35px;}
 
+/*退款明细弹窗*/
+.ca-detail-dialog{ width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
+.ca-detail-show{width:730px; margin:0 auto;  margin-top:10%; background:#fff; padding-bottom:30px; border:1px solid #ececec}
+.ca-detail-show table{ padding:1px 0px;}
+.ca-detail-show table thead tr{height:40px; background:#e8f4fe; color:#666;}
+.ca-return-detail{border:1px solid #ececec;  padding:0 3px;}
+.ca-return-detail table{color:#999;}
+.ca-return-detail table td{height:43px; border-bottom:1px solid #f3f3f3;}
 

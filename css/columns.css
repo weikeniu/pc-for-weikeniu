@@ -5,16 +5,16 @@
 .ca-tips>span{background:url(../images/sugar.png) no-repeat -10px -120px; width:18px; height:18px; display:block; float:left; margin:11px;}
 .ca-message{ width:100%;}
 .ca-message tr{line-height:55px; color:#999999;}
-.ca-message tr td:first-child{ text-align:right; padding-right:15px;}
+.ca-message tr td:first-child{ padding-right:15px; text-align:right;}
 .ca-message tr td label{font-size:14px;}
-.ca-message tr td span{margin-left:10px;}
+.ca-message tr td label span{ width:70px; float:left;}
 .ca-message tr td select{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:5px; line-height:32px; color:#333;}
 .ca-input{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:10px; line-height:35px;}
 .ca-loading{border:none; background:none; padding-right:10px; line-height:32px; color:#666;}
-.ca-textearea{width:560px; height:180px; font-size:14px; padding-right:25px; padding-top:8px; line-height:24px;}
+.ca-textearea{width:47.4%; height:180px; font-size:14px; padding-right:20px; padding-top:8px; line-height:24px;}
 .ca-fre-tips{width:78px; height:23px; border:1px solid #ddd; background:#fff; color:#2093f7; margin:0 10px; border-radius:2px;}
 .ca-keep-btn{width:160px; height:45px; background:#2093f7; color:#fff; border:none; font-size:18px; border-radius:4px; font-family:"微软雅黑";}
-.ca-map{height:290px; width:885px; float:left; margin-bottom:25px;}
+.ca-map{height:290px; width:74.6%; float:left; margin-bottom:25px;}
 .ca-map img{width:100%; height:100%;}
 
 /*会员管理*/
@@ -119,6 +119,9 @@
 .ca-recept-goods li{float:left; margin-right:20px;}
 .ca-recept-goods li>div{margin-top:20px;}
 
+/*上传商品*/
+.ca-load-product tr td label span{ float:left; text-align:left; width:56px; margin-left:0px;}
+
 /*订单详情*/
 .ca-ord-detail{color:#999; height:25px; margin-top:30px;}
 .ca-ord-detail li{float:left; font-size:14px; margin-right:10px;}
@@ -126,11 +129,11 @@
 .ca-over-time{margin-left:77px; display:none;}
 .ca-operation-state{height:35px; margin-bottom:20px; margin-top:20px;}
 .ca-operation-state li{float:left;  margin-right:20px;}
-.ca-operation-state li input{width:120px; height:35px; border-radius:2px; font-size:16px; color:#333; border:1px solid #ebebeb;}
+.ca-operation-state li input{width:120px; height:35px; border-radius:2px; font-size:16px; color:#333; border:1px solid #ebebeb; background:#f9f9f9;}
 .ca-operation-state .on.ca-dliver-btn{background:#ff6600; border:none;  color:#fff;}
 .ca-operation-state .on.ca-wxreturn-btn{background:#2093f7; border:none;  color:#fff;}
 .ca-operation-state .on.ca-return-detail{background:#ff9900; border:none;  color:#fff;}
-.ca-operation-state .on.ca-print-btn{background:#e7e7e7; border:1px solid #ebebeb; color:#333;}
+/*.ca-operation-state .on.ca-print-btn{background:#e7e7e7; border:1px solid #ebebeb; color:#333;}*/
 #ca-R-mation{display:none;}
 .ca-list-content{position:relative; color:#333;}
 .ca-bg-gray{background:#f7f7f7; padding:12px 10px 20px 12px;}
@@ -141,8 +144,8 @@
 .ca-left-list table thead tr th{height:38px; color:#666;}
 .ca-left-list table tbody tr td{ height:54px;}
 .ca-left-list table td{ border-top:1px solid #f3f3f3;}
-.ca-products-img{line-height:50px;}
-.ca-products-img span{border-radius:50%; width:40px; height:40px; margin:7px 10px 0 18px; float:left}
+.ca-products-img span{border-radius:50%; width:40px; height:40px; margin:0px 10px 0 18px; float:left}
+.ca-products-img b{font-weight:normal; padding-top:8px; display:inherit;}
 .ca-buy-infor{background:#fff; line-height:25px; padding:12px 0px 18px 20px;}
 .ca-buy-infor li>span{margin-right:10px; color:#999;}
 .ca-right-list{width:276px; position:absolute; right:0px; top:0px; float:right; }

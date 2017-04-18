@@ -186,7 +186,7 @@
                                               </thead>
                                               <tbody>
                                                      <tr>
-                                                          <td class="ca-products-img"><span class="fl"><img src="images/products-02.png"></span>新农哥坚果休闲零食果仁巴</td>
+                                                          <td><div class="ca-products-img"><span class="fl"><img src="images/products-02.png"></span><b>新农哥坚果休闲零食果仁巴</b></div></td>
                                                           <td align="center">1</td>
                                                           <td align="center">￥26</td>
                                                           <td rowspan="3" align="center" class="cal-bdleft-f3">￥122</td>
@@ -471,12 +471,12 @@
 				  $('.ca-over-time').show()
 			  })
 			
-		   $('.ca-operation-state li input').mouseover(function(){
+		   /*$('.ca-operation-state li input').mouseover(function(){
 			      $(this).addClass('on')
 			   })
 		   $('.ca-operation-state li input').mouseout(function(){
 			      $(this).removeClass('on')
-			   })
+			   })*/
 		  //退款状态变化  
 		  $('.ca-wxreturn-btn').click(function(){
 			      $('.ca-return-dialog').css('display','block')  
@@ -489,20 +489,6 @@
 		  $('.ca-return-detail').click(function(){
 			    $('.ca-detail-dialog').show()
 			  })
-		  
-	      /** 字数统计 */
-		function limitWordNum(o, field){
-			var max = field.attr("data-max"), curLen;
-			o[0].setAttribute("maxlength", max);
-			curLen = o.val().length;
-			//field.text(max - curLen);
-			field.text(curLen);
-			o.on("input propertychange keyup", function(){
-				//field.text(max - $(this).val().length);
-				field.text($(this).val().length);
-			});
-		}
-		limitWordNum($(".J__wordWrite"), $(".J__wordLimit"));
 	</script>
 	<script type="text/javascript">
 		$(function(){

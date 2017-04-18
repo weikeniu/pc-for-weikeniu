@@ -10,23 +10,36 @@
 #logo {
   width: 262px;
   height: 60px;
-  background: url(../images/logo.png) no-repeat center;
+  /*background: url(../images/logo.png) no-repeat center;*/
+  background: url(../images/logo.png) no-repeat left center;
   text-indent: -999em;
   margin-left: 37px;
+}
+.top-bar #logo{
+	margin: 0 auto; width: 1200px;
 }
 .left-side {
   position: absolute;
   left: 0;
   top: 0;
   width: 199px;
-  border-right: 1px solid #dedede;
-  border-bottom: 1px solid #dedede;
+  /*border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;*/
+	border-right: 0 none;
+  border-bottom: 1px solid #E7E7E7;
   text-align: center;
   padding-bottom: 90px;
   background: #fff;
+  
+  /*+++*/
+	padding-bottom: 0;
+	height: 100%;
 }
 .left-side.kai{
-	top: 60px;
+	/*top: 60px;*/
+	
+	/*+++*/
+	top: 81px; left: 196px;
 }
 .left-side-nav dl {
   cursor: pointer;
@@ -39,11 +52,18 @@
   position: relative;
 }
 .content {
-  width: 100%;
+  /*width: 100%;*/
   position: relative;
-  padding-left: 200px;
+  padding-left: 199px;
   box-sizing: border-box;
+  
+  /*+++*/
+	background: #fff;
+  border: 1px solid #e7e7e7;
+  margin: 20px auto;
+  width: 1200px;
 }
+.content .right-side{border-left: 1px solid #E7E7E7;}
 .bread-nav {
   width: 100%;
   height: 45px;
@@ -52,6 +72,9 @@
   background: #fff;
   line-height: 45px;
   font-size: 12px;
+  
+  /*+++*/
+	background: #f4f4f4;
 }
 .bread-nav > ul > li {
   float: left;
@@ -170,7 +193,8 @@
 }
 .inner-type1 {
   width: 100%;
-  padding: 0 0 40px 30px;
+  /*padding: 0 0 40px 30px;*/
+  padding: 0 30px 40px 30px;
   box-sizing: border-box;
   background: #fff;
 }
@@ -1515,8 +1539,8 @@ a{text-decoration:none;}
 
 .menus{/*margin:0 64px; width:95.7%;*/}
 .top-menu{height:85px; border-bottom:1px solid #e7e7e7;}
-.left-top-menu{color:#333; font-size:24px; margin-top:35px}
-.left-top-menu span{ background:#2093f7; width:3px; height:24px; margin-right:10px; margin-top:5px;  display:block; float:left;}
+.left-top-menu{color:#333; font-size:24px; margin-top:30px; line-height: 24px;}
+.left-top-menu span{ background:#2093f7; width:3px; height:24px; margin-right:10px; margin-top:2px;  display:block; float:left;}
 .cal-contet{width:100%; border-right:1px solid #e7e7e7; }
 .left-menu{padding-right: 60px;height:auto; /*border-right:1px solid #e7e7e7;*/}
 .hot-list{margin-left:20px; height:65px;}

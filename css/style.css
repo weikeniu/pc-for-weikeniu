@@ -4,7 +4,10 @@ body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend,
 }
 body{
 	font-family: microsoft yahei,simhei;
-	background: #f0f1f4;
+	background: #f7f7f7;
+	
+	/*+++*/
+	min-width: 1200px;
 }
 .fl {
 	float: left;
@@ -39,6 +42,7 @@ img{
 .yu-pad20{
 	padding: 20px;
 }
+.right-side .yu-pad20{padding: 0;}
 .yu-next-ico{
 	font-family: simsun;
 }

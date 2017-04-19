@@ -61,7 +61,7 @@
 .s-v-card-method > .type6 .ico{background:url(../images/sugar.png) no-repeat -191px -185px;}
 .s-v-card-method>.type6 .font-color{color:#f46464;}
 .s-v-card-list.s-v-card-list{padding-right:0px;}
-.ca-vip-manager a{margin-right:15px;}
+.ca-vip-manager a{margin-right:12px; width:308px; font-size:20px;}
 
 /*设置会员卡*/
 .ca-set-card{padding-top:30px; display:inline-block;}

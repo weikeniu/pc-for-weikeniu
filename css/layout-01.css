@@ -96,7 +96,7 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 
 
 .zone__rt-similar{background:#fff;padding:30px 30px 30px 0;}
-.zone__rt-similar .hd-tit{border-bottom:1px solid #e7e7e7;padding-bottom:30px;}
+.zone__rt-similar .hd-tit{border-bottom:1px solid #e7e7e7;padding-bottom:20px;}
 .zone__rt-similar .hd-tit.un_bor{border-bottom:0 none;}
 .zone__rt-similar .hd-tit h2{color:#333;font-size:24px; line-height: 24px;}
 .zone__rt-similar .hd-tit h2 i{background:#2093f7;display:inline-block;margin-top:2px;margin-right:10px;vertical-align:top;height:24px;width:3px;}
@@ -131,10 +131,11 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 
 /* …… 会员中心-子账号管理页面 {{{ …… */
 .zone__manageSubAccount .main__cont{width:100%;}
-.main__cont .cont-wrapper{margin-right:240px;}
+.main__cont .cont-wrapper{margin-right:250px;}
+.main__cont .cont-wrapper .yu-h50 .yu-line35{font-size: 16px;}
 .zone__manageSubAccount .sidebar__menu{border:1px solid #e7e7e7;margin-left:-240px;width:220px; position:relative;}
 .sidebar__menu .items li{border-bottom:1px solid #f2f2f2;display:inline;float:left;line-height:50px;width:100%; position:relative;}
-.sidebar__menu .items li a{background:#fff;color:#000;display:block;font-size:16px;padding-left:30px;}
+.sidebar__menu .items li a{background:#fff;color:#000;display:block;font-size:14px;padding-left:30px;}
 .sidebar__menu .items li a .num{color:#b2b2b2; font-size:12px; margin-left:5px;}
 .sidebar__menu .items li .btn{display:none;position:absolute;top:6px;right:8px;}
 .sidebar__menu .items li .btn .edit, .sidebar__menu .items li .btn .del{
@@ -189,14 +190,14 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 .zone__photoAlbum .pht-products .cal-pro .cal-edit .txt{display:none; color:#999;font-size:14px; line-height:20px;position:relative;top:-2px;}
 .zone__photoAlbum .pht-products .cal-pro .cal-edit:hover .ico{display:none;}
 .zone__photoAlbum .pht-products .cal-pro .cal-edit:hover .txt{display:block;}
-.zone__photoAlbum .pht-products .cal-pro .cal-carbage{float: right; background:none!important; cursor:pointer; display:inline-block; text-align:center; width:50px;}
+.zone__photoAlbum .pht-products .cal-pro .cal-carbage{float: right; background:none!important; cursor:pointer; display:inline-block; text-align:center; width:38px;}
 .zone__photoAlbum .pht-products .cal-pro .cal-carbage .ico{display:inline-block;background:url(../images/sugar.png) no-repeat -80px -5px; height:20px;width:18px;}
 .zone__photoAlbum .pht-products .cal-pro .cal-carbage .txt{display:none; color:#999;font-size:14px; line-height:20px; position:relative;top:-2px;}
 .zone__photoAlbum .pht-products .cal-pro .cal-carbage:hover .ico{display:none;}
 .zone__photoAlbum .pht-products .cal-pro .cal-carbage:hover .txt{display:block;}
 
 /* 单选checkbox */
-.cp__checkbox-custom{cursor: pointer;}
+.cp__checkbox-custom{cursor: pointer; font-size: 14px;}
 .cp__checkbox-custom .checkbox__mask{
 	background:url(../images/icon-multiple-sel.png) no-repeat -51px 0; display:inline-block; margin-top:-3px; vertical-align:middle; height:16px;width:16px; position:relative;
 }

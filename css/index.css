@@ -1157,13 +1157,13 @@
   border:1px solid #73beff;
 }
 .s-v-card-method{
-  padding-top: 30px;
+  padding-top: 20px;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .s-v-card-method>a{
   display: block;
-  width: 420px;
+  width: 459px;
   height: 120px;
   float: left;
   margin-right: 20px;
@@ -1367,7 +1367,7 @@
 }
 .seach-box2{
 	overflow: hidden;
-	padding: 26px 20px 0 0;
+	padding: 26px 30px 0 0;
 }
 .seach-box2 input[type="text"]{
 	width: 298px;
@@ -1392,10 +1392,10 @@
 	
 }
 .s-v-card-info{
-	padding-top: 30px;
+	padding-top: 20px;
 	overflow: hidden;
 	/*border-bottom: 1px solid #f0f1f4;*/
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	
 	/*+++*/
 	margin-right: 30px;
@@ -1608,6 +1608,7 @@ a{text-decoration:none;}
 
 .menus{/*margin:0 64px; width:95.7%;*/}
 .top-menu{height:85px; border-bottom:1px solid #e7e7e7;}
+.top-menu .yu-add1{margin-right: 30px!important;}
 .left-top-menu{color:#333; font-size:24px; margin-top:30px; line-height: 24px;}
 .left-top-menu span{ background:#2093f7; width:3px; height:24px; margin-right:10px; margin-top:2px;  display:block; float:left;}
 .cal-contet{width:100%; border-right:1px solid #e7e7e7;}
@@ -1616,7 +1617,7 @@ a{text-decoration:none;}
 .hot-list div{  background:url(../images/sugar.png) no-repeat -10px -6px; width:13px; height:18px; margin-top:23px; float:left;}
 .hot-list p{ padding-left:10px; font-size:16px; float:left; margin-top:20px;}
 .load-btn{border:0;background:#ff6600; font-size:14px; font-family: "Microsoft Yahei"; width:100px; height:32px; color:#fff; display:block; border-radius:2px; float:right; margin-top:15px;}
-.edits{height:40px; background:#f0f1f4; padding-top:10px; line-height:35px;}
+.edits{height:40px; /*background:#f0f1f4;*/ background:#f7f7f7; padding-top:10px; line-height:35px;}
 .edits ul li label.yu-line35{display:inline-block; font-size: 14px; vertical-align: top; line-height: 30px;}
 .edits ul li label.yu-line35 input{vertical-align: middle;}
 .edits .page-btn.yu-rmar20{margin-right: 30px;}
@@ -1742,6 +1743,7 @@ a{text-decoration:none;}
 .page-turn{float:right; margin-top:25px;}
 
 .ord-menus{margin-right:30px;}
+.ord-menus .ord-manager .page-turn{margin-top: 34px;}
 .t-title{background:#f2f2f2;  margin-top:20px; line-height:40px; font-size:14px; color:#666; font-weight:normal;width: 100%;}
 .t-title th{}
 .t-title li{float:left; text-align:center;}
@@ -1891,7 +1893,7 @@ a{text-decoration:none;}
 
 
 /* 单选checkbox */
-.cp__checkbox-custom{cursor: pointer;}
+.cp__checkbox-custom{cursor: pointer; font-size: 14px;}
 .cp__checkbox-custom .checkbox__mask{
 	background:url(../images/icon-multiple-sel.png) no-repeat -51px 0; display:inline-block; margin-top:-3px; vertical-align:middle; height:16px;width:16px; position:relative;
 }

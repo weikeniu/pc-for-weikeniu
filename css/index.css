@@ -854,7 +854,8 @@
 }
 .order-tetails-table td {
   background: #fff;
-  font-size: 14px;
+  /*font-size: 14px;*/
+  font-size:12px;
 }
 .order-tetails-table td .odder-s-img,.odder-s-img {
   width: 40px;
@@ -1048,6 +1049,7 @@
 }
 .refund-pass{
   padding: 35px 0 35px 35px;
+  padding: 25px 0 10px 25px;
   border-top: 1px solid #e7e7e7;
   overflow: hidden;
 }
@@ -1068,10 +1070,10 @@
 }
 .btn-row3 input{
   display: block;
-  width: 120px;
-  height: 35px;
+  width: 90px;
+  height: 30px;
   border-radius: 2px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: microsoft yahei,simhei;
   text-align: center;
   margin-bottom: 20px;
@@ -1137,7 +1139,7 @@
   margin-top: 10px;
 }
 .refund-step{
-  padding:50px 0 40px 300px;
+  padding:50px 0 40px 190px;
   overflow: hidden;
 }
 .refund-inner .border-1.cur{
@@ -1146,7 +1148,7 @@
 .refund-succes{
   background: #fff7ed;
   padding:30px 0;
-  padding-left: 440px;
+  padding-left: 325px;
   border-top: 1px solid #e7e7e7;
   overflow: hidden;
 }
@@ -1814,7 +1816,7 @@ a{text-decoration:none;}
 .blue-small-btn.cur{ background:#2093f7;border: 0; }
 .blue-small-btn.cur input{color:#fff; background: #2093f7;}
 .blue-small-btn.cur div{background:url(../images/sugar.png) no-repeat  -103px -32px; width:22px; height:22px; display:block; }
-.msg-detail{ height:auto; background:#f9f9f9; padding-left:20px;padding-bottom: 30px;}
+.msg-detail{ height:auto; background:#f9f9f9; padding-bottom: 30px;}
 .msg-detail.sp{
 	display: none;
 }

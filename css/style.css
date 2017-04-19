@@ -172,6 +172,9 @@ input{
 .yu-lrpad30{
 	padding: 0 30px;
 }
+.yu-lrpad20{
+    padding-left:20px; padding-right:20px;
+}
 .yu-fontb{
 	font-weight: bold;
 }

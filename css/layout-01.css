@@ -169,15 +169,16 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 
 /* …… 订餐管理-上传相册 {{{ …… */
 .zone__photoAlbum .main__cont{width:100%;}
-.zone__photoAlbum .pht-products{margin-top:10px;}
+.zone__photoAlbum .pht-products{margin-top:10px; overflow: visible;}
 .zone__photoAlbum .pht-products ul{display:inline-block;margin-right:-40px;}
-.zone__photoAlbum .pht-products ul li{margin:0 40px 23px 0; width:226px;}
-.zone__photoAlbum .pht-products ul li.add-pro{height:282px;width:226px;}
+.zone__photoAlbum .pht-products ul li{margin:0 30px 23px 0; width:212px;}
+.zone__photoAlbum .pht-products ul li.add-pro{width:212px;}
 .zone__photoAlbum .pht-products ul li.add-pro dl{border:1px solid #e3e3e3;}
-.zone__photoAlbum .pht-products ul li.add-pro dl dt{padding-top:100px;height:170px; width:122px;}
+.zone__photoAlbum .pht-products ul li.add-pro dl dt{padding-top:100px;height:174px; width:108px;}
 .zone__photoAlbum .pht-products ul li.add-pro dl dd{border-top:0 none;}
+.zone__photoAlbum .pht-products ul li.add-pro dl dt .cal-bg{margin-left: -8px;}
 .zone__photoAlbum .pht-products li:hover dl{border:1px solid #2093f7!important;}
-.zone__photoAlbum .pht-products dt>div{width:212px!important;}
+.zone__photoAlbum .pht-products dt>div{width:198px!important;}
 .zone__photoAlbum .pht-products dl dd{border-top:1px solid #e3e3e3; position:relative;}
 .zone__photoAlbum .pht-products dl dd .ipt-edit{
 	background:#EDF7FF;border:0 none;color:#000;font-size:14px;font-family:"Microsoft Yahei";padding:0 6px;line-height:32px;width:212px;position:absolute;left:0;top:0; display:none;
@@ -218,7 +219,7 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 .cp__upload-zone .btn__upload .ico{
 	background:url(../images/icon-upload@1x.png) no-repeat; display:inline-block; height:36px;width:36px;
 }
-.cp__upload-zone .btn__upload label{color:#999;display:block;font-size:14px; line-height:20px;}
+.cp__upload-zone .btn__upload label{color:#999;display:block;font-size:14px; margin-top: 3px; line-height:20px;}
 .cp__upload-zone .btn__upload .imglist{display:block;max-width:100%;max-height:100%;width:100%; position: absolute; left: 0; top: 0;}
 .cp__upload-zone .btn__upload .del__cover{
 	display: none;
@@ -227,6 +228,8 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 }
 .cp__upload-zone .btn__upload .del__cover label{color: #fff;}
 .cp__upload-zone .btn__upload:hover .del__cover{display: block;}
+.cp__upload-zone:hover .btn__upload .ico{background-position: 0 -41px;}
+.cp__upload-zone:hover .btn__upload label{color: #2093F7;}
 /* }}} */
 
 
@@ -287,37 +290,3 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 }
 .tree-choose .tree-inner dl dd a.checked i{background-position: -70px 0;}
 .tree-choose .tree-inner dl dd a.disabled i{background:url(../images/icon-chkbox-disabled-on.png) no-repeat;cursor: not-allowed;}
-
-
-/* :::媒体查询区域 */
-/*上传相册*/
-.zone__photoAlbum .pht-products .wrap__photo{float: left; text-align: center;}
-.zone__photoAlbum .pht-products li {margin-right: 20px;float: none; display: inline-block;}
-.zone__photoAlbum .pht-products .cal-pro .cal-edit{float: left;}
-.zone__photoAlbum .pht-products dl dd .flt{text-align: left;}
-@media (max-width: 1680px){
-	.pht-products .wrap__photo {
-		width: calc(19.9%); width:-moz-calc(19.9%); width: -webkit-calc(19.9%);
-	}
-}
-@media (max-width: 1440px){
-	.pht-products .wrap__photo {
-		width: calc(25%); width:-moz-calc(25%); width: -webkit-calc(25%);
-	}
-}
-@media (max-width: 1300px){
-	.pht-products .wrap__photo {
-		width: calc(33.3%); width:-moz-calc(33.3%); width: -webkit-calc(33.3%);
-	}
-}
-@media (max-width: 1010px){
-	.pht-products .wrap__photo {
-		width: calc(50%); width:-moz-calc(50%); width: -webkit-calc(50%);
-	}
-}
-@media (max-width: 746px){
-	.pht-products .wrap__photo {
-		width: calc(100%); width:-moz-calc(100%); width: -webkit-calc(100%);
-	}
-}
-

@@ -11,6 +11,7 @@
 .cal-mart10{margin-top:10px;}
 .cal-mart15{margin-top:15px;}
 .cal-mart20{margin-top:20px;}
+.cal-mart25{margin-top:25px;}
 .cal-mart30{margin-top:30px;}
 .cal-mart40{margin-top:40px;}
 .cal-mart60{margin-top:60px;}
@@ -36,12 +37,13 @@
 .cal-padl30{padding-left:30px;}
 .cal-padl45{padding-left:45px;}
 
-.ca-width450{width:38.95%;}
-.ca-width415{width:35%;}
-.ca-width370{width:31.2%;}
-.ca-width280{width:23.6%;}
-.ca-width140{width:11.8%;}
-.ca-width120{width:10.12%;}
+.ca-width450{width:450px;}
+.ca-width415{width:415px;}
+.ca-width370{width:370px;}
+.ca-width320{width:320px;}
+.ca-width280{width:280px}
+.ca-width140{width:140px;}
+.ca-width120{width:120px;}
 
 
 .ca-middle-35{height:35px;}

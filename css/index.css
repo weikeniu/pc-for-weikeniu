@@ -796,7 +796,7 @@
 }
 .order-tetails-table td {
   background: #fff;
-  font-size: 14px;
+  font-size: 12px;
 }
 .order-tetails-table td .odder-s-img,.odder-s-img {
   width: 40px;
@@ -987,9 +987,11 @@
 }
 .refund-top{
   background: #f7f7f7;
+  font-size:14px;
 }
 .refund-pass{
-  padding: 35px 0 35px 35px;
+  /*padding: 35px 0 35px 35px;*/
+  padding: 25px 0 10px 25px;
   border-top: 1px solid #e7e7e7;
   overflow: hidden;
 }
@@ -1010,10 +1012,12 @@
 }
 .btn-row3 input{
   display: block;
-  width: 120px;
-  height: 35px;
+  /*width: 120px;*/
+  /*height: 35px;*/
+  width:100px; 
+  height:30px;
   border-radius: 2px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: microsoft yahei,simhei;
   text-align: center;
   margin-bottom: 20px;
@@ -1079,8 +1083,10 @@
   margin-top: 10px;
 }
 .refund-step{
-  padding:50px 0 40px 300px;
+  /*padding:50px 0 40px 300px;*/
+  padding:30px 0 25px 190px;
   overflow: hidden;
+  font-size:14px;
 }
 .refund-inner .border-1.cur{
   background: #f60;
@@ -1088,7 +1094,7 @@
 .refund-succes{
   background: #fff7ed;
   padding:30px 0;
-  padding-left: 440px;
+  padding-left: 314px;
   border-top: 1px solid #e7e7e7;
   overflow: hidden;
 }
@@ -1099,9 +1105,11 @@
   border:1px solid #73beff;
 }
 .s-v-card-method{
-  padding-top: 30px;
+ /* padding-top: 30px;*/
+  padding-top: 20px;
   overflow: hidden;
-  margin-bottom: 30px;
+ /* margin-bottom: 30px;*/
+  margin-bottom: 10px;
 }
 .s-v-card-method>a{
   display: block;
@@ -1142,7 +1150,7 @@
   padding-right: 65px;
 }
 .s-v-card-list>div{
-  padding-top: 30px;
+  padding-top: 20px;
   border-top: 1px solid #f0f1f4;
 }
 .s-v-card-list table{
@@ -1152,12 +1160,14 @@
 .s-v-card-list th{
   height: 45px;
   background: #f6f8fa;
-  font-size: 14px;
+  /*font-size: 14px;*/
+  font-size: 12px;
   color: #666;
 }
 .s-v-card-list td{
   height: 85px;
-  font-size: 14px;
+  /*font-size: 14px;*/
+  font-size: 12px;
 }
 .s-v-card-list .even td{
   background: #f6f8fa;
@@ -1306,7 +1316,8 @@
 }
 .seach-box2{
 	overflow: hidden;
-	padding: 33px 20px 0 0;
+	/*padding: 33px 20px 0 0;*/
+	padding-top:25px;
 }
 .seach-box2 input[type="text"]{
 	width: 298px;
@@ -1548,8 +1559,8 @@ a{text-decoration:none;}
 .hot-list p{ padding-left:10px; font-size:18px; float:left; margin-top:20px;}
 .load-btn{border:0;background:#ff6600; font-size:16px; width:115px; height:35px; color:#fff; display:block; border-radius:2px; float:right; margin-top:15px;}
 .edits{height:45px; background:#f0f1f4; padding-top:10px; line-height:35px;}
-.chose li{float:left; margin-left:20px;}
-.yd-btn{border:1px solid #ddd; width:103px; height:35px; display:block; color:#999; font-size:16px; background:#f9f9f9;}
+.chose li{float:left; margin-left:10px; font-size:14px;}
+.yd-btn{border:1px solid #ddd; width:90px; height:30px; display:block; color:#999; background:#f9f9f9;}
 .pages{background:#fff; width:124px; height:33px; border:1px solid #ddd;  border-right:0; margin-right:20px;}
 .pages li{float:left; width:61px;}
 .rows{border-right:1px solid #ddd; height:33px;}
@@ -1655,11 +1666,11 @@ a{text-decoration:none;}
 .search-box{width:368px; height:33px; border:1px solid #ddd; margin-top:32px; margin-right:82px; border-radius:4px;}
 .my-search-bx{border: none; width:288px; height:33px; padding-left:10px;  font-size:14px; display:block; line-height:35px; float:left; color:#afafaf;}
 .my-search-btn{width:70px; height:33px; background:#f2f2f2; color:#666; font-size:16px; border-left:1px solid #ddd;border: 0;}
-.ord-manager{ height:78px; border-bottom:1px solid #f0f1f4;}
-.all-order{float:left; margin-top:40px; position:absolute; color:#666;}
-.all-order li{float:left; width:150px; text-align:center;}
-.all-order li div{background:#f0f1f4; position:relative; left:149px; top:-20px; width:1px; height:20px;}
-.li_curre{border-bottom:3px solid #2093f7; position:relative; font-weight:bold; height:36px; color:#333;}
+.ord-manager{ height:59px; border-bottom:1px solid #f0f1f4; font-size:14px;}
+.all-order{float:left; margin-top:26px; position:absolute; color:#666;}
+.all-order li{float:left; width:125px; text-align:center;}
+.all-order li div{background:#f0f1f4; position:relative; left:125px; top:-16px; width:1px; height:16px;}
+.li_curre{border-bottom:3px solid #2093f7; position:relative; font-weight:bold; height:30px; color:#333;}
 .page-turn{float:right; margin-top:25px;}
 
 .ord-menus{margin-right:30px;}
@@ -1735,7 +1746,7 @@ a{text-decoration:none;}
 .blue-small-btn.cur{ background:#2093f7;border: 0; }
 .blue-small-btn.cur input{color:#fff; background: #2093f7;}
 .blue-small-btn.cur div{background:url(../images/sugar.png) no-repeat  -103px -32px; width:22px; height:22px; display:block; }
-.msg-detail{ height:auto; background:#f9f9f9; padding-left:20px;padding-bottom: 30px;}
+.msg-detail{ height:auto; background:#f9f9f9;  padding-bottom:10px;}
 .msg-detail.sp{
 	display: none;
 }

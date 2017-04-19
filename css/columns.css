@@ -1,7 +1,6 @@
 
-.cal-container-mr{margin-right:30px;}
-.ca-hotel-msg{margin-right:42px;}
-.ca-tips{width:100%; height:38px; border:1px solid #ffcb80; line-height:40px; color:#333; margin-top:20px; margin-bottom:10px; background:#ffffe7; font-size:14px;}
+/*.cal-container-mr{margin-right:30px;}*/
+.ca-tips{height:38px; border:1px solid #ffcb80; line-height:40px; color:#333; margin-top:20px; margin-bottom:10px; background:#ffffe7; font-size:14px;}
 .ca-tips>span{background:url(../images/sugar.png) no-repeat -10px -120px; width:18px; height:18px; display:block; float:left; margin:11px;}
 .ca-message{ width:100%;}
 .ca-message tr{line-height:55px; color:#999999;}
@@ -11,7 +10,7 @@
 .ca-message tr td select{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:5px; line-height:32px; color:#333;}
 .ca-input{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:10px; line-height:35px;}
 .ca-loading{border:none; background:none; padding-right:10px; line-height:32px; color:#666;}
-.ca-textearea{width:47.4%; height:180px; font-size:14px; padding-right:20px; padding-top:8px; line-height:24px;}
+.ca-textearea{width:560px; height:180px; font-size:14px; padding-right:20px; padding-top:8px; line-height:24px;}
 .ca-fre-tips{width:78px; height:23px; border:1px solid #ddd; background:#fff; color:#2093f7; margin:0 10px; border-radius:2px;}
 .ca-keep-btn{width:160px; height:45px; background:#2093f7; color:#fff; border:none; font-size:18px; border-radius:4px; font-family:"微软雅黑";}
 .ca-map{height:290px; width:74.6%; float:left; margin-bottom:25px;}
@@ -21,8 +20,8 @@
 .ca-vip-list table tbody tr td{color:#333;}
 .ca-no-chose{border:1px solid #ddd; width:14px; height:14px; display:block; margin:0 auto;}
 .ca-done-chosed{background:url(../images/sugar.png) no-repeat -171px -5px; width:16px; height:16px; display:block; border:none;}
-.ca-vip-list table tbody tr td div{width:22px; height:22px; display:inline-block; vertical-align:bottom; margin-left:-28px; margin-right:10px;}
-.ca-vip-list table tbody tr td p{display:inline-block;}
+.ca-vip-list table tbody tr td div{width:22px; height:22px; display:inline-block; vertical-align:middle; margin-left:-28px; margin-right:10px;}
+.ca-vip-list table tbody tr td p{display:inline-block;  margin-top:5px;}
 .ca-vip-list table tbody tr .ca-regin-times{color:#999; font-size:12px;}
 .ca-vip-heard{width:50px; height:50px; display:block; margin:0 auto; border-radius:50%;}
 .ca-vip-heard img{width:100%; height:100%;}
@@ -62,7 +61,7 @@
 .s-v-card-method > .type6 .ico{background:url(../images/sugar.png) no-repeat -191px -185px;}
 .s-v-card-method>.type6 .font-color{color:#f46464;}
 .s-v-card-list.s-v-card-list{padding-right:0px;}
-.ca-vip-manager a{margin-right:10px;}
+.ca-vip-manager a{margin-right:15px;}
 
 /*设置会员卡*/
 .ca-set-card{padding-top:30px; display:inline-block;}
@@ -113,7 +112,7 @@
 .ca-cur{background:url(../images/sugar.png) no-repeat -108px -70px; width:32px; height:32px; margin:0 auto; margin-top:12px;}
 
 /*团购管理*/
-.top-menu .ca-togther{padding-left:32px; padding-right:45px; margin-right:0px;}
+.top-menu .ca-togther{padding-left:15px; padding-right:15px; margin-right:0px; margin-left:10px;}
 
 .ca-products-pht img{width:60px; height:60px;}
 .ca-recept-goods li{float:left; margin-right:20px;}
@@ -129,7 +128,7 @@
 .ca-over-time{margin-left:77px; display:none;}
 .ca-operation-state{height:35px; margin-bottom:20px; margin-top:20px;}
 .ca-operation-state li{float:left;  margin-right:20px;}
-.ca-operation-state li input{width:120px; height:35px; border-radius:2px; font-size:16px; color:#333; border:1px solid #ebebeb; background:#f9f9f9;}
+.ca-operation-state li input{width:90px; height:30px; border-radius:2px; font-size:14px; color:#333; border:1px solid #ebebeb; background:#f9f9f9;}
 .ca-operation-state .on.ca-dliver-btn{background:#ff6600; border:none;  color:#fff;}
 .ca-operation-state .on.ca-wxreturn-btn{background:#2093f7; border:none;  color:#fff;}
 .ca-operation-state .on.ca-return-detail{background:#ff9900; border:none;  color:#fff;}
@@ -140,23 +139,22 @@
 .ca-goods-title{height:40px; line-height:40px; color:#666; background:#e8e8e8; padding-left:20px;}
 .ca-left-list{margin-right:320px;}
 .ca-ship-infor{display:none;}
-.ca-left-list table{border:1px solid #f3f3f3; background:#fff; width:100%; margin-bottom:20px;}
+.ca-left-list table{border:1px solid #f3f3f3; background:#fff; width:100%; margin-bottom:20px; font-size:12px;}
 .ca-left-list table thead tr th{height:38px; color:#666;}
 .ca-left-list table tbody tr td{ height:54px;}
 .ca-left-list table td{ border-top:1px solid #f3f3f3;}
 .ca-products-img span{border-radius:50%; width:40px; height:40px; margin:0px 10px 0 18px; float:left}
-.ca-products-img b{font-weight:normal; padding-top:8px; display:inherit;}
-.ca-buy-infor{background:#fff; line-height:25px; padding:12px 0px 18px 20px;}
+.ca-products-img b{font-weight:normal; padding-top:10px; display:inherit;}
+.ca-buy-infor{background:#fff; line-height:25px; padding:12px 0px 18px 20px; font-size:12px;}
 .ca-buy-infor li>span{margin-right:10px; color:#999;}
 .ca-right-list{width:276px; position:absolute; right:0px; top:0px; float:right; }
 .ca-ord-infor{margin-top:15px; margin-left:20px; line-height:20px;}
 .ca-ord-infor li>span{margin-right:10px; color:#999;}
 .ca-hotel-instion{background:#ffffe7; border:2px solid #ffcb80; padding:15px 12px 17px 20px; margin-top:15px;}
 .ca-hotel-instion >p{font-size:12px; margin-top:15px; color:#666;}
-.ca-keep-post{ width:100%; position:relative; background:#f7f7f7; padding:12px 0px 10px 0px;}
-.ca-keep-post >div{margin-right:152px;}
-.ca-keep-post >div >textarea{width:100%; text-indent:20px; line-height:20px; padding-top:5px; margin-left:12px;}
-.ca-keep-middle-btn{width:120px; height:35px; border-radius:2px; background:#2093f7; color:#fff; border:none; font-size:16px; position:absolute; right:10px; top:25px; float:right;}
+.ca-keep-post{ width:100%; background:#f7f7f7; padding:12px 0px 10px 0px; display:inline-block;}
+.ca-keep-post >div >textarea{width:80%; text-indent:20px; line-height:20px; padding-top:5px; margin-left:12px; float:left; vertical-align:middle;}
+.ca-keep-middle-btn{width:90px; height:30px; border-radius:2px; background:#2093f7; color:#fff; border:none; font-size:14px; float:left;}
 .ca-hotel-tips{margin-top:20px;}
 .ca-hotel-tips table{border-collapse:collapse;}
 .ca-hotel-tips thead tr{height:40px; background:#f7f7f7;}

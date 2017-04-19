@@ -1,5 +1,5 @@
 
-/*.cal-container-mr{margin-right:30px;}*/
+.cal-container-mr{margin-right:20px;}
 .ca-tips{height:38px; border:1px solid #ffcb80; line-height:40px; color:#333; margin-top:20px; margin-bottom:10px; background:#ffffe7; font-size:14px;}
 .ca-tips>span{background:url(../images/sugar.png) no-repeat -10px -120px; width:18px; height:18px; display:block; float:left; margin:11px;}
 .ca-message{ width:100%;}
@@ -61,7 +61,7 @@
 .s-v-card-method > .type6 .ico{background:url(../images/sugar.png) no-repeat -191px -185px;}
 .s-v-card-method>.type6 .font-color{color:#f46464;}
 .s-v-card-list.s-v-card-list{padding-right:0px;}
-.ca-vip-manager a{margin-right:15px;}
+.ca-vip-manager a{margin-right:12px; width:308px; font-size:20px;}
 
 /*设置会员卡*/
 .ca-set-card{padding-top:30px; display:inline-block;}
@@ -112,7 +112,7 @@
 .ca-cur{background:url(../images/sugar.png) no-repeat -108px -70px; width:32px; height:32px; margin:0 auto; margin-top:12px;}
 
 /*团购管理*/
-.top-menu .ca-togther{padding-left:15px; padding-right:15px; margin-right:0px; margin-left:10px;}
+.top-menu .ca-togther{padding-left:15px; padding-right:15px; margin-right:0px; height:34px; line-height:34px;}
 
 .ca-products-pht img{width:60px; height:60px;}
 .ca-recept-goods li{float:left; margin-right:20px;}

@@ -1,8 +1,13 @@
 
-.cal-container-mr{margin-right:20px;}
+.cal-container-mr{margin-right:30px;}
+.cal-container-mr .top-menu .seach-box2{padding-right: 0; padding-top: 26px!important;}
+.cal-container-mr .top-menu .yu-add1{margin: -3px 0 0 20px!important;}
 .ca-tips{height:38px; border:1px solid #ffcb80; line-height:40px; color:#333; margin-top:20px; margin-bottom:10px; background:#ffffe7; font-size:14px;}
 .ca-tips>span{background:url(../images/sugar.png) no-repeat -10px -120px; width:18px; height:18px; display:block; float:left; margin:11px;}
 .ca-message{ width:100%;}
+.cal-container-mr .ca-message{padding-bottom: 50px;}
+.cal-container-mr .cal-mart30 .ca-keep-btn{margin-bottom: 50px;}
+.cal-container-mr .ord-manager .page-turn{margin-top: 15px;}
 .ca-message tr{line-height:55px; color:#999999;}
 .ca-message tr td:first-child{ padding-right:15px; text-align:right;}
 .ca-message tr td label{font-size:14px;}
@@ -61,7 +66,8 @@
 .s-v-card-method > .type6 .ico{background:url(../images/sugar.png) no-repeat -191px -185px;}
 .s-v-card-method>.type6 .font-color{color:#f46464;}
 .s-v-card-list.s-v-card-list{padding-right:0px;}
-.ca-vip-manager a{margin-right:12px; width:308px; font-size:20px;}
+.ca-vip-manager{display: inline-block; margin-right: -14px;}
+.ca-vip-manager a{margin-right:14px; width:304px; font-size:18px;}
 
 /*设置会员卡*/
 .ca-set-card{padding-top:30px; display:inline-block;}

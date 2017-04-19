@@ -7,6 +7,7 @@ body{
 	background: #f7f7f7;
 	
 	/*+++*/
+	font-size: 14px;
 	min-width: 1200px;
 }
 .fl {
@@ -68,7 +69,7 @@ img{
 	margin-right: 60px;
 }
 .yu-bmar60{
-	margin-bottom: 60px;
+	/*margin-bottom: 60px;*/
 }
 .yu-orange{
 	color: #f60;
@@ -83,7 +84,7 @@ img{
 	padding: 5px 0;
 }
 .yu-rpad80{
-	padding-right: 80px;
+	/*padding-right: 80px;*/
 }
 .yu-bbor{
 	border-bottom: 1px solid #e7e7e7;
@@ -119,7 +120,7 @@ img{
 	margin-bottom: 10px;
 }
 .no-rmar{
-	margin-right: 0 !important;
+	/*margin-right: 0 !important;*/
 }
 .yu-line37{
 	line-height: 37px;
@@ -162,7 +163,8 @@ input{
 	margin-bottom: 20px;
 }
 .yu-line35{
-	line-height: 35px;
+	/*line-height: 35px;*/
+	line-height: 32px;
 }
 .yu-bgf9{
 	background: #f9f9f9;

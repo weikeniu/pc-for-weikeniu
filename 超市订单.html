@@ -738,10 +738,11 @@
 					<div class="page-num-bar">
 			            <p class="yu-line37 yu-c88 yu-font14 yu-rmar10">总菜单：129</p>
 			            <ul class="page-num-zujian">
-			              <li class="type1"> 上一页 </li>
+			              <li class="type1 prev-btn"> 上一页 </li>
 			              <li class="type2">1</li>
 			              <li class="type3">2</li>
-			              <li class="type3"> 下一页 </li>
+                    <li class="type3">3</li>
+                    <li class="type3 next-btn"> 下一页 </li>
 			            </ul>
 			            <p class="yu-line37 yu-c88 yu-font14 yu-rmar10">共2页</p>
 			            <div class="yu-line37 yu-c88 yu-font14 yu-rmar10">到第
@@ -828,7 +829,55 @@
 
 				}
 			});
+      // //页码
+      // function nextDis(){
+      //     if($(".page-num-zujian").find(".type2").next().hasClass("next-btn")){
+      //       return true;
+      //     }else{
+      //       return false;
+      //     }
+      // }
+      // function prevDis(){
+      //     if($(".page-num-zujian").find(".type2").prev().hasClass("prev-btn")){
+      //       return true;
+      //     }else{
+      //       return false;
+      //     }
+      // }      
+      // $(".next-btn").click(function(){
+      //     $(".prev-btn").removeClass("type1").addClass("type3");
+      //     if(!nextDis()){
+      //      $(".page-num-zujian").find(".type2").addClass("type3").removeClass("type2").next().addClass("type2").removeClass("type3");
+      //      if(nextDis()){
+      //        $(".next-btn").removeClass("type3").addClass("type1");
+      //      }
+      //       }
+      // })  
+      // $(".prev-btn").click(function(){
+      //     $(".next-btn").removeClass("type1").addClass("type3");
+      //     if(!prevDis()){
+      //       $(".page-num-zujian").find(".type2").addClass("type3").removeClass("type2").prev().addClass("type2").removeClass("type3");
+      //       if(prevDis()){
+      //          $(".prev-btn").removeClass("type3").addClass("type1");
+      //       }            
+      //     }
+      // })
 
+      // $(".page-num-zujian").on("click",".type3",function(){
+      //   if(!($(this).hasClass("prev-btn")||$(this).hasClass("next-btn"))){
+      //     $(this).addClass("type2").removeClass("type3").siblings(".type2").removeClass("type2").addClass("type3");
+      //     if(nextDis()){
+      //          $(".next-btn").removeClass("type3").addClass("type1");
+      //       }else if(prevDis()){
+      //          $(".prev-btn").removeClass("type3").addClass("type1");
+      //       }else if(!(nextDis()&&prevDis())){
+      //          $(".next-btn").addClass("type3").removeClass("type1");
+      //          $(".prev-btn").addClass("type3").removeClass("type1");
+
+      //       }                  
+      //   }
+      // })
+      // //页码end
 		})
 	</script>
 </body>

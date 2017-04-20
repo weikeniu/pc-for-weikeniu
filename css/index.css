@@ -1613,7 +1613,7 @@ a{text-decoration:none;}
 .top-menu .yu-add1{margin-right: 30px!important;}
 .left-top-menu{color:#333; font-size:24px; margin-top:30px; line-height: 24px;}
 .left-top-menu span{ background:#2093f7; width:3px; height:24px; margin-right:10px; margin-top:2px;  display:block; float:left;}
-.cal-contet{width:100%; border-right:1px solid #e7e7e7;}
+.cal-contet{width:100%; border-right:1px solid #e7e7e7; min-height: 450px; _height: 450px;}
 .left-menu{padding-right: 0px;height:auto; /*border-right:1px solid #e7e7e7;*/}
 .hot-list{margin-left:20px; padding-right: 30px; height:65px;}
 .hot-list div{  background:url(../images/sugar.png) no-repeat -10px -6px; width:13px; height:18px; margin-top:23px; float:left;}
@@ -1677,8 +1677,8 @@ a{text-decoration:none;}
 /*.add-pro a:hover dl dt .cal-bg{background:url(../images/sugar.png) no-repeat -120px 0px;}*/
 .add-pro a:hover dl dt .cal-bg{background-position: -37px -315px;}
 
-.right-menu{width:218px; /*padding-left:1px;*/ padding-top:1px;position: absolute;right: 0;top: 0;}
-.right-menu dl{height:50px; line-height:50px; background:#f9f9f9; margin-bottom:1px; padding-left:25px;border-right: 1px solid #fff;}
+.right-menu{width:219px; /*padding-left:1px;*/ position: absolute;right: 0;top: 0;}
+.right-menu dl{height:50px; line-height:50px; background:#fff; border-bottom: 1px solid #f2f2f2; padding-left:25px;}
 .right-menu a dl{color:#000; font-size:14px;}
 .right-menu a dl dt{float:left; margin-right:10px}
 .right-menu a:hover dl{background:#f0f1f4}
@@ -1690,6 +1690,17 @@ a{text-decoration:none;}
 .cal-add{background:url(../images/sugar.png) no-repeat -156px -6px; width:13px; height:13px; display:block; float:left; margin-top:18px; margin-right:10px; margin:18px 10px 0 10px;}
 .right-menu dl.creat-team .cal-add{display: inline-block; float: none; margin: 0 10px 0 0;}
 .right-menu dl.creat-team dd{display: inline-block;}
+
+/*+++ 菜单编辑按钮 */
+.right-menu a{background: #fff; display: block; position: relative;}
+.right-menu .cai__btns{display:none;position:absolute;top:15px;right:10px;}
+.right-menu .cai__btns .edit, .right-menu .cai__btns .del{
+	background: url(../images/sugar.png) no-repeat -42px -6px;
+	cursor:pointer;display:inline-block;height:20px;width:18px;
+}
+.right-menu .cai__btns .del{background-position: -80px -5px; margin-left:5px;}
+.right-menu a:hover dl{background: #f7f7f7;}
+.right-menu a:hover .cai__btns{display:block;}
 
 
 

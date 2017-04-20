@@ -249,30 +249,35 @@
                           <dt><div class="cal-goods cal-list"></div>热销榜</dt>
                           <dd>(10)</dd>
                      </dl>
+                     <span class="cai__btns"><i class="edit J__editCai"></i> <!--<i class="del J_delRowCai"></i>--></span>
                 </a>
                 <a href="#">
                      <dl>
                           <dt><div class="cal-off cal-list"></div>优惠</dt>
                           <dd>(12)</dd>
                      </dl>
+                     <span class="cai__btns"><i class="edit J__editCai"></i></span>
                 </a>
                 <a href="#">
                      <dl>
                           <dt><div></div>新品推荐</dt>
                           <dd>(8)</dd>
                      </dl>
+                     <span class="cai__btns"><i class="edit J__editCai"></i></span>
                 </a>
                 <a href="#">
                      <dl>
                           <dt><div></div>经典套餐</dt>
                           <dd>(6)</dd>
                      </dl>
+                     <span class="cai__btns"><i class="edit J__editCai"></i></span>
                 </a>
                 <a href="#">
                      <dl>
                           <dt><div></div>营养炖品</dt>
                           <dd>(32)</dd>
                      </dl>
+                     <span class="cai__btns"><i class="edit J__editCai"></i></span>
                 </a>
                 <dl class="creat-team"><dt class="cal-add"></dt><dd>新建分组</dd></dl>   
            </div>
@@ -293,11 +298,11 @@
 	<div class="mask up-load-mask">
 		<div class="mask-inner type1">
 			<div class="top-box">
-				<p>编辑菜式</p>
+				<p>上传菜式</p>
 				<p class="mask-close"></p>
 			</div>
 			<div class="main-box">
-				<div class="yu-bgw yu-pad20">
+				<div class="yu-bgw yu-pad30">
 					<form>
 					<table>
 						<tbody><tr>
@@ -379,6 +384,155 @@
 		</div>
 	</div>
 	
+	<!--//编辑菜式-->
+	<div class="mask edit-load-mask">
+		<div class="mask-inner type1">
+			<div class="top-box">
+				<p>编辑菜式</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<form>
+					<table>
+						<tbody><tr>
+							<th style="width: 30px;">菜名</th>
+							<td>
+								<input type="text" class="type2 J__wordWrite2" value="酱烧鱼腩酱烧鱼腩" />
+								<div class="dib ml__10 ff-hv"><span class="yu-font14 yu-c99 yu-cblue J__wordLimit2" max-length="8">0</span><span class="yu-font14 yu-c99">/8字</span></div>
+							</td>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>价格</th>
+							<td>
+								<input type="text" class="type2">
+								<span class="yu-font14 yu-c99">￥</span>
+							</td>
+						</tr>
+						<tr>
+							<th>口味</th>
+							<td>
+								<ul class="la-lv J_selLa">
+									<li>小辣</li>
+									<li>中辣</li>
+									<li class="no-rbor">大辣</li>
+								</ul>
+								<ul class="s-h-select">
+									<li class="cur">
+										<span class="ico fl"></span>
+										<span class="fl">显示</span>
+									</li>
+									<li>
+										<span class="ico fl"></span>
+										<span class="fl">隐藏</span>
+									</li>
+								</ul>
+								<script type="text/javascript">
+									$(function(){
+										$(".J_selLa li").on("click", function(){
+											$(this).addClass("on").siblings().removeClass("on");
+										});
+										$(".s-h-select li").on("click",function(){
+											$(this).addClass("cur").siblings().removeClass("cur");
+										});
+									});
+								</script>
+							</td>
+						</tr>
+						<tr>
+							<th>图片</th>
+							<td>
+								<div>
+									<input type="file" class="file-btn yu-disN">
+									<div class="file-copy fl">
+										<p></p>
+									</div>
+									<p class="fl">
+										<span class="yu-c99 yu-font14">*支持PNG、JPG格式</span>
+									</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>分组</th>
+							<td>
+								<select class="select-type1">
+									<option>热销榜</option>
+									<option>优惠</option>
+									<option>蒸蒸日上</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel">
+									<input type="submit" value="确定" class="type2">
+								</div>
+								
+							</td>
+						</tr>
+					</tbody></table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--//编辑分组-->
+	<div class="mask edit-group-mask">
+		<div class="mask-inner type1">
+			<div class="top-box">
+				<p>编辑分组</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<form>
+					<table>
+						<tbody><tr>
+							<th style="width: 30px;">菜名</th>
+							<td>
+								<input type="text" class="type2 J__wordWrite2" value="酱烧鱼腩酱烧鱼腩" />
+								<div class="dib ml__10 ff-hv"><span class="yu-font14 yu-c99 yu-cblue J__wordLimit2" max-length="8">0</span><span class="yu-font14 yu-c99">/8字</span></div>
+							</td>
+							<td>
+								
+							</td>
+						</tr>
+						<tr>
+							<th>分组</th>
+							<td>
+								<select class="select-type1">
+									<option>热销榜</option>
+									<option>优惠</option>
+									<option>蒸蒸日上</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel">
+									<input type="submit" value="确定" class="type2">
+								</div>
+								
+							</td>
+						</tr>
+					</tbody></table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	
 	<div class="edt-dialog">
@@ -487,6 +641,7 @@
 </div>
 <!--state-suc end-->
 	<script type="text/javascript">
+	
 		$(function(){
 			//侧导航
 			$(".left-side-nav>.lv1>dt").on("click",function(){
@@ -551,6 +706,16 @@
 				$(".up-load-mask").fadeIn();
 			})
 			//cassiel
+			
+			//编辑菜式
+			$('.cal-edit').click(function(){
+			    $(".edit-load-mask").fadeIn();
+			})
+			
+			//编辑分组
+			$(".J__editCai").click(function(){
+				$(".edit-group-mask").fadeIn();
+			});
 	
 			$('.curren').click(function(){
 				$(this).toggleClass("cal-ture");
@@ -562,20 +727,14 @@
 			});
 		
 		     
-			 $('.cal-edit').click(function(){
-			     $('.edt-dialog').show();
-			})
-		     $('.Close,.gy-btn,.bl-btn').click(function(){
-				 $('.edt-dialog').css('display','none')
+		     $('.Close,.gy-btn,.bl-btn, .cal-pop').click(function(){
+				 $('.cal-pop').fadeOut(250);
 			})
 			
 		
 			 $('.cal-move').click(function(){
 			     $('.cal-pop').css('display','block')
 				})
-		     $('.Close,.gy-btn,.bl-btn').click(function(){
-				 $('.cal-pop').css('display','none')
-			})
 			
 			
 			 $('.cal-carbage').click(function(){

@@ -37,16 +37,14 @@ $(function(){
 
       $(".page-num-zujian").on("click",".type3",function(){
         if(!($(this).hasClass("prev-btn")||$(this).hasClass("next-btn"))){
-          $(this).addClass("type2").removeClass("type3").siblings(".type2").removeClass("type2").addClass("type3");
+          // $(this).addClass("type2").removeClass("type3").siblings(".type2").removeClass("type2").addClass("type3");
+            $(".page-num-zujian>li").removeClass("type2").addClass("type3");
+            $(this).addClass("type2").removeClass("type3");
           if(nextDis()){
                $(".next-btn").removeClass("type3").addClass("type1");
             }else if(prevDis()){
                $(".prev-btn").removeClass("type3").addClass("type1");
-            }else if(!(nextDis()&&prevDis())){
-               $(".next-btn").addClass("type3").removeClass("type1");
-               $(".prev-btn").addClass("type3").removeClass("type1");
-
-            }                  
+            }                
         }
       })
       //页码end	

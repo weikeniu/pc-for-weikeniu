@@ -1686,10 +1686,15 @@ a{text-decoration:none;}
 .cal-list{height:16px; display:block; float:left; margin-right:10px; margin-top:18px;}
 .cal-goods{background:url(../images/sugar.png) no-repeat -10px -6px; width:13px; }
 .cal-off{background:url(../images/sugar.png) no-repeat -23px -6px; width:19px;}
-.right-menu dl.creat-team{background:#eff9ff; border-top:1px dashed #cbd8e6; border-bottom:1px dashed #cbd8e6; font-size:14px; text-align: center; margin-top:10px; padding-left: 0; color:#000;}
+.right-menu dl.creat-team{background:#fff; border: 1px dashed #d7d7d7; font-size:14px; text-align: center; margin-top:10px; padding-left: 0; color:#000; margin: 20px 10px 0; height: 40px; line-height: 40px;}
 .cal-add{background:url(../images/sugar.png) no-repeat -156px -6px; width:13px; height:13px; display:block; float:left; margin-top:18px; margin-right:10px; margin:18px 10px 0 10px;}
-.right-menu dl.creat-team .cal-add{display: inline-block; float: none; margin: 0 10px 0 0;}
+.right-menu dl.creat-team .cal-add{
+	background: url(../images/icon-multiple-sel.png) no-repeat 0 -2px;
+	display: inline-block; float: none; margin: 15px 10px 0 0; vertical-align: top;
+}
 .right-menu dl.creat-team dd{display: inline-block;}
+.right-menu dl.creat-team:hover{border-color: #2093f7; color: #2093f7; cursor: pointer;}
+.right-menu dl.creat-team:hover .cal-add{background-position: -16px -2px;}
 
 /*+++ 菜单编辑按钮 */
 .right-menu a{background: #fff; display: block; position: relative;}

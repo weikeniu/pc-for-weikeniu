@@ -200,7 +200,7 @@
 										<td>
 											<div>
 												<a href="javascript:;" class="yu-c66 yu-rmar10 J__viewDetail">查看明细</a>
-												<a href="#" class="recharge-btn">充值</a>
+												<a href="#" class="recharge-btn J__btnMemRecharge">充值</a>
 											</div>
 										</td>
 									</tr>	
@@ -219,7 +219,7 @@
 										<td>
 											<div>
 												<a href="javascript:;" class="yu-c66 yu-rmar10 J__viewDetail">查看明细</a>
-												<a href="#" class="recharge-btn">充值</a>
+												<a href="#" class="recharge-btn J__btnMemRecharge">充值</a>
 											</div>
 										</td>
 									</tr>																			
@@ -314,6 +314,225 @@
 			</div>
 		</div>
 	</div>
+	
+	<!-- 会员充值 -->
+	<div class="mask" id="J_dlg_memRecharge">
+		<div class="mask-inner type7">
+			<div class="top-box">
+				<p>会员充值</p>
+				<p class="mask-close"></p>
+			</div>	
+			<div class="main-box">
+			<div class="yu-bgw yu-pad30">
+				<form>
+				<table>
+						<tr>
+							<th class="sp" style="width: 60px;">店铺电话</th>
+							<td>
+								<input type="text" class="sp fl yu-rmar10" placeholder="请输入会员手机号">
+							</td>
+						</tr>
+						<tr>
+							<th class="sp">充值金额</th>
+							<td>
+								<div class="yu-pos-r">
+									<span class="yu-orange money-sy1">￥</span><input type="text" class="sp fl yu-rmar10" placeholder="请选择或输入金额">
+								</div>
+								
+							</td>
+						</tr>	
+						<tr>
+							<th class="sp">充值金额</th>
+							<td>
+								<div class="yu-pos-r">
+									<span class="yu-orange money-sy1">￥</span><input type="text" class="sp fl yu-rmar10 money-sp" placeholder="请选择或输入金额">
+								</div>
+								
+							</td>
+						</tr>							
+						<tr>
+							<th class="sp">&nbsp;</th>
+							<td>
+									<ul class="money-list J__secRecharge">
+										<li>
+											<p class="yu-c66 yu-font26 yu-tpad5">300</p>
+											<p class="yu-c88 yu-font16">仅售280元</p>
+										</li>
+										<li>
+											<p class="yu-c66 yu-font26 yu-tpad5">500</p>
+											<p class="yu-c88 yu-font16">仅售480元</p>
+										</li>										
+										<li class="cur">
+											<p class="yu-c66 yu-font26 yu-tpad5">800</p>
+											<p class="yu-c88 yu-font16">仅售280元</p>
+										</li>										
+										<li>
+											<p class="yu-c66 yu-font26 yu-tpad5">1000</p>
+											<p class="yu-c88 yu-font16">仅售280元</p>
+										</li>										
+										<li>
+											<p class="yu-c66 yu-font26 yu-tpad5">1500</p>
+											<p class="yu-c88 yu-font16">仅售280元</p>
+										</li>										
+										<li>
+											<p class="yu-c66 yu-font26 yu-tpad5">2000</p>
+											<p class="yu-c88 yu-font16">仅售280元</p>
+										</li>										
+									</ul>
+							</td>
+						</tr>	
+						<tr>
+							<th class="sp">&nbsp;</th>
+							<td>
+								<input value="下一步" class="next-btn1 J__btnNext" type="button">
+							</td>
+						</tr>										
+				</table>
+				</form>
+			</div>
+		</div>				
+		</div>
+		
+	</div>
+	
+	<!--会员充值(确认充值信息)-->
+	<div class="mask" id="J_dlg_SureRechargeInfo">
+		<div class="mask-inner type7">
+			<div class="top-box">
+				<p>会员充值</p>
+				<p class="mask-close"></p>
+			</div>	
+			<div class="main-box">
+				<div class="tip-bar">请与会员核实充值信息，确认无误。</div>
+			<div class="yu-bgw yu-pad30">
+
+				<form>
+				<table>
+						<tr>
+							<th class="sp">店铺电话</th>
+							<td>
+								<span class="yu-font26">133161333127</span>
+							</td>
+						</tr>
+						<tr>
+							<th class="sp">会员姓名</th>
+							<td>
+								<span class="yu-font26 yu-rmar10">陈逸飞</span>
+								<span class="yu-font20 yu-c99">高级会员</span>
+							</td>
+						</tr>	
+						<tr>
+							<th class="sp">支付方式</th>
+							<td>
+								<span class="yu-font26">现金方式</span>
+							</td>
+						</tr>
+						<tr>
+							<th class="sp">充值金额</th>
+							<td>
+								<span class="yu-font20 yu-c40 yu-fontb">￥</span><span class="yu-font26 yu-c40 yu-fontb">500</span>
+							</td>
+						</tr>
+						<tr>
+							<th class="sp">售卡金额</th>
+							<td>
+								<span class="yu-font20 yu-c40 yu-fontb">￥</span><span class="yu-font26 yu-c40 yu-fontb">480</span>
+							</td>
+						</tr>																		
+						<tr>
+							<th class="sp">&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="返回修改" class="type6 yu-rmar10 J__btnBackEdit">
+									<input type="button" value="发送验证码" class="type7 J__btnSendCode">
+								</div>
+							</td>
+						</tr>													
+				</table>
+				</form>
+			</div>
+		</div>				
+		</div>
+		
+	</div>
+	
+	<!--会员充值(确认验证码)-->
+	<div class="mask" id="J_dlg_SureVcode">
+		<div class="mask-inner type7">
+			<div class="top-box">
+				<p>会员充值</p>
+				<p class="mask-close"></p>
+			</div>	
+			<div class="main-box">
+				<div class="tip-bar">验证码已发送到<span class="yu-orange">133315245645</span><br>请会员提供验证码</div>
+			<div class="yu-bgw yu-pad30">
+
+				<form>
+				<table>
+						<tr>
+							<th class="sp">操作工号</th>
+							<td>
+								<input type="text" class="sp fl yu-rmar10" value="1854">
+							</td>
+						</tr>
+						<tr>
+							<th class="sp">验证码</th>
+							<td>
+								<input type="text" class="sp fl yu-rmar10" value="201186">
+							</td>
+						</tr>
+						<tr>
+							<th class="sp">&nbsp;</th>
+							<td>
+								<div>
+								<span class="yu-font20 yu-c66 yu-weight100">充值后可用余额为</span>
+								<span class="yu-c40 yu-font20">￥</span><span  class="yu-c40 yu-font26">584</span>									
+								</div>
+								
+							</td>
+						</tr>	
+						<tr>
+							<th class="sp">&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<div class="resent-btn">重发验证码<span>(56s)</span></div>
+									<input type="button" value="确认充值" class="type7 J__btnSureRecharge">
+								</div>
+							</td>
+						</tr>																			
+					</table>
+				</form>
+			</div>
+		</div>				
+		</div>
+		
+	</div>	
+	
+	<!-- 会员卡状态 -->
+	<div class="mask" id="J_dlg_CloseCard">
+		<div class="cal-sure">
+            <p>是否关闭会员卡状态？</p>
+            <div class="cal-btn">
+                  <ul>
+                      <li><input type="reset" value="否" class="gy-btn mask-cancel"></li>
+                      <li><input type="button" value="是" class="bl-btn sp J__btnCloseStatus"></li>
+                  </ul>
+            </div>
+        </div>
+	</div>
+	
+	<!-- 充值成功 -->
+	<div class="mask" id="J_dlg_successRecharge">
+		<div class="mask-mask">
+			<div class="yu-pad20 yu-overf  type1">
+				<p class="s-ico fl yu-rmar10"></p>
+				<div class="yu-cff yu-line40 fl">
+					<p class="yu-font26"><span class="yu-font20">￥</span>500</p>
+					<p class="yu-font24">充值成功，2秒后关闭</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript">
 		/**
 		 *	create by hison
@@ -332,6 +551,39 @@
 			//充值明细弹窗
 			$(".J__viewDetail").on("click", function(){
 				$("#J_dlg_RechargeDetail").fadeIn();
+			});
+			
+			
+			//会员充值
+			$(".J__btnMemRecharge").on("click", function(){
+				$("#J_dlg_memRecharge").fadeIn();
+				
+				//下一步
+				$(".J__btnNext").on("click", function(){
+					$("#J_dlg_memRecharge").fadeOut(250);
+					$("#J_dlg_SureRechargeInfo").fadeIn();
+					
+					//返回修改、发送验证码
+					$(".J__btnBackEdit").on("click", function(){
+						$("#J_dlg_SureRechargeInfo").fadeOut(250);
+						$("#J_dlg_memRecharge").fadeIn();
+					});
+					$(".J__btnSendCode").on("click", function(){
+						$("#J_dlg_SureRechargeInfo").fadeOut(250);
+						$("#J_dlg_SureVcode").fadeIn();
+						
+						//充值成功
+						$(".J__btnSureRecharge").on("click", function(){
+							$("#J_dlg_SureVcode").fadeOut(250);
+							$("#J_dlg_successRecharge").fadeIn();
+						});
+					});
+				});
+			});
+			
+			//设置充值金额
+			$(".J__secRecharge li").on("click", function(){
+				$(this).addClass("cur").siblings().removeClass("cur");
 			});
 			
 		});

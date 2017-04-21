@@ -158,10 +158,10 @@
 .ca-ord-infor li>span{margin-right:10px; color:#999;}
 .ca-hotel-instion{background:#ffffe7; border:2px solid #ffcb80; padding:15px 12px 17px 20px; margin-top:15px;}
 .ca-hotel-instion >p{font-size:12px; margin-top:15px; color:#666;}
-.ca-keep-post{ width:100%; background:#f7f7f7; padding:12px 0px 10px 0px; display:inline-block;}
+.ca-keep-post{ width:100%; background:#f7f7f7; margin-bottom: 20px; padding:12px 0px 12px 0px; display:inline-block;}
 .ca-keep-post >div >textarea{width:80%; text-indent:20px; line-height:20px; padding-top:5px; margin-left:12px; float:left; vertical-align:middle;}
 .ca-keep-middle-btn{width:90px; height:30px; border-radius:2px; background:#2093f7; color:#fff; border:none; font-size:14px; float:left;}
-.ca-hotel-tips{margin-top:20px;}
+.ca-hotel-tips{margin-bottom:20px;}
 .ca-hotel-tips table{border-collapse:collapse;}
 .ca-hotel-tips thead tr{height:40px; background:#f7f7f7;}
 .ca-hotel-mytbody{border:1px solid #ebebeb; height:auto; padding:0 3px 2px 3px;}

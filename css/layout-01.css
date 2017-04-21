@@ -133,9 +133,11 @@ input[disabled]:hover, input[readonly]:hover, button[disabled]:hover, button[rea
 /* …… 会员中心-子账号管理页面 {{{ …… */
 .zone__manageSubAccount{position: relative; margin-top: 0px!important;}
 .zone__manageSubAccount .main__cont{width:100%;}
-.main__cont .cont-wrapper{margin-right:220px; padding-top: 20px;}
+.main__cont .cont-wrapper{margin-right:250px; padding-top: 20px;}
 .main__cont .cont-wrapper .yu-h50 .yu-line35{font-size: 16px;}
-.main__cont .cont-wrapper .yu-h50 .yu-add1{margin-right: 30px!important;}
+.main__cont .cont-wrapper .yu-h50 .yu-line35.mr--30{margin-right: 20px!important;}
+/*.main__cont .cont-wrapper .yu-h50 .yu-add1{margin-right: 30px!important;}*/
+.main__cont .cont-wrapper .yu-h50 .yu-add1{margin-left: 0!important;}
 .zone__manageSubAccount .sidebar__menu{border-left:1px solid #e7e7e7;margin-left:-240px; height: 100%; width:220px; position:absolute; top: 0; right:0;}
 .sidebar__menu .items li{border-bottom:1px solid #f2f2f2;display:inline;float:left;line-height:50px;width:100%; position:relative;}
 .sidebar__menu .items li a{background:#fff;color:#000;display:block;font-size:14px;padding-left:30px;}

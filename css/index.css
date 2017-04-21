@@ -1166,12 +1166,17 @@
 }
 .s-v-card-method>a{
   display: block;
-  width: 459px;
+  /*width: 459px;*/
   height: 120px;
   float: left;
-  margin-right: 20px;
+  /*margin-right: 20px;*/
   line-height: 80px;
-  font-size: 24px;
+  /*font-size: 24px;*/
+ font-size: 18px;
+  
+  /*+++*/
+ border-radius: 2px;
+	width: 304px; margin-right: 14px;
 }
 .s-v-card-method>.type1{
   background: #f6fcf7;

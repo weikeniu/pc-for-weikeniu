@@ -207,7 +207,7 @@
                                        <div class="ca-buy-infor">
                                              <ul>
                                                    <li><span>买家姓名</span>王女士<span class="cal-marl30">买家电话</span>135987456214</li>
-                                                   <li><span>收货地址</span>广州市越秀区寺右新马路129号23B <a href="javascript:;" class="yu-blue1 cal-marl20">修改地址</a></li>
+                                                   <li><span class="fl">收货地址</span><div class="fl"><input type="text" value="广州市越秀区寺右新马路129号23B"  id="J-ca-adress" class="j-ca-adress"></div><a href="javascript:;" class="yu-blue1 cal-marl20" id="J-ca-revice">修改地址</a></li>
                                                    <li><span>订单备注</span>派送前电话联系，谢谢</li>
                                              </ul>
                                        </div>
@@ -364,13 +364,13 @@
                       <tbody class="yu-font14">
                                <tr><td><label class="yu-c99 cal-marr10">快递公司</label></td>
                                <td>
-                                   <select class="cal-padl5">
+                                   <select class="cal-padl5" id="ca-J-select">
                                             <option>申通快递</option>
                                             <option>中通快递</option>
                                    </select>
                                </td>
                                </tr>
-                               <tr><td><label class="yu-c99 cal-marr10">快递单号</label></td><td><input type="text" placeholder="请填写快递单号" class="cal-padl10"></td></tr>
+                               <tr><td><label class="yu-c99 cal-marr10">快递单号</label></td><td><input type="text" placeholder="请填写快递单号" class="cal-padl10"id="ca-J-text"></td></tr>
                        </tbody>
                 </table>
                 <div><input type="button" value="确定" class="ca-middle-btn cal-marb30" id="ca-sure"></div>
@@ -399,7 +399,7 @@
                                    <input type="button" value="获取手机验证码" class="fr yu-blue1 ca-get-codas">
                                </td>
                                </tr>
-                               <tr><td class="cal-padl12"><label class="yu-c99 cal-marr10">退款金额</label></td><td class="get-phone-msg"><input type="text" placeholder="退款金额不能大于1.00" class="cal-padl10"></td></tr>
+                               <tr><td class="cal-padl12"><label class="yu-c99 cal-marr10">退款金额</label></td><td class="get-phone-msg"><input type="text" placeholder="退款金额不能大于1.00" class="cal-padl10" id="ca-cash-text"></td></tr>
                        </tbody>
                 </table>
                 <div class="cal-marl15"><input type="button" value="确定退款" class="ca-middle-btn cal-marb20" id="ca-return"></div>
@@ -472,6 +472,41 @@
 				  $('.ca-ship-infor').show()
 				  $('.ca-over-time').show()
 			  })
+			//弹窗按钮状态改变
+			$(function(){
+					$('#ca-J-text,#ca-J-select option:selected').bind('input propertychange', function() {
+						if(($('#ca-J-select option:selected').text() !="") && ($('#ca-J-text').val() !="")){
+						   $("#ca-sure").css('background','#2093f7')
+						 }
+						 else{
+						   $("#ca-sure").css('background','#e7e7e7') 
+						}
+					});
+				         
+				})
+			$(function(){
+					$('.ca-phone-codas,#ca-cash-text').bind('input propertychange', function() {
+						if(($('.ca-phone-codas').val() !="") && ($('#ca-cash-text').val() !="")){
+						   $("#ca-return").css('background','#2093f7')
+						 }
+						 else{
+						   $("#ca-return").css('background','#e7e7e7') 
+						}
+					});
+				         
+				})	
+			
+			   $("#J-ca-revice").click(function(){
+				  if($(this).html() !="确定"){
+					  $("#J-ca-adress").focus();
+					  $(this).html('确定'); 
+				  }
+				  else{
+					  $("#J-ca-adress").blur();
+					  $(this).html('修改地址');
+				  }
+			  })
+				
 			
 		   /*$('.ca-operation-state li input').mouseover(function(){
 			      $(this).addClass('on')

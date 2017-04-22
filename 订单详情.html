@@ -467,45 +467,32 @@
 		   $('.Close,.ca-middle-btn').click(function(){
 			      $('.ca-ship-dialog,.ca-return-dialog,.ca-detail-dialog').css('display','none')
 			   })
-		   $('#ca-sure').click(function(){
-			      $('.ca-dliver-btn').addClass('on')
-				  $('.ca-ship-infor').show()
-				  $('.ca-over-time').show()
-			  })
-			//弹窗按钮状态改变
+			
+		  
 			$(function(){
 					$('#ca-J-text,#ca-J-select option:selected').bind('input propertychange', function() {
 						if(($('#ca-J-select option:selected').text() !="") && ($('#ca-J-text').val() !="")){
-						   $("#ca-sure").css('background','#2093f7')
+						   $("#ca-sure").addClass('on')
 						 }
 						 else{
-						   $("#ca-sure").css('background','#e7e7e7') 
+						   $("#ca-sure").removeClass('on')
 						}
 					});
 				         
 				})
-			$(function(){
-					$('.ca-phone-codas,#ca-cash-text').bind('input propertychange', function() {
-						if(($('.ca-phone-codas').val() !="") && ($('#ca-cash-text').val() !="")){
-						   $("#ca-return").css('background','#2093f7')
-						 }
-						 else{
-						   $("#ca-return").css('background','#e7e7e7') 
-						}
-					});
-				         
-				})	
-			
-			   $("#J-ca-revice").click(function(){
-				  if($(this).html() !="确定"){
-					  $("#J-ca-adress").focus();
-					  $(this).html('确定'); 
-				  }
-				  else{
-					  $("#J-ca-adress").blur();
-					  $(this).html('修改地址');
-				  }
+			 $('#ca-sure').click(function(){
+			      if($(this).parent().children().hasClass('on')){
+					      $('.ca-dliver-btn').addClass('on')
+						  $('.ca-ship-infor').show()
+						  $('.ca-over-time').show()
+					 }
+					  //else{
+						//  alert('请填写快递单')
+					  //}
 			  })
+			 if($("#ca-sure").parent().children().hasClass("on")){$("#ca-sure").css(" background","red");}
+			 if($("#ca-sure").parent().children().not(".on")){$("#ca-sure").css("cursor","not-allowed");}
+			
 				
 			
 		   /*$('.ca-operation-state li input').mouseover(function(){
@@ -518,14 +505,46 @@
 		  $('.ca-wxreturn-btn').click(function(){
 			      $('.ca-return-dialog').css('display','block')  
 			  })
-		  $('#ca-return').click(function(){
-			       $('#ca-R-mation').show()
-			       $('.ca-wxreturn-btn,.ca-return-detail').addClass('on')
-			  })
-			  
+		  
 		  $('.ca-return-detail').click(function(){
 			    $('.ca-detail-dialog').show()
 			  })
+		  $(function(){
+					$('.ca-phone-codas,#ca-cash-text').bind('input propertychange', function() {
+						if(($('.ca-phone-codas').val() !="") && ($('#ca-cash-text').val() !="")){
+						   $("#ca-return").addClass('on')
+						 }
+						 else{
+						   $("#ca-return").removeClass('on')
+						}
+					});
+				         
+				})	
+			$('#ca-return').click(function(){
+			       if($(this).hasClass('on')){
+					   $("#ca-return").css("cursor","point");
+					   $('#ca-R-mation').show()
+			           $('.ca-wxreturn-btn,.ca-return-detail').addClass('on')
+					  }
+					//else{
+						//alert('请输入验证码和退款金额')
+						//}
+			  })
+			if($("#ca-return").parent().children().not(".on")){
+				    $("#ca-return").css("cursor","not-allowed");
+			}
+			
+		   //修改地址
+		   $("#J-ca-revice").click(function(){
+			  if($(this).html() !="确定"){
+				  $("#J-ca-adress").focus();
+				  $(this).html('确定'); 
+			  }
+			  else{
+				  $("#J-ca-adress").blur();
+				  $(this).html('修改地址');
+			  }
+		  })
 	</script>
 	<script type="text/javascript">
 		$(function(){

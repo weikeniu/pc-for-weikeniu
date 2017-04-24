@@ -32,7 +32,7 @@
   width: 199px;
   /*border-right: 1px solid #dedede;
   border-bottom: 1px solid #dedede;*/
-	border-right: 0 none;
+	border-right: 1px solid #E7E7E7;
   border-bottom: 1px solid #E7E7E7;
   /*text-align: center;*/
   padding-bottom: 90px;
@@ -72,7 +72,7 @@
   margin: 20px auto;
   width: 1200px;
 }
-.content .right-side{border-left: 1px solid #E7E7E7;}
+.content .right-side{border-left: 1px solid #E7E7E7; min-height: 500px;_height: 500px;}
 .bread-nav {
   width: 100%;
   height: 45px;

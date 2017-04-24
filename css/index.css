@@ -1002,7 +1002,7 @@
 .checkbox-copy > p {
   font-size: 14px;
   line-height: 16px;
-  color: #666;
+  color: #333;
   float: left;
 }
 .order-ico {
@@ -1582,7 +1582,7 @@
 	border: 1px solid #ebebeb;
 	border-radius: 2px;
 	background: #f9f9f9;
-	color: #999;
+	color: #333;
 	outline: 0;
 }
 /*yuffie部分end*/

@@ -109,7 +109,8 @@
 						<p class="yu-arr type1"></p>
 					</dt>
 					<dd></dd>
-				</dl>				
+				</dl>
+				
 			</div>
 		</div>
 
@@ -617,7 +618,7 @@
 	</div>	
 	
 	<!-- 会员卡状态 -->
-	<div class="mask" id="J_dlg_CloseCard">
+	<!--<div class="mask" id="J_dlg_CloseCard">
 		<div class="cal-sure">
             <p>是否关闭会员卡状态？</p>
             <div class="cal-btn">
@@ -627,7 +628,7 @@
                   </ul>
             </div>
         </div>
-	</div>
+	</div>-->
 	
 	<!-- 充值成功 -->
 	<div class="mask" id="J_dlg_successRecharge">
@@ -694,19 +695,20 @@
 			
 			//关闭会员卡状态
 			$(".J__cardStatus").on("click", function(){
-				var that = $(this);
-				if($(this).hasClass("cur")){
-					$("#J_dlg_CloseCard").fadeIn();
-					$(".J__btnCloseStatus").on("click", function(){
-						$("#J_dlg_CloseCard").fadeOut(250);
-						that.removeClass("cur");
-					});
-				}
+				//var that = $(this);
+				//if($(this).hasClass("cur")){
+					//$("#J_dlg_CloseCard").fadeIn();
+					//$(".J__btnCloseStatus").on("click", function(){
+						//$("#J_dlg_CloseCard").fadeOut(250);
+						//that.removeClass("cur");
+					//});
+				//}
+				$(this).toggleClass("cur")
 			});
 			//开启
-			$(".J__cardStatus:not(.cur)").on("click", function(){
-				$(this).addClass("cur");
-			});
+//			$(".J__cardStatus:not(.cur)").on("click", function(){
+//				$(this).addClass("cur");
+//			});
 			
 			
 			//设置使用范围

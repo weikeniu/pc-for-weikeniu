@@ -32,9 +32,9 @@
   width: 199px;
   /*border-right: 1px solid #dedede;
   border-bottom: 1px solid #dedede;*/
-	border-right: 0 none;
+	border-right: 1px solid #E7E7E7;
   border-bottom: 1px solid #E7E7E7;
-  text-align: center;
+  /*text-align: center;*/
   padding-bottom: 90px;
   background: #fff;
   
@@ -42,6 +42,7 @@
 	padding-bottom: 0;
 	height: 100%;
 }
+.left-side .yu-c7d.yu-h45 p{text-indent: 60px;}
 .left-side.kai{
 	/*top: 60px;*/
 	
@@ -58,6 +59,7 @@
   background: #fff;
   position: relative;
 }
+.left-side-nav dt p{text-indent: 60px;}
 .content {
   /*width: 100%;*/
   position: relative;
@@ -70,7 +72,7 @@
   margin: 20px auto;
   width: 1200px;
 }
-.content .right-side{border-left: 1px solid #E7E7E7;}
+.content .right-side{border-left: 1px solid #E7E7E7; min-height: 500px;_height: 500px;}
 .bread-nav {
   width: 100%;
   height: 45px;
@@ -608,6 +610,8 @@
   padding-top: 20px;
   /*width: 70px;*/
   text-align: right;
+  
+  min-width: 70px; _width: 70px;
 }
 .mask .button-row > input {
   width: 100px;
@@ -1002,7 +1006,7 @@
 .checkbox-copy > p {
   font-size: 14px;
   line-height: 16px;
-  color: #666;
+  color: #333;
   float: left;
 }
 .order-ico {
@@ -1582,7 +1586,7 @@
 	border: 1px solid #ebebeb;
 	border-radius: 2px;
 	background: #f9f9f9;
-	color: #999;
+	color: #333;
 	outline: 0;
 }
 /*yuffie部分end*/

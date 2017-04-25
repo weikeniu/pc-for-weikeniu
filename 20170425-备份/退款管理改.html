@@ -1,0 +1,563 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="关键词1,关键词2,关键词3" />
+<meta name="description" content="对网站的描述" />
+<title>退款管理</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link type="text/css" rel="stylesheet" href="css/index.css"/>
+<link type="text/css" rel="stylesheet" href="css/common.css"/>
+<link type="text/css" rel="stylesheet" href="css/columns.css"/>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+<div class="top-bar">
+  <h1 id="logo">微可牛管理中心</h1>
+</div>
+<div class="content">
+  <div class="left-side">
+    <div class="yu-c7d yu-h45 yu-bgf4 yu-l45 yu-pos-r">
+      <p class="nav-ico type1"> </p>
+      <p class="">功能导航</p>
+    </div>
+    <div class="left-side-nav">
+      <dl class="lv1">
+        <dt>
+          <p class="nav-ico type2"></p>
+          <p>系统设置</p>
+          <p class="yu-arr type1"></p>
+        </dt>
+        <dd></dd>
+      </dl>
+      <dl class="lv1">
+        <dt>
+          <p class="nav-ico type3"></p>
+          <p>酒店管理</p>
+          <p class="yu-arr type1"></p>
+        </dt>
+        <dd>
+          <dl class="lv2">
+            <dt><span class="dian"></span>餐饮订餐</dt>
+            <dd>
+              <dl class="lv3">
+                <dt>商家管理</dt>
+                <dd> <a href="javascript:;">基本设置</a> <a href="javascript:;">菜单管理</a> </dd>
+              </dl>
+              <dl class="lv3">
+                <dt>订单管理</dt>
+                <dd> <a href="javascript:;">基本设置</a> <a href="javascript:;">菜单管理</a> </dd>
+              </dl>
+            </dd>
+          </dl>
+          <dl class="lv2">
+            <dt><span class="dian"></span>订房管理</dt>
+            <dd>
+              <dl class="lv3">
+                <dt>商家管理</dt>
+                <dd> <a href="javascript:;">基本设置</a> <a href="javascript:;">菜单管理</a> </dd>
+              </dl>
+            </dd>
+          </dl>
+          <dl class="lv2">
+            <dt><span class="dian"></span>订房设置</dt>
+            <dd>
+              <dl class="lv3">
+                <dt>商家管理</dt>
+                <dd> <a href="javascript:;">基本设置</a> <a href="javascript:;">菜单管理</a> </dd>
+              </dl>
+            </dd>
+          </dl>
+        </dd>
+      </dl>
+      <dl class="lv1">
+        <dt>
+          <p class="nav-ico type4"></p>
+          <p>团购管理</p>
+          <p class="yu-arr type1"></p>
+        </dt>
+        <dd></dd>
+      </dl>
+      <dl class="lv1">
+        <dt>
+          <p class="nav-ico type5"></p>
+          <p>会员中心</p>
+          <p class="yu-arr type1"></p>
+        </dt>
+        <dd></dd>
+      </dl>
+      <dl class="lv1">
+        <dt>
+          <p class="nav-ico type6"></p>
+          <p>手机官网</p>
+          <p class="yu-arr type1"></p>
+        </dt>
+        <dd></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="bread-nav">
+      <ul>
+        <li class="yu-c99">酒店管理</li>
+        <li class="yu-next-ico yu-c99 yu-font14">》</li>
+        <li class="yu-c99">餐饮管理</li>
+        <li class="yu-next-ico yu-c99 yu-font14">》</li>
+        <li>退款管理</li>
+      </ul>
+    </div>
+    <!--yu-pad20 end-->
+    <div class="yu-pad20">
+      <div class="inner-type1">
+        <div class="top-menu">
+          <p class="fl left-top-menu"><span></span>退款管理</p>
+          <!--<div class="search-box fr"> <span class="fl">
+            <input type="text" value="请输入单号或卖家手机号码进行搜索" class="my-search-bx">
+            </span><span class="fl">
+            <input type="button" value="搜索" class="my-search-btn">
+            </span> </div>-->
+            <div class="fr seach-box2">
+					          	<input type="text" placeholder="请输入姓名或者手机号"><input type="button" value="搜索">
+					          </div>
+          <!--search-box end--> 
+        </div>
+        <!--top-menu end-->
+        <div class="cal-container-mr">
+          <div class="ord-manager">
+            <div class="all-order">
+              <ul>
+                <li class="li_curre rgula1" onclick="regular(1)">所有订单
+                  <div></div>
+                </li>
+                <li class="rgula2" onclick="regular(2)">当日取消订单<span class="org">(2)</span>
+                  <div></div>
+                </li>
+                <li class="rgula3" onclick="regular(3)">拒绝申请
+                  <div></div>
+                </li>
+                <li class="rgula4" onclick="regular(4)">确认退款
+                  <div></div>
+                </li>
+              </ul>
+            </div>
+            <!--all-order end-->
+            <div class="page-turn">
+              <ul class="page-btn fr">
+                <li class="prev-page  dis">
+                  <div class=" arr prev-arr"></div>
+                </li>
+                <li class="next-page">
+                  <div class="arr next-arr"></div>
+                </li>
+              </ul>
+              <!--pagee-btn end-->
+              <div class="fr yu-line35 yu-rmar10"> <span class="yu-orange cur-page">1</span> <span class="yu-c66">/</span> <span class="yu-c66 all-page">5</span> </div>
+              <!--yu-rmar10 end--> 
+            </div>
+            <!--page-turn end--> 
+          </div>
+          <!--ord-manager end-->
+          <div class="order-container">
+              <table class="t-title">
+                <colgroup>
+	                    <col width="110px">
+		                <col width="320px">
+		                <col width="70px">
+		                <col width="70px">
+		                <col width="80px">
+		                <col width="80px">
+		                <col width="105px">
+		                <col width="120px">
+                </colgroup>
+                <tbody>
+                  <th>下单时间</th>
+                  <th>订单内容</th>
+                  <th>交易金额</th>
+                  <th>退款金额</th>
+                  <th>申请时间</th>
+                  <th>取消原因</th>
+                  <th>退款原因</th>
+                  <th>状态/详情</th>
+                    </tbody>
+              </table>
+            <div class="">
+              <div class="my-table cal_sub1">
+                <div class="t-heard">
+                  <ul class="fl">
+                    <li class="ms-lady">女士</li>
+                    <li>135705545284</li>
+                    <li class="hot-name">广州桃花江豪生酒店</li>
+                    <li class="num-room"><b>201A</b></li>
+                  </ul>
+                </div>
+                <!--t-heard end-->
+                <table cellpadding="0" cellspacing="0" border="0" class="my-tbody">
+                  <colgroup>
+	                    <col width="110px">
+		                <col width="320px">
+		                <col width="70px">
+		                <col width="70px">
+		                <col width="80px">
+		                <col width="80px">
+		                <col width="105px">
+		                <col width="120px">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td class="order-of-time yu-font12 yu-fontv">
+                      	<p class="cal-c33">11:22:15</p>
+                        <p class="yu-c99">2017-2-27</p>
+                      </td>
+                      <td>
+                      	 <div class="yu-i-b cal-marr10 ord-msg fl"><img src="images/htl-pic.png"></div>
+                         <dl class="yu-i-b fl">
+                            <dt>广州桃花江豪生酒店</dt>
+                            <dd>青菜猪肉1份 / 原味肠粉1分...  <span class="cal-c33"><b>3</b></span>个菜品</dd>
+                            <dd>订单号：17030713515135083</dd>
+                         </dl>
+                      </td>
+                      <td class="yu-font14 yu-c66 yu-fontv">￥122</td>
+                      <td class="org yu-font14 yu-fontv">￥122</td>
+                      <td class="yu-font12 yu-fontv">
+                      	<p class="cal-c33">11:22:15</p>
+                        <p class="yu-c99">2017-2-27</p>
+                      </td>
+                      <td class="yu-font12">不想要了</td>
+                      <td class="yu-font12">订餐派送中</td>
+                      <td><div class="no-aplay">
+                          <ul>
+                            <li class="cal-red yu-font14">拒绝申请</li>
+                            <li class="yu-font12 yu-c99">还剩20时10分</li>
+                            <li class="blue-small-btn">
+                              <input type="button" value="订单详情" class="fl">
+                              <div></div>
+                            </li>
+                          </ul>
+                        </div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--my-table end-->
+              <div class="msg-detail sp">
+                <div class="main-box">
+                  <div class="yu-lrpad30 yu-bgf9">
+                    <div class="yu-bmar-1 yu-overf">
+                      <dl class="order-dl-row">
+                        <dt>商家信息</dt>
+                        <dd>
+                          <div class="fl"> <span class="yu-blue1 yu-fontb yu-rmar10">广州桃花江豪生酒店</span> <span class="yu-orange yu-fontv yu-rmar10">020-5899548</span> <span class="yu-orange yu-fontv yu-rmar10">13570568987</span> </div>
+                          <div class="fr"> <span class="yu-fontb yu-c99 yu-rmar10 fl">订单信息</span>
+                            <div class="fl">
+                              <div class="fl yu-rmar20"> <span class="yu-c99">付款时间：</span> <span class="yu-fontv">2017-01-11 22:11:15</span> </div>
+                              <div class="fl"> <span class="yu-c99">确认时间：</span> <span class="yu-fontv">2017-01-11 22:11:15</span> </div>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="yu-bmar20">
+                      <table width="100%" class="order-tetails-table" border="1" bordercolor="#ececec">
+                        <tbody>
+                          <tr>
+                            <th>订单名称</th>
+                            <th>数量</th>
+                            <th>金额</th>
+                            <th>口味</th>
+                            <th>包装费</th>
+                            <th>用餐人数</th>
+                            <th>备注</th>
+                            <th>优惠</th>
+                            <th>总价</th>
+                          </tr>
+                          <tr>
+                            <td width="260"><div class="yu-lpad40">
+                                <p class="odder-s-img"> <img src="images/product.png"> </p>
+                                <p class="fl yu-tpad10">排骨拼鸡腿套餐饭</p>
+                              </div></td>
+                            <td class="yu-fontv">1</td>
+                            <td class="yu-fontv">￥26</td>
+                            <td>中辣</td>
+                            <td rowspan="3" class="yu-fontv yu-c66">￥2</td>
+                            <td rowspan="3" class="yu-fontv yu-c66">3</td>
+                            <td rowspan="3" class="yu-c66">不要香菜|不要醋|不要葱</td>
+                            <td rowspan="3" class="yu-c66">无可用红包</td>
+                            <td rowspan="3"><p class="yu-fontv yu-orange"><span class="yu-font14">￥</span><span class="yu-font16">122</span></p>
+                              <p class="yu-c66">共3份菜</p></td>
+                          </tr>
+                          <tr>
+                            <td><div class="yu-lpad40">
+                                <p class="odder-s-img"> <img src="images/product.png"> </p>
+                                <p class="fl yu-tpad10">排骨拼鸡腿套餐饭</p>
+                              </div></td>
+                            <td class="yu-fontv">1</td>
+                            <td class="yu-fontv">￥26</td>
+                            <td>中辣</td>
+                          </tr>
+                          <tr>
+                            <td><div class="yu-lpad40">
+                                <p class="odder-s-img"> <img src="images/product.png"> </p>
+                                <p class="fl yu-tpad10">排骨拼鸡腿套餐饭</p>
+                              </div></td>
+                            <td class="yu-fontv">1</td>
+                            <td class="yu-fontv">￥26</td>
+                            <td>中辣</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--msg-detail end--> 
+              <div class="my-table cal_sub1">
+                <div class="t-heard">
+                  <ul class="fl">
+                    <li class="ms-lady">女士</li>
+                    <li>135705545284</li>
+                    <li class="hot-name">广州桃花江豪生酒店</li>
+                    <li class="num-room"><b>201A</b></li>
+                  </ul>
+                </div>
+                <!--t-heard end-->
+                <table cellpadding="0" cellspacing="0" border="0" class="my-tbody">
+                  <colgroup>
+	                    <col width="120px">
+		                <col width="320px">
+		                <col width="70px">
+		                <col width="70px">
+		                <col width="90px">
+		                <col width="80px">
+		                <col width="110px">
+		                <col width="130px">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td class="order-of-time yu-font12 yu-fontv">
+                      	<p class="cal-c33">11:22:15</p>
+                        <p class="yu-c99">2017-2-27</p>
+                      </td>
+                      <td>
+                      	 <div class="yu-i-b cal-marr10 ord-msg fl"><img src="images/htl-pic.png"></div>
+                         <dl class="yu-i-b fl">
+                            <dt>广州桃花江豪生酒店</dt>
+                            <dd>青菜猪肉1份 / 原味肠粉1分...  <span class="cal-c33"><b>3</b></span>个菜品</dd>
+                            <dd>订单号：17030713515135083</dd>
+                         </dl>
+                      </td>
+                      <td class="yu-font14 yu-c66 yu-fontv">￥122</td>
+                      <td class="org yu-font14 yu-fontv">￥122</td>
+                      <td class="yu-font12 yu-fontv">
+                      	<p class="cal-c33">11:22:15</p>
+                        <p class="yu-c99">2017-2-27</p>
+                      </td>
+                      <td class="yu-font12">不想要了</td>
+                      <td class="yu-font12">订餐派送中</td>
+                      <td><div class="no-aplay">
+                          <ul>
+                            <li class="cal-red yu-font14">拒绝申请</li>
+                            <li class="yu-font12 yu-c99">还剩20时10分</li>
+                            <li class="blue-small-btn">
+                              <input type="button" value="订单详情" class="fl">
+                              <div></div>
+                            </li>
+                          </ul>
+                        </div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--my-table end-->
+              <div class="msg-detail sp">
+                <div class="main-box">
+                  <div class="yu-lrpad30 yu-bgf9">
+                    <div class="yu-bmar-1 yu-overf">
+                      <dl class="order-dl-row">
+                        <dt>商家信息</dt>
+                        <dd>
+                          <div class="fl"> <span class="yu-blue1 yu-fontb yu-rmar10">广州桃花江豪生酒店</span> <span class="yu-orange yu-fontv yu-rmar10">020-5899548</span> <span class="yu-orange yu-fontv yu-rmar10">13570568987</span> </div>
+                          <div class="fr"> <span class="yu-fontb yu-c99 yu-rmar10 fl">订单信息</span>
+                            <div class="fl">
+                              <div class="fl yu-rmar20"> <span class="yu-c99">付款时间：</span> <span class="yu-fontv">2017-01-11 22:11:15</span> </div>
+                              <div class="fl"> <span class="yu-c99">确认时间：</span> <span class="yu-fontv">2017-01-11 22:11:15</span> </div>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="yu-bmar20">
+                      <table width="100%" class="order-tetails-table" border="1" bordercolor="#ececec">
+                        <tbody>
+                          <tr>
+                            <th>订单名称</th>
+                            <th>数量</th>
+                            <th>金额</th>
+                            <th>口味</th>
+                            <th>包装费</th>
+                            <th>用餐人数</th>
+                            <th>备注</th>
+                            <th>优惠</th>
+                            <th>总价</th>
+                          </tr>
+                          <tr>
+                            <td width="260"><div class="yu-lpad40">
+                                <p class="odder-s-img"> <img src="images/product.png"> </p>
+                                <p class="fl yu-tpad10">排骨拼鸡腿套餐饭</p>
+                              </div></td>
+                            <td class="yu-fontv">1</td>
+                            <td class="yu-fontv">￥26</td>
+                            <td>中辣</td>
+                            <td rowspan="3" class="yu-fontv yu-c66">￥2</td>
+                            <td rowspan="3" class="yu-fontv yu-c66">3</td>
+                            <td rowspan="3" class="yu-c66">不要香菜|不要醋|不要葱</td>
+                            <td rowspan="3" class="yu-c66">无可用红包</td>
+                            <td rowspan="3"><p class="yu-fontv yu-orange"><span class="yu-font14">￥</span><span class="yu-font16">122</span></p>
+                              <p class="yu-c66">共3份菜</p></td>
+                          </tr>
+                          <tr>
+                            <td><div class="yu-lpad40">
+                                <p class="odder-s-img"> <img src="images/product.png"> </p>
+                                <p class="fl yu-tpad10">排骨拼鸡腿套餐饭</p>
+                              </div></td>
+                            <td class="yu-fontv">1</td>
+                            <td class="yu-fontv">￥26</td>
+                            <td>中辣</td>
+                          </tr>
+                          <tr>
+                            <td><div class="yu-lpad40">
+                                <p class="odder-s-img"> <img src="images/product.png"> </p>
+                                <p class="fl yu-tpad10">排骨拼鸡腿套餐饭</p>
+                              </div></td>
+                            <td class="yu-fontv">1</td>
+                            <td class="yu-fontv">￥26</td>
+                            <td>中辣</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--msg-detail end--> 
+            </div>                     
+          </div>
+          <!--order-container end-->
+          <div class="page-num-bar">
+            <p class="yu-line37 yu-c88 yu-font14 yu-rmar10">总菜单：129</p>
+            <ul class="page-num-zujian">
+              <li class="type1"> 上一页 </li>
+              <li class="type2">1</li>
+              <li class="type3">2</li>
+              <li class="type3"> 下一页 </li>
+            </ul>
+            <p class="yu-line37 yu-c88 yu-font14 yu-rmar10">共2页</p>
+            <div class="yu-line37 yu-c88 yu-font14 yu-rmar10">到第
+              <input type="text" value="1" class="page-input">
+              页</div>
+            <p>
+              <input type="submit" value="确定" class="page-sub">
+            </p>
+          </div>
+          <!--page-num-bar end--> 
+        </div>
+        <!--cal-container-mr end-->
+        <div class="rem-info">
+          <div class="no-info">
+            <div></div>
+          </div>
+        </div>
+        <!--rem-info end-->
+        <div class="rem-info">
+          <div class="to-info">
+            <div><span>3</span></div>
+          </div>
+          <div class="showTime">
+            <ul>
+              <li class="ord-pending"><a href="#">待处理订单（2）</a></li>
+              <li class="ref-pending"><a href="#">待处理退款（1）</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--rem-info end--> 
+      </div>
+      <!--inner-type1 end--> 
+    </div>
+    <!--yu-pad20 end-->
+  </div>
+  <!--right-side end--> 
+</div>
+<script type="text/javascript">
+	      //切换
+	        $('.to-info,.showTime').mouseover(function(){
+				 $('.showTime').show()
+				})
+			$('.to-info,.showTime').mouseout(function(){
+				$('.showTime').hide()
+			})
+			
+		function regular(value){
+ 	       for(i=1;i<=4;i++){
+				if(i == value){
+		             $('.rgula'+value).addClass('li_curre')
+//					 $('.cal_sub'+value).css('display','block');	
+				}else{
+		             $('.rgula'+i).removeClass('li_curre') 
+//					 $('.cal_sub'+i).css('display','none');	
+				 }
+			  }
+           }
+		$(function(){
+			//订单详情
+			$(".blue-small-btn").on("click",function(){
+				$(this).toggleClass("cur");
+				$(this).parents(".my-table").next(".msg-detail").toggle();
+			})
+			//侧导航
+			$(".left-side-nav>.lv1>dt").on("click",function(){
+				$(this).siblings().children(".lv2").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv2>dt").on("click",function(){
+				$(this).siblings().children(".lv3").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv3>dt").on("click",function(){
+				$(this).siblings().slideToggle(200);
+				$(this).toggleClass("cur");
+
+			})
+			//
+			$(".copy-checkbox1").on("click",function(){
+				$(this).parent().toggleClass("cur");
+			})
+
+			//翻页按钮
+			var allPages=parseInt($(".all-page").text());
+			var pageClickNum=1;
+			$(".next-page").click(function(){
+				if(pageClickNum<allPages){
+					pageClickNum++;
+					$(".cur-page").text(pageClickNum);
+					$(".prev-page").removeClass("dis");
+					if(pageClickNum==allPages){
+						$(this).addClass("dis");
+					}
+				}
+			});
+			$(".prev-page").click(function(){
+				if(pageClickNum>1){
+					pageClickNum--;
+					$(".cur-page").text(pageClickNum);
+					$(".next-page").removeClass("dis");
+					if(pageClickNum==1){
+						$(this).addClass("dis");
+					}
+
+				}
+			});
+
+		})
+	</script>
+</body>
+</html>

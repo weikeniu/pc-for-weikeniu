@@ -1,0 +1,295 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: microsoft yahei,simhei;
+	background: #f7f7f7;
+	
+	/*+++*/
+	font-size: 14px;
+	min-width: 1200px;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+ul {
+	list-style: none;
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+img{
+	/*display: block;*/
+}
+.clear{
+	clear:both;}
+
+.yu-c7d{
+	color: #7d7d7d;
+}
+.yu-h45{
+	height: 45px;
+}
+.yu-bgf4{
+	background: #f4f4f4;
+}
+.yu-l45{
+	line-height: 45px;
+}
+.yu-pad20{
+	padding: 20px;
+}
+.right-side .yu-pad20{padding: 0;}
+.yu-next-ico{
+	font-family: simsun;
+}
+.yu-c99{
+	color: #999999;
+}
+.yu-font14{
+	font-size: 14px;
+}
+.yu-pos-r{
+	position: relative;
+}
+.yu-font16{
+	font-size: 16px;
+}
+.yu-font24{
+	font-size: 24px;
+}
+.yu-font26{
+	font-size: 26px;
+}
+.yu-rmar60{
+	margin-right: 60px;
+}
+.yu-bmar60{
+	/*margin-bottom: 60px;*/
+}
+.yu-orange{
+	color: #f60;
+}
+.yu-lrmar10{
+	margin:0 10px;
+}
+.yu-c00{
+	color: #000;
+}
+.yu-tbpad5{
+	padding: 5px 0;
+}
+.yu-rpad80{
+	/*padding-right: 80px;*/
+}
+.yu-bbor{
+	border-bottom: 1px solid #e7e7e7;
+}
+.yu-h50{
+	height: 50px;
+}
+.yu-line35{
+	line-height: 35px;
+}
+.yu-rmar10{
+	margin-right: 10px;
+}
+.yu-c66{
+	color: #666;
+}
+.yu-bmar35{
+	margin-bottom: 35px;
+}
+.yu-blue1{
+	color: #2093f7;
+}
+.yu-font12{
+	font-size: 12px !important;
+}
+.yu-tbpad10{
+	padding: 10px 0;
+}
+.yu-font18{
+	font-size: 18px;
+}
+.yu-bmar10{
+	margin-bottom: 10px;
+}
+.no-rmar{
+	/*margin-right: 0 !important;*/
+}
+.yu-line37{
+	line-height: 37px;
+}
+.yu-c88{
+	color: #888;
+
+}
+.yu-tmar30{
+	margin-top: 30px;
+}
+.yu-rpad20{
+	padding-right: 20px;
+}
+.yu-rmar20{
+	margin-right: 20px;
+}
+.yu-bgw{
+	background: #fff;
+}
+.yu-bgf7{
+	background: #f7f7f7;
+}
+.yu-overf{
+	overflow: hidden;
+}
+.yu-pad10{
+	padding: 10px;
+}
+.yu-cblue{
+	color:#2093f7;
+}
+input{
+	outline: 0;
+}
+.yu-disN{
+	display: none;
+}
+.yu-bmar20{
+	margin-bottom: 20px;
+}
+.yu-line35{
+	/*line-height: 35px;*/
+	line-height: 32px;
+}
+.yu-bgf9{
+	background: #f9f9f9;
+}
+.yu-lrpad30{
+	padding: 0 30px;
+}
+.yu-lrpad20{
+    padding-left:20px; padding-right:20px;
+}
+.yu-fontb{
+	font-weight: bold;
+}
+.yu-fontv{
+	font-family: verdana;
+}
+.yu-lpad40{
+	padding-left: 40px;
+}
+.yu-bmar-1{
+	margin-bottom: -1px;
+}
+.yu-font36{
+	font-size: 36px;
+}
+.yu-font18{
+	font-size: 18px;
+}
+.yu-tpad10{
+	padding-top: 10px;
+}
+.yu-bor-e7{
+	border:1px solid #e7e7e7;
+}
+.yu-rmar30{
+	margin-right: 30px;
+}
+.yu-h35{
+	height: 35px;
+}
+.yu-c33{
+	color: #333;
+}
+.yu-blue{
+	color: #2093f7;
+}
+.yu-lpad55{
+	padding-left: 55px !important;
+}
+.yu-mar0a{
+	margin: 0 auto !important;
+	float: none !important;
+}
+.yu-font30{
+	font-size: 30px;
+	font-weight: bold;
+}
+.yu-tpad30{
+	padding-top: 30px;
+}
+.yu-tpad20{
+	padding-top: 20px;
+}
+.yu-lpad30{
+	padding-left: 30px;
+}
+.yu-lmar10{
+	margin-left: 10px;
+}
+.yu-bgf7{
+	background: #f7f7f7;
+}
+.yu-tpad5{
+	padding-top: 5px;
+}
+.yu-font20{
+	font-size: 20px;
+}
+.yu-c40{
+	color: #f40;
+}
+.yu-bgy{
+	background: #ffff00;
+}
+.yu-weight100{
+	font-weight: 100;
+}
+.yu-cff{
+	color: #fff;
+}
+.yu-line40{
+	line-height: 40px;
+}
+.dis-i-b{
+	display: inline-block;
+}
+.yu-max-h200{
+	max-height: 200px;
+	overflow-y: scroll;
+}
+.yu-pad30{
+	padding: 30px;
+}
+.yu-bmar5{
+	margin-bottom: 5px;
+}
+.yu-i-b{
+	display: inline-block;
+}
+.no-rbor{
+	border-right: 0 !important;
+}
+/*输入框字体颜色*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+color: #999 !important; 
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+color: #999 !important; 
+} 
+input::-moz-placeholder, textarea::-moz-placeholder { 
+color: #999 !important; 
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+color: #999 !important; 
+} 
+input[type="text"]{
+	color: #333 !important;
+}

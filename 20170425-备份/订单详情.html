@@ -1,0 +1,592 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="关键词1,关键词2,关键词3" />
+<meta name="description" content="对网站的描述" />
+<title>订单详情</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link type="text/css" rel="stylesheet" href="css/index.css"/>
+<link type="text/css" rel="stylesheet" href="css/common.css"/>
+<link type="text/css" rel="stylesheet" href="css/columns.css"/>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+	<div class="top-bar">
+		<h1 id="logo">微可牛管理中心</h1>
+	</div>
+	<div class="content">
+		<div class="left-side">
+			<div class="yu-c7d yu-h45 yu-bgf4 yu-l45 yu-pos-r">
+				<p class="nav-ico type1">
+					
+				</p>
+				<p class="">功能导航</p>
+			</div>
+			<div class="left-side-nav">
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type2"></p>
+						<p>系统设置</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type3"></p>
+						<p>酒店管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd>
+						<dl class="lv2">
+							<dt><span class="dian"></span>餐饮订餐</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>
+								<dl class="lv3">
+									<dt>订单管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>								
+							</dd>
+						</dl>
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房管理</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>	
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房设置</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>													
+					</dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type4"></p>
+						<p>团购管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type5"></p>
+						<p>会员中心</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type6"></p>
+						<p>手机官网</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+			</div>
+		</div>
+
+		<div class="right-side">
+			<div class="bread-nav">
+				<ul>
+					<li class="yu-c99">酒店超市</li>
+					<li class="yu-next-ico yu-c99 yu-font14">》</li>
+					<li>订单详情</li>
+
+				</ul>
+			</div>
+			<div class="yu-pad20">
+				<div class="inner-type1 ">
+                     <div class="cal-container-mr">
+                           <div class="top-menu">
+                                 <p class="fl left-top-menu"><span></span>订单详情</p>
+                           </div>
+                           <!--top-menu end -->
+                           <div class="ca-ord-detail">
+                                 <ul>
+                                      <li><input type="button" value="超市订单" class="ca-super-btn"></li>
+                                      <li>订单状态</li>
+                                      <li class="org">已付款待处理</li>
+                                      <li class="cal-marl20">下单时间<span class="yu-c33 cal-marl10 cal-marr20">2017-03-24  22：03：44</span></li>
+                                      <li>支付方式<span class="yu-c33 cal-marl10 cal-marr20">微信支付</span></li>
+                                      <li>收货方式<span class="yu-c33 cal-marl10">快递</span></li>
+                                      
+                                 </ul>
+                           </div>
+                           <!--ca-ord-detail end-->
+                           <div class="yu-c99 cal-mart5 yu-font14 ca-over-time">买家还有<span class="org">6</span>天<span class="org">23</span>时<span class="org">57</span>分<span class="org">37</span>秒来确认收货，超时订单将自动确认收货</div>
+                           <div class="ca-operation-state">
+                                 <ul>
+                                      <li><input type="button" value="发   货" class="ca-dliver-btn"></li>
+                                      <li><input type="button" value="微信退款" class="ca-wxreturn-btn"></li>
+                                      <li id="ca-R-mation"><input type="button" value="退款明细" class="ca-return-detail"></li>
+                                      <li><input type="button" value="打印预览" class="ca-print-btn" ></li>
+                                 </ul>
+                           </div>
+                           <!--ca-operation-state end-->
+                           <div class="ca-list-content">
+                                 <div class="ca-left-list yu-font14 ca-bg-gray">
+                                       <div class="ca-ship-infor" style="display:none;">
+                                             <div class="ca-goods-title"><b>发货信息</b></div>
+                                             <div class="ca-buy-infor cal-marb20">
+                                                   <ul>
+                                                         <li><span>发货时间</span>2017-3-28&nbsp;&nbsp;&nbsp;11：05：12</li>
+                                                         <li><span>物流公司</span>中通快递<a href="javascript:;" class="yu-blue1 cal-marl20">点击进入物流官网</a></li>
+                                                         <li><span>快递单号</span>42065289456<a href="javascript:;" class="yu-blue1 cal-marl10">修改</a></li>
+                                                         <li><span>物流跟踪</span>您的快递单号暂时没有查询结果，可访问该物流公司官方网站查询</li>
+                                                   </ul>
+                                             </div>
+                                             <!--ca-buy-infor end -->
+                                       </div>
+                                       <!--ca-ship-infor end -->
+                                       <div class="ca-goods-title"><b>商品清单</b></div>
+                                       <table cellpadding="0" cellspacing="0" border="0">
+                                              <colgroup>
+                                                  <col width="56.2%">
+                                                  <col width="12.8%">
+                                                  <col width="15%">
+                                                  <col width="16%">
+                                              </colgroup>
+                                              <thead>
+                                                     <tr>
+                                                         <th align="left"><span class="cal-marl-big">商品</span></th>
+                                                         <th>数量</th>
+                                                         <th>单价</th>
+                                                         <th>总价</th>
+                                                     </tr>
+                                              </thead>
+                                              <tbody>
+                                                     <tr>
+                                                          <td><div class="ca-products-img"><span class="fl"><img src="images/products-02.png"></span><b>新农哥坚果休闲零食果仁巴</b></div></td>
+                                                          <td align="center">1</td>
+                                                          <td align="center">￥26</td>
+                                                          <td rowspan="3" align="center" class="cal-bdleft-f3">￥122</td>
+                                                     </tr>
+                                                     <!--<tr>
+                                                          <td class="ca-products-img"><span class="fl"><img src="images/products-02.png"></span><b>新农哥坚果休闲零食果仁巴</b></td>
+                                                          <td align="center">1</td>
+                                                          <td align="center" >￥26</td>
+                                                          <td rowspan="3" align="center" class="cal-bdleft-f3"></td>
+                                                     </tr>
+                                                     <tr>
+                                                          <td class="ca-products-img"><span class="fl"><img src="images/products-02.png"></span><b>新农哥坚果休闲零食果仁巴</b></td>
+                                                          <td align="center">1</td>
+                                                          <td align="center">￥26</td>
+                                                          <td rowspan="3" align="center" class="cal-bdleft-f3"></td>
+                                                     </tr>-->
+                                              </tbody>
+                                       </table>
+                                       <div class="ca-goods-title"><b>买家信息</b></div>
+                                       <div class="ca-buy-infor">
+                                             <ul>
+                                                   <li><span>买家姓名</span>王女士<span class="cal-marl30">买家电话</span>135987456214</li>
+                                                   <li><span class="fl">收货地址</span><div class="fl"><input type="text" value="广州市越秀区寺右新马路129号23B"  id="J-ca-adress" class="j-ca-adress"></div><a href="javascript:;" class="yu-blue1 cal-marl20" id="J-ca-revice">修改地址</a></li>
+                                                   <li><span>订单备注</span>派送前电话联系，谢谢</li>
+                                             </ul>
+                                       </div>
+                                       <!--ca-buy-infor end -->
+                                        <div class="ca-keep-post">
+                                             <div>
+                                                 <textarea placeholder="请在这里填写备注" class="yu-font12" style="height:65px;"></textarea>
+                                                 <input type="button" value="保存备注" class="ca-keep-middle-btn cal-marl10 cal-mart20">
+                                             </div>
+                                        </div>
+                                        <!--ca-keep-post end -->
+                                 </div>
+                                 <!--ca-left-list end -->
+                                 <div class="ca-right-list ca-bg-gray">
+                                      <div class="ca-goods-title yu-font14"><b>买价 ........................................ ￥146</b></div>
+                                      <div class="ca-ord-infor yu-font12">
+                                            <ul>
+                                                  <li><span>订单编号</span>96545621887556</li>
+                                                  <li><span>快递费用</span>￥12</li>
+                                                  <li><span>优惠信息</span>￥12</li>
+                                                  <li class="yu-blue1"><span>特殊要求</span>无</li>
+                                                  <li><span>订单来源</span>微官网</li>
+                                            </ul>
+                                      </div>
+                                      <!--ca-ord-infor end -->
+                                      <div class="ca-hotel-instion">
+                                           <div class="yu-font14">酒店操作说明</div>
+                                           <p>微官网订单原则确认后不可以变更/取消,针对预付订单，客人30分钟内未付款，系统自动取消订单，如对订单有疑问可与客人进行沟通</p>
+                                           <p>针对非微官网渠道订单,一经确认后不允许自行变更/取消订单,若确认后到店无房或者拒单等情况,酒店需承担相应的订单责任</p>
+                                           <p>微信退款有一定延时，零钱支付的退款20分钟内到账，银行卡支付的退款需3个工作日</p>
+                                      </div>
+                                      <!--ca-hotel-instion end-->
+                                 </div>
+                                 <!--ca-right-list end-->
+                           </div>
+                           <!--ca-list-content end -->
+                           <div class="ca-hotel-tips">
+                                 <p class="cal-marl20 yu-font12 yu-c33">酒店备注</p>
+                                  <table cellpadding="0" cellspacing="0" width="100%;" class="yu-c66 cal-mart10">
+                                           <colgroup>
+                                                      <col width="13%">
+                                                      <col width="25.7%">
+                                                      <col width="23%">
+                                                      <col width="38.3%">
+                                           </colgroup>
+                                           <thead>
+                                                   <tr class="yu-font12">
+                                                         <th>操作员</th>
+                                                         <th>操作日期</th>
+                                                         <th>详情描述</th>
+                                                         <th></th>
+                                                   </tr>
+                                           </thead>
+                                   </table>
+                                   <div class="ca-hotel-mytbody">
+                                         <table cellpadding="0" cellspacing="0" width="100%;" class="yu-c66">
+                                                 <colgroup>
+                                                            <col width="13%">
+                                                            <col width="25.7%">
+                                                            <col width="23%">
+                                                            <col width="38.3%">
+                                                 </colgroup>
+                                                 <tbody class="yu-font12">
+                                                         <tr>
+                                                              <td align="center">系统</td>
+                                                              <td align="center">2017-04-10  15：49：37</td>
+                                                              <td align="center">订单状态流转为:已确认</td>
+                                                              <td></td>
+                                                         </tr>
+                                                 </tbody>
+                                         </table>
+                                   </div>
+                           </div>
+                           <!--ca-hotel-tips end -->
+                           <div class="ca-hotel-tips">
+                                 <p class="cal-marl20 yu-font12 yu-c33">系统日志</p>
+                                  <table cellpadding="0" cellspacing="0" width="100%;" class="yu-c66 cal-mart10">
+                                           <colgroup>
+                                                      <col width="13%">
+                                                      <col width="25.7%">
+                                                      <col width="23%">
+                                                      <col width="38.3%">
+                                           </colgroup>
+                                           <thead>
+                                                   <tr class="yu-font12">
+                                                         <th>操作员</th>
+                                                         <th>操作日期</th>
+                                                         <th>详情描述</th>
+                                                         <th></th>
+                                                   </tr>
+                                           </thead>
+                                           <!--<tbody class="yu-font12">
+                                                   <tr>
+                                                        <td align="center">系统</td>
+                                                        <td align="center">2017-04-10  15：49：37</td>
+                                                        <td align="center">订单状态流转为:已确认</td>
+                                                        <td></td>
+                                                   </tr>
+                                           </tbody> -->
+                                   </table>
+                                   <div class="ca-hotel-mytbody">
+                                         <table cellpadding="0" cellspacing="0" width="100%;" class="yu-c66">
+                                                 <colgroup>
+                                                            <col width="13%">
+                                                            <col width="25.7%">
+                                                            <col width="23%">
+                                                            <col width="38.3%">
+                                                 </colgroup>
+                                                 <!--<thead>
+                                                         <tr class="yu-font14">
+                                                               <th>操作员</th>
+                                                               <th>操作日期</th>
+                                                               <th>详情描述</th>
+                                                               <th></th>
+                                                         </tr>
+                                                 </thead>-->
+                                                 <tbody class="yu-font12">
+                                                         <tr>
+                                                              <td align="center">系统</td>
+                                                              <td align="center">2017-04-10  15：49：37</td>
+                                                              <td align="center">订单状态流转为:已确认</td>
+                                                              <td></td>
+                                                         </tr>
+                                                         <tr>
+                                                              <td align="center">微可牛</td>
+                                                              <td align="center">2017-04-10  15：49：37</td>
+                                                              <td align="center">订单状态流转为:已确认</td>
+                                                              <td></td>
+                                                         </tr>
+                                                 </tbody>
+                                         </table>
+                                   </div>
+                           </div>
+                           <!--ca-hotel-tips end -->
+                     </div>
+                     <!--cal-container-mr end -->
+					 <!-- 在这里写内容 -->
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--发货弹窗-->
+    <div class="ca-ship-dialog">
+         <form action=""; method="get">
+         <div class="ca-ship-show">
+               <div class="cal-title">
+                     <dl>
+                          <dt>发货</dt>
+                          <dd class="Close"></dd>
+                     </dl> 
+               </div>
+               <!--cal-title end-->
+               <table cellspacing="0" cellpadding="0">
+                      <tbody class="yu-font14">
+                               <tr><td><label class="yu-c99 cal-marr10">快递公司</label></td>
+                               <td>
+                                   <select class="cal-padl5" id="ca-J-select">
+                                            <option>申通快递</option>
+                                            <option>中通快递</option>
+                                   </select>
+                               </td>
+                               </tr>
+                               <tr><td><label class="yu-c99 cal-marr10">快递单号</label></td><td><input type="text" placeholder="请填写快递单号" class="cal-padl10"id="ca-J-text"></td></tr>
+                       </tbody>
+                </table>
+                <div><input type="button" value="确定" class="ca-middle-btn cal-marb30" id="ca-sure"></div>
+          </div>
+         <!--ca-ship-show end-->
+         </form>
+    </div>
+    <!--ca-ship-dialog end-->
+    <!--退款弹窗-->
+    <div class="ca-return-dialog">
+         <form action=""; method="get">
+         <div class="ca-return-show">
+               <div class="cal-title">
+                     <dl>
+                          <dt>退款操作</dt>
+                          <dd class="Close"></dd>
+                     </dl> 
+               </div>
+               <!--cal-title end-->
+               <div class="ca-cor-telep">对应手机号<b class="yu-blue1">131****4545</b>（可多次退款，仅支持微信支付订单）</div>
+               <table cellspacing="0" cellpadding="0">
+                      <tbody class="yu-font14">
+                               <tr><td><label class="yu-c99 cal-marr10">手机验证码</label></td>
+                               <td class="get-phone-msg">
+                                   <input type="text" placeholder="手机验证码" class="fl cal-padl10 ca-phone-codas">
+                                   <input type="button" value="获取手机验证码" class="fr yu-blue1 ca-get-codas">
+                               </td>
+                               </tr>
+                               <tr><td class="cal-padl12"><label class="yu-c99 cal-marr10">退款金额</label></td><td class="get-phone-msg"><input type="text" placeholder="退款金额不能大于1.00" class="cal-padl10" id="ca-cash-text"></td></tr>
+                       </tbody>
+                </table>
+                <div class="cal-marl15"><input type="button" value="确定退款" class="ca-middle-btn cal-marb20" id="ca-return"></div>
+                <div class="yu-font12 yu-blue1 cal-marl15">温馨提示：由于各种原因需要退款时，酒店可通过退款将支付款退还客人</div>
+          </div>
+         <!--ca-return-show end-->
+         </form>
+    </div>
+    <!--ca-return-dialog end-->
+    <!--退款明细弹窗-->
+    <div class="ca-detail-dialog">
+          <div class="ca-detail-show">
+                 <div class="cal-title">
+                       <dl>
+                            <dt>退款单明细</dt>
+                            <dd class="Close"></dd>
+                       </dl> 
+                 </div>
+                 <!--cal-title end-->
+                 <table cellspacing="0" cellpadding="0" class="yu-font14" width="100%">
+                        <colgroup>
+                                   <col width="42%">
+                                   <col width="16%">
+                                   <col width="20%">
+                                   <col width="22%">
+                        </colgroup>
+                        <thead>
+                               <tr><th>退款申请编号</th><th>退款金额</th><th>审批状态</th><th>支付状态</th></tr>
+                        </thead>
+                 </table>
+                 <div class="ca-return-detail">
+                       <table cellspacing="0" cellpadding="0" class="yu-font14" width="100%">
+                              <colgroup>
+                                       <col width="42%">
+                                       <col width="16%">
+                                       <col width="20%">
+                                       <col width="22%">
+                              </colgroup>
+                              <tbody>
+                                     <tr>
+                                          <td align="center" class="cal-padl30">965456218875562456987521425</td>
+                                          <td align="center">￥100</td>
+                                          <td align="center">审批通过</td>
+                                          <td align="center">已退清</td>
+                                     </tr>
+                                     <tr>
+                                          <td align="center" class="cal-padl30">965456218875562456987521425</td>
+                                          <td align="center">￥50</td>
+                                          <td align="center">审批通过</td>
+                                          <td align="center">已退清</td>
+                                     </tr>
+                              </tbody>
+                        </table>
+                 </div>
+                 <!--ca-return-detail end-->
+          </div>
+          <!--ca-detail-show end-->
+    </div>
+    <!--ca-detail-dialog end-->
+    <script type="text/javascript">
+	       //发货状态变化
+		   $('.ca-dliver-btn').click(function(){
+			      $('.ca-ship-dialog').css('display','block')  
+			   })
+		   $('.Close,.ca-middle-btn').click(function(){
+			      $('.ca-ship-dialog,.ca-return-dialog,.ca-detail-dialog').css('display','none')
+			   })
+			
+		  
+			$(function(){
+					$('#ca-J-text,#ca-J-select option:selected').bind('input propertychange', function() {
+						if(($('#ca-J-select option:selected').text() !="") && ($('#ca-J-text').val() !="")){
+						   $("#ca-sure").addClass('on')
+						 }
+						 else{
+						   $("#ca-sure").removeClass('on')
+						}
+					});
+				         
+				})
+			 $('#ca-sure').click(function(){
+			      if($(this).parent().children().hasClass('on')){
+					      $('.ca-dliver-btn').addClass('on')
+						  $('.ca-ship-infor').show()
+						  $('.ca-over-time').show()
+					 }
+					  //else{
+						//  alert('请填写快递单')
+					  //}
+			  })
+			/*$('.ca-operation-state li input').mouseover(function(){
+			      $(this).addClass('on')
+			   })
+		   $('.ca-operation-state li input').mouseout(function(){
+			      $(this).removeClass('on')
+			   })*/
+		  //退款状态变化  
+		  $('.ca-wxreturn-btn').click(function(){
+			      $('.ca-return-dialog').css('display','block')  
+			  })
+		  
+		  $('.ca-return-detail').click(function(){
+			    $('.ca-detail-dialog').show()
+			  })
+		  $(function(){
+					$('.ca-phone-codas,#ca-cash-text').bind('input propertychange', function() {
+						if(($('.ca-phone-codas').val() !="") && ($('#ca-cash-text').val() !="")){
+						   $("#ca-return").addClass('on')
+						 }
+						 else{
+						   $("#ca-return").removeClass('on')
+						}
+					});
+				         
+				})	
+			$('#ca-return').click(function(){
+			       if($(this).hasClass('on')){
+					   $("#ca-return").css("cursor","point");
+					   $('#ca-R-mation').show()
+			           $('.ca-wxreturn-btn,.ca-return-detail').addClass('on')
+					  }
+					//else{
+						//alert('请输入验证码和退款金额')
+						//}
+			  })
+
+		   //修改地址
+		   $("#J-ca-revice").click(function(){
+			  if($(this).html() !="确定"){
+				  $("#J-ca-adress").focus();
+				  $(this).html('确定'); 
+			  }
+			  else{
+				  $("#J-ca-adress").blur();
+				  $(this).html('修改地址');
+			  }
+		  })
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			//侧导航
+			$(".left-side-nav>.lv1>dt").on("click",function(){
+				$(this).siblings().children(".lv2").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv2>dt").on("click",function(){
+				$(this).siblings().children(".lv3").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv3>dt").on("click",function(){
+				$(this).siblings().slideToggle(200);
+				$(this).toggleClass("cur");
+
+			})
+			//
+			$(".copy-checkbox1").on("click",function(){
+				$(this).parent().toggleClass("cur");
+			})
+
+			//翻页按钮
+			var allPages=parseInt($(".all-page").text());
+			var pageClickNum=1;
+			$(".next-page").click(function(){
+				if(pageClickNum<allPages){
+					pageClickNum++;
+					$(".cur-page").text(pageClickNum);
+					$(".prev-page").removeClass("dis");
+					if(pageClickNum==allPages){
+						$(this).addClass("dis");
+					}
+				}
+			});
+			$(".prev-page").click(function(){
+				if(pageClickNum>1){
+					pageClickNum--;
+					$(".cur-page").text(pageClickNum);
+					$(".next-page").removeClass("dis");
+					if(pageClickNum==1){
+						$(this).addClass("dis");
+					}
+
+				}
+			});
+
+		})
+	</script>
+</body>
+</html>

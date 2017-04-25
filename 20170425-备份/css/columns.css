@@ -1,0 +1,201 @@
+
+.cal-container-mr{margin-right:30px;}
+.cal-container-mr .top-menu .seach-box2{padding-right: 0; padding-top: 26px!important;}
+.cal-container-mr .top-menu .yu-add1{margin: -3px 0 0 20px!important;}
+.ca-tips{height:38px; border:1px solid #ffcb80; line-height:40px; color:#333; margin-top:20px; margin-bottom:10px; background:#ffffe7; font-size:14px;}
+.ca-tips>span{background:url(../images/sugar.png) no-repeat -10px -120px; width:18px; height:18px; display:block; float:left; margin:11px;}
+.ca-message{ width:100%;}
+.cal-container-mr .ca-message{padding-bottom: 50px;}
+.cal-container-mr .cal-mart30 .ca-keep-btn{margin-bottom: 50px;}
+.cal-container-mr .ord-manager .page-turn{margin-top: 15px;}
+.ca-message tr{line-height:55px; color:#999999;}
+.ca-message tr td:first-child{ padding-right:15px; text-align:right;}
+.ca-message tr td label{font-size:14px;}
+.ca-message tr td label span{ width:70px; float:left;}
+.ca-message tr td select{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:5px; line-height:32px; color:#333;}
+.ca-input{height:33px; background:#f9f9f9; border:1px solid #ebebeb; padding-left:10px; line-height:35px;}
+.ca-loading{border:none; background:none; padding-right:10px; line-height:32px; color:#666;}
+.ca-textearea{width:560px; max-width:747px; height:180px; font-size:14px; padding-right:20px; padding-top:8px; line-height:24px;}
+.ca-fre-tips{width:78px; height:23px; border:1px solid #ddd; background:#fff; color:#2093f7; margin:0 10px; border-radius:2px;}
+.ca-keep-btn{width:160px; height:45px; background:#2093f7; color:#fff; border:none; font-size:18px; border-radius:4px; font-family:"微软雅黑";}
+.ca-map{height:290px; width:74.6%; float:left; margin-bottom:25px;}
+.ca-map img{width:100%; height:100%;}
+
+/*会员管理*/
+.ca-vip-list table tbody tr td{color:#333;}
+.ca-no-chose{border:1px solid #ddd; width:14px; height:14px; display:block; margin:0 auto;}
+.ca-done-chosed{background:url(../images/sugar.png) no-repeat -171px -5px; width:16px; height:16px; display:block; border:none;}
+.ca-vip-list table tbody tr td div{width:22px; height:22px; display:inline-block; vertical-align:middle; margin-left:-28px; margin-right:10px;}
+.ca-vip-list table tbody tr td p{display:inline-block;  margin-top:5px;}
+.ca-vip-list table tbody tr .ca-regin-times{color:#999; font-size:12px;}
+.ca-vip-heard{width:50px; height:50px; display:block; margin:0 auto; border-radius:50%;}
+.ca-vip-heard img{width:100%; height:100%;}
+.ca-vip-ordinary{background:url(../images/sugar.png) no-repeat  -134px -150px;}
+.ca-vip-senior{background:url(../images/sugar.png) no-repeat  -10px -150px;}
+.ca-vip-silver{background:url(../images/sugar.png) no-repeat  -103px -150px;}
+.ca-vip-gold{background:url(../images/sugar.png) no-repeat  -72px -150px;}
+.ca-vip-diamond{background:url(../images/sugar.png) no-repeat  -41px -150px;}
+.all-order li span{font-weight:normal; font-size:12px;}
+.li_curre span{font-weight:normal; font-size:14px;}
+/*如果index有加统一的页面可以删掉
+.ca-dig-width{width:280px;}
+.ca-dig-width .cal-title{width:280px;}
+.recom-prd .new-name{width:250px; margin-left:30px; padding-top:18px;}
+.recom-prd .cal-btn{margin-top:0px;}
+.recom-prd .new-name li{width:125px;}*/
+
+/*粉丝管理*/
+.ca-bding-btn{border:1px solid #ededed; background:#f9f9f9; width:65px; height:28px; font-size:12px; color:#2093f7; line-height:28px;}
+.ca-bding-btn-tips{ width:60px; height:22px; background:#ccc; border:none; color:#fff; font-size:14px;}
+.ca-bding-doalog{width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
+.ca-bding-doalog table{margin-top:20px;}
+.ca-bding-doalog table tr{line-height:52px;}
+.ca-bding-doalog table tr td input{ width:215px; height:33px; line-height:35px; border:1px solid #ddd;  margin-left:12px; padding-left:10px; font-size:14px; color:#333; background:#f9f9f9; border-radius:2px;}
+.ca-bding-doalog table tr td label{font-size:14px; color:#999; width:100%; text-align:right; float:left;}
+.ca-bding-doalog table tr td p{float:left; margin-left:12px;}
+.ca-bding-doalog table tr td span{margin-top:18px; margin-right:5px;}
+
+/*会员卡管理*/
+.s-v-card-method > .type4{background:#f6fcf7;}
+.s-v-card-method > .type4 .ico{background:url(../images/sugar.png) no-repeat -10px -185px;}
+.s-v-card-method>.type4 .font-color{color:#4bcc5c;}
+.s-v-card-method > .type5{background:#f4f9ff;}
+.s-v-card-method > .type5 .ico{background:url(../images/sugar.png) no-repeat -101px -185px;}
+.s-v-card-method>.type5 .font-color{color:#2093f7;}
+.s-v-card-method > .type6{background:#fef7f7;}
+.s-v-card-method > .type6 .ico{background:url(../images/sugar.png) no-repeat -191px -185px;}
+.s-v-card-method>.type6 .font-color{color:#f46464;}
+.s-v-card-list.s-v-card-list{padding-right:0px;}
+.ca-vip-manager{display: inline-block; margin-right: -14px;}
+.ca-vip-manager a{margin-right:14px; width:304px; /*font-size:18px;*/ font-size: 16px; border-radius: 2px;}
+
+/*设置会员卡*/
+.ca-set-card{padding-top:30px; display:inline-block;}
+.ca-set-card > dl{width:313px; height:202px; background-size:100%; color:#fff; float:left; margin-right:30px;}
+.ca-vbg-yellow{background:url(../images/cards-yellow.png) no-repeat;}
+.ca-vbg-green{background:url(../images/cards-green.png) no-repeat;}
+.ca-vbg-cyan{background:url(../images/cards-cyan.png) no-repeat;}
+.ca-vbg-blue{background:url(../images/cards-blue.png) no-repeat;}
+.ca-vbg-red{background:url(../images/cards-red.png) no-repeat;}
+.ca-vbg-black{background:url(../images/cards-black.png) no-repeat;}
+.ca-vbg-purple{background:url(../images/cards-purple.png) no-repeat;}
+.ca-vip-infor{ padding-top:15px;}
+.ca-vip-infor dt{width:50px; height:50px; border-radius:50%; float:left; margin-right:10px; margin-left:12px;}
+.ca-vip-infor dt img{width:100%; height:100%;}
+.ca-vip-infor dd{text-shadow:2px 2px 1px rgba(0,0,0,0.3);}
+.ca-vip-infor dd p{font-size:20px;}
+.ca-vip-infor dd span{font-size:12px;}
+.ca-vip-idcard{font-size:20px; margin-top:60px; margin-left:12px; text-shadow:2px 2px 1px rgba(0,0,0,0.3);}
+.ca-set-color{float:left; display:inline-block; margin-top:15px; position:relative;}
+.ca-memb-defind{width:280px;}
+.ca-memb-defind li{float:left; width:50px; height:50px; display:block; border-radius:50%; margin:12px 20px 8px 0; cursor:pointer;}
+.ca-memb-yellow{background:#f3be00;}
+.ca-memb-green{background:#85ba09;}
+.ca-memb-cyan{background:#21afbe;}
+.ca-memb-blue{background:#0a74ce;}
+.ca-memb-red{background:#ba0910;}
+.ca-memb-black{background:#333;}
+.ca-memb-purple{background:#b221be;}
+#ca-memb-custom{border:2px solid #ccc; border-radius:50%; bottom:10px; right:20px; width:46px; height:46px; text-align:center; line-height:46px; color:#333; font-size:14px; position:absolute;}
+#ca-memb-custom input{width:48px; height:48px; position:absolute; left:-1px; top:-1px; opacity:0; cursor:pointer;}
+.ca-set-vlogo{border:1px solid #ccc; background:#eee; float:left; height:78px; width:78px;  border-radius:50%; color:#666; font-size:14px; margin-left:8px; margin-top:68px; position:relative;}
+.ca-set-vlogo p{text-align:center; margin-top:20px;}
+.ca-set-vlogo input{position:absolute; width:80px; height:80px; top:-1px; right:0px; opacity:0; cursor:pointer;}
+.ca-memb-level{margin-top:22px; height:auto;}
+.ca-ord-dec{background:url(../images/sugar.png) no-repeat -50px -123px; margin-left:8px;}
+.ca-ord-add{background:url(../images/sugar.png) no-repeat -82px -123px; margin-right:8px;}
+.ca-order-prdmt{line-height:30px; margin-top:10px; display:inline-block; margin-left:30px;}
+.ca-order-prdmt li{margin-top:10px; height:30px;}
+.ca-order-prdmt li > span{color:#222; font-size:14px; float:left;}
+.ca-order-prdmt li > span i{font-style:normal; color:#7d7d7d;}
+.ca-order-prdmt li > div{width:120px; height:30px; border:1px solid #ebebeb; margin:0 10px; border-radius:2px;}
+.ca-order-prdmt li > div p{margin-top:8px; width:12px; height:12px; float:left; display:block;}
+.ca-order-prdmt li > div > span input{width:78px; height:30px; text-align:center; border:none; font-size:16px; float:left; color:#2093f7; font-family:Verdana;}
+.ca-instrc-books{width:598px; height:148px; border:1px solid #ebebeb; background:#f9f9f9; margin-left:20px; margin-top:8px;}
+.ca-rem-point li{margin-top:10px; margin-left:20px;}
+.ca-rem-point span{font-size:14px; color:#222;}
+.ca-vip-select{width:58px; height:30px; font-size:16px; border:1px solid #ebebeb; background:#f9f9f9; border-radius:2px; text-align:left; padding-left:4px;}
+.ca-cur{background:url(../images/sugar.png) no-repeat -108px -70px; width:32px; height:32px; margin:0 auto; margin-top:12px;}
+
+/*团购管理*/
+.top-menu .ca-togther{padding-left:15px; padding-right:15px; margin-right:0px; height:34px; line-height:34px;}
+
+.ca-products-pht img{width:60px; height:60px;}
+.ca-recept-goods li{float:left; margin-right:20px;}
+.ca-recept-goods li>div{margin-top:20px;}
+
+/*上传商品*/
+.ca-load-product tr td label span{ float:left; text-align:left; width:56px; margin-left:0px;}
+
+/*订单详情*/
+.ca-ord-detail{color:#999; height:25px; margin-top:30px;}
+.ca-ord-detail li{float:left; font-size:14px; margin-right:10px;}
+.ca-super-btn{width:65px; height:22px; border:1px solid #ebebeb; background:#f9f9f9; color:#999; line-height:12px;}
+.ca-over-time{margin-left:77px; display:none;}
+.ca-operation-state{height:35px; margin-bottom:20px; margin-top:20px;}
+.ca-operation-state li{float:left;  margin-right:20px;}
+.ca-operation-state li input{width:90px; height:30px; border-radius:2px; font-size:14px; color:#333; border:1px solid #ebebeb; background:#f9f9f9;}
+.ca-operation-state .on.ca-dliver-btn{background:#ff6600; border:none;  color:#fff;}
+.ca-operation-state .on.ca-wxreturn-btn{background:#2093f7; border:none;  color:#fff;}
+.ca-operation-state .on.ca-return-detail{background:#ff9900; border:none;  color:#fff;}
+/*.ca-operation-state .on.ca-print-btn{background:#e7e7e7; border:1px solid #ebebeb; color:#333;}*/
+#ca-R-mation{display:none;}
+.ca-list-content{color:#333; height:auto; display:inline-block;}
+.ca-bg-gray{background:#f7f7f7; padding:12px 10px 20px 12px;}
+.ca-goods-title{height:40px; line-height:40px; color:#666; background:#e8e8e8; padding-left:20px;}
+.ca-left-list{ width:608px; float:left;  margin-right:10px; margin-bottom:20px;}
+.ca-ship-infor{display:none;}
+.ca-left-list table{border:1px solid #f3f3f3; background:#fff; width:100%; margin-bottom:20px; font-size:12px; border-collapse:collapse; border-bottom:none;}
+.ca-left-list table>thead>tr{border-bottom:1px solid #f3f3f3;}
+.ca-left-list table thead tr th{height:38px; color:#666;}
+.ca-left-list table tbody tr td{ height:54px;}
+.ca-left-list table td{ border-bottom:1px solid #f3f3f3;}
+.ca-products-img span{border-radius:50%; width:40px; height:40px; margin:0px 10px 0 18px; float:left}
+.ca-products-img b{font-weight:normal; padding-top:10px; display:inherit;}
+.ca-buy-infor{background:#fff; line-height:25px; padding:12px 0px 18px 20px; font-size:12px;}
+.ca-buy-infor li>span{margin-right:10px; color:#999;}
+.ca-right-list{width:266px; height:440px; float:right; }
+.ca-ord-infor{margin-top:15px; margin-left:20px; line-height:20px;}
+.ca-ord-infor li>span{margin-right:10px; color:#999;}
+.ca-hotel-instion{background:#ffffe7; border:2px solid #ffcb80; padding:15px 12px 17px 20px; margin-top:15px;}
+.ca-hotel-instion >p{font-size:12px; margin-top:15px; color:#666;}
+.ca-keep-post{background:#f7f7f7; padding-top:20px; display:inline-block; width:607px;}
+.ca-keep-post >div >textarea{width:80%; text-indent:20px; line-height:20px; padding-top:5px; float:left; vertical-align:middle; border:1px solid #ebebeb; max-width:505px;}
+.ca-keep-middle-btn{width:90px; height:30px; border-radius:2px; background:#2093f7; color:#fff; border:none; font-size:14px; float:left;}
+.ca-hotel-tips{margin-bottom:20px;}
+.ca-hotel-tips table{border-collapse:collapse;}
+.ca-hotel-tips thead tr{height:40px; background:#f7f7f7;}
+.ca-hotel-mytbody{border:1px solid #ebebeb; height:auto; padding:0 3px 2px 3px;}
+.ca-hotel-tips tbody tr td{border-bottom:1px solid #f3f3f3; height:43px;}
+.j-ca-adress{width:190px; border:none; font-size:12px; font-family:"微软雅黑";}
+
+/*发货弹窗*/
+.ca-ship-dialog{ width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
+.ca-ship-show{width:470px; margin:0 auto;  margin-top:10%; background:#fff;}
+.ca-ship-show table{margin:18px 0 20px 30px;}
+.ca-ship-show table tbody{line-height:50px;}
+.ca-ship-show table tbody tr td select{width:277px; height:33px; border:1px solid #ddd; border-radius:2px;}
+.ca-ship-show table tbody tr td input{width:265px; height:33px; border:1px solid #ddd; border-radius:2px;}
+.ca-middle-btn{width:120px; height:32px; font-size:16px; color:#fff; border-radius:2px; border:none; margin-left:96px; background:#e7e7e7; cursor:not-allowed !important;}
+.ca-middle-btn.on{background:#2093f7; cursor:pointer !important;}
+
+/*退款弹窗*/
+.ca-return-dialog{ width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
+.ca-return-show{width:415px; margin:0 auto;  margin-top:10%; background:#fff; padding-bottom:30px;}
+.ca-cor-telep{width:413px; height:43px; line-height:43px; border:1px solid #ffcb80; background:#ffffe7; font-size:12px; text-indent:45px; color:#666;}
+.ca-return-show table{margin:20px 0 0px 30px; }
+.ca-return-show table tbody tr{display:block; margin-bottom:20px;}
+.ca-return-show table tbody tr td input{border: none }
+.get-phone-msg{width:250px; border:1px solid #ebebeb; height:35px; border-radius:2px;}
+.ca-phone-codas{width:110px; height:35px;}
+.ca-get-codas{width:128px; height:35px; background:#f9f9f9;}
+
+/*退款明细弹窗*/
+.ca-detail-dialog{ width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; display:none;}
+.ca-detail-show{width:730px; margin:0 auto;  margin-top:10%; background:#fff; padding-bottom:30px; border:1px solid #ececec}
+.ca-detail-show table{ padding:1px 0px;}
+.ca-detail-show table thead tr{height:40px; background:#e8f4fe; color:#666;}
+.ca-return-detail{border:1px solid #ececec;  padding:0 3px;}
+.ca-return-detail table{color:#999;}
+.ca-return-detail table td{height:43px; border-bottom:1px solid #f3f3f3;}
+

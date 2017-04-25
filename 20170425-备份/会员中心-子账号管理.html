@@ -1,0 +1,1029 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="关键词1,关键词2,关键词3" />
+<meta name="description" content="对网站的描述" />
+<title>会员中心-子账号管理</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link type="text/css" rel="stylesheet" href="css/index.css"/>
+<link href="css/layout-01.css" rel="stylesheet" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<div class="top-bar">
+		<h1 id="logo">微可牛管理中心</h1>
+		<div class="left-side kai">
+			<div class="yu-c7d yu-h45 yu-bgf4 yu-l45 yu-pos-r">
+				<p class="nav-ico type1">
+					
+				</p>
+				<p class="">功能导航</p>
+			</div>
+			<div class="left-side-nav">
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type2"></p>
+						<p>系统设置</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type3"></p>
+						<p>酒店管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd>
+						<dl class="lv2">
+							<dt><span class="dian"></span>餐饮订餐</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>
+								<dl class="lv3">
+									<dt>订单管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+									</dd>
+								</dl>								
+							</dd>
+						</dl>
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房管理</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>	
+						<dl class="lv2">
+							<dt><span class="dian"></span>订房设置</dt>
+							<dd>
+								<dl class="lv3">
+									<dt>商家管理</dt>
+									<dd>
+										<a href="javascript:;">基本设置</a>
+										<a href="javascript:;">菜单管理</a>
+
+									</dd>
+								</dl>
+							</dd>
+						</dl>													
+					</dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type4"></p>
+						<p>团购管理</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type5"></p>
+						<p>会员中心</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+				<dl class="lv1">
+					<dt>
+						<p class="nav-ico type6"></p>
+						<p>手机官网</p>
+						<p class="yu-arr type1"></p>
+					</dt>
+					<dd></dd>
+				</dl>				
+			</div>
+		</div>		
+	</div>
+	<div class="content">
+		
+
+		<div class="right-side">
+			<div class="bread-nav">
+				<ul>
+					<li class="yu-c99">会员中心</li>
+					<li class="yu-next-ico yu-c99 yu-font14">》</li>
+					<li>子账号管理</li>
+
+				</ul>
+			</div>
+			<div class="yu-pad20">
+				<div class="inner-type1 ">
+					<!-- <>子账号管理区域 -->
+					<div class="zone__rt-similar" style="padding-right: 0;">
+						<div class="hd-tit clearfix">
+							<h2 class="fl"><i></i>子账号管理</h2>
+							<div class="fr seach-box2" style="padding:0;">
+								<input type="text" placeholder="请输入姓名或者手机号"><input type="button" value="搜索">
+							</div>
+						</div>
+						
+						<div class="zone__manageSubAccount mt--20 clearfix">
+							<!--//左侧内容区域-->
+							<div class="main__cont fl">
+								<div class="cont-wrapper">
+									<!--操作选项-->
+									<div class="yu-h50 clearfix">
+										<p class="fl yu-line35">
+											前厅部 <i class="c--999">(35)</i>
+										</p>
+										<div class="fr">
+											<div class="fl yu-line35 yu-rmar10 mr--30"><label class="cp__checkbox-custom"><i class="checkbox__mask"><input class="J__chkAll" type="checkbox" name="chkAll" /></i> 全选</label></div>
+											<div class="fl yu-del1 move-dpm J_btn_moveDpt">移动部门</div>
+											<div class="fl yu-del1 del-mark J_btn_delSubAccount">删除</div>
+											<div class="fl yu-add1 add-mark ml--20" style="margin-right:0;" id="J_btn_createAccount"><span class="yu-ico"></span>添加子账号</div>
+										</div>
+									</div>
+									
+									<!--列表-->
+									<div class="s-v-card-list" style="padding-right:0;">
+										<table width="100%" style="border-top:1px solid #e7e7e7;" id="J__tabList">
+											<!--<colgroup>
+												<col width="180px" />
+												<col width="180px" />
+												<col width="180px" />
+												<col width="180px" />
+												<col width="180px" />
+												<col width="180px" />
+												<col width="220px" />
+											</colgroup>-->
+											<thead>
+												<tr>
+													<th width="30%" align="left"><div style="padding-left:20px;">子账号名</div></th>
+													<th>姓名</th>
+													<th>手机号码</th>
+													<th>部门</th>
+													<th>状态</th>
+													<th width="15%">操作</th>
+												</tr>									
+											</thead>
+											<tbody>
+												<tr class="odd" data-val="101">
+													<td align="left"><div class="fl ml--20 mr--10"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div><div class="name" style="vertical-align: top; margin-left: 45px;">广州都市易家酒店-ABCD007</div></td>
+													<td>张小娴</td>
+													<td>13880155900</td>
+													<td>前厅部</td>
+													<td><div class="tab-btn cur"></div></td>
+													<td><a href="javascript:;" class="yu-blue J_btn_editAccount">编辑</a></td>
+												</tr>
+												<tr class="even" data-val="102">
+													<td align="left"><div class="fl ml--20 mr--10"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div><div class="name" style="vertical-align: top; margin-left: 45px;">广州都市易家酒店-ABCD007</div></td>
+													<td>张小娴</td>
+													<td>13880155900</td>
+													<td>前厅部</td>
+													<td><div class="tab-btn"></div></td>
+													<td><a href="javascript:;" class="yu-blue J_btn_editAccount">编辑</a></td>
+												</tr>
+												<tr class="odd" data-val="103">
+													<td align="left"><div class="fl ml--20 mr--10"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div><div class="name" style="vertical-align: top; margin-left: 45px;">广州都市易家酒店-ABCD007</div></td>
+													<td>张小娴</td>
+													<td>13880155900</td>
+													<td>前厅部</td>
+													<td><div class="tab-btn cur"></div></td>
+													<td><a href="javascript:;" class="yu-blue J_btn_editAccount">编辑</a></td>
+												</tr>
+												<tr class="even" data-val="104">
+													<td align="left"><div class="fl ml--20 mr--10"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div><div class="name" style="vertical-align: top; margin-left: 45px;">广州都市易家酒店-ABCD007</div></td>
+													<td>张小娴</td>
+													<td>13880155900</td>
+													<td>前厅部</td>
+													<td><div class="tab-btn"></div></td>
+													<td><a href="javascript:;" class="yu-blue J_btn_editAccount">编辑</a></td>
+												</tr>
+												<tr class="odd" data-val="105">
+													<td align="left"><div class="fl ml--20 mr--10"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div><div class="name" style="vertical-align: top; margin-left: 45px;">广州都市易家酒店-ABCD007</div></td>
+													<td>张小娴</td>
+													<td>13880155900</td>
+													<td>前厅部</td>
+													<td><div class="tab-btn cur"></div></td>
+													<td><a href="javascript:;" class="yu-blue J_btn_editAccount">编辑</a></td>
+												</tr>
+												<tr class="even" data-val="106">
+													<td align="left"><div class="fl ml--20 mr--10"><label class="checkbox__item"><input type="checkbox" name="id[]" /></label></div><div class="name" style="vertical-align: top; margin-left: 45px;">广州都市易家酒店-ABCD007</div></td>
+													<td>张小娴</td>
+													<td>13880155900</td>
+													<td>前厅部</td>
+													<td><div class="tab-btn cur"></div></td>
+													<td><a href="javascript:;" class="yu-blue J_btn_editAccount">编辑</a></td>
+												</tr>
+											</tbody>
+										</table>							
+									</div>
+									<div class="page-num-bar" style="padding-left:180px;">
+										<p class="yu-line37 yu-c88 yu-font14 yu-rmar10">总菜单：129</p>
+										<ul class="page-num-zujian">
+										  <li class="type1"> 上一页 </li>
+										  <li class="type2">1</li>
+										  <li class="type3">2</li>
+										  <li class="type3"> 下一页 </li>
+										</ul>
+										<p class="yu-line37 yu-c88 yu-font14 yu-rmar10">共2页</p>
+										<div class="yu-line37 yu-c88 yu-font14 yu-rmar10">到第
+										  <input type="text" value="1" class="page-input">
+										  页</div>
+										<p>
+										  <input type="submit" value="确定" class="page-sub">
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<!--//右侧边栏-->
+							<div class="sidebar__menu fr">
+								<ul class="items clearfix">
+									<li>
+										<a href="javascript:;">
+											前厅部<em class="num">(35)</em>
+											<span class="btn"><i class="edit J__editDpt"></i> <i class="del J_delRowDpt"></i></span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											客房部<em class="num">(20)</em>
+											<span class="btn"><i class="edit J__editDpt"></i> <i class="del J_delRowDpt"></i></span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											餐饮部<em class="num">(12)</em>
+											<span class="btn"><i class="edit J__editDpt"></i> <i class="del J_delRowDpt"></i></span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											餐饮商家部<em class="num">(8)</em>
+											<span class="btn"><i class="edit J__editDpt"></i> <i class="del J_delRowDpt"></i></span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											会议部<em class="num">(24)</em>
+											<span class="btn"><i class="edit J__editDpt"></i> <i class="del J_delRowDpt"></i></span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											康乐部<em class="num">(36)</em>
+											<span class="btn"><i class="edit J__editDpt"></i> <i class="del J_delRowDpt"></i></span>
+										</a>
+									</li>
+								</ul>
+								<div class="btns">
+									<a class="J__createDpt" href="javascript:;"><i></i>新建部门</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 在这里写内容 -->
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- ……弹窗内容模板.Start -->
+	<!--//新建子账号-->
+	<div class="mask dlg-popup dlg-createAccount" id="J_dlg_createAccount" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="top-box">
+				<p>新建子帐号</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<form>
+					<table>
+						<tr>
+							<th>子账号名</th>
+							<td><input type="text" class="type1 input-250" value="广州都市易家酒店-ABCD007" /> <span class="yu-font14 yu-c99 ml--10">输入英文或数字</span></td>
+						</tr>
+						<tr>
+							<th>登录密码</th>
+							<td><input type="password" class="type2 input-250" /> <span class="yu-font14 ml--10"><a class="yu-cblue J__editLgPwd" href="javascript:;">修改</a></span></td>
+						</tr>
+						<tr>
+							<th>支付密码</th>
+							<td><input type="password" class="type2 input-250" /> <span class="yu-font14 ml--10"><a class="yu-cblue J__editPayPwd" href="javascript:;">修改</a></span></td>
+						</tr>
+						<tr>
+							<th>员工姓名</th>
+							<td><input type="text" class="type2 input-250" value="李谷一" /></td>
+						</tr>
+						<tr>
+							<th>员工手机</th>
+							<td><input type="text" class="type2 input-250" value="13880155900" /></td>
+						</tr>
+						<tr>
+							<th>所属部门</th>
+							<td>
+								<select class="select-control" name="department">
+									<option>请选择</option>
+									<option selected>前厅部</option>
+									<option>客房部</option>
+									<option>餐饮部</option>
+									<option>会议部</option>
+								</select>
+								<span class="yu-font14 ml--10"><a class="yu-cblue J__createDpt" href="javascript:;">新建</a></span>
+							</td>
+						</tr>
+						<tr>
+							<th valign="top" style="padding-top:10px;">使用权限</th>
+							<td>
+								<div class="tree-choose">
+									<div class="tree-inner" id="J__treeChoose">
+										<dl>
+											<dt class="on disabled"><i></i>订单处理</dt>
+											<dd>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt><i></i>交易管理</dt>
+											<dd>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>修改价格</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>取消订单</a>
+												<a class="disabled" href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
+												<a href="javascript:;"><em class="line"></em><i></i>同意退货/换货/维修/补寄</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>拒绝申请</a>
+												<a href="javascript:;"><em class="line"></em><i></i>同意订金退给买家</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel" />
+									<input type="submit" value="保存" class="type2" />
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--//编辑子账号-->
+	<div class="mask dlg-popup dlg-createAccount" id="J_dlg_editAccount" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="top-box">
+				<p>编辑子帐号</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<form>
+					<table>
+						<tr>
+							<th>子账号名</th>
+							<td><input type="text" class="type1 input-250" value="广州都市易家酒店-ABCD007" /> <span class="yu-font14 yu-c99 ml--10">输入英文或数字</span></td>
+						</tr>
+						<tr>
+							<th>登录密码</th>
+							<td><input type="password" class="type2 input-250" /></td>
+						</tr>
+						<tr>
+							<th>支付密码</th>
+							<td><input type="password" class="type2 input-250" /></td>
+						</tr>
+						<tr>
+							<th>员工姓名</th>
+							<td><input type="text" class="type2 input-250" value="李谷一" /></td>
+						</tr>
+						<tr>
+							<th>员工手机</th>
+							<td><input type="text" class="type2 input-250" value="13880155900" /></td>
+						</tr>
+						<tr>
+							<th>所属部门</th>
+							<td>
+								<select class="select-control" name="department">
+									<option>请选择</option>
+									<option selected>前厅部</option>
+									<option>客房部</option>
+									<option>餐饮部</option>
+									<option>会议部</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th valign="top" style="padding-top:10px;">使用权限</th>
+							<td>
+								<div class="tree-choose">
+									<div class="tree-inner" id="J__treeChoose">
+										<dl>
+											<dt class="on disabled"><i></i>订单处理</dt>
+											<dd>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt><i></i>交易管理</dt>
+											<dd>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>修改价格</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>取消订单</a>
+												<a class="disabled" href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
+												<a href="javascript:;"><em class="line"></em><i></i>同意退货/换货/维修/补寄</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>拒绝申请</a>
+												<a href="javascript:;"><em class="line"></em><i></i>同意订金退给买家</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel" />
+									<input type="submit" value="保存" class="type2" />
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--//新建部门-->
+	<div class="mask dlg-popup dlg-createDpt" id="J_dlg_createDpt" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="top-box">
+				<p>新建部门</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<form>
+					<table>
+						<tr>
+							<th>部门名称</th>
+							<td><input type="text" class="type1 input-250" /></td>
+						</tr>
+						<tr>
+							<th valign="top" style="padding-top:10px;">使用权限</th>
+							<td>
+								<div class="tree-choose">
+									<div class="tree-inner" id="J__treeChoose">
+										<dl>
+											<dt class="on disabled"><i></i>订单处理</dt>
+											<dd>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt><i></i>交易管理</dt>
+											<dd>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>修改价格</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>取消订单</a>
+												<a class="disabled" href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
+												<a href="javascript:;"><em class="line"></em><i></i>同意退货/换货/维修/补寄</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>拒绝申请</a>
+												<a href="javascript:;"><em class="line"></em><i></i>同意订金退给买家</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel" />
+									<input type="submit" value="保存" class="type2" />
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--//编辑部门-->
+	<div class="mask dlg-popup dlg-createDpt" id="J_dlg_editDpt" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="top-box">
+				<p>编辑部门</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<form>
+					<table>
+						<tr>
+							<th>部门名称</th>
+							<td><input type="text" class="type1 input-250" value="财务部" /></td>
+						</tr>
+						<tr>
+							<th valign="top" style="padding-top:10px;">使用权限</th>
+							<td>
+								<div class="tree-choose">
+									<div class="tree-inner" id="J__treeChoose">
+										<dl>
+											<dt class="on disabled"><i></i>订单处理</dt>
+											<dd>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>上下架(改房态库存)</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>查看订单详情</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt><i></i>交易管理</dt>
+											<dd>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>修改价格</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>取消订单</a>
+												<a class="disabled" href="javascript:;"><em class="line"></em><i></i>同意子账号退款</a>
+												<a href="javascript:;"><em class="line"></em><i></i>同意退货/换货/维修/补寄</a>
+												<a class="checked" href="javascript:;"><em class="line"></em><i></i>拒绝申请</a>
+												<a href="javascript:;"><em class="line"></em><i></i>同意订金退给买家</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel" />
+									<input type="submit" value="保存" class="type2" />
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--//修改登录密码-->
+	<div class="mask dlg-popup dlg-editLgPwd" id="J_dlg_editLgPwd" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="top-box">
+				<p>修改登录密码</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<form>
+					<table>
+						<tr>
+							<th style="width: 70px;">原密码</th>
+							<td><input type="password" class="type1 input-250" value="789fds78" /> <span class="yu-font14 ml--10"><a class="yu-cblue J__forgetPwd" href="javascript:;">找回密码</a></span></td>
+						</tr>
+						<tr>
+							<th>新密码</th>
+							<td><input type="password" class="type1 input-250" value="543543" /> <span class="yu-font14 ml--10 yu-c99">输入英文或数字</span></td>
+						</tr>
+						<tr>
+							<th>重复新密码</th>
+							<td class="error"><input type="password" class="type1 input-250" value="543543" /> <span class="yu-font14 ml--10">2次密码不一致</span></td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel" />
+									<input type="submit" value="保存" class="type2" />
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--//找回密码-->
+	<div class="mask dlg-popup dlg-forgetPwd" id="J_dlg_forgetPwd" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="top-box">
+				<p>找回密码</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<form>
+					<table>
+						<tr>
+							<th>手机号</th>
+							<td><input type="text" class="type1 input-250" value="13880155900" /> <span class="yu-font14 ml--10"><a class="btn-sendCode" href="javascript:;">发送验证码</a></span></td>
+						</tr>
+						<tr>
+							<th>手机验证码</th>
+							<td><input type="text" class="type1 input-250" /></td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel" />
+									<input type="submit" value="下一步" class="type2" />
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--//修改支付密码-->
+	<div class="mask dlg-popup dlg-editPayPwd" id="J_dlg_editPayPwd" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="top-box">
+				<p>修改支付密码</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<form>
+					<table>
+						<tr>
+							<th>原密码</th>
+							<td><input type="password" class="type1 input-250" value="789fds78" /> <span class="yu-font14 ml--10"><a class="yu-cblue J__forgetPayPwd" href="javascript:;">找回密码</a></span></td>
+						</tr>
+						<tr>
+							<th>新密码</th>
+							<td><input type="password" class="type1 input-250" value="543543" /> <span class="yu-font14 ml--10 yu-c99">输入英文或数字</span></td>
+						</tr>
+						<tr>
+							<th>重复新密码</th>
+							<td class="error"><input type="password" class="type1 input-250" value="543543" /> <span class="yu-font14 ml--10">2次密码不一致</span></td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel" />
+									<input type="submit" value="保存" class="type2" />
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--//找回支付密码-->
+	<div class="mask dlg-popup dlg-forgetPayPwd" id="J_dlg_forgetPayPwd" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="top-box">
+				<p>找回支付密码</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<form>
+					<table>
+						<tr>
+							<th>手机号</th>
+							<td><input type="text" class="type1 input-250" value="13880155900" /> <span class="yu-font14 ml--10"><a class="btn-sendCode disabled" href="javascript:;">重发(52)</a></span></td>
+						</tr>
+						<tr>
+							<th>手机验证码</th>
+							<td class="error"><input type="text" class="type1 input-250" value="2546" /> <span class="yu-font14 ml--10">验证码已过期</span></td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<div class="button-row">
+									<input type="button" value="取消" class="type1 mask-cancel" />
+									<input type="submit" value="下一步" class="type2" />
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--//移动部门-->
+	<div class="mask dlg-popup dlg-moveDpt" id="J_dlg_moveDpt" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="top-box">
+				<p>移动部门</p>
+				<p class="mask-close"></p>
+			</div>
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<div class="group-list">
+						<ul class="clearfix" id="J__groupList">
+							<li class="on"><i></i>前厅部</li>
+							<li><i></i>客房部</li>
+							<li><i></i>餐饮部</li>
+							<li><i></i>餐饮商家部</li>
+							<li><i></i>会议部</li>
+							<li><i></i>康乐部</li>
+						</ul>
+					</div>
+					<div class="button-row ml--20 mt--10">
+						<input type="button" value="取消" class="type1 mask-cancel" />
+						<input type="submit" value="确定" class="type2" />
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(function(){
+					//选项选择(单选)
+					$("#J__groupList li").on("click", function(){
+						$(this).addClass("on").siblings().removeClass("on");
+					});
+				});
+			</script>
+		</div>
+	</div>
+	
+	<!--//删除子账号(全选)-->
+	<div class="mask dlg-popup dlg-delSubAccount" id="J_dlg_delSubAccount" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<div class="message ml--20 mt--20">
+						确定要删除所选部门吗？
+					</div>
+					<div class="button-row ml--20 mt--30">
+						<input type="button" value="取消" class="type1 mask-cancel" />
+						<input type="submit" value="确定" class="type2" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--//删除部门(右侧边栏)-->
+	<div class="mask dlg-popup dlg-delSubAccount" id="J_dlg_delDpt" style="display:none;">
+		<div class="mask-inner dlg-main">
+			<div class="main-box">
+				<div class="yu-bgw yu-pad30">
+					<div class="message ml--20 mt--20">
+						确定要删除该部门吗？
+					</div>
+					<div class="button-row ml--20 mt--30">
+						<input type="button" value="取消" class="type1 mask-cancel" />
+						<input type="submit" value="确定" class="type2" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		/**
+		 *	create by hison
+		 */
+		
+		/** 弹窗控制 */
+		$(function(){
+			//关闭弹窗
+			$(".dlg-popup").on("click", function(){
+				$(this).fadeOut(250);
+			});
+			$(".mask-close, .mask-cancel").on("click", function(){
+				$(this).parents(".dlg-popup").fadeOut(250);
+			});
+			$(".mask-inner").on("click", function(e){
+				e.stopPropagation();
+			});
+			
+			//新建子账号(添加账号)
+			$("#J_btn_createAccount").on("click", function(){
+				$("#J_dlg_createAccount").fadeIn();
+			});
+			//编辑子账号
+			$(".J_btn_editAccount").on("click", function(){
+				$("#J_dlg_editAccount").fadeIn();
+			});
+			//新建部门
+			$(".J__createDpt").on("click", function(){
+				$("#J_dlg_createDpt").fadeIn();
+			});
+			//编辑部门
+			$(".J__editDpt").on("click", function(){
+				$("#J_dlg_editDpt").fadeIn();
+			});
+			
+			//修改登录密码
+			$(".J__editLgPwd").on("click", function(){
+				$("#J_dlg_editLgPwd").fadeIn();
+			});
+			//找回密码
+			$(".J__forgetPwd").on("click", function(){
+				$("#J_dlg_forgetPwd").fadeIn();
+			});
+			
+			//修改登录密码
+			$(".J__editPayPwd").on("click", function(){
+				$("#J_dlg_editPayPwd").fadeIn();
+			});
+			//找回支付密码
+			$(".J__forgetPayPwd").on("click", function(){
+				$("#J_dlg_forgetPayPwd").fadeIn();
+			});
+			
+			//移动部门
+			$(".J_btn_moveDpt").on("click", function(){
+				$("#J_dlg_moveDpt").fadeIn();
+			});
+			
+			//删除子账号(选择)
+			$(".J_btn_delSubAccount").on("click", function(){
+				$("#J_dlg_delSubAccount").fadeIn();
+				
+				//执行删除
+				$("#J_dlg_delSubAccount .type2").on("click", function(){
+					//that.parents("li").remove();
+					//$("#J_dlg_delSubAccount").fadeOut(250);
+					
+					var tmpVal = [];
+					if($("#J__tabList .checkbox__item.on").size() > 0){
+						//获取选中项值
+						$("#J__tabList .checkbox__item.on").each(function(){
+							tmpVal.push($(this).parents("tr").data("val"));
+						});
+						alert(tmpVal);
+						$("#J_dlg_delSubAccount").fadeOut(250);
+					}else{
+						alert("还没有选择选项！");
+					}
+				});
+			});
+			
+			//删除部门
+			$(".J_delRowDpt").on("click", function(){
+				var that = $(this);
+				$("#J_dlg_delDpt").fadeIn();
+				
+				//执行删除
+				$("#J_dlg_delDpt .type2").on("click", function(){
+					that.parents("li").remove();
+					$("#J_dlg_delDpt").fadeOut(250);
+				});
+			});
+			
+		});
+		
+		/** 控制函数 */
+		$(function(){
+			//树节点控制
+			$("#J__treeChoose dl dt:not(.disabled)").on("click", function(){
+				if($(this).hasClass("on")){
+					$(this).removeClass("on");
+					$(this).siblings("dd").children("a").removeClass("checked");
+				}else{
+					$(this).addClass("on");
+					$(this).siblings("dd").children("a").addClass("checked");
+				}
+			});
+			$("#J__treeChoose dl dd a:not(.disabled)").on("click", function(){
+				$(this).toggleClass("checked");
+				
+				var count = $(this).parents("dl").find("dd a").size();
+				var i = 0;
+				$(this).parents("dl").find("dd a").each(function(){
+					if($(this).hasClass("checked")){
+						i++;
+					}
+				});
+				if(count == i){
+					$(this).parents("dl").find("dt").addClass("on");
+				}else{
+					$(this).parents("dl").find("dt").removeClass("on");
+				}
+			});
+			
+			//状态控制
+			$("#J__tabList .tab-btn").on("click", function(){
+				$(this).toggleClass("cur");
+			});
+			
+			//全选控制
+			$(".J__chkAll").on("click", function(){
+				if($(this).is(":checked")){
+					$(this).parent(".checkbox__mask").addClass("on"); //checkbox全选控制
+					$("#J__tabList .checkbox__item").addClass("on");
+					$("#J__tabList input[name='id[]']").prop("checked", true);
+				}else{
+					$(this).parent(".checkbox__mask").removeClass("on"); //checkbox全选控制
+					$("#J__tabList .checkbox__item").removeClass("on");
+					$("#J__tabList input[name='id[]']").prop("checked", false);
+				}
+			});
+			$("#J__tabList input[name='id[]']").on("click", function(){
+				$(this).parent(".checkbox__item").toggleClass("on");
+				var chkNum = $("#J__tabList input[name='id[]']").size();
+				var chk = 0;
+				$("#J__tabList input[name='id[]']").each(function(){
+					if($(this).is(":checked")){
+						chk++;
+					}
+				});
+				if(chkNum == chk){
+					$(".J__chkAll").prop("checked", true);
+					$(".J__chkAll").parent(".checkbox__mask").addClass("on"); //checkbox全选控制
+				}else{
+					$(".J__chkAll").prop("checked", false);
+					$(".J__chkAll").parent(".checkbox__mask").removeClass("on"); //checkbox全选控制
+				}
+			});
+			
+			
+			//新增js部分(控制顶部)
+			$(".top-bar").wrap("<div class='wrap__header'></div>")
+		});
+	</script>
+	<!-- ……弹窗内容模板.End -->
+	
+	<script type="text/javascript">
+		$(function(){
+			//侧导航
+			$(".left-side-nav>.lv1>dt").on("click",function(){
+				$(this).siblings().children(".lv2").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv2>dt").on("click",function(){
+				$(this).siblings().children(".lv3").slideToggle(200);
+				$(this).toggleClass("cur");
+			})
+			$(".left-side-nav .lv3>dt").on("click",function(){
+				$(this).siblings().slideToggle(200);
+				$(this).toggleClass("cur");
+
+			})
+			//
+			$(".copy-checkbox1").on("click",function(){
+				$(this).parent().toggleClass("cur");
+			})
+
+			//翻页按钮
+			var allPages=parseInt($(".all-page").text());
+			var pageClickNum=1;
+			$(".next-page").click(function(){
+				if(pageClickNum<allPages){
+					pageClickNum++;
+					$(".cur-page").text(pageClickNum);
+					$(".prev-page").removeClass("dis");
+					if(pageClickNum==allPages){
+						$(this).addClass("dis");
+					}
+				}
+			});
+			$(".prev-page").click(function(){
+				if(pageClickNum>1){
+					pageClickNum--;
+					$(".cur-page").text(pageClickNum);
+					$(".next-page").removeClass("dis");
+					if(pageClickNum==1){
+						$(this).addClass("dis");
+					}
+
+				}
+			});
+
+		});
+	</script>
+</body>
+</html>
